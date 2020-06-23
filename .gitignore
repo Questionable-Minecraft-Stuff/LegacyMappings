@@ -3,3 +3,9 @@
 
 # Minecraft jar files
 *.jar
+
+# BBEdit Workspace file
+*.bbproject
+
+# Windows thumbnail files
+Thumbs.db
