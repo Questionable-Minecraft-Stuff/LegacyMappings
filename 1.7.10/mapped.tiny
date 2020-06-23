@@ -170,6 +170,9 @@ c	net/minecraft/class_1725	net/minecraft/entity/PigEntity
 c	net/minecraft/class_1729	net/minecraft/entity/SquidEntity
 c	net/minecraft/class_801	net/minecraft/inventory/CreativeInventoryInventory
 c	net/minecraft/class_800	net/minecraft/client/gui/CreativeInventoryScreen
+c	net/minecraft/class_1023	net/minecraft/class_1023
+	f	Lorg/apache/logging/log4j/Logger;	field_3941	LOGGER
+	f	Lnet/minecraft/class_1093;	field_3942	TEXTURE
 c	net/minecraft/class_913	net/minecraft/command/ScoreboardCommand
 c	net/minecraft/class_813	net/minecraft/client/gui/DispenserScreen
 c	net/minecraft/class_1150	net/minecraft/command/StopCommand
@@ -544,7 +547,7 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	f	Lnet/minecraft/class_246;	field_903	GLASS
 	f	Lnet/minecraft/class_246;	field_897	STONE
 	f	Lnet/minecraft/class_246;	field_898	WOOD
-	f	Lnet/minecraft/class_1222;	field_895	BLOCK
+	f	Lnet/minecraft/class_1222;	field_895	REGISTRY
 	m	(Lnet/minecraft/class_242;)I	method_876	getIdByBlock
 c	net/minecraft/class_362	net/minecraft/block/StoneButtonBlock
 c	net/minecraft/class_241	net/minecraft/block/BedBlock
@@ -613,6 +616,7 @@ c	net/minecraft/class_268	net/minecraft/block/DetectorRailBlock
 c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
 c	net/minecraft/class_147	net/minecraft/item/enchantment/EfficiencyEnchantment
 c	net/minecraft/class_389	net/minecraft/block/entity/CommandBlockEntity
+c	net/minecraft/class_36	net/minecraft/item/BlockItem
 c	net/minecraft/class_267	net/minecraft/block/DeadBushBlock
 c	net/minecraft/class_146	net/minecraft/item/enchantment/UnbreakingEnchantment
 c	net/minecraft/class_388	net/minecraft/block/entity/ChestBlockEntity
@@ -660,6 +664,44 @@ c	net/minecraft/class_142	net/minecraft/item/enchantment/FlameEnchantment
 c	net/minecraft/class_27	net/minecraft/inventory/DispenserInventory
 c	net/minecraft/class_45	net/minecraft/item/CoalItem
 c	net/minecraft/class_159	net/minecraft/item/enchantment/FireAspectEnchantment
+c	net/minecraft/class_48	net/minecraft/item/group/ItemGroup
+	m	()Z	method_80	titleExists
+	m	()Lnet/minecraft/class_48;	method_83	setNoScrolling
+	m	()Z	method_82	isScrollable
+	f	Ljava/lang/String;	field_139	logoFile
+	m	()Lnet/minecraft/class_48;	method_81	setNoTitle
+	f	Lnet/minecraft/class_86;	field_143	logo
+	m	(Lnet/minecraft/class_149;)Z	method_69	hasProperToolTag
+	f	[Lnet/minecraft/class_149;	field_142	toolTags
+	f	Z	field_140	scrollable
+	f	Lnet/minecraft/class_48;	field_133	COMBAT
+	f	Lnet/minecraft/class_48;	field_135	MATERIALS
+	m	([Lnet/minecraft/class_149;)Lnet/minecraft/class_48;	method_73	withToolTags
+		p	1	arr	tags
+	f	[Lnet/minecraft/class_48;	field_124	ITEMGROUPS
+	f	Lnet/minecraft/class_48;	field_131	FOOD
+	f	I	field_137	position
+	f	Lnet/minecraft/class_48;	field_126	DECORATIONS
+	f	Lnet/minecraft/class_48;	field_136	INVENTORY
+	f	Lnet/minecraft/class_48;	field_128	TRANSPORT
+	m	(Ljava/lang/String;)Lnet/minecraft/class_48;	method_70	setLogo
+		p	1	string	logoFile
+	m	(ILjava/lang/String;)V	<init>	<init>
+		p	2	string	name
+		p	1	integer	position
+	m	()[Lnet/minecraft/class_149;	method_86	getAllToolTags
+	f	Ljava/lang/String;	field_138	name
+	f	Lnet/minecraft/class_48;	field_132	TOOLS
+	m	(Ljava/util/List;)V	method_71	displayItems
+		p	1	list	items
+	f	Lnet/minecraft/class_48;	field_134	BREWING
+	m	()I	method_84	getColumn
+	f	Lnet/minecraft/class_48;	field_130	SEARCH
+	f	Lnet/minecraft/class_48;	field_129	MISC
+	f	Lnet/minecraft/class_48;	field_125	BUILDING
+	m	()Ljava/lang/String;	method_79	getLogo
+	f	Z	field_141	titleExists
+	f	Lnet/minecraft/class_48;	field_127	REDSTONE
 c	net/minecraft/class_279	net/minecraft/block/EndPortalBlock
 c	net/minecraft/class_278	net/minecraft/block/EnchantingTableBlock
 c	net/minecraft/class_47	net/minecraft/item/MapItem
@@ -689,20 +731,30 @@ c	net/minecraft/class_1808	net/minecraft/inventory/AbstractInventory
 c	net/minecraft/class_1806	net/minecraft/entity/ExplodingWitherSkullEntity
 c	net/minecraft/class_39	net/minecraft/item/BookItem
 c	net/minecraft/class_38	net/minecraft/item/BoatItem
+c	net/minecraft/class_57	net/minecraft/item/group/MiscellaneousItemgroup
 c	net/minecraft/class_325	net/minecraft/block/OreBlock
+c	net/minecraft/class_56	net/minecraft/item/group/TransportationItemgroup
 c	net/minecraft/class_324	net/minecraft/block/LogBlock
+c	net/minecraft/class_59	net/minecraft/item/group/FoodItemgroup
 c	net/minecraft/class_323	net/minecraft/block/LeavesBlock
+c	net/minecraft/class_58	net/minecraft/item/group/AllItemSearchItemgroup
 c	net/minecraft/class_201	net/minecraft/world/biome/AbstractBiome
 c	net/minecraft/class_322	net/minecraft/block/ObsidianBlock
+c	net/minecraft/class_53	net/minecraft/item/group/DecorationsItemgroup
 c	net/minecraft/class_329	net/minecraft/block/PotatoCropBlock
+c	net/minecraft/class_52	net/minecraft/item/group/InventoryItemgroup
 c	net/minecraft/class_207	net/minecraft/command/ClearCommand
 c	net/minecraft/class_55	net/minecraft/server/CommandSource
 c	net/minecraft/class_569	net/minecraft/command/KillCommand
 c	net/minecraft/class_327	net/minecraft/block/NetherPortalBlock
+c	net/minecraft/class_54	net/minecraft/item/group/RedstoneItemgroup
 c	net/minecraft/class_326	net/minecraft/block/PackedIceBlock
+c	net/minecraft/class_51	net/minecraft/item/group/MaterialsItemgroup
+c	net/minecraft/class_50	net/minecraft/item/group/BrewingStand
 c	net/minecraft/class_321	net/minecraft/block/NoteBlock
 c	net/minecraft/class_320	net/minecraft/block/Log2Block
 c	net/minecraft/class_319	net/minecraft/block/Leaves2Block
+c	net/minecraft/class_49	net/minecraft/item/group/BuildingBlocksItemgroup
 c	net/minecraft/class_336	net/minecraft/block/RailBlock
 c	net/minecraft/class_68	net/minecraft/item/EnchantedBookItem
 c	net/minecraft/class_335	net/minecraft/block/QuartzBlock
@@ -715,7 +767,9 @@ c	net/minecraft/class_338	net/minecraft/command/MeCommand
 c	net/minecraft/class_66	net/minecraft/item/EggItem
 c	net/minecraft/class_337	net/minecraft/block/RedstoneOreBlock
 c	net/minecraft/class_65	net/minecraft/item/DyeItem
+c	net/minecraft/class_60	net/minecraft/item/group/ToolsItemgroup
 c	net/minecraft/class_62	net/minecraft/item/MiningTool
+c	net/minecraft/class_61	net/minecraft/item/group/CombatItemgroup
 c	net/minecraft/class_695	net/minecraft/client/GameOptions
 	f	Lnet/minecraft/class_695;	field_2305	MAX_FPS
 	f	Lnet/minecraft/class_695;	field_2317	PROMPT_CHAT_LINKS
@@ -841,6 +895,7 @@ c	net/minecraft/class_85	net/minecraft/util/ToolMaterials
 	m	()F	method_204	getMiningSpeed
 	m	()I	method_206	getMiningLevel
 c	net/minecraft/class_119	net/minecraft/item/BookNQuillItem
+c	net/minecraft/class_118	net/minecraft/item/ColorableBlockItem
 c	net/minecraft/class_88	net/minecraft/item/LeadItem
 c	net/minecraft/class_238	net/minecraft/block/AbstractRailBlock
 c	net/minecraft/class_359	net/minecraft/block/PlantStemBlock
@@ -1020,9 +1075,17 @@ c	net/minecraft/class_350	net/minecraft/block/SkullBlock
 c	net/minecraft/class_591	net/minecraft/command/BanListCommand
 c	net/minecraft/class_81	net/minecraft/item/PaintingItem
 c	net/minecraft/class_84	net/minecraft/item/Item
+	f	Ljava/lang/String;	field_197	rawName
+	f	I	field_192	maxStackSize
+	f	Ljava/lang/String;	field_196	name
+	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_181	withName
+		p	1	string	name
 	f	Z	field_194	unbreakable
 	m	()Z	method_196	hasDurability
 	m	(Lnet/minecraft/class_242;)Lnet/minecraft/class_84;	method_158	getAsItem
+	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_168	withRawName
+		p	1	string	name
+	f	Lnet/minecraft/class_1222;	field_189	REGISTRY
 	f	I	field_186	durability
 c	net/minecraft/class_83	net/minecraft/item/HoeItem
 c	net/minecraft/class_233	net/minecraft/command/DeOPCommand
