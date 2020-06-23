@@ -10,9 +10,13 @@ c	net/minecraft/class_1796	net/minecraft/entity/FireworkEntity
 c	net/minecraft/class_1795	net/minecraft/entity/AbstractFireballEntity
 c	net/minecraft/class_1789	net/minecraft/entity/AbstractPlayerEntity
 c	net/minecraft/class_1760	net/minecraft/entity/BlazeEntity
+c	net/minecraft/class_1643	net/minecraft/entity/AbstractEntityAttribute
 c	net/minecraft/class_1764	net/minecraft/entity/EndermanEntity
 c	net/minecraft/class_1763	net/minecraft/command/AbstractCommand
 c	net/minecraft/class_1762	net/minecraft/entity/CreeperEntity
+c	net/minecraft/class_1640	net/minecraft/entity/Attribute
+	m	(D)D	method_6021	correctValue
+		p	1	double1	value
 c	net/minecraft/class_1761	net/minecraft/entity/CaveSpiderEntity
 c	net/minecraft/class_1636	net/minecraft/entity/AbstractAIEntity
 c	net/minecraft/class_1639	net/minecraft/entity/AbstractTameableEntity
@@ -20,7 +24,26 @@ c	net/minecraft/class_1771	net/minecraft/entity/ZombifiedPiglinEntity
 c	net/minecraft/class_1770	net/minecraft/entity/AbstractHostileMobEntity
 c	net/minecraft/class_1775	net/minecraft/entity/SkeletonEntity
 c	net/minecraft/class_1774	net/minecraft/entity/SilverfishEntity
+c	net/minecraft/class_1773	net/minecraft/entity/Attributes
+	f	Lnet/minecraft/class_1640;	field_6643	MOVEMENT_SPEED
+	f	Lnet/minecraft/class_1640;	field_6644	ATTACK_DAMAGE
+	f	Lnet/minecraft/class_1640;	field_6641	FOLLOW_RANGE
+	f	Lnet/minecraft/class_1640;	field_6642	KNOCKBACK_RESISTANCE
+	f	Lnet/minecraft/class_1640;	field_6640	MAX_HEALTH
+	f	Lorg/apache/logging/log4j/Logger;	field_6645	LOGGER
 c	net/minecraft/class_1768	net/minecraft/entity/GiantEntity
+c	net/minecraft/class_1646	net/minecraft/entity/EntityAttribute
+	f	D	field_6106	maximumValue
+	m	()Ljava/lang/String;	method_6051	getName
+	m	(Ljava/lang/String;)Lnet/minecraft/class_1646;	method_6050	withName
+		p	1	string	name
+	m	(Ljava/lang/String;DDD)V	<init>	<init>
+		p	4	double3	minimumValue
+		p	2	double2	defaultValue
+		p	6	double4	maximumValue
+		p	1	string	name
+	f	Ljava/lang/String;	field_6107	name
+	f	D	field_6105	minimumValue
 c	net/minecraft/class_1767	net/minecraft/entity/GhastEntity
 c	net/minecraft/class_1765	net/minecraft/entity/HostileMobEntityProvider
 c	net/minecraft/class_1769	net/minecraft/entity/MagmaCubeEntity
