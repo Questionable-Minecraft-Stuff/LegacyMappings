@@ -1,5 +1,10 @@
 tiny	2	0	intermediary	named
 c	net/minecraft/class_96	net/minecraft/item/PickaxeItem
+c	net/minecraft/class_99	net/minecraft/util/Rarity
+	f	Lnet/minecraft/class_99;	field_402	EPIC
+	f	Lnet/minecraft/class_99;	field_400	UNCOMMON
+	f	Lnet/minecraft/class_99;	field_401	RARE
+	f	Lnet/minecraft/class_99;	field_399	COMMON
 c	net/minecraft/class_98	net/minecraft/item/PotionItem
 c	net/minecraft/class_92	net/minecraft/item/MinecartItem
 c	net/minecraft/class_95	net/minecraft/item/NameTagItem
@@ -37,6 +42,13 @@ c	net/minecraft/class_284	net/minecraft/block/FarmlandBlock
 c	net/minecraft/class_283	net/minecraft/block/FallingBlock
 c	net/minecraft/class_281	net/minecraft/block/EnderChestBlock
 c	net/minecraft/class_288	net/minecraft/block/FireBlock
+	f	[I	field_1146	flammableBlocksByFlammability
+	f	[I	field_1147	flammableBlocksBySpeed
+	m	(III)V	method_1028	addAsFlammable
+		p	3	integer3	speed
+		p	1	integer1	blockId
+		p	2	integer2	flammability
+	m	()V	method_1032	registerFlammableBlocks
 c	net/minecraft/class_287	net/minecraft/block/FenceGateBlock
 c	net/minecraft/class_285	net/minecraft/block/FenceBlock
 c	net/minecraft/class_280	net/minecraft/block/EndPortalFrameBlock
@@ -82,7 +94,9 @@ c	net/minecraft/class_1	net/minecraft/util/Formatting
 	f	Lnet/minecraft/class_1;	field_16	RED
 	f	Lnet/minecraft/class_1;	field_14	GREEN
 	f	Lnet/minecraft/class_1;	field_24	ITALIC
+c	net/minecraft/class_127	net/minecraft/recipe/FoodRecipes
 c	net/minecraft/class_369	net/minecraft/block/LeavesBaseBlock
+c	net/minecraft/class_126	net/minecraft/recipe/FireworksRecipes
 c	net/minecraft/class_368	net/minecraft/block/TorchBlock
 c	net/minecraft/class_247	net/minecraft/block/Blocks
 	f	Lnet/minecraft/class_408;	field_927	STICKY_PISTON
@@ -256,15 +270,23 @@ c	net/minecraft/class_247	net/minecraft/block/Blocks
 	f	Lnet/minecraft/class_242;	field_1092	DISPENSER
 	f	Lnet/minecraft/class_242;	field_984	WHEAT
 	f	Lnet/minecraft/class_242;	field_1080	GRAVEL
+c	net/minecraft/class_125	net/minecraft/recipe/DyeingRecipes
+c	net/minecraft/class_246	net/minecraft/block/Sound
 c	net/minecraft/class_367	net/minecraft/block/TntBlock
 c	net/minecraft/class_366	net/minecraft/block/BarOrPaneBlock
+c	net/minecraft/class_129	net/minecraft/recipe/SmeltingRecipes
+c	net/minecraft/class_128	net/minecraft/command/BanIPCommand
 c	net/minecraft/class_249	net/minecraft/block/BookshelfBlock
 c	net/minecraft/class_361	net/minecraft/block/StoneBrickBlock
 c	net/minecraft/class_240	net/minecraft/block/BeaconBlock
 c	net/minecraft/class_360	net/minecraft/block/StoneBlock
+c	net/minecraft/class_123	net/minecraft/recipe/ArmorRecipes
+	f	[[Ljava/lang/Object;	field_446	items
+	f	[[Ljava/lang/String;	field_445	recipe
 c	net/minecraft/class_364	net/minecraft/block/TallGrassBlock
 c	net/minecraft/class_363	net/minecraft/block/StoneSlabBlock
 c	net/minecraft/class_242	net/minecraft/block/Block
+	m	(Lnet/minecraft/class_242;)I	method_876	getIdByBlock
 c	net/minecraft/class_362	net/minecraft/block/StoneButtonBlock
 c	net/minecraft/class_241	net/minecraft/block/BedBlock
 c	net/minecraft/class_120	net/minecraft/item/SignedBookNQuillItem
@@ -275,6 +297,9 @@ c	net/minecraft/class_378	net/minecraft/block/PlanksBlock
 c	net/minecraft/class_257	net/minecraft/block/ChestBlock
 c	net/minecraft/class_377	net/minecraft/block/MetalPressurePlateBlock
 c	net/minecraft/class_256	net/minecraft/block/CauldronBlock
+c	net/minecraft/class_139	net/minecraft/recipe/ToolRecipes
+	f	[[Ljava/lang/Object;	field_464	items
+	f	[[Ljava/lang/String;	field_463	recipe
 c	net/minecraft/class_372	net/minecraft/block/TripwireHookBlock
 c	net/minecraft/class_251	net/minecraft/block/PlantBlock
 c	net/minecraft/class_371	net/minecraft/block/TripwireBlock
@@ -284,6 +309,7 @@ c	net/minecraft/class_255	net/minecraft/block/CarrotCropBlock
 c	net/minecraft/class_376	net/minecraft/block/CobwebBlock
 c	net/minecraft/class_375	net/minecraft/block/LilyPadBlock
 c	net/minecraft/class_254	net/minecraft/block/CakeBlock
+c	net/minecraft/class_132	net/minecraft/recipe/NineItemRecipes
 c	net/minecraft/class_374	net/minecraft/block/CobblestoneWallBlock
 c	net/minecraft/class_253	net/minecraft/block/CactusBlock
 c	net/minecraft/class_252	net/minecraft/block/AbstractButtonBlock
@@ -382,6 +408,12 @@ c	net/minecraft/class_584	net/minecraft/block/CobblestoneBlock
 c	net/minecraft/class_100	net/minecraft/item/MusicDiscItem
 c	net/minecraft/class_341	net/minecraft/block/RedstoneTorchBlock
 c	net/minecraft/class_340	net/minecraft/block/RedstoneLampBlock
+c	net/minecraft/class_116	net/minecraft/util/HandMovement
+	f	Lnet/minecraft/class_116;	field_426	BOW
+	f	Lnet/minecraft/class_116;	field_423	EAT
+	f	Lnet/minecraft/class_116;	field_422	NONE
+	f	Lnet/minecraft/class_116;	field_425	BLOCK
+	f	Lnet/minecraft/class_116;	field_424	DRINK
 c	net/minecraft/class_237	net/minecraft/block/AbstractPressurePlateBlock
 c	net/minecraft/class_358	net/minecraft/block/FluidBlock
 c	net/minecraft/class_236	net/minecraft/block/AbstractBlockWithEntity
@@ -392,6 +424,7 @@ c	net/minecraft/class_356	net/minecraft/block/StainedGlassPaneBlock
 c	net/minecraft/class_355	net/minecraft/block/StainedGlassBlock
 c	net/minecraft/class_234	net/minecraft/block/AirBlock
 c	net/minecraft/class_113	net/minecraft/item/SpawnEggItem
+c	net/minecraft/class_86	net/minecraft/item/ItemStack
 c	net/minecraft/class_85	net/minecraft/item/ToolMaterials
 	f	I	field_203	miningLevel
 	f	Lnet/minecraft/class_85;	field_201	DIAMOND
