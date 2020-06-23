@@ -4,21 +4,52 @@ c	net/minecraft/class_98	net/minecraft/item/PotionItem
 c	net/minecraft/class_92	net/minecraft/item/MinecartItem
 c	net/minecraft/class_95	net/minecraft/item/NameTagItem
 c	net/minecraft/class_91	net/minecraft/item/MilkBucketItem
-c	net/minecraft/class_120	net/minecraft/item/SignedBookNQuillItem
 c	net/minecraft/class_90	net/minecraft/item/FilledMapItem
-c	net/minecraft/class_68	net/minecraft/item/EnchantedBookItem
-c	net/minecraft/class_67	net/minecraft/item/EmptyMapItem
-c	net/minecraft/class_69	net/minecraft/item/EyeOfEnderItem
-c	net/minecraft/class_63	net/minecraft/item/DoorItem
-c	net/minecraft/class_66	net/minecraft/item/EggItem
-c	net/minecraft/class_65	net/minecraft/item/DyeItem
-c	net/minecraft/class_1594	net/minecraft/util/Snooper
-	m	(Lnet/minecraft/class_1592;)V	method_5560	method_5560
-		p	1	ri	settings
-	m	(Lnet/minecraft/class_1592;)V	method_5561	method_5561
-		p	1	ri	settings
-	m	()Z	method_5559	isSnooperEnabled
-c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
+c	net/minecraft/class_410	net/minecraft/block/MovingPistonBlock
+c	net/minecraft/class_409	net/minecraft/block/PistonHeadBlock
+c	net/minecraft/class_408	net/minecraft/block/PistonBlock
+c	net/minecraft/class_303	net/minecraft/block/JukeboxBlock
+c	net/minecraft/class_302	net/minecraft/block/IceBlock
+c	net/minecraft/class_301	net/minecraft/block/MushroomBlock
+c	net/minecraft/class_300	net/minecraft/block/HopperBlock
+c	net/minecraft/class_307	net/minecraft/block/LeverBlock
+c	net/minecraft/class_306	net/minecraft/block/AbstractLeavesBlock
+c	net/minecraft/class_305	net/minecraft/block/LadderBlock
+c	net/minecraft/class_314	net/minecraft/block/MonsterEggBlock
+c	net/minecraft/class_313	net/minecraft/block/SpawnerBlock
+c	net/minecraft/class_311	net/minecraft/block/MetalBlock
+c	net/minecraft/class_318	net/minecraft/block/NetherrackBlock
+c	net/minecraft/class_317	net/minecraft/block/NetherWartBlock
+c	net/minecraft/class_316	net/minecraft/block/MyceliumBlock
+c	net/minecraft/class_315	net/minecraft/block/MushroomPlantBlock
+c	net/minecraft/class_1093	net/minecraft/util/Identifier
+c	net/minecraft/class_310	net/minecraft/block/MelonBlock
+c	net/minecraft/class_671	net/minecraft/client/MinecraftClient
+	f	Lnet/minecraft/class_1093;	field_2073	LOGO
+	f	Ljava/util/List;	field_2074	DISPLAYMODES
+	f	[B	field_2124	memory
+	f	Ljava/io/File;	field_2075	resourcePackFolder
+	f	Lorg/apache/logging/log4j/Logger;	field_2072	LOGGER
+c	net/minecraft/class_309	net/minecraft/block/AbstractLogBlock
+c	net/minecraft/class_308	net/minecraft/block/AbstractFluidBlock
+c	net/minecraft/class_289	net/minecraft/block/FlowerBlock
+c	net/minecraft/class_284	net/minecraft/block/FarmlandBlock
+c	net/minecraft/class_283	net/minecraft/block/FallingBlock
+c	net/minecraft/class_281	net/minecraft/block/EnderChestBlock
+c	net/minecraft/class_288	net/minecraft/block/FireBlock
+c	net/minecraft/class_287	net/minecraft/block/FenceGateBlock
+c	net/minecraft/class_285	net/minecraft/block/FenceBlock
+c	net/minecraft/class_280	net/minecraft/block/EndPortalFrameBlock
+c	net/minecraft/class_295	net/minecraft/block/GravelBlock
+c	net/minecraft/class_294	net/minecraft/block/GrassBlock
+c	net/minecraft/class_293	net/minecraft/block/GlowstoneBlock
+c	net/minecraft/class_292	net/minecraft/block/GlassBlock
+c	net/minecraft/class_299	net/minecraft/block/HayBaleBlock
+c	net/minecraft/class_298	net/minecraft/block/TerracottaBlock
+c	net/minecraft/class_297	net/minecraft/block/GlassSoundingBlock
+c	net/minecraft/class_296	net/minecraft/block/AbstractSlabBlock
+c	net/minecraft/class_291	net/minecraft/block/FurnaceBlock
+c	net/minecraft/class_290	net/minecraft/block/FlowerPotBlock
 c	net/minecraft/class_1	net/minecraft/util/Formatting
 	f	Lnet/minecraft/class_1;	field_12	DARK_GRAY
 	f	Lnet/minecraft/class_1;	field_8	DARK_RED
@@ -51,39 +82,344 @@ c	net/minecraft/class_1	net/minecraft/util/Formatting
 	f	Lnet/minecraft/class_1;	field_16	RED
 	f	Lnet/minecraft/class_1;	field_14	GREEN
 	f	Lnet/minecraft/class_1;	field_24	ITALIC
-c	net/minecraft/class_105	net/minecraft/item/ShearsItem
+c	net/minecraft/class_369	net/minecraft/block/LeavesBaseBlock
+c	net/minecraft/class_368	net/minecraft/block/TorchBlock
+c	net/minecraft/class_247	net/minecraft/block/Blocks
+	f	Lnet/minecraft/class_408;	field_927	STICKY_PISTON
+	f	Lnet/minecraft/class_242;	field_990	LADDER
+	f	Lnet/minecraft/class_242;	field_1011	COBBLESTONE_WALL
+	f	Lnet/minecraft/class_408;	field_931	PISTON
+	f	Lnet/minecraft/class_308;	field_1075	FLOWING_WATER
+	f	Lnet/minecraft/class_242;	field_1007	BIRCH_STAIRS
+	f	Lnet/minecraft/class_242;	field_1008	JUNGLE_STAIRS
+	f	Lnet/minecraft/class_344;	field_966	UNPOWERED_REDSTONE_REPEATER
+	f	Lnet/minecraft/class_242;	field_947	OBSIDIAN
+	f	Lnet/minecraft/class_251;	field_938	RED_MUSHROOM
+	f	Lnet/minecraft/class_242;	field_923	NOTEBLOCK
+	f	Lnet/minecraft/class_242;	field_1059	STAINED_TERRACOTTA
+	f	Lnet/minecraft/class_242;	field_999	LIT_REDSTONE_ORE
+	f	Lnet/minecraft/class_242;	field_1047	DRAGON_EGG
+	f	Lnet/minecraft/class_289;	field_936	POPPY
+	f	Lnet/minecraft/class_274;	field_1067	DOUBLE_PLANT
+	f	Lnet/minecraft/class_242;	field_959	NETHERRACK
+	f	Lnet/minecraft/class_242;	field_1063	COAL_BLOCK
+	f	Lnet/minecraft/class_242;	field_991	RAIL
+	f	Lnet/minecraft/class_242;	field_987	LIT_FURNACE
+	f	Lnet/minecraft/class_242;	field_975	TORCH
+	f	Lnet/minecraft/class_242;	field_951	ICE
+	f	Lnet/minecraft/class_242;	field_1091	LAPIS_LAZULI_BLOCK
+	f	Lnet/minecraft/class_242;	field_1090	LAPIS_LAZULI_ORE
+	f	Lnet/minecraft/class_242;	field_1034	STONE_BRICK_STAIRS
+	f	Lnet/minecraft/class_364;	field_929	TALLGRASS
+	f	Lnet/minecraft/class_242;	field_1006	SPRUCE_STAIRS
+	f	Lnet/minecraft/class_242;	field_1018	ANVIL
+	f	Lnet/minecraft/class_242;	field_1019	TRAPPED_CHEST
+	f	Lnet/minecraft/class_242;	field_958	PUMPKIN
+	f	Lnet/minecraft/class_242;	field_946	MOSS_STONE
+	f	Lnet/minecraft/class_251;	field_937	BROWN_MUSHROOM
+	f	Lnet/minecraft/class_288;	field_976	FIRE
+	f	Lnet/minecraft/class_242;	field_922	SANDSTONE
+	f	Lnet/minecraft/class_242;	field_1058	DROPPER
+	f	Lnet/minecraft/class_242;	field_1046	END_STONE
+	f	Lnet/minecraft/class_257;	field_979	CHEST
+	f	Lnet/minecraft/class_289;	field_935	DANDELION
+	f	Lnet/minecraft/class_242;	field_950	SNOW_LAYER
+	f	Lnet/minecraft/class_242;	field_1074	BEDROCK
+	f	Lnet/minecraft/class_242;	field_1062	TERRACOTTA
+	f	Lnet/minecraft/class_242;	field_998	REDSTONE_ORE
+	f	Lnet/minecraft/class_242;	field_986	FURNACE
+	f	Lnet/minecraft/class_242;	field_974	GLASS_PANE
+	f	Lnet/minecraft/class_242;	field_962	GLOWSTONE
+	f	Lnet/minecraft/class_242;	field_1021	IRON_PRESSURE_PLATE
+	f	Lnet/minecraft/class_242;	field_1033	BRICK_STAIRS
+	f	Lnet/minecraft/class_242;	field_1005	EMERALD_BLOCK
+	f	Lnet/minecraft/class_242;	field_1017	SKULL
+	f	Lnet/minecraft/class_409;	field_932	PISTON_HEAD
+	f	Lnet/minecraft/class_242;	field_1029	PUMPKIN_STEM
+	f	Lnet/minecraft/class_306;	field_1087	LEAVES2
+	f	Lnet/minecraft/class_242;	field_925	POWERED_RAIL
+	f	Lnet/minecraft/class_306;	field_1086	LEAVES
+	f	Lnet/minecraft/class_242;	field_989	WOODEN_DOOR
+	f	Lnet/minecraft/class_242;	field_977	SPAWNER
+	f	Lnet/minecraft/class_242;	field_1057	ACTIVATOR_RAIL
+	f	Lnet/minecraft/class_256;	field_1043	CAULDRON
+	f	Lnet/minecraft/class_242;	field_1045	END_PORTAL_FRAME
+	f	Lnet/minecraft/class_242;	field_949	STONE_BUTTON
+	f	Lnet/minecraft/class_242;	field_993	WALL_SIGN
+	f	Lnet/minecraft/class_242;	field_981	DIAMOND_ORE
+	f	Lnet/minecraft/class_242;	field_1085	LOG2
+	f	Lnet/minecraft/class_242;	field_1073	SAPLING
+	f	Lnet/minecraft/class_242;	field_1061	CARPET
+	f	Lnet/minecraft/class_242;	field_965	CAKE
+	f	Lnet/minecraft/class_242;	field_953	CACTUS
+	f	Lnet/minecraft/class_240;	field_1010	BEACON
+	f	Lnet/minecraft/class_242;	field_1020	GOLDEN_PRESSURE_PLATE
+	f	Lnet/minecraft/class_242;	field_1032	FENCE_GATE
+	f	Lnet/minecraft/class_242;	field_1004	TRIPWIRE
+	f	Lnet/minecraft/class_242;	field_1016	WOODEN_BUTTON
+	f	Lnet/minecraft/class_242;	field_1028	MELON
+	f	Lnet/minecraft/class_242;	field_924	BED
+	f	Lnet/minecraft/class_242;	field_988	STANDING_SIGN
+	f	Lnet/minecraft/class_242;	field_1056	QUARTZ_STAIRS
+	f	Lnet/minecraft/class_410;	field_934	MOVING_PISTON
+	f	Lnet/minecraft/class_263;	field_1023	POWERED_REDSTONE_COMPARATOR
+	f	Lnet/minecraft/class_242;	field_1044	END_PORTAL
+	f	Lnet/minecraft/class_344;	field_967	POWERED_REDSTONE_REPEATER
+	f	Lnet/minecraft/class_242;	field_948	REDSTONE_TORCH
+	f	Lnet/minecraft/class_242;	field_992	STONE_STAIRS
+	f	Lnet/minecraft/class_242;	field_1084	LOG
+	f	Lnet/minecraft/class_242;	field_1072	PLANKS
+	f	Lnet/minecraft/class_242;	field_1060	HAY_BLOCK
+	f	Lnet/minecraft/class_242;	field_964	LIT_PUMPKIN
+	f	Lnet/minecraft/class_242;	field_952	SNOW
+	f	Lnet/minecraft/class_242;	field_940	IRON_BLOCK
+	f	Lnet/minecraft/class_242;	field_1031	VINE
+	f	Lnet/minecraft/class_242;	field_1015	POTATOES
+	f	Lnet/minecraft/class_316;	field_1035	MYCELIUM
+	f	Lnet/minecraft/class_242;	field_1039	NETHER_BRICK_STAIRS
+	f	Lnet/minecraft/class_300;	field_1027	HOPPER
+	f	Lnet/minecraft/class_242;	field_955	SUGARCANE
+	f	Lnet/minecraft/class_267;	field_930	DEADBUSH
+	f	Lnet/minecraft/class_242;	field_939	GOLD_BLOCK
+	f	Lnet/minecraft/class_327;	field_963	NETHER_PORTAL
+	f	Lnet/minecraft/class_242;	field_1055	QUARTZ_BLOCK
+	f	Lnet/minecraft/class_263;	field_1022	UNPOWERED_REDSTONE_COMPARATOR
+	f	Lnet/minecraft/class_242;	field_983	CRAFTING_TABLE
+	f	Lnet/minecraft/class_242;	field_971	BROWN_MUSHROOM_BLOCK
+	f	Lnet/minecraft/class_242;	field_943	BRICKS
+	f	Lnet/minecraft/class_242;	field_1083	COAL_ORE
+	f	Lnet/minecraft/class_242;	field_1071	COBBLESTONE
+	f	Lnet/minecraft/class_242;	field_995	STONE_PRESSURE_PLATE
+	f	Lnet/minecraft/class_296;	field_941	DOUBLE_STONE_SLAB
+	f	Lnet/minecraft/class_242;	field_1030	MELON_STEM
+	f	Lnet/minecraft/class_242;	field_1002	ENDER_CHEST
+	f	Lnet/minecraft/class_242;	field_1014	CARROTS
+	f	Lnet/minecraft/class_242;	field_1026	NETHER_QUARTZ_ORE
+	f	Lnet/minecraft/class_242;	field_1038	NETHER_BRICK_FENCE
+	f	Lnet/minecraft/class_356;	field_1069	STAINED_GLASS_PANE
+	f	Lnet/minecraft/class_346;	field_1079	SAND
+	f	Lnet/minecraft/class_242;	field_978	OAK_STAIRS
+	f	Lnet/minecraft/class_242;	field_1078	LAVA
+	f	Lnet/minecraft/class_242;	field_1066	DARK_OAK_STAIRS
+	f	Lnet/minecraft/class_242;	field_926	DETECTOR_RAIL
+	f	Lnet/minecraft/class_242;	field_994	LEVER
+	f	Lnet/minecraft/class_242;	field_1042	BREWING_STAND
+	f	Lnet/minecraft/class_242;	field_982	DIAMOND_BLOCK
+	f	Lnet/minecraft/class_242;	field_970	STONE_BRICKS
+	f	Lnet/minecraft/class_294;	field_1054	GRASS
+	f	Lnet/minecraft/class_242;	field_954	CLAY
+	f	Lnet/minecraft/class_242;	field_1082	IRON_ORE
+	f	Lnet/minecraft/class_242;	field_1070	DIRT
+	f	Lnet/minecraft/class_242;	field_1001	EMERALD_ORE
+	f	Lnet/minecraft/class_242;	field_1013	STONE
+	f	Lnet/minecraft/class_242;	field_1025	REDSTONE_BLOCK
+	f	Lnet/minecraft/class_242;	field_1037	NETHER_BRICKS
+	f	Lnet/minecraft/class_308;	field_1077	FLOWING_LAVA
+	f	Lnet/minecraft/class_242;	field_969	MONSTER_EGG
+	f	Lnet/minecraft/class_242;	field_957	FENCE
+	f	Lnet/minecraft/class_242;	field_1049	LIT_REDSTONE_LAMP
+	f	Lnet/minecraft/class_242;	field_945	BOOKSHELF
+	f	Lnet/minecraft/class_242;	field_933	WOOL
+	f	Lnet/minecraft/class_242;	field_1089	GLASS
+	f	Lnet/minecraft/class_242;	field_1065	ACACIA_STAIRS
+	f	Lnet/minecraft/class_242;	field_961	SOULSAND
+	f	Lnet/minecraft/class_242;	field_1053	SANDSTONE_STAIRS
+	f	Lnet/minecraft/class_242;	field_1041	ENCHANTING_TABLE
+	f	Lnet/minecraft/class_296;	field_1051	WOODEN_SLAB
+	f	Lnet/minecraft/class_242;	field_997	WOODEN_PRESSURE_PLATE
+	f	Lnet/minecraft/class_242;	field_985	FARMLAND
+	f	Lnet/minecraft/class_242;	field_1081	GOLD_ORE
+	f	Lnet/minecraft/class_242;	field_973	IRON_BARS
+	f	Lnet/minecraft/class_242;	field_1000	UNLIT_REDSTONE_TORCH
+	f	Lnet/minecraft/class_242;	field_1012	FLOWER_POT
+	f	Lnet/minecraft/class_242;	field_1036	LILY_PAD
+	f	Lnet/minecraft/class_242;	field_1009	COMMAND_BLOCK
+	f	Lnet/minecraft/class_242;	field_968	TRAPDOOR
+	f	Lnet/minecraft/class_355;	field_1068	STAINED_GLASS
+	f	Lnet/minecraft/class_242;	field_956	JUKEBOX
+	f	Lnet/minecraft/class_339;	field_980	REDSTONE_DUST
+	f	Lnet/minecraft/class_266;	field_1024	DAYLIGHT_DETECTOR
+	f	Lnet/minecraft/class_242;	field_1048	REDSTONE_LAMP
+	f	Lnet/minecraft/class_242;	field_944	TNT
+	f	Lnet/minecraft/class_242;	field_928	COBWEB
+	f	Lnet/minecraft/class_372;	field_1003	TRIPWIRE_HOOK
+	f	Lnet/minecraft/class_242;	field_1088	SPONGE
+	f	Lnet/minecraft/class_242;	field_972	RED_MUSHROOM_BLOCK
+	f	Lnet/minecraft/class_242;	field_1076	WATER
+	f	Lnet/minecraft/class_242;	field_1064	PACKED_ICE
+	f	Lnet/minecraft/class_242;	field_960	AIR
+	f	Lnet/minecraft/class_242;	field_1052	COCOA
+	f	Lnet/minecraft/class_242;	field_1040	NETHER_WART
+	f	Lnet/minecraft/class_296;	field_1050	DOUBLE_WOODEN_SLAB
+	f	Lnet/minecraft/class_242;	field_996	IRON_DOOR
+	f	Lnet/minecraft/class_296;	field_942	STONE_SLAB
+	f	Lnet/minecraft/class_242;	field_1092	DISPENSER
+	f	Lnet/minecraft/class_242;	field_984	WHEAT
+	f	Lnet/minecraft/class_242;	field_1080	GRAVEL
+c	net/minecraft/class_367	net/minecraft/block/TntBlock
+c	net/minecraft/class_366	net/minecraft/block/BarOrPaneBlock
+c	net/minecraft/class_249	net/minecraft/block/BookshelfBlock
+c	net/minecraft/class_361	net/minecraft/block/StoneBrickBlock
+c	net/minecraft/class_240	net/minecraft/block/BeaconBlock
+c	net/minecraft/class_360	net/minecraft/block/StoneBlock
+c	net/minecraft/class_364	net/minecraft/block/TallGrassBlock
+c	net/minecraft/class_363	net/minecraft/block/StoneSlabBlock
+c	net/minecraft/class_242	net/minecraft/block/Block
+c	net/minecraft/class_362	net/minecraft/block/StoneButtonBlock
+c	net/minecraft/class_241	net/minecraft/block/BedBlock
+c	net/minecraft/class_120	net/minecraft/item/SignedBookNQuillItem
+c	net/minecraft/class_259	net/minecraft/block/JungleCocoaBlock
+c	net/minecraft/class_379	net/minecraft/block/WoodenButtonBlock
+c	net/minecraft/class_258	net/minecraft/block/ClayBlock
+c	net/minecraft/class_378	net/minecraft/block/PlanksBlock
+c	net/minecraft/class_257	net/minecraft/block/ChestBlock
+c	net/minecraft/class_377	net/minecraft/block/MetalPressurePlateBlock
+c	net/minecraft/class_256	net/minecraft/block/CauldronBlock
+c	net/minecraft/class_372	net/minecraft/block/TripwireHookBlock
+c	net/minecraft/class_251	net/minecraft/block/PlantBlock
+c	net/minecraft/class_371	net/minecraft/block/TripwireBlock
+c	net/minecraft/class_250	net/minecraft/block/BrewingStandBlock
+c	net/minecraft/class_370	net/minecraft/block/TrapdoorBlock
+c	net/minecraft/class_255	net/minecraft/block/CarrotCropBlock
+c	net/minecraft/class_376	net/minecraft/block/CobwebBlock
+c	net/minecraft/class_375	net/minecraft/block/LilyPadBlock
+c	net/minecraft/class_254	net/minecraft/block/CakeBlock
+c	net/minecraft/class_374	net/minecraft/block/CobblestoneWallBlock
+c	net/minecraft/class_253	net/minecraft/block/CactusBlock
+c	net/minecraft/class_252	net/minecraft/block/AbstractButtonBlock
+c	net/minecraft/class_373	net/minecraft/block/VineBlock
 c	net/minecraft/class_35	net/minecraft/item/BedItem
+c	net/minecraft/class_269	net/minecraft/block/AbstractComplexRedstoneComponentBlock
+c	net/minecraft/class_34	net/minecraft/item/AxeItem
+c	net/minecraft/class_268	net/minecraft/block/DetectorRailBlock
+c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
+c	net/minecraft/class_267	net/minecraft/block/DeadBushBlock
+c	net/minecraft/class_30	net/minecraft/item/ArmorItem
+c	net/minecraft/class_701	net/minecraft/client/SessionIdService
+c	net/minecraft/class_262	net/minecraft/block/CommandBlock
+c	net/minecraft/class_261	net/minecraft/block/WoolBlock
+c	net/minecraft/class_381	net/minecraft/block/CarpetBlock
+c	net/minecraft/class_380	net/minecraft/block/WoodenSlabBlock
+c	net/minecraft/class_266	net/minecraft/block/DaylightDetectorBlock
+c	net/minecraft/class_265	net/minecraft/block/WheatBlock
+c	net/minecraft/class_264	net/minecraft/block/CraftingTableBlock
+c	net/minecraft/class_263	net/minecraft/block/RedstoneComparatorBlock
+c	net/minecraft/class_45	net/minecraft/item/CoalItem
+c	net/minecraft/class_279	net/minecraft/block/EndPortalBlock
+c	net/minecraft/class_278	net/minecraft/block/EnchantingTableBlock
+c	net/minecraft/class_47	net/minecraft/item/MapItem
+c	net/minecraft/class_41	net/minecraft/item/BowItem
+c	net/minecraft/class_44	net/minecraft/item/CarrotOnAStickItem
+c	net/minecraft/class_43	net/minecraft/item/BucketItem
+c	net/minecraft/class_273	net/minecraft/block/DoorBlock
+c	net/minecraft/class_272	net/minecraft/block/DispenserBlock
+c	net/minecraft/class_271	net/minecraft/block/DirtBlock
+c	net/minecraft/class_40	net/minecraft/item/GlassBottleItem
+c	net/minecraft/class_270	net/minecraft/AbstractQuadDirectionalBlock
+c	net/minecraft/class_277	net/minecraft/block/FlowingFluidBlock
+c	net/minecraft/class_276	net/minecraft/block/DropperBlock
+c	net/minecraft/class_275	net/minecraft/block/DragonEggBlock
+c	net/minecraft/class_274	net/minecraft/block/DoublePlantBlock
+c	net/minecraft/class_39	net/minecraft/item/BookItem
+c	net/minecraft/class_38	net/minecraft/item/BoatItem
+c	net/minecraft/class_325	net/minecraft/block/OreBlock
+c	net/minecraft/class_324	net/minecraft/block/LogBlock
+c	net/minecraft/class_323	net/minecraft/block/LeavesBlock
+c	net/minecraft/class_322	net/minecraft/block/ObsidianBlock
+c	net/minecraft/class_329	net/minecraft/block/PotatoCropBlock
+c	net/minecraft/class_327	net/minecraft/block/NetherPortalBlock
+c	net/minecraft/class_326	net/minecraft/block/PackedIceBlock
+c	net/minecraft/class_321	net/minecraft/block/NoteBlock
+c	net/minecraft/class_320	net/minecraft/block/Log2Block
+c	net/minecraft/class_319	net/minecraft/block/Leaves2Block
+c	net/minecraft/class_336	net/minecraft/block/RailBlock
+c	net/minecraft/class_68	net/minecraft/item/EnchantedBookItem
+c	net/minecraft/class_335	net/minecraft/block/QuartzBlock
+c	net/minecraft/class_67	net/minecraft/item/EmptyMapItem
+c	net/minecraft/class_334	net/minecraft/block/PumpkinBlock
+c	net/minecraft/class_69	net/minecraft/item/EyeOfEnderItem
+c	net/minecraft/class_339	net/minecraft/block/RedstoneDustBlock
+c	net/minecraft/class_63	net/minecraft/item/DoorItem
+c	net/minecraft/class_66	net/minecraft/item/EggItem
+c	net/minecraft/class_337	net/minecraft/block/RedstoneOreBlock
+c	net/minecraft/class_65	net/minecraft/item/DyeItem
+c	net/minecraft/class_1594	net/minecraft/util/Snooper
+	m	(Lnet/minecraft/class_1592;)V	method_5560	method_5560
+		p	1	ri	settings
+	m	(Lnet/minecraft/class_1592;)V	method_5561	method_5561
+		p	1	ri	settings
+	m	()Z	method_5559	isSnooperEnabled
+c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
+c	net/minecraft/class_332	net/minecraft/block/PressurePlateBlock
+c	net/minecraft/class_331	net/minecraft/block/PoweredRailBlock
+c	net/minecraft/class_330	net/minecraft/block/RedstoneBlock
+c	net/minecraft/class_347	net/minecraft/block/SandstoneBlock
+c	net/minecraft/class_105	net/minecraft/item/ShearsItem
 c	net/minecraft/class_79	net/minecraft/item/FoodItem
+c	net/minecraft/class_346	net/minecraft/block/SandBlock
 c	net/minecraft/class_104	net/minecraft/item/WheatSeedsItem
 c	net/minecraft/class_78	net/minecraft/item/FlintNSteelItem
-c	net/minecraft/class_34	net/minecraft/item/AxeItem
+c	net/minecraft/class_345	net/minecraft/block/AbstractLogRotationBlock
 c	net/minecraft/class_103	net/minecraft/item/CarrotOrPotatoItem
-c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
+c	net/minecraft/class_344	net/minecraft/block/RedstoneRepeaterBlock
 c	net/minecraft/class_102	net/minecraft/item/SaddleItem
 c	net/minecraft/class_109	net/minecraft/item/NetherStarItem
 c	net/minecraft/class_75	net/minecraft/item/FishItem
 c	net/minecraft/class_74	net/minecraft/item/FireworksItem
-c	net/minecraft/class_30	net/minecraft/item/ArmorItem
+c	net/minecraft/class_349	net/minecraft/block/SignBlock
 c	net/minecraft/class_77	net/minecraft/item/FishingRodItem
 c	net/minecraft/class_107	net/minecraft/item/SignItem
-c	net/minecraft/class_701	net/minecraft/client/SessionIdService
+c	net/minecraft/class_348	net/minecraft/block/SaplingBlock
 c	net/minecraft/class_106	net/minecraft/item/ShovelItem
 	c	
 c	net/minecraft/class_71	net/minecraft/item/BottleOEnchantingItem
 c	net/minecraft/class_70	net/minecraft/item/EnderPearlItem
 c	net/minecraft/class_73	net/minecraft/item/FireworkChargeItem
 c	net/minecraft/class_72	net/minecraft/item/FireChargeItem
+c	net/minecraft/class_343	net/minecraft/block/SugarcaneBlock
 c	net/minecraft/class_101	net/minecraft/item/RedstoneDustItem
+c	net/minecraft/class_584	net/minecraft/block/CobblestoneBlock
 c	net/minecraft/class_100	net/minecraft/item/MusicDiscItem
+c	net/minecraft/class_341	net/minecraft/block/RedstoneTorchBlock
+c	net/minecraft/class_340	net/minecraft/block/RedstoneLampBlock
+c	net/minecraft/class_237	net/minecraft/block/AbstractPressurePlateBlock
+c	net/minecraft/class_358	net/minecraft/block/FluidBlock
+c	net/minecraft/class_236	net/minecraft/block/AbstractBlockWithEntity
+c	net/minecraft/class_357	net/minecraft/block/StairsBlock
 c	net/minecraft/class_115	net/minecraft/item/SwordItem
-c	net/minecraft/class_45	net/minecraft/item/CoalItem
-c	net/minecraft/class_47	net/minecraft/item/MapItem
+c	net/minecraft/class_235	net/minecraft/block/AnvilBlock
+c	net/minecraft/class_356	net/minecraft/block/StainedGlassPaneBlock
+c	net/minecraft/class_355	net/minecraft/block/StainedGlassBlock
+c	net/minecraft/class_234	net/minecraft/block/AirBlock
 c	net/minecraft/class_113	net/minecraft/item/SpawnEggItem
+c	net/minecraft/class_85	net/minecraft/item/ToolMaterials
+	f	I	field_203	miningLevel
+	f	Lnet/minecraft/class_85;	field_201	DIAMOND
+	f	Lnet/minecraft/class_85;	field_200	IRON
+	m	(Ljava/lang/String;IIIFFI)V	<init>	<init>
+		p	6	float6	attackMultiplier
+		p	7	integer7	enchantability
+		p	3	integer3	miningLevel
+		p	4	integer4	durability
+		p	5	float5	miningSpeed
+	f	Lnet/minecraft/class_85;	field_199	STONE
+	f	Lnet/minecraft/class_85;	field_198	WOOD
+	f	F	field_206	attackMultiplier
+	m	()I	method_203	getDurability
+	f	F	field_205	miningSpeed
+	f	Lnet/minecraft/class_85;	field_202	GOLD
+	f	I	field_204	durability
+	f	I	field_207	enchantability
+	m	()Lnet/minecraft/class_84;	method_208	getIngredient
+	m	()F	method_205	getAttackMultiplier
+	m	()I	method_207	getEnchantability
+	m	()F	method_204	getMiningSpeed
+	m	()I	method_206	getMiningLevel
 c	net/minecraft/class_119	net/minecraft/item/BookNQuillItem
-c	net/minecraft/class_41	net/minecraft/item/BowItem
 c	net/minecraft/class_88	net/minecraft/item/LeadItem
-c	net/minecraft/class_44	net/minecraft/item/CarrotOnAStickItem
-c	net/minecraft/class_87	net/minecraft/class_87
+c	net/minecraft/class_238	net/minecraft/block/AbstractRailBlock
+c	net/minecraft/class_359	net/minecraft/block/PlantStemBlock
+c	net/minecraft/class_87	net/minecraft/item/Items
 	f	Lnet/minecraft/class_30;	field_272	DIAMOND_CHESTPLATE
 	f	Lnet/minecraft/class_84;	field_294	BOAT
 	f	Lnet/minecraft/class_84;	field_282	PAINTING
@@ -255,20 +591,15 @@ c	net/minecraft/class_87	net/minecraft/class_87
 	f	Lnet/minecraft/class_84;	field_317	MINECART_WITH_TNT
 	f	Lnet/minecraft/class_84;	field_305	GOLDEN_CARROT
 	f	Lnet/minecraft/class_30;	field_238	CHAINMAIL_LEGGINGS
-c	net/minecraft/class_43	net/minecraft/item/BucketItem
-c	net/minecraft/class_1093	net/minecraft/util/Identifier
+c	net/minecraft/class_350	net/minecraft/block/SkullBlock
 c	net/minecraft/class_81	net/minecraft/item/PaintingItem
-c	net/minecraft/class_40	net/minecraft/item/GlassBottleItem
 c	net/minecraft/class_84	net/minecraft/item/Item
+	m	(Lnet/minecraft/class_242;)Lnet/minecraft/class_84;	method_158	getAsItem
 c	net/minecraft/class_83	net/minecraft/item/HoeItem
+c	net/minecraft/class_354	net/minecraft/block/SpongeBlock
 c	net/minecraft/class_112	net/minecraft/item/SnowballItem
+c	net/minecraft/class_353	net/minecraft/block/SoulsandBlock
+c	net/minecraft/class_352	net/minecraft/block/SnowLayerBlock
 c	net/minecraft/class_110	net/minecraft/item/SkullItem
 c	net/minecraft/class_80	net/minecraft/item/GoldenAppleItem
-c	net/minecraft/class_671	net/minecraft/client/MinecraftClient
-	f	Lnet/minecraft/class_1093;	field_2073	LOGO
-	f	Ljava/util/List;	field_2074	DISPLAYMODES
-	f	[B	field_2124	memory
-	f	Ljava/io/File;	field_2075	resourcePackFolder
-	f	Lorg/apache/logging/log4j/Logger;	field_2072	LOGGER
-c	net/minecraft/class_39	net/minecraft/item/BookItem
-c	net/minecraft/class_38	net/minecraft/item/BoatItem
+c	net/minecraft/class_351	net/minecraft/block/SnowBlock
