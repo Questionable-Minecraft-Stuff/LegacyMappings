@@ -1,2 +1,274 @@
 tiny	2	0	intermediary	named
+c	net/minecraft/class_96	net/minecraft/item/PickaxeItem
+c	net/minecraft/class_98	net/minecraft/item/PotionItem
+c	net/minecraft/class_92	net/minecraft/item/MinecartItem
+c	net/minecraft/class_95	net/minecraft/item/NameTagItem
+c	net/minecraft/class_91	net/minecraft/item/MilkBucketItem
+c	net/minecraft/class_120	net/minecraft/item/SignedBookNQuillItem
+c	net/minecraft/class_90	net/minecraft/item/FilledMapItem
+c	net/minecraft/class_68	net/minecraft/item/EnchantedBookItem
+c	net/minecraft/class_67	net/minecraft/item/EmptyMapItem
+c	net/minecraft/class_69	net/minecraft/item/EyeOfEnderItem
+c	net/minecraft/class_63	net/minecraft/item/DoorItem
+c	net/minecraft/class_66	net/minecraft/item/EggItem
+c	net/minecraft/class_65	net/minecraft/item/DyeItem
+c	net/minecraft/class_1594	net/minecraft/util/Snooper
+	m	(Lnet/minecraft/class_1592;)V	method_5560	method_5560
+		p	1	ri	settings
+	m	(Lnet/minecraft/class_1592;)V	method_5561	method_5561
+		p	1	ri	settings
+	m	()Z	method_5559	isSnooperEnabled
+c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
+c	net/minecraft/class_1	net/minecraft/util/Formatting
+	f	Lnet/minecraft/class_1;	field_12	DARK_GRAY
+	f	Lnet/minecraft/class_1;	field_8	DARK_RED
+	m	()Ljava/lang/String;	method_7	getName
+	f	Lnet/minecraft/class_1;	field_22	STRIKETHROUGH
+	f	Lnet/minecraft/class_1;	field_10	GOLD
+	f	Lnet/minecraft/class_1;	field_20	OBFUSCATED
+	f	Lnet/minecraft/class_1;	field_4	BLACK
+	f	C	field_29	key
+	f	Lnet/minecraft/class_1;	field_6	DARK_GREEN
+	f	Ljava/lang/String;	field_2	colorKey
+	m	()C	method_1	getKey
+	f	Lnet/minecraft/class_1;	field_19	WHITE
+	f	Lnet/minecraft/class_1;	field_17	LIGHT_PURPLE
+	f	Lnet/minecraft/class_1;	field_15	AQUA
+	f	Lnet/minecraft/class_1;	field_25	RESET
+	f	Z	field_1	notColor
+	f	Lnet/minecraft/class_1;	field_13	BLUE
+	f	Lnet/minecraft/class_1;	field_23	UNDERLINE
+	f	Lnet/minecraft/class_1;	field_11	GRAY
+	f	Lnet/minecraft/class_1;	field_9	DARK_PURPLE
+	f	Lnet/minecraft/class_1;	field_21	BOLD
+	f	Lnet/minecraft/class_1;	field_5	DARK_BLUE
+	f	Lnet/minecraft/class_1;	field_7	DARK_AQUA
+	m	()Z	method_4	isNotColor
+	m	(Ljava/lang/String;ICZ)V	<init>	<init>
+		p	4	boolean4	notColor
+		p	3	character	key
+	f	Lnet/minecraft/class_1;	field_18	YELLOW
+	f	Lnet/minecraft/class_1;	field_16	RED
+	f	Lnet/minecraft/class_1;	field_14	GREEN
+	f	Lnet/minecraft/class_1;	field_24	ITALIC
+c	net/minecraft/class_105	net/minecraft/item/ShearsItem
+c	net/minecraft/class_35	net/minecraft/item/BedItem
+c	net/minecraft/class_79	net/minecraft/item/FoodItem
+c	net/minecraft/class_104	net/minecraft/item/WheatSeedsItem
+c	net/minecraft/class_78	net/minecraft/item/FlintNSteelItem
+c	net/minecraft/class_34	net/minecraft/item/AxeItem
+c	net/minecraft/class_103	net/minecraft/item/CarrotOrPotatoItem
+c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
+c	net/minecraft/class_102	net/minecraft/item/SaddleItem
+c	net/minecraft/class_109	net/minecraft/item/NetherStarItem
+c	net/minecraft/class_75	net/minecraft/item/FishItem
+c	net/minecraft/class_74	net/minecraft/item/FireworksItem
+c	net/minecraft/class_30	net/minecraft/item/ArmorItem
+c	net/minecraft/class_77	net/minecraft/item/FishingRodItem
+c	net/minecraft/class_107	net/minecraft/item/SignItem
+c	net/minecraft/class_701	net/minecraft/client/SessionIdService
+c	net/minecraft/class_106	net/minecraft/item/ShovelItem
+	c	
+c	net/minecraft/class_71	net/minecraft/item/BottleOEnchantingItem
+c	net/minecraft/class_70	net/minecraft/item/EnderPearlItem
+c	net/minecraft/class_73	net/minecraft/item/FireworkChargeItem
+c	net/minecraft/class_72	net/minecraft/item/FireChargeItem
+c	net/minecraft/class_101	net/minecraft/item/RedstoneDustItem
+c	net/minecraft/class_100	net/minecraft/item/MusicDiscItem
+c	net/minecraft/class_115	net/minecraft/item/SwordItem
+c	net/minecraft/class_45	net/minecraft/item/CoalItem
+c	net/minecraft/class_47	net/minecraft/item/MapItem
+c	net/minecraft/class_113	net/minecraft/item/SpawnEggItem
+c	net/minecraft/class_119	net/minecraft/item/BookNQuillItem
+c	net/minecraft/class_41	net/minecraft/item/BowItem
+c	net/minecraft/class_88	net/minecraft/item/LeadItem
+c	net/minecraft/class_44	net/minecraft/item/CarrotOnAStickItem
+c	net/minecraft/class_87	net/minecraft/class_87
+	f	Lnet/minecraft/class_30;	field_272	DIAMOND_CHESTPLATE
+	f	Lnet/minecraft/class_84;	field_294	BOAT
+	f	Lnet/minecraft/class_84;	field_282	PAINTING
+	f	Lnet/minecraft/class_84;	field_266	COOKIE
+	f	Lnet/minecraft/class_30;	field_232	LEATHER_HELMET
+	f	Lnet/minecraft/class_84;	field_375	WOODEN_PICKAXE
+	f	Lnet/minecraft/class_84;	field_254	IRON_SHOVEL
+	f	Lnet/minecraft/class_84;	field_351	MINECART_WITH_COMMAND_BLOCK
+	f	Lnet/minecraft/class_84;	field_242	LEATHER
+	f	Lnet/minecraft/class_84;	field_363	MUSIC_DISC_WAIT
+	f	Lnet/minecraft/class_84;	field_230	WHEAT
+	f	Lnet/minecraft/class_84;	field_226	IRON_HOE
+	f	Lnet/minecraft/class_84;	field_347	FIRE_CHARGE
+	f	Lnet/minecraft/class_84;	field_323	PUMPKIN_SEEDS
+	f	Lnet/minecraft/class_41;	field_366	BOW
+	f	Lnet/minecraft/class_84;	field_311	FIREWORKS
+	f	Lnet/minecraft/class_84;	field_348	IRON_AXE
+	f	Lnet/minecraft/class_84;	field_227	DIAMOND_HOE
+	f	Lnet/minecraft/class_84;	field_308	CARROT_ON_A_STICK
+	f	Lnet/minecraft/class_84;	field_350	NAME_TAG
+	f	Lnet/minecraft/class_30;	field_271	DIAMOND_HELMET
+	f	Lnet/minecraft/class_84;	field_293	SNOWBALL
+	f	Lnet/minecraft/class_84;	field_281	COOKED_PORKCHOP
+	f	Lnet/minecraft/class_84;	field_310	PUMPKIN_PIE
+	f	Lnet/minecraft/class_84;	field_386	BOWL
+	f	Lnet/minecraft/class_84;	field_265	REDSTONE_REPEATER
+	f	Lnet/minecraft/class_84;	field_362	CREEPY_MUSIC_DISC_11
+	f	Lnet/minecraft/class_84;	field_253	COMPASS
+	f	Lnet/minecraft/class_84;	field_374	WOODEN_SHOVEL
+	f	Lnet/minecraft/class_84;	field_346	EXPERIENCE_BOTTLE
+	f	Lnet/minecraft/class_84;	field_358	MUSIC_DISC_MELLOHI
+	f	Lnet/minecraft/class_84;	field_225	STONE_HOW
+	f	Lnet/minecraft/class_84;	field_334	NETHER_WART
+	f	Lnet/minecraft/class_84;	field_322	MELON
+	f	Lnet/minecraft/class_84;	field_289	MINECART
+	f	Lnet/minecraft/class_84;	field_307	IRON_PICKAXE
+	f	Lnet/minecraft/class_84;	field_359	MUSIC_DISC_STAL
+	f	Lnet/minecraft/class_84;	field_319	IRON_HORSE_ARMOR
+	f	Lnet/minecraft/class_84;	field_284	SIGN
+	f	Lnet/minecraft/class_84;	field_260	DYE
+	f	Lnet/minecraft/class_84;	field_381	DIAMOND_SWORD
+	f	Lnet/minecraft/class_84;	field_353	MUSIC_DISC_CAT
+	f	Lnet/minecraft/class_84;	field_244	BRICK
+	f	Lnet/minecraft/class_84;	field_365	APPLE
+	f	Lnet/minecraft/class_30;	field_274	DIAMOND_BOOTS
+	f	Lnet/minecraft/class_84;	field_220	GOLDEN_AXE
+	f	Lnet/minecraft/class_84;	field_296	SIGNED_BOOK_N_QUILL
+	f	Lnet/minecraft/class_84;	field_341	BREWING_STAND
+	f	Lnet/minecraft/class_84;	field_325	RAW_BEEF
+	f	Lnet/minecraft/class_84;	field_301	POTATO
+	f	Lnet/minecraft/class_30;	field_234	LEATHER_LEGGINGS
+	f	Lnet/minecraft/class_84;	field_377	STONE_SWORD
+	f	Lnet/minecraft/class_84;	field_256	CLOCK
+	f	Lnet/minecraft/class_84;	field_229	WHEAT_SEEDS
+	f	Lnet/minecraft/class_84;	field_217	GOLDEN_SWORD
+	f	Lnet/minecraft/class_84;	field_338	FERMENTED_SPIDER_EYE
+	f	Lnet/minecraft/class_84;	field_326	STEAK
+	f	Lnet/minecraft/class_84;	field_295	BOOK_N_QUILL
+	f	Lnet/minecraft/class_84;	field_283	GOLDEN_APPLE
+	f	Lnet/minecraft/class_84;	field_380	STONE_AXE
+	f	Lnet/minecraft/class_84;	field_364	FLINT_AND_STEEL
+	f	Lnet/minecraft/class_84;	field_243	MILK_BUCKET
+	f	Lnet/minecraft/class_84;	field_376	WOODEN_AXE
+	f	Lnet/minecraft/class_84;	field_340	MAGMA_CREAM
+	f	Lnet/minecraft/class_84;	field_231	BREAD
+	f	Lnet/minecraft/class_84;	field_352	CREEPY_MUSIC_DISC_13
+	f	Lnet/minecraft/class_30;	field_273	DIAMOND_LEGGINGS
+	f	Lnet/minecraft/class_30;	field_269	IRON_LEGGINGS
+	f	Lnet/minecraft/class_84;	field_336	GLASS_BOTTLE
+	f	Lnet/minecraft/class_84;	field_324	MELON_SEEDS
+	f	Lnet/minecraft/class_84;	field_312	FIREWORK_CHARGE
+	f	Lnet/minecraft/class_84;	field_279	FLINT
+	f	Lnet/minecraft/class_84;	field_300	CARROT
+	f	Lnet/minecraft/class_30;	field_233	LEATHER_CHESTPLATE
+	f	Lnet/minecraft/class_84;	field_337	SPIDER_EYE
+	f	Lnet/minecraft/class_84;	field_228	GOLDEN_HOE
+	f	Lnet/minecraft/class_84;	field_349	LEAD
+	f	Lnet/minecraft/class_98;	field_335	POTION
+	f	Lnet/minecraft/class_84;	field_216	MUSHROOM_STEW
+	f	Lnet/minecraft/class_84;	field_309	NETHER_STAR
+	f	Lnet/minecraft/class_68;	field_313	ENCHANTED_BOOK
+	f	Lnet/minecraft/class_84;	field_290	SADDLE
+	f	Lnet/minecraft/class_84;	field_262	SUGAR
+	f	Lnet/minecraft/class_84;	field_371	GOLD_INGOT
+	f	Lnet/minecraft/class_84;	field_250	CHEST_MINECART
+	f	Lnet/minecraft/class_84;	field_383	DIAMOND_PICKAXE
+	f	Lnet/minecraft/class_30;	field_276	GOLDEN_CHESTPLATE
+	f	Lnet/minecraft/class_84;	field_222	FEATHER
+	f	Lnet/minecraft/class_84;	field_298	ITEM_FRAME
+	f	Lnet/minecraft/class_84;	field_343	EYE_OF_ENDER
+	f	Lnet/minecraft/class_84;	field_331	BLAZE_ROD
+	f	Lnet/minecraft/class_84;	field_286	BUCKET
+	f	Lnet/minecraft/class_30;	field_240	IRON_HELMET
+	f	Lnet/minecraft/class_84;	field_303	POISONOUS_POTATO
+	f	Lnet/minecraft/class_30;	field_236	CHAINMAIL_HELMET
+	f	Lnet/minecraft/class_84;	field_379	STONE_PICKAXE
+	f	Lnet/minecraft/class_84;	field_258	FISH
+	f	Lnet/minecraft/class_84;	field_355	MUSIC_DISC_CHIRP
+	f	Lnet/minecraft/class_84;	field_246	SUGARCANE
+	f	Lnet/minecraft/class_84;	field_367	ARROW
+	f	Lnet/minecraft/class_84;	field_219	GOLDEN_PICKAXE
+	f	Lnet/minecraft/class_84;	field_328	COOKED_CHICKEN
+	f	Lnet/minecraft/class_84;	field_316	NETHER_QUARTZ
+	f	Lnet/minecraft/class_30;	field_237	CHAINMAIL_CHESTPLATE
+	f	Lnet/minecraft/class_90;	field_267	FILLED_MAP
+	f	Lnet/minecraft/class_84;	field_382	DIAMOND_SHOVEL
+	f	Lnet/minecraft/class_84;	field_261	BONE
+	f	Lnet/minecraft/class_84;	field_370	IRON_INGOT
+	f	Lnet/minecraft/class_84;	field_342	CAULDRON
+	f	Lnet/minecraft/class_84;	field_354	MUSIC_DISC_BLOCKS
+	f	Lnet/minecraft/class_30;	field_275	GOLDEN_HELMET
+	f	Lnet/minecraft/class_84;	field_221	STRING
+	f	Lnet/minecraft/class_84;	field_297	EMERALD
+	f	Lnet/minecraft/class_84;	field_330	ENDER_PEARL
+	f	Lnet/minecraft/class_84;	field_285	WOODEN_DOOR
+	f	Lnet/minecraft/class_84;	field_314	REDSTONE_COMPARATOR
+	f	Lnet/minecraft/class_84;	field_302	BAKED_POTATO
+	f	Lnet/minecraft/class_30;	field_235	LEATHER_BOOTS
+	f	Lnet/minecraft/class_84;	field_257	GLOWSTONE_DUST
+	f	Lnet/minecraft/class_84;	field_245	CLAY_BALL
+	f	Lnet/minecraft/class_84;	field_378	STONE_SHOVEL
+	f	Lnet/minecraft/class_84;	field_339	BLAZE_POWDER
+	f	Lnet/minecraft/class_84;	field_218	GOLDEN_SHOVEL
+	f	Lnet/minecraft/class_84;	field_327	RAW_CHICKEN
+	f	Lnet/minecraft/class_84;	field_315	NETHER_BRICK
+	f	Lnet/minecraft/class_67;	field_304	EMPTY_MAP
+	f	Lnet/minecraft/class_84;	field_280	RAW_PORKCHOP
+	f	Lnet/minecraft/class_84;	field_361	MUSIC_DISC_WARD
+	f	Lnet/minecraft/class_30;	field_270	IRON_BOOTS
+	f	Lnet/minecraft/class_84;	field_292	REDSTONE_DUST
+	f	Lnet/minecraft/class_84;	field_321	DIAMOND_HORSE_ARMOR
+	f	Lnet/minecraft/class_84;	field_288	LAVA_BUCKET
+	f	Lnet/minecraft/class_84;	field_264	BED
+	f	Lnet/minecraft/class_84;	field_373	WOODEN_SWORD
+	f	Lnet/minecraft/class_84;	field_252	EGG
+	f	Lnet/minecraft/class_84;	field_385	STICK
+	f	Lnet/minecraft/class_84;	field_357	MUSIC_DISC_MALL
+	f	Lnet/minecraft/class_77;	field_255	FISHING_ROD
+	f	Lnet/minecraft/class_84;	field_248	BOOK
+	f	Lnet/minecraft/class_84;	field_369	DIAMOND
+	f	Lnet/minecraft/class_30;	field_278	GOLDEN_BOOTS
+	f	Lnet/minecraft/class_84;	field_224	WOODEN_HOE
+	f	Lnet/minecraft/class_84;	field_345	SPAWN_EGG
+	f	Lnet/minecraft/class_84;	field_333	GOLD_NUGGET
+	f	Lnet/minecraft/class_84;	field_318	MINECART_WITH_HOPPER
+	f	Lnet/minecraft/class_84;	field_306	SKULL
+	f	Lnet/minecraft/class_30;	field_239	CHAINMAIL_BOOTS
+	f	Lnet/minecraft/class_105;	field_268	SHEARS
+	f	Lnet/minecraft/class_84;	field_249	SLIME_BALL
+	f	Lnet/minecraft/class_84;	field_291	IRON_DOOR
+	f	Lnet/minecraft/class_84;	field_360	MUSIC_DISC_STRAD
+	f	Lnet/minecraft/class_84;	field_251	FURNACE_MINECART
+	f	Lnet/minecraft/class_84;	field_372	IRON_SWORD
+	f	Lnet/minecraft/class_84;	field_299	FLOWER_POT
+	f	Lnet/minecraft/class_84;	field_332	GHAST_TEAR
+	f	Lnet/minecraft/class_84;	field_320	GOLDEN_HORSE_ARMOR
+	f	Lnet/minecraft/class_84;	field_287	WATER_BUCKET
+	f	Lnet/minecraft/class_30;	field_241	IRON_CHESTPLATE
+	f	Lnet/minecraft/class_84;	field_384	DIAMOND_AXE
+	f	Lnet/minecraft/class_84;	field_263	CAKE
+	f	Lnet/minecraft/class_84;	field_259	COOKED_FISH
+	f	Lnet/minecraft/class_84;	field_368	COAL
+	f	Lnet/minecraft/class_84;	field_247	PAPER
+	f	Lnet/minecraft/class_84;	field_344	GLISTERING_MELON
+	f	Lnet/minecraft/class_84;	field_356	MUSIC_DISC_FAR
+	f	Lnet/minecraft/class_30;	field_277	GOLDEN_LEGGINGS
+	f	Lnet/minecraft/class_84;	field_223	GUNPOWDER
+	f	Lnet/minecraft/class_84;	field_329	ROTTEN_FLESH
+	f	Lnet/minecraft/class_84;	field_317	MINECART_WITH_TNT
+	f	Lnet/minecraft/class_84;	field_305	GOLDEN_CARROT
+	f	Lnet/minecraft/class_30;	field_238	CHAINMAIL_LEGGINGS
+c	net/minecraft/class_43	net/minecraft/item/BucketItem
+c	net/minecraft/class_1093	net/minecraft/util/Identifier
+c	net/minecraft/class_81	net/minecraft/item/PaintingItem
+c	net/minecraft/class_40	net/minecraft/item/GlassBottleItem
+c	net/minecraft/class_84	net/minecraft/item/Item
+c	net/minecraft/class_83	net/minecraft/item/HoeItem
+c	net/minecraft/class_112	net/minecraft/item/SnowballItem
+c	net/minecraft/class_110	net/minecraft/item/SkullItem
+c	net/minecraft/class_80	net/minecraft/item/GoldenAppleItem
 c	net/minecraft/class_671	net/minecraft/client/MinecraftClient
+	f	Lnet/minecraft/class_1093;	field_2073	LOGO
+	f	Ljava/util/List;	field_2074	DISPLAYMODES
+	f	[B	field_2124	memory
+	f	Ljava/io/File;	field_2075	resourcePackFolder
+	f	Lorg/apache/logging/log4j/Logger;	field_2072	LOGGER
+c	net/minecraft/class_39	net/minecraft/item/BookItem
+c	net/minecraft/class_38	net/minecraft/item/BoatItem
