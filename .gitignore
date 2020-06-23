@@ -3,3 +3,6 @@
 
 # Minecraft jar files
 *.jar
+
+## BBEdit Workspace file
+*.bbproject
