@@ -375,9 +375,11 @@ c	net/minecraft/class_1594	net/minecraft/util/Snooper
 	m	(Lnet/minecraft/class_1592;)V	method_5560	method_5560
 		p	1		settings
 	m	(Lnet/minecraft/class_1592;)V	method_5561	method_5561
-		p	1		settings
+		p	1		snooper
 	m	()Z	method_5559	isSnooperEnabled
 c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
+	m	(Ljava/lang/String;Ljava/lang/Object;)V	method_5544	addStat
+c	net/minecraft/class_1114	net/minecraft/client/LanguageHelper
 c	net/minecraft/class_1355	net/minecraft/util/UsedMemoryRetriever
 c	net/minecraft/class_1227	net/minecraft/util/SuperRegistry
 c	net/minecraft/class_1589	net/minecraft/client/util/IconProvider
@@ -475,11 +477,13 @@ c	net/minecraft/class_652	net/minecraft/math/Vec3d
 		p	3		two
 		p	1		one
 c	net/minecraft/class_657	net/minecraft/command/TellrawCommand
-c	net/minecraft/class_656	net/minecraft/util/CrashReportSystemInformation
+c	net/minecraft/class_656	net/minecraft/util/CrashReportSystemInformationBuilder
 	m	()Ljava/lang/String;	method_1970	buildCrashReport
 	f	Lorg/apache/logging/log4j/Logger;	field_2013	LOGGER
 	m	()Ljava/lang/String;	method_1974	addComment
 	f	Lnet/minecraft/class_1408;	field_2016	crashReportGroup
+	m	()Ljava/io/File;	method_1971	getFile
+	m	(Ljava/io/File;)Z	method_1963	saved
 c	net/minecraft/class_651	net/minecraft/block/MovableObject
 	f	Lnet/minecraft/class_651;	field_1989	NONE
 	f	Lnet/minecraft/class_651;	field_1990	BLOCK
@@ -499,6 +503,8 @@ c	net/minecraft/class_785	net/minecraft/client/gui/InventoryScreen
 c	net/minecraft/class_300	net/minecraft/block/HopperBlock
 c	net/minecraft/class_542	net/minecraft/command/KickCommand
 c	net/minecraft/class_784	net/minecraft/client/gui/ControlsScreen
+c	net/minecraft/class_1085	net/minecraft/class_1085
+	m	(Lnet/minecraft/class_1093;)Ljava/io/InputStream;	method_3511	getAssets
 c	net/minecraft/class_307	net/minecraft/block/LeverBlock
 c	net/minecraft/class_306	net/minecraft/block/AbstractLeavesBlock
 c	net/minecraft/class_305	net/minecraft/block/LadderBlock
@@ -522,28 +528,55 @@ c	net/minecraft/class_315	net/minecraft/block/MushroomPlantBlock
 c	net/minecraft/class_552	net/minecraft/world/feature/StructureGenerationData
 c	net/minecraft/class_310	net/minecraft/block/MelonBlock
 c	net/minecraft/class_671	net/minecraft/client/MinecraftClient
-	f	Z	field_2086	paused
 	f	Z	field_2097	IS_MACOS
 	f	Ljava/io/File;	field_2091	assetsDirectory
+	f	Lnet/minecraft/class_971;	field_2118	framebuffer
 	f	Lnet/minecraft/class_1093;	field_2073	LOGO
-	f	Lnet/minecraft/class_897;	field_2130	player
+	m	(Ljava/lang/String;I)V	method_2094	setServerDetails
+		p	1	string	name
+		p	2	integer	port
+	m	(Lnet/minecraft/class_656;)V	method_2119	showCrashReport
+		p	1	b	info
+	m	()Z	method_2137	isDemo
+	f	Z	field_2106	is64Bit
 	m	()V	method_2121	stop
-	f	Lorg/apache/logging/log4j/Logger;	field_2072	LOGGER
-	m	(Lnet/minecraft/class_701;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;Lcom/google/common/collect/Multimap;Ljava/lang/String;)V	<init>	<init>
-		p	1		sessionIdService
-		p	6		gameDirectory
-		p	8		resourcePacksDirectory
-		p	7		assetsDirectory
+	m	()Z	method_2113	isForceUnicode
 	f	Lnet/minecraft/class_1627;	field_2131	livingEntity
 	f	Lnet/minecraft/class_757;	field_2136	currentScreen
 	f	Lnet/minecraft/class_926;	field_2133	particleRenderer
+	f	Lnet/minecraft/class_1085;	field_2114	defaultResourcePack
 	m	(Lnet/minecraft/class_656;)Lnet/minecraft/class_656;	method_2115	method_2115
 		p	1		builder
-	f	Ljava/io/File;	field_2145	gameDirectory
-	f	Lnet/minecraft/class_1610;	field_2132	entity
 	f	Ljava/util/List;	field_2074	DISPLAYMODES
 	f	Lnet/minecraft/class_671;	field_2079	INSTANCE
 	f	Ljava/io/File;	field_2075	resourcePacksDirectory
+	f	I	field_2127	height
+	f	Lnet/minecraft/class_656;	field_2082	systemInfo
+	m	()Lnet/minecraft/class_971;	method_2081	getFramebuffer
+	f	Lnet/minecraft/class_692;	field_2143	settings
+	f	Z	field_2081	crashed
+	f	Ljava/lang/String;	field_2103	serverName
+	f	Z	field_2086	paused
+	m	()V	method_2106	updateDisplay
+	m	(Ljava/io/InputStream;)Ljava/nio/ByteBuffer;	method_2092	readImage
+	f	Lnet/minecraft/class_897;	field_2130	player
+	f	Lnet/minecraft/class_1114;	field_2116	languageHelper
+	f	Lorg/apache/logging/log4j/Logger;	field_2072	LOGGER
+	m	()Z	method_2102	is64Bit
+	m	(Lnet/minecraft/class_701;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;Lcom/google/common/collect/Multimap;Ljava/lang/String;)V	<init>	<init>
+		p	1		sessionIdService
+		p	4	boolean4	fullscreenEnabled
+		p	6		gameDirectory
+		p	8		resourcePacksDirectory
+		p	7		assetsDirectory
+	m	()V	method_2104	start
+	f	Z	field_2107	isDemo
+	m	(Lnet/minecraft/class_656;)V	method_2086	crash
+		p	1	b	info
+	f	Ljava/io/File;	field_2145	gameDirectory
+	f	Lnet/minecraft/class_1610;	field_2132	entity
+	f	I	field_2126	width
+	f	I	field_2104	serverPort
 	f	[B	field_2124	memory
 	m	()Lnet/minecraft/class_671;	method_2057	getInstance
 	f	Z	field_2080	fullscreenEnabled
@@ -560,6 +593,7 @@ c	net/minecraft/class_718	net/minecraft/client/gui/OptionButton
 	f	Lnet/minecraft/class_695;	field_2455	options
 c	net/minecraft/class_974	net/minecraft/client/block/BeaconBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3795	BEAM
+c	net/minecraft/class_971	net/minecraft/client/Framebuffer
 c	net/minecraft/class_850	net/minecraft/client/entity/BiPedModel
 c	net/minecraft/class_978	net/minecraft/client/block/EnchantingTableBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3820	BOOK
@@ -1284,6 +1318,7 @@ c	net/minecraft/class_695	net/minecraft/client/GameOptions
 c	net/minecraft/class_331	net/minecraft/block/PoweredRailBlock
 c	net/minecraft/class_451	net/minecraft/world/AbstractWorldGenerator
 c	net/minecraft/class_330	net/minecraft/block/RedstoneBlock
+c	net/minecraft/class_692	net/minecraft/client/Settings
 c	net/minecraft/class_79	net/minecraft/item/FoodItem
 	m	()Lnet/minecraft/class_79;	method_124	alwaysEdible
 	m	(IIIF)Lnet/minecraft/class_79;	method_119	setStatusEffect
@@ -1298,12 +1333,22 @@ c	net/minecraft/class_103	net/minecraft/item/CarrotOrPotatoItem
 c	net/minecraft/class_345	net/minecraft/block/AbstractLogRotatableBlock
 c	net/minecraft/class_586	net/minecraft/item/MapColor
 	f	Lnet/minecraft/class_586;	field_1809	GOLD
+	f	Lnet/minecraft/class_586;	field_1818	AIR
+	f	Lnet/minecraft/class_586;	field_1829	STONE
+	f	Lnet/minecraft/class_586;	field_1819	GRASS
+	f	Lnet/minecraft/class_586;	field_1827	GRAY
+	f	Lnet/minecraft/class_586;	field_1828	DIRT
+	f	Lnet/minecraft/class_586;	field_1825	PLANT
+	f	Lnet/minecraft/class_586;	field_1823	ICE
 	f	Lnet/minecraft/class_586;	field_1812	GREEN
 	f	[Lnet/minecraft/class_586;	field_1817	MAP_COLORS
 	f	Lnet/minecraft/class_586;	field_1824	SILVER
+	f	Lnet/minecraft/class_586;	field_1821	YELLOW
 	f	Lnet/minecraft/class_586;	field_1810	CYAN
 	f	Lnet/minecraft/class_586;	field_1822	RED
 	f	Lnet/minecraft/class_586;	field_1811	BLUE
+	f	Lnet/minecraft/class_586;	field_1830	WATER
+	f	Lnet/minecraft/class_586;	field_1831	WOOD
 c	net/minecraft/class_102	net/minecraft/item/SaddleItem
 c	net/minecraft/class_344	net/minecraft/block/RedstoneRepeaterBlock
 c	net/minecraft/class_75	net/minecraft/item/FishItem
@@ -1327,41 +1372,60 @@ c	net/minecraft/class_343	net/minecraft/block/SugarcaneBlock
 c	net/minecraft/class_100	net/minecraft/item/MusicDiscItem
 c	net/minecraft/class_584	net/minecraft/block/Substance
 	f	Lnet/minecraft/class_584;	field_1783	METAL
-	f	Lnet/minecraft/class_584;	field_1793	FALLING
-	f	Lnet/minecraft/class_584;	field_1781	WOOD
 	f	Lnet/minecraft/class_584;	field_1791	WOOL
+	m	()Lnet/minecraft/class_584;	method_1706	setTranslucent
+	m	()Lnet/minecraft/class_584;	method_1696	setReplaceable
 	f	Lnet/minecraft/class_584;	field_1801	PACKED_ICE
+	m	()Lnet/minecraft/class_584;	method_1701	setNoPushing
 	f	Lnet/minecraft/class_584;	field_1768	CAKE
-	f	Lnet/minecraft/class_584;	field_1778	AIR
-	f	Lnet/minecraft/class_584;	field_1766	DRAGON_EGG
 	f	Lnet/minecraft/class_584;	field_1788	PLANT
-	f	Lnet/minecraft/class_584;	field_1798	TNT
-	f	Lnet/minecraft/class_586;	field_1774	mapColor
+	f	Lnet/minecraft/class_586;	field_1774	color
 	f	Lnet/minecraft/class_584;	field_1764	CLAY
-	f	Lnet/minecraft/class_584;	field_1786	LAVA
 	f	Lnet/minecraft/class_584;	field_1796	GLASS
 	f	Lnet/minecraft/class_584;	field_1784	ANVIL
 	f	Lnet/minecraft/class_584;	field_1794	REDSTONE
 	f	Lnet/minecraft/class_584;	field_1782	STONE
 	f	Lnet/minecraft/class_584;	field_1770	PISTON
+	f	Lnet/minecraft/class_584;	field_1790	CHEESE
+	m	()Z	method_1697	isReplaceable
+	m	(Lnet/minecraft/class_586;)V	<init>	<init>
+		p	1		color
+	f	Z	field_1777	canBeBrokenInAdventureMode
+	f	Lnet/minecraft/class_584;	field_1779	GRASS
+	f	Lnet/minecraft/class_584;	field_1767	NETHER_PORTAL
+	f	Lnet/minecraft/class_584;	field_1799	UNKNOWN
+	f	Lnet/minecraft/class_584;	field_1800	ICE
+	f	Z	field_1773	isTranslucent
+	f	Lnet/minecraft/class_584;	field_1787	LEAVES
+	f	Lnet/minecraft/class_584;	field_1763	CACTUS
+	f	Lnet/minecraft/class_584;	field_1795	CARPET
+	f	Lnet/minecraft/class_584;	field_1793	FALLING
+	f	Lnet/minecraft/class_584;	field_1781	WOOD
+	m	()Z	method_1698	isOpaque
+	m	()I	method_1700	getPistonInteractionType
+	f	Lnet/minecraft/class_584;	field_1778	AIR
+	f	Lnet/minecraft/class_584;	field_1766	DRAGON_EGG
+	f	Lnet/minecraft/class_584;	field_1798	TNT
+	f	Z	field_1772	isReplaceable
+	f	Lnet/minecraft/class_584;	field_1786	LAVA
+	m	()Lnet/minecraft/class_584;	method_1694	setFlammable
+	f	I	field_1776	pistonInteractionType
 	f	Lnet/minecraft/class_584;	field_1792	FIRE
 	f	Lnet/minecraft/class_584;	field_1780	DIRT
 	m	()Lnet/minecraft/class_586;	method_1705	getMapColor
-	f	Lnet/minecraft/class_584;	field_1790	CHEESE
-	m	(Lnet/minecraft/class_586;)V	<init>	<init>
-		p	1		mapColor
+	m	()Lnet/minecraft/class_584;	method_1703	setCanBeBrokenInAdventureMode
+	m	()Z	method_1699	canBeBrokenByHand
+	m	()Z	method_1704	canBeBrokenInAdventureMode
+	f	Z	field_1775	canBeBrokenByHand
+	m	()Lnet/minecraft/class_584;	method_1702	setImmovable
 	f	Lnet/minecraft/class_584;	field_1769	COBWEB
-	f	Lnet/minecraft/class_584;	field_1779	GRASS
-	f	Lnet/minecraft/class_584;	field_1767	NETHER_PORTAL
 	f	Lnet/minecraft/class_584;	field_1789	VINE
-	f	Lnet/minecraft/class_584;	field_1799	UNKNOWN
-	f	Lnet/minecraft/class_584;	field_1800	ICE
-	f	Lnet/minecraft/class_584;	field_1787	LEAVES
+	m	()Z	method_1695	isFlammable
 	f	Lnet/minecraft/class_584;	field_1797	REDSTONE_LAMP
-	f	Lnet/minecraft/class_584;	field_1763	CACTUS
+	m	()Lnet/minecraft/class_584;	method_1693	setNeedsTool
+	f	Z	field_1771	isFlammable
 	f	Lnet/minecraft/class_584;	field_1785	WATER
 	m	()Z	method_1691	blocksMovement
-	f	Lnet/minecraft/class_584;	field_1795	CARPET
 c	net/minecraft/class_463	net/minecraft/command/GameruleCommand
 c	net/minecraft/class_583	net/minecraft/block/FluidSubstance
 c	net/minecraft/class_341	net/minecraft/block/RedstoneTorchBlock
