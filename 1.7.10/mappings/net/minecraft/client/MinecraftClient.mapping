@@ -25,6 +25,7 @@ CLASS net/minecraft/class_671 net/minecraft/client/MinecraftClient
 	FIELD field_2132 entity Lnet/minecraft/class_1610;
 	FIELD field_2133 particleRenderer Lnet/minecraft/class_926;
 	FIELD field_2136 currentScreen Lnet/minecraft/class_757;
+	FIELD field_2140 overlay Lnet/minecraft/class_704;
 	FIELD field_2143 settings Lnet/minecraft/class_692;
 	FIELD field_2145 gameDirectory Ljava/io/File;
 	METHOD <init> (Lnet/minecraft/class_701;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;Lcom/google/common/collect/Multimap;Ljava/lang/String;)V

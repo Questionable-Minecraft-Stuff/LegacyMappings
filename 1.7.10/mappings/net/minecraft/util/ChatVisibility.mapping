@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1792 net/minecraft/util/ChatVisibility
+	FIELD field_6747 FULL Lnet/minecraft/class_1792;
+	FIELD field_6748 SYSTEM Lnet/minecraft/class_1792;
+	FIELD field_6749 HIDDEN Lnet/minecraft/class_1792;
+	FIELD field_6750 CHAT_VISIBILITIES [Lnet/minecraft/class_1792;
+	FIELD field_6751 id I
+	FIELD field_6752 key Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 id
+		ARG 4 key
+	METHOD method_6641 getId ()I
+	METHOD method_6642 getById (I)Lnet/minecraft/class_1792;
+		ARG 0 id
+	METHOD method_6643 getKey ()Ljava/lang/String;
+	METHOD values ()[Lnet/minecraft/class_1792;

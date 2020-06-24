@@ -1,3 +1,5 @@
 CLASS net/minecraft/class_1640 net/minecraft/entity/Attribute
+	METHOD method_6020 getAttributeName ()Ljava/lang/String;
 	METHOD method_6021 correctValue (D)D
 		ARG 1 value
+	METHOD method_6022 getDefaultValue ()D

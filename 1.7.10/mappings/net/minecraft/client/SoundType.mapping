@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1710 net/minecraft/client/SoundType
+	FIELD field_6388 MASTER Lnet/minecraft/class_1710;
+	FIELD field_6389 MUSIC Lnet/minecraft/class_1710;
+	FIELD field_6390 MUSIC_DISC Lnet/minecraft/class_1710;
+	FIELD field_6391 WEATHER Lnet/minecraft/class_1710;
+	FIELD field_6392 BLOCKS Lnet/minecraft/class_1710;
+	FIELD field_6393 MOBS Lnet/minecraft/class_1710;
+	FIELD field_6394 ANIMALS Lnet/minecraft/class_1710;
+	FIELD field_6395 PLAYERS Lnet/minecraft/class_1710;
+	FIELD field_6396 AMBIENT Lnet/minecraft/class_1710;
+	FIELD field_6397 SOUNDTYPES_STRING Ljava/util/Map;
+	FIELD field_6398 SOUNDTYPES_INT Ljava/util/Map;
+	FIELD field_6399 name Ljava/lang/String;
+	FIELD field_6400 id I
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+		ARG 3 name
+		ARG 4 id
+	METHOD method_6183 getName ()Ljava/lang/String;
+	METHOD method_6184 getByName (Ljava/lang/String;)Lnet/minecraft/class_1710;
+		ARG 0 name
+	METHOD method_6185 getId ()I
+	METHOD values ()[Lnet/minecraft/class_1710;
