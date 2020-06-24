@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_1738 net/minecraft/entity/EnderDragonEntity
+	FIELD field_6503 parts [Lnet/minecraft/class_1735;

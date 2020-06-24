@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1641 net/minecraft/entity/AttributeInstanceProvider
+	METHOD method_6025 setValue (D)V
+		ARG 1 value

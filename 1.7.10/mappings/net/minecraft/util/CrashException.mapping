@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1609 net/minecraft/util/CrashException
+	FIELD field_5824 builder Lnet/minecraft/class_656;
+	METHOD <init> (Lnet/minecraft/class_656;)V
+		ARG 1 builder
+	METHOD getCause ()Ljava/lang/Throwable;
+	METHOD getMessage ()Ljava/lang/String;
+	METHOD method_5649 getBuilder ()Lnet/minecraft/class_656;

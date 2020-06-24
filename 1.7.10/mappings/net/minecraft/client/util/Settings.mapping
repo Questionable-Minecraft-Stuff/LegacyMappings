@@ -1,0 +1,109 @@
+CLASS net/minecraft/class_692 net/minecraft/client/util/Settings
+	FIELD field_2168 overrideHeight I
+	FIELD field_2169 heldItemTooltips Z
+	FIELD field_2170 chatScale F
+	FIELD field_2171 chatWidth F
+	FIELD field_2172 chatHeightUnfocused F
+	FIELD field_2173 chatHeightFocused F
+	FIELD field_2174 showInventoryAchievementHint Z
+	FIELD field_2175 mipmapLevels I
+	FIELD field_2176 anisotropicFiltering I
+	FIELD field_2177 streamBytesPerPixel F
+	FIELD field_2178 micVolume F
+	FIELD field_2179 systemVolume F
+	FIELD field_2180 streamKbps F
+	FIELD field_2181 StreamFps F
+	FIELD field_2182 streamCompression I
+	FIELD field_2183 sendMetadata Z
+	FIELD field_2184 streamPreferredServer Ljava/lang/String;
+	FIELD field_2185 streamChatEnabled I
+	FIELD field_2186 streamChatUserFilter I
+	FIELD field_2187 streamMicToggleBehavior I
+	FIELD field_2188 MOVE_FORWARD Lnet/minecraft/class_668;
+	FIELD field_2189 STRAFE_LEFT Lnet/minecraft/class_668;
+	FIELD field_2190 MOVE_BACKWARD Lnet/minecraft/class_668;
+	FIELD field_2191 STRAFE_RIGHT Lnet/minecraft/class_668;
+	FIELD field_2192 JUMP Lnet/minecraft/class_668;
+	FIELD field_2193 SNEAK Lnet/minecraft/class_668;
+	FIELD field_2199 mouseSensitivity F
+	FIELD field_2200 fov F
+	FIELD field_2201 brightness F
+	FIELD field_2202 saturation F
+	FIELD field_2203 guiScale I
+	FIELD field_2204 particleQuality I
+	FIELD field_2205 language Ljava/lang/String;
+	FIELD field_2206 forceUnicode Z
+	FIELD field_2207 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_2208 GSON Lcom/google/gson/Gson;
+	FIELD field_2209 TYPE Ljava/lang/reflect/ParameterizedType;
+	FIELD field_2210 GUI_SCALE [Ljava/lang/String;
+	FIELD field_2211 PARTICLE_QUALITY [Ljava/lang/String;
+	FIELD field_2213 STREAM_COMPRESSION [Ljava/lang/String;
+	FIELD field_2214 STREAM_CHAT [Ljava/lang/String;
+	FIELD field_2215 STREAM_USER_FILTER [Ljava/lang/String;
+	FIELD field_2216 STREAM_MIC [Ljava/lang/String;
+	FIELD field_2217 soundTypesMap Ljava/util/Map;
+	FIELD field_2218 savedOptionsFile Ljava/io/File;
+	FIELD field_2219 OPEN_INVENTORY Lnet/minecraft/class_668;
+	FIELD field_2220 USE Lnet/minecraft/class_668;
+	FIELD field_2221 DROP_ITEM Lnet/minecraft/class_668;
+	FIELD field_2222 ATTACK Lnet/minecraft/class_668;
+	FIELD field_2223 PICK_BLOCK Lnet/minecraft/class_668;
+	FIELD field_2224 SPRINT Lnet/minecraft/class_668;
+	FIELD field_2225 OPEN_CHAT Lnet/minecraft/class_668;
+	FIELD field_2226 PLAYER_LIST Lnet/minecraft/class_668;
+	FIELD field_2227 COMMAND Lnet/minecraft/class_668;
+	FIELD field_2228 SCREENSHOT Lnet/minecraft/class_668;
+	FIELD field_2229 PERSPECTIVE Lnet/minecraft/class_668;
+	FIELD field_2230 CINEMATIC_CAMERA Lnet/minecraft/class_668;
+	FIELD field_2231 FULLSCREEN Lnet/minecraft/class_668;
+	FIELD field_2232 TOGGLE_STREAM Lnet/minecraft/class_668;
+	FIELD field_2233 PAUSE_STREAM Lnet/minecraft/class_668;
+	FIELD field_2234 STREAM_COMMERCIAL Lnet/minecraft/class_668;
+	FIELD field_2235 TOGGLE_MIC Lnet/minecraft/class_668;
+	FIELD field_2236 HOTBAR_SLOTS [Lnet/minecraft/class_668;
+	FIELD field_2237 KEYBINDINGS [Lnet/minecraft/class_668;
+	FIELD field_2238 instance Lnet/minecraft/class_671;
+	FIELD field_2239 difficulty Lnet/minecraft/class_1587;
+	FIELD field_2244 lastServer Ljava/lang/String;
+	FIELD field_2245 invertMouse Z
+	FIELD field_2246 renderDistance I
+	FIELD field_2247 viewBobbing Z
+	FIELD field_2248 threeDimensionalAnaglyph Z
+	FIELD field_2249 advancedOpenGL Z
+	FIELD field_2250 enableFBO Z
+	FIELD field_2251 maxFPS I
+	FIELD field_2252 graphicsQuality Z
+	FIELD field_2253 ambientOcclusion I
+	FIELD field_2254 showClouds Z
+	FIELD field_2255 resourcePacks Ljava/util/List;
+	FIELD field_2256 chatVisibility Lnet/minecraft/class_1792;
+	FIELD field_2257 chatColor Z
+	FIELD field_2258 chatLinks Z
+	FIELD field_2259 promptChatLinks Z
+	FIELD field_2260 chatOpacity F
+	FIELD field_2261 snooperEnabled Z
+	FIELD field_2262 fullscreen Z
+	FIELD field_2263 vsyncEnabled Z
+	FIELD field_2264 hideServerAddress Z
+	FIELD field_2265 showHiddenTooltips Z
+	FIELD field_2266 pauseOnLostFocus Z
+	FIELD field_2267 showCape Z
+	FIELD field_2268 touchscreenMode Z
+	FIELD field_2269 overrideWidth I
+	METHOD <init> (Lnet/minecraft/class_671;Ljava/io/File;)V
+		ARG 1 instance
+		ARG 2 gameDir
+	METHOD method_2163 getFloatValueOfOption (Lnet/minecraft/class_695;)F
+		ARG 1 options
+	METHOD method_2164 (Lnet/minecraft/class_695;F)V
+		ARG 1 options
+		ARG 2 value
+	METHOD method_2165 (Lnet/minecraft/class_695;I)V
+		ARG 1 options
+		ARG 2 value
+	METHOD method_2170 saveGameOptions ()V
+	METHOD method_2171 getBooleanValueOfOption (Lnet/minecraft/class_695;)Z
+		ARG 1 options
+	METHOD method_2174 (Lnet/minecraft/class_695;)Ljava/lang/String;
+		ARG 1 options

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1005 net/minecraft/client/entity/FallingBlockRenderer
+	FIELD field_3899 renderer Lnet/minecraft/class_952;

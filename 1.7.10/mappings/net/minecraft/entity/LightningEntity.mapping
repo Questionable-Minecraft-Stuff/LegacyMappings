@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1744 net/minecraft/entity/LightningEntity
+	METHOD <init> (Lnet/minecraft/class_183;DDD)V
+		ARG 1 world

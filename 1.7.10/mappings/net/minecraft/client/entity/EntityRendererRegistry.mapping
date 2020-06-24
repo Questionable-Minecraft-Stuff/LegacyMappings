@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1002 net/minecraft/client/entity/EntityRendererRegistry
+	FIELD field_3874 INSTANCE Lnet/minecraft/class_1002;
+	FIELD field_3890 map Ljava/util/Map;
+	METHOD method_3154 (Lnet/minecraft/class_183;Lnet/minecraft/class_1075;Lnet/minecraft/class_703;Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;Lnet/minecraft/class_692;F)V
+		ARG 1 world
+		ARG 3 renderer
+		ARG 4 entity1
+		ARG 5 entity2
+		ARG 6 settings
+	METHOD method_3157 (Lnet/minecraft/class_1610;)Lnet/minecraft/class_1003;
+		ARG 1 entity
+	METHOD method_3159 (Lnet/minecraft/class_1610;DDDFFZ)Z
+		ARG 1 entity
+	METHOD method_3160 (Lnet/minecraft/class_1610;F)Z
+		ARG 1 entity
+	METHOD method_3161 (Lnet/minecraft/class_1610;FZ)Z
+		ARG 1 entity

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_994 net/minecraft/client/entity/CaveSpiderRenderer
+	FIELD field_3857 CAVE_SPIDER Lnet/minecraft/class_1093;

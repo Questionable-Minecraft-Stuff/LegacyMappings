@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_855 net/minecraft/client/entity/AbstractModel
+	METHOD method_2668 (FFFFFFLnet/minecraft/class_1610;)V
+		ARG 7 entity
+	METHOD method_2673 (Lnet/minecraft/class_1627;FFF)V
+		ARG 1 entity

@@ -1,3 +1,14 @@
 CLASS net/minecraft/class_1003 net/minecraft/client/AbstractRenderer
+	FIELD field_3892 SHADOWN Lnet/minecraft/class_1093;
+	FIELD field_3893 registry Lnet/minecraft/class_1002;
+	FIELD field_3894 rendererInstance Lnet/minecraft/class_952;
+	METHOD method_3165 (Lnet/minecraft/class_649;)V
+		ARG 0 shape
 	METHOD method_3170 getTexture (Lnet/minecraft/class_1610;)Lnet/minecraft/class_1093;
+		ARG 1 entity
+	METHOD method_3171 (Lnet/minecraft/class_1610;DDDF)V
+		ARG 1 entity
+	METHOD method_3172 (Lnet/minecraft/class_1610;DDDFF)V
+		ARG 1 entity
+	METHOD method_3174 (Lnet/minecraft/class_1610;)V
 		ARG 1 entity
