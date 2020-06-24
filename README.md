@@ -14,3 +14,5 @@ If you're planning on *actually* helping, follow these instructions
 5. Export a jar file mapped with the intermediary names
 6. Then re-open enigma and import the **intermediary** jar and the **mapped** mappings
 7. Start making mappings!
+
+**Note: Using names from MCP is completely forbidden!**
