@@ -361,6 +361,15 @@ c	net/minecraft/class_1147	net/minecraft/client/IntegratedServer
 c	net/minecraft/class_1026	net/minecraft/client/entity/NonPlayerEntityRenderer
 c	net/minecraft/class_1146	net/minecraft/client/IntegratedServerPlayers
 c	net/minecraft/class_1024	net/minecraft/client/entity/MinecartRenderer
+c	net/minecraft/class_1019	net/minecraft/client/entity/ProjectileRenderer
+	m	(Lnet/minecraft/class_972;Lnet/minecraft/class_1589;)V	method_3224	method_3224
+		p	2	rf	iconProvider
+	m	(Lnet/minecraft/class_84;)V	<init>	<init>
+		p	1	adb	item
+	m	(Lnet/minecraft/class_84;I)V	<init>	<init>
+		p	2	integer	value
+		p	1	adb	item
+	f	Lnet/minecraft/class_84;	field_3936	projectle
 c	net/minecraft/class_913	net/minecraft/command/ScoreboardCommand
 c	net/minecraft/class_919	net/minecraft/client/particle/FootstepParticle
 c	net/minecraft/class_1030	net/minecraft/client/entity/PigRenderer
@@ -386,6 +395,7 @@ c	net/minecraft/class_1157	net/minecraft/client/MusicType
 	m	()Lnet/minecraft/class_1093;	method_3674	getIdentifier
 	f	Lnet/minecraft/class_1157;	field_4330	ENDERDRAGON
 	f	Lnet/minecraft/class_1157;	field_4331	END
+c	net/minecraft/class_1035	net/minecraft/client/entity/SlimeRenderer
 c	net/minecraft/class_1277	net/minecraft/util/VirtualMachineInfoRetriever
 c	net/minecraft/class_1029	net/minecraft/client/entity/PaintingRenderer
 c	net/minecraft/class_806	net/minecraft/client/gui/SmeltingScreen
@@ -831,6 +841,8 @@ c	net/minecraft/class_721	net/minecraft/client/gui/Slot
 	m	(Lnet/minecraft/class_671;IIIII)V	<init>	<init>
 		p	1		instance
 	f	Lnet/minecraft/class_671;	field_2470	instance
+c	net/minecraft/class_841	net/minecraft/client/entity/BlazeModel
+c	net/minecraft/class_840	net/minecraft/client/entity/BatEntityModel
 c	net/minecraft/class_965	net/minecraft/command/SetBlockCommand
 c	net/minecraft/class_1069	net/minecraft/command/SeedCommand
 c	net/minecraft/class_718	net/minecraft/client/gui/OptionButton
@@ -842,6 +854,7 @@ c	net/minecraft/class_838	net/minecraft/client/main/MainThread
 c	net/minecraft/class_836	net/minecraft/client/main/SecondMainTypeImpl
 c	net/minecraft/class_974	net/minecraft/client/block/BeaconBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3795	BEAM
+c	net/minecraft/class_852	net/minecraft/client/entity/MagmaCubeModel
 c	net/minecraft/class_850	net/minecraft/client/entity/BiPedModel
 c	net/minecraft/class_971	net/minecraft/client/GLFramebuffer
 c	net/minecraft/class_978	net/minecraft/client/block/EnchantingTableBlockEntityRenderer
@@ -855,7 +868,7 @@ c	net/minecraft/class_977	net/minecraft/client/block/ChestBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3812	CHRISTMAS_DOUBLE
 	f	Lnet/minecraft/class_1093;	field_3811	TRAPPED_DOUBLE
 c	net/minecraft/class_1073	net/minecraft/client/TextureAtlasSpriteIcon
-c	net/minecraft/class_855	net/minecraft/client/entity/AbstractEntityModel
+c	net/minecraft/class_855	net/minecraft/client/entity/AbstractModel
 c	net/minecraft/class_976	net/minecraft/client/block/AbstractBlockEntityRenderer
 	m	(Lnet/minecraft/class_383;DDDF)V	method_3095	render
 c	net/minecraft/class_612	net/minecraft/command/ListCommand
@@ -863,6 +876,7 @@ c	net/minecraft/class_1199	net/minecraft/command/TimeCommand
 c	net/minecraft/class_1198	net/minecraft/command/TestforCommand
 c	net/minecraft/class_1197	net/minecraft/command/TestforBlockCommand
 c	net/minecraft/class_1196	net/minecraft/command/TeleportCommand
+c	net/minecraft/class_863	net/minecraft/client/block/SignBlockEntityModel
 c	net/minecraft/class_742	net/minecraft/client/gui/AddServerScreen
 c	net/minecraft/class_984	net/minecraft/client/block/EndPortalBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3836	PORTAL
@@ -875,6 +889,7 @@ c	net/minecraft/class_983	net/minecraft/client/block/SkullBlockEntityRenderer
 c	net/minecraft/class_740	net/minecraft/client/gui/DirectConnectScreen
 c	net/minecraft/class_982	net/minecraft/client/block/SignBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3825	SIGN
+c	net/minecraft/class_868	net/minecraft/client/entity/SlimeModel
 c	net/minecraft/class_989	net/minecraft/command/SetWorldSpawnCommand
 c	net/minecraft/class_1041	net/minecraft/client/entity/IronGolemRenderer
 	f	Lnet/minecraft/class_1093;	field_3973	IRON_GOLEM

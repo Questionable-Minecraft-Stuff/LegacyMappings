@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1019 net/minecraft/client/entity/ProjectileRenderer
+	FIELD field_3936 projectle Lnet/minecraft/class_84;
+	METHOD <init> (Lnet/minecraft/class_84;)V
+		ARG 1 item
+	METHOD <init> (Lnet/minecraft/class_84;I)V
+		ARG 1 item
+		ARG 2 value
+	METHOD method_3224 (Lnet/minecraft/class_972;Lnet/minecraft/class_1589;)V
+		ARG 2 iconProvider
