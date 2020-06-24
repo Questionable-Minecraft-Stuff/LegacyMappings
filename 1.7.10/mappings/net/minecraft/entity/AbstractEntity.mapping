@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1610 net/minecraft/entity/AbstractEntity
 	FIELD field_5827 hitbox Lnet/minecraft/class_649;
+	FIELD field_5835 dead Z
 	FIELD field_5837 width F
 	FIELD field_5838 height F
 	FIELD field_5850 random Ljava/util/Random;
@@ -16,7 +17,14 @@ CLASS net/minecraft/class_1610 net/minecraft/entity/AbstractEntity
 		ARG 1 world
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 entity
+	METHOD method_5651 setDead ()V
+	METHOD method_5679 setBounds (FF)V
+		ARG 1 width
+		ARG 2 height
+	METHOD method_5692 (Lnet/minecraft/class_1408;)V
+		ARG 1 group
 	METHOD method_5729 setEntityPos (DDD)V
 	METHOD method_5748 setId (I)V
 		ARG 1 id
 	METHOD method_5777 getId ()I
+	METHOD method_89 getName ()Ljava/lang/String;

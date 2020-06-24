@@ -213,11 +213,14 @@ c	net/minecraft/client/ClientBrandRetriever	net/minecraft/client/ClientBrandRetr
 c	net/minecraft/class_1610	net/minecraft/entity/AbstractEntity
 	m	(I)V	method_5748	setId
 		p	1	integer	id
+	m	()Ljava/lang/String;	method_89	getName
 	f	Ljava/util/UUID;	field_5868	uuid
 	f	Lnet/minecraft/class_1614;	field_5869	sizeClass
 	f	F	field_5838	height
 	f	Lnet/minecraft/class_649;	field_5827	hitbox
 	f	F	field_5837	width
+	m	(Lnet/minecraft/class_1408;)V	method_5692	method_5692
+		p	1	k	group
 	m	(Ljava/lang/Object;)Z	equals	equals
 		p	1	object	entity
 	m	()I	method_5777	getId
@@ -229,9 +232,14 @@ c	net/minecraft/class_1610	net/minecraft/entity/AbstractEntity
 	f	I	field_5872	id
 	f	Lnet/minecraft/class_183;	field_5886	world
 	f	Ljava/util/Random;	field_5850	random
+	m	(FF)V	method_5679	setBounds
+		p	1	float1	width
+		p	2	float2	height
 	m	(DDD)V	method_5729	setEntityPos
+	m	()V	method_5651	setDead
 	m	(Lnet/minecraft/class_183;)V	<init>	<init>
 		p	1	ahb	world
+	f	Z	field_5835	dead
 c	net/minecraft/class_1731	net/minecraft/entity/AquaticMobEntity
 c	net/minecraft/class_1730	net/minecraft/entity/IronGolemEntity
 c	net/minecraft/class_198	net/minecraft/world/TemperoryChunkStorage
@@ -559,16 +567,79 @@ c	net/minecraft/class_656	net/minecraft/util/CrashReportSystemInformationBuilder
 	f	Lnet/minecraft/class_1408;	field_2016	crashReportGroup
 	m	()Ljava/io/File;	method_1971	getFile
 	m	(Ljava/io/File;)Z	method_1963	saved
-c	net/minecraft/class_651	net/minecraft/block/MovableObject
+c	net/minecraft/class_651	net/minecraft/block/MovableObjectType
 	f	Lnet/minecraft/class_651;	field_1989	NONE
 	f	Lnet/minecraft/class_651;	field_1990	BLOCK
 	f	Lnet/minecraft/class_651;	field_1991	ENTITY
+c	net/minecraft/class_650	net/minecraft/block/MovableObjectPosition
 c	net/minecraft/class_892	net/minecraft/world/ClientWorld
 c	net/minecraft/class_409	net/minecraft/block/PistonHeadBlock
 c	net/minecraft/class_408	net/minecraft/block/PistonBlock
 c	net/minecraft/class_407	net/minecraft/block/entity/EndPortalBlockEntity
 c	net/minecraft/class_649	net/minecraft/math/VoxelShape
+	m	(Lnet/minecraft/class_649;D)D	method_1903	method_1903
+		p	1	azt	shape
+	m	(Lnet/minecraft/class_649;D)D	method_1913	method_1913
+		p	1	azt	shape
+	m	(DDD)Lnet/minecraft/class_649;	method_1918	reduceSize
+		p	1	double1	sizeX
+		p	5	double3	sizeZ
+		p	3	double2	sizeY
+	m	(DDD)Lnet/minecraft/class_649;	method_1907	increaseShapeSize
+		p	1	double1	sizeX
+		p	5	double3	sizeZ
+		p	3	double2	sizeY
+	m	()D	method_1899	getAverageSize
+	m	(DDD)Lnet/minecraft/class_649;	method_1915	incrementAllPos
+		p	3	double2	sizeY
+		p	1	double1	sizeX
+		p	5	double3	sizeZ
 	m	(DDDDDD)Lnet/minecraft/class_649;	method_1901	getVoxelShape
+		p	0	double1	minX
+		p	4	double3	minZ
+		p	2	double2	minY
+		p	8	double5	maxY
+		p	6	double4	maxX
+		p	10	double6	maxZ
+	m	(Lnet/minecraft/class_652;)Z	method_1904	compareVec3d
+		p	1	azw	vec3d
+	m	(Lnet/minecraft/class_649;)Lnet/minecraft/class_649;	method_1902	compareAndSetMin
+		p	1	azt	other
+	m	(Lnet/minecraft/class_649;)V	method_1916	copy
+		p	1	azt	shape
+	m	(Lnet/minecraft/class_649;)Z	method_1909	validateMaxAndMin
+		p	1	azt	shape
+	m	(DDD)Lnet/minecraft/class_649;	method_1900	modifyShapeSize
+		p	3	double2	sizeY
+		p	1	double1	sizeX
+		p	5	double3	sizeZ
+	m	(DDD)Lnet/minecraft/class_649;	method_1912	incrementAll
+		p	3	double2	sizeY
+		p	1	double1	sizeX
+		p	5	double3	sizeZ
+	m	(DDDDDD)Lnet/minecraft/class_649;	method_1908	setShape
+		p	9	double5	maxY
+		p	7	double4	maxX
+		p	11	double6	maxZ
+		p	1	double1	minX
+		p	5	double3	minZ
+		p	3	double2	minY
+	f	D	field_1978	minZ
+	f	D	field_1979	maxX
+	f	D	field_1976	minX
+	f	D	field_1977	minY
+	f	D	field_1981	maxZ
+	m	(Lnet/minecraft/class_649;D)D	method_1910	method_1910
+		p	1	azt	shape
+	m	(DDDDDD)V	<init>	<init>
+		p	11	double6	maxZ
+		p	1	double1	minX
+		p	5	double3	minZ
+		p	3	double2	minY
+		p	9	double5	maxY
+		p	7	double4	maxX
+	m	()Lnet/minecraft/class_649;	method_1906	get
+	f	D	field_1980	maxY
 c	net/minecraft/class_787	net/minecraft/client/gui/BeaconScreen
 c	net/minecraft/class_303	net/minecraft/block/JukeboxBlock
 c	net/minecraft/class_786	net/minecraft/client/gui/AnvilScreen
@@ -1525,6 +1596,8 @@ c	net/minecraft/class_210	net/minecraft/world/biome/DesertBiome
 c	net/minecraft/class_331	net/minecraft/block/PoweredRailBlock
 c	net/minecraft/class_330	net/minecraft/block/RedstoneBlock
 c	net/minecraft/class_451	net/minecraft/world/AbstractWorldGenerator
+	m	(Lnet/minecraft/class_183;Ljava/util/Random;III)Z	method_1457	method_1457
+		p	1	ahb	world
 c	net/minecraft/class_692	net/minecraft/client/Settings
 c	net/minecraft/class_347	net/minecraft/block/SandstoneBlock
 c	net/minecraft/class_105	net/minecraft/item/ShearsItem
@@ -1898,7 +1971,7 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 	f	Z	field_194	hasTypes
 	m	()Lnet/minecraft/class_84;	method_197	setHandheld
 	m	()Z	method_196	hasDurability
-	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_168	withRawName
+	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_168	setRawName
 		p	1		name
 	m	(Lnet/minecraft/class_48;)Lnet/minecraft/class_84;	method_143	setItemGroup
 	f	Lnet/minecraft/class_1222;	field_189	REGISTRY

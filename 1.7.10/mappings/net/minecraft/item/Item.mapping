@@ -18,7 +18,7 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 		ARG 0 block
 	METHOD method_160 setHasTypes (Z)Lnet/minecraft/class_84;
 	METHOD method_167 setItemAfterUse (Lnet/minecraft/class_84;)Lnet/minecraft/class_84;
-	METHOD method_168 withRawName (Ljava/lang/String;)Lnet/minecraft/class_84;
+	METHOD method_168 setRawName (Ljava/lang/String;)Lnet/minecraft/class_84;
 		ARG 1 name
 	METHOD method_170 getAsItem (I)Lnet/minecraft/class_84;
 		ARG 0 id
