@@ -8,6 +8,7 @@ CLASS net/minecraft/class_671 net/minecraft/client/MinecraftClient
 	FIELD field_2081 crashed Z
 	FIELD field_2082 systemInfo Lnet/minecraft/class_656;
 	FIELD field_2086 paused Z
+	FIELD field_2090 integratedServer Lnet/minecraft/class_1147;
 	FIELD field_2091 assetsDirectory Ljava/io/File;
 	FIELD field_2097 IS_MACOS Z
 	FIELD field_2103 serverName Ljava/lang/String;
@@ -17,7 +18,7 @@ CLASS net/minecraft/class_671 net/minecraft/client/MinecraftClient
 	FIELD field_2114 defaultResourcePack Lnet/minecraft/class_1085;
 	FIELD field_2116 languageHelper Lnet/minecraft/class_1114;
 	FIELD field_2118 framebuffer Lnet/minecraft/class_971;
-	FIELD field_2124 memory [B
+	FIELD field_2124 MEMORY [B
 	FIELD field_2126 width I
 	FIELD field_2127 height I
 	FIELD field_2130 player Lnet/minecraft/class_897;
@@ -35,10 +36,14 @@ CLASS net/minecraft/class_671 net/minecraft/client/MinecraftClient
 		ARG 7 assetsDirectory
 		ARG 8 resourcePacksDirectory
 	METHOD method_2057 getInstance ()Lnet/minecraft/class_671;
+	METHOD method_2063 getIntegratedServer ()Lnet/minecraft/class_1147;
+	METHOD method_2064 startClient ()V
 	METHOD method_2079 getMusicType ()Lnet/minecraft/class_1157;
 	METHOD method_2081 getFramebuffer ()Lnet/minecraft/class_971;
 	METHOD method_2086 crash (Lnet/minecraft/class_656;)V
 		ARG 1 info
+	METHOD method_2089 (Lnet/minecraft/class_892;)V
+		ARG 1 world
 	METHOD method_2092 readImage (Ljava/io/InputStream;)Ljava/nio/ByteBuffer;
 	METHOD method_2094 setServerDetails (Ljava/lang/String;I)V
 		ARG 1 name

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1444 net/minecraft/server/ServerThread
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/lang/String;)V
+		ARG 1 server
+		ARG 2 name

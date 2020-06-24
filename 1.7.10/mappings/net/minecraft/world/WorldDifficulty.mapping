@@ -13,4 +13,3 @@ CLASS net/minecraft/class_1587 net/minecraft/world/WorldDifficulty
 	METHOD method_5525 getById (I)Lnet/minecraft/class_1587;
 		ARG 0 id
 	METHOD method_5526 getTranslationKey ()Ljava/lang/String;
-	METHOD values ()[Lnet/minecraft/class_1587;

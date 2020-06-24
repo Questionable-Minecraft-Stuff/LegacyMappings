@@ -1,14 +1,1 @@
 CLASS net/minecraft/realms/Realms net/minecraft/realms/Realms
-	METHOD adventureId ()I
-	METHOD creativeId ()I
-	METHOD currentTimeMillis ()J
-	METHOD getGameDirectoryPath ()Ljava/lang/String;
-	METHOD getName ()Ljava/lang/String;
-	METHOD getProxy ()Ljava/net/Proxy;
-	METHOD getSessionId ()Ljava/lang/String;
-	METHOD isTouchScreen ()Z
-	METHOD sessionId ()Ljava/lang/String;
-	METHOD setScreen (Lnet/minecraft/realms/RealmsScreen;)V
-	METHOD survivalId ()I
-	METHOD userName ()Ljava/lang/String;
-	METHOD uuidToName (Ljava/lang/String;)Ljava/lang/String;

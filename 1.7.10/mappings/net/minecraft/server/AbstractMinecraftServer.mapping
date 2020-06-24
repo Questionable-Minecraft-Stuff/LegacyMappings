@@ -2,3 +2,18 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/AbstractMinecraf
 	FIELD field_5340 USERCACHE Ljava/io/File;
 	FIELD field_5348 LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD field_5349 INSTANCE Lnet/minecraft/server/MinecraftServer;
+	METHOD main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD method_5029 (Lnet/minecraft/class_191;)V
+		ARG 1 gamemodes
+	METHOD method_5031 (Lnet/minecraft/class_656;)V
+		ARG 1 builder
+	METHOD method_5032 convertWorldToAnvil (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD method_5033 startLoadingLevel (Ljava/lang/String;Ljava/lang/String;JLnet/minecraft/class_193;Ljava/lang/String;)V
+	METHOD method_5076 getResourceFromFileName (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 fileName
+	METHOD method_5082 generateWorld ()V
+	METHOD method_5098 stopServer ()V
+	METHOD method_5102 getCurrentDirectory ()Ljava/io/File;
+	METHOD run ()V

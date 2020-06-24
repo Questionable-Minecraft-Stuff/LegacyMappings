@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_436 net/minecraft/world/Feature
+	FIELD field_1495 world Lnet/minecraft/class_183;
+	METHOD method_1427 (Lnet/minecraft/class_183;IIII[Lnet/minecraft/class_242;)V
+		ARG 1 world
+	METHOD method_1428 (Lnet/minecraft/class_412;Lnet/minecraft/class_183;II[Lnet/minecraft/class_242;)V
+		ARG 2 world

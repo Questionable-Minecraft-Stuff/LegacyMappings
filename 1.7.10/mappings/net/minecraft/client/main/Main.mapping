@@ -1,3 +1,6 @@
 CLASS net/minecraft/client/main/Main net/minecraft/client/main/Main
+	FIELD field_5312 TYPE Ljava/lang/reflect/Type;
 	METHOD main ([Ljava/lang/String;)V
 		ARG 0 args
+	METHOD method_5005 isNotNull (Ljava/lang/String;)Z
+		ARG 0 string
