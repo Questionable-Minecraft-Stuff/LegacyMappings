@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_701 net/minecraft/client/SessionIdService
+	METHOD method_2193 ()Ljava/lang/String;

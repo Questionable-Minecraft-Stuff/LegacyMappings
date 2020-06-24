@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1215 net/minecraft/block/behavior/DispenserBehaviorProvider
+	FIELD field_4559 INSTANCE Lnet/minecraft/class_1215;
+	METHOD method_3932 (Lnet/minecraft/class_1210;Lnet/minecraft/class_86;)Lnet/minecraft/class_86;
+		ARG 2 stack

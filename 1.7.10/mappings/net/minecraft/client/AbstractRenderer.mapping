@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1003 net/minecraft/client/AbstractRenderer
+	METHOD method_3170 getTexture (Lnet/minecraft/class_1610;)Lnet/minecraft/class_1093;
+		ARG 1 entity

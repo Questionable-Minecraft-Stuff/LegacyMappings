@@ -1,0 +1,146 @@
+CLASS net/minecraft/class_242 net/minecraft/block/Block
+	FIELD field_881 isBlockEntity Z
+	FIELD field_882 minX D
+	FIELD field_883 minY D
+	FIELD field_884 minZ D
+	FIELD field_885 maxX D
+	FIELD field_886 maxY D
+	FIELD field_887 maxZ D
+	FIELD field_888 sound Lnet/minecraft/class_246;
+	FIELD field_890 substance Lnet/minecraft/class_584;
+	FIELD field_891 slipperiness F
+	FIELD field_892 icon Lnet/minecraft/class_1589;
+	FIELD field_893 itemGroup Lnet/minecraft/class_48;
+	FIELD field_895 REGISTRY Lnet/minecraft/class_1222;
+	FIELD field_897 STONE Lnet/minecraft/class_246;
+	FIELD field_898 WOOD Lnet/minecraft/class_246;
+	FIELD field_899 GRAVEL Lnet/minecraft/class_246;
+	FIELD field_900 GRASS Lnet/minecraft/class_246;
+	FIELD field_901 STONE2 Lnet/minecraft/class_246;
+	FIELD field_902 STONE3 Lnet/minecraft/class_246;
+	FIELD field_903 GLASS Lnet/minecraft/class_246;
+	FIELD field_904 CLOTH Lnet/minecraft/class_246;
+	FIELD field_905 SAND Lnet/minecraft/class_246;
+	FIELD field_906 SNOW Lnet/minecraft/class_246;
+	FIELD field_907 LADDER Lnet/minecraft/class_246;
+	FIELD field_908 ANVIL Lnet/minecraft/class_246;
+	FIELD field_909 isOpaque Z
+	FIELD field_910 opacity I
+	FIELD field_912 light I
+	FIELD field_914 hardness F
+	FIELD field_915 resistance F
+	FIELD field_918 hasRandomTicks Z
+	METHOD <init> (Lnet/minecraft/class_584;)V
+		ARG 1 substance
+	METHOD method_815 noStats ()Lnet/minecraft/class_242;
+	METHOD method_817 getItemGroup ()Lnet/minecraft/class_48;
+	METHOD method_824 setLight (F)Lnet/minecraft/class_242;
+		ARG 1 light
+	METHOD method_825 setShape (FFFFFF)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD method_827 getIcon (II)Lnet/minecraft/class_1589;
+	METHOD method_829 getDroppedItem (ILjava/util/Random;I)Lnet/minecraft/class_84;
+	METHOD method_830 canCollide (IZ)Z
+	METHOD method_831 setItemGroup (Lnet/minecraft/class_48;)Lnet/minecraft/class_242;
+		ARG 1 itemGroup
+	METHOD method_835 getTickRate (Lnet/minecraft/class_183;)I
+		ARG 1 world
+	METHOD method_836 getBoundingBox (Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;
+		ARG 1 world
+	METHOD method_838 randomlyDropAsItem (Lnet/minecraft/class_183;IIIIFI)V
+		ARG 1 world
+		ARG 6 chance
+	METHOD method_842 (Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V
+		ARG 1 world
+	METHOD method_844 onAdjacentUpdate (Lnet/minecraft/class_183;IIILnet/minecraft/class_242;)V
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_845 onBreaking (Lnet/minecraft/class_183;IIILnet/minecraft/class_242;I)V
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+		ARG 5 block
+	METHOD method_846 (Lnet/minecraft/class_183;IIILnet/minecraft/class_649;Ljava/util/List;Lnet/minecraft/class_1610;)V
+		ARG 1 world
+	METHOD method_848 onUpdateTick (Lnet/minecraft/class_183;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_853 (Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;)V
+		ARG 1 world
+	METHOD method_854 (Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;IFFF)Z
+		ARG 1 world
+	METHOD method_859 setSound (Lnet/minecraft/class_246;)Lnet/minecraft/class_242;
+		ARG 1 sound
+	METHOD method_861 getNumberOfDrops (Ljava/util/Random;)I
+		ARG 1 random
+	METHOD method_864 (Lnet/minecraft/class_1789;Lnet/minecraft/class_183;III)F
+		ARG 1 player
+		ARG 2 world
+	METHOD method_865 setHasRandomTicks (Z)Lnet/minecraft/class_242;
+		ARG 1 hasRandomTicks
+	METHOD method_866 getRenderType ()I
+	METHOD method_867 setResistance (F)Lnet/minecraft/class_242;
+		ARG 1 resistance
+	METHOD method_869 onAdding (Lnet/minecraft/class_183;III)V
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_870 onBreakByPlayer (Lnet/minecraft/class_183;IIII)V
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_871 dropAsItem (Lnet/minecraft/class_183;IIIII)V
+		ARG 1 world
+	METHOD method_872 onDisplayTick (Lnet/minecraft/class_183;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_874 blocksMovement (Lnet/minecraft/class_192;III)Z
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_876 getIdByBlock (Lnet/minecraft/class_242;)I
+	METHOD method_879 isOpaque ()Z
+	METHOD method_880 setHardness (F)Lnet/minecraft/class_242;
+		ARG 1 hardness
+	METHOD method_882 summonXp (Lnet/minecraft/class_183;IIII)V
+		ARG 1 world
+	METHOD method_883 (Lnet/minecraft/class_192;III)I
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_887 setRawName (Ljava/lang/String;)Lnet/minecraft/class_242;
+	METHOD method_888 renderAsNormalBlock ()Z
+	METHOD method_893 setName (Ljava/lang/String;)Lnet/minecraft/class_242;
+	METHOD method_898 getMapColor (I)Lnet/minecraft/class_586;
+		ARG 1 id
+	METHOD method_899 getHardness (Lnet/minecraft/class_183;III)F
+		ARG 1 world
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ
+	METHOD method_902 setOpacity (I)Lnet/minecraft/class_242;
+		ARG 1 opacity
+	METHOD method_903 (Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;
+		ARG 1 world
+	METHOD method_917 getSubstance ()Lnet/minecraft/class_584;
+	METHOD method_918 registerBlocks ()V
+	METHOD method_919 isNormalBlock ()Z
+	METHOD method_920 isFullCube ()Z
+	METHOD method_921 setUnbreakable ()Lnet/minecraft/class_242;
+	METHOD method_922 hasRandomTicks ()Z
+	METHOD method_923 isBlockEntity ()Z
+	METHOD method_924 hasCollision ()Z

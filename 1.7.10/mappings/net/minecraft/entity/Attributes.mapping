@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1773 net/minecraft/entity/Attributes
+	FIELD field_6640 MAX_HEALTH Lnet/minecraft/class_1640;
+	FIELD field_6641 FOLLOW_RANGE Lnet/minecraft/class_1640;
+	FIELD field_6642 KNOCKBACK_RESISTANCE Lnet/minecraft/class_1640;
+	FIELD field_6643 MOVEMENT_SPEED Lnet/minecraft/class_1640;
+	FIELD field_6644 ATTACK_DAMAGE Lnet/minecraft/class_1640;
+	FIELD field_6645 LOGGER Lorg/apache/logging/log4j/Logger;

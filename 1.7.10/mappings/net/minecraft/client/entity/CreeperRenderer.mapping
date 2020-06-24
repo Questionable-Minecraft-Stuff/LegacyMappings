@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_997 net/minecraft/client/entity/CreeperRenderer
+	FIELD field_3860 CHARGED_CREEPER_OVERLAY Lnet/minecraft/class_1093;
+	FIELD field_3861 CREEPER Lnet/minecraft/class_1093;

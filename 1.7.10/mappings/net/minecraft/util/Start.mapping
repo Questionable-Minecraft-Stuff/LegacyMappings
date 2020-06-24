@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1420 net/minecraft/util/Start
+	FIELD field_5100 started Z
+	METHOD method_4797 registerDispenserSpecialItems ()V
+	METHOD method_4798 beginStart ()V

@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1605 net/minecraft/potion/StatusEffects
+	FIELD field_5782 id I
+	FIELD field_5790 EFFECTS [Lnet/minecraft/class_1605;
+	FIELD field_5792 SPEED Lnet/minecraft/class_1605;
+	FIELD field_5793 SLOWNESS Lnet/minecraft/class_1605;
+	FIELD field_5794 HASTE Lnet/minecraft/class_1605;
+	FIELD field_5795 MINING_FATIGUE Lnet/minecraft/class_1605;
+	FIELD field_5796 STRENGTH Lnet/minecraft/class_1605;
+	FIELD field_5797 HEALTH Lnet/minecraft/class_1605;
+	FIELD field_5798 HARMING Lnet/minecraft/class_1605;
+	FIELD field_5799 JUMP_BOOST Lnet/minecraft/class_1605;
+	FIELD field_5800 NAUSEA Lnet/minecraft/class_1605;
+	FIELD field_5801 REGENERATION Lnet/minecraft/class_1605;
+	FIELD field_5802 RESISTANCE Lnet/minecraft/class_1605;
+	FIELD field_5803 FIRE_RESISTANCE Lnet/minecraft/class_1605;
+	FIELD field_5804 WATER_BREATHING Lnet/minecraft/class_1605;
+	FIELD field_5805 INVISIBILITY Lnet/minecraft/class_1605;
+	FIELD field_5806 BLINDNESS Lnet/minecraft/class_1605;
+	FIELD field_5807 NIGHTVISION Lnet/minecraft/class_1605;
+	FIELD field_5808 HUNGER Lnet/minecraft/class_1605;
+	FIELD field_5809 WEAKNESS Lnet/minecraft/class_1605;
+	FIELD field_5810 POISON Lnet/minecraft/class_1605;
+	FIELD field_5811 WITHER Lnet/minecraft/class_1605;
+	FIELD field_5812 HEALTH_BOOST Lnet/minecraft/class_1605;
+	FIELD field_5813 ABSORPTION Lnet/minecraft/class_1605;
+	FIELD field_5814 SATURATION Lnet/minecraft/class_1605;
+	METHOD <init> (IZI)V
+		ARG 1 id

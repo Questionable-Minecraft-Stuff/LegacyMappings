@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1009 net/minecraft/client/entity/GiantRenderer
+	FIELD field_3904 GIANT Lnet/minecraft/class_1093;
+	METHOD <init> (Lnet/minecraft/class_855;FF)V
+		ARG 1 model

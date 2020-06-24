@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_149 net/minecraft/util/ToolTags
+	FIELD field_502 ALL Lnet/minecraft/class_149;
+	FIELD field_503 ARMOR Lnet/minecraft/class_149;
+	FIELD field_504 FEET Lnet/minecraft/class_149;
+	FIELD field_505 LEGS Lnet/minecraft/class_149;
+	FIELD field_506 BODY Lnet/minecraft/class_149;
+	FIELD field_507 HEAD Lnet/minecraft/class_149;
+	FIELD field_508 WEAPON Lnet/minecraft/class_149;
+	FIELD field_509 MINING Lnet/minecraft/class_149;
+	FIELD field_510 FISHING_ROD Lnet/minecraft/class_149;
+	FIELD field_511 BREAKABLE Lnet/minecraft/class_149;
+	FIELD field_512 BOW Lnet/minecraft/class_149;
+	METHOD method_347 isItemIn (Lnet/minecraft/class_84;)Z
+		ARG 1 item

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_921 net/minecraft/client/particle/ExplosionParticle
+	FIELD field_3388 EXPLOSION Lnet/minecraft/class_1093;

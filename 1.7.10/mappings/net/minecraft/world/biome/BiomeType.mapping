@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_203 net/minecraft/world/biome/BiomeType
+	FIELD field_772 OCEAN Lnet/minecraft/class_203;
+	FIELD field_773 COLD Lnet/minecraft/class_203;
+	FIELD field_774 TEMPERATE Lnet/minecraft/class_203;
+	FIELD field_775 WARM Lnet/minecraft/class_203;

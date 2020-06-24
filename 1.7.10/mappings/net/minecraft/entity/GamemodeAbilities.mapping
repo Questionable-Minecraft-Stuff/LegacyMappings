@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1786 net/minecraft/entity/GamemodeAbilities
+	METHOD method_6524 (Lnet/minecraft/class_1232;)V
+		ARG 1 tag

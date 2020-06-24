@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1034 net/minecraft/client/entity/SkeletonRenderer
+	FIELD field_3963 SKELETON Lnet/minecraft/class_1093;
+	FIELD field_3964 WITHER_SKELETON Lnet/minecraft/class_1093;

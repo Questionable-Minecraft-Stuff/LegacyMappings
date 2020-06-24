@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1012 net/minecraft/client/entity/ItemFrameRenderer
+	FIELD field_3918 TEXTURE Lnet/minecraft/class_1093;

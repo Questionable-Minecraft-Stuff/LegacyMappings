@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_978 net/minecraft/client/block/EnchantingTableBlockEntityRenderer
+	FIELD field_3820 BOOK Lnet/minecraft/class_1093;

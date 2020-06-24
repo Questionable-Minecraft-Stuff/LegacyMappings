@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1041 net/minecraft/client/entity/IronGolemRenderer
+	FIELD field_3973 IRON_GOLEM Lnet/minecraft/class_1093;

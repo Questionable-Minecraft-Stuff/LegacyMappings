@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_974 net/minecraft/client/block/BeaconBlockEntityRenderer
+	FIELD field_3795 BEAM Lnet/minecraft/class_1093;

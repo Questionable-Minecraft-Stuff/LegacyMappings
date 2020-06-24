@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1044 net/minecraft/client/entity/WitchRenderer
+	FIELD field_3982 WITCH Lnet/minecraft/class_1093;

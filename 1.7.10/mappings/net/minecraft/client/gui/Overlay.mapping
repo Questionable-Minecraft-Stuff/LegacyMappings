@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_704 net/minecraft/client/gui/Overlay
+	FIELD field_2375 VIGNETTE Lnet/minecraft/class_1093;
+	FIELD field_2376 WIDGETS Lnet/minecraft/class_1093;
+	FIELD field_2377 PUMPKIN_BLUR Lnet/minecraft/class_1093;

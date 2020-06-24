@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_977 net/minecraft/client/block/ChestBlockEntityRenderer
+	FIELD field_3811 TRAPPED_DOUBLE Lnet/minecraft/class_1093;
+	FIELD field_3812 CHRISTMAS_DOUBLE Lnet/minecraft/class_1093;
+	FIELD field_3813 DOUBLE Lnet/minecraft/class_1093;
+	FIELD field_3814 TRAPPED_SINGLE Lnet/minecraft/class_1093;
+	FIELD field_3815 CHRISTMAS_SINGLE Lnet/minecraft/class_1093;
+	FIELD field_3816 SINGLE Lnet/minecraft/class_1093;

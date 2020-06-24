@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_139 net/minecraft/recipe/ToolRecipes
+	FIELD field_463 recipe [[Ljava/lang/String;
+	FIELD field_464 items [[Ljava/lang/Object;
+	METHOD method_330 (Lnet/minecraft/class_133;)V
+		ARG 1 recipes

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1001 net/minecraft/client/entity/EndermanRenderer
+	FIELD field_3870 EYES Lnet/minecraft/class_1093;
+	FIELD field_3871 ENDERMAN Lnet/minecraft/class_1093;

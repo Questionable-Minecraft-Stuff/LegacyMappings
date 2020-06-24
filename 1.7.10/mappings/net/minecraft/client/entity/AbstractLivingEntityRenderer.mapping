@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1023 net/minecraft/client/entity/AbstractLivingEntityRenderer
+	FIELD field_3941 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_3942 TEXTURE Lnet/minecraft/class_1093;
+	METHOD method_3237 (Lnet/minecraft/class_1627;F)V
+		ARG 1 entity

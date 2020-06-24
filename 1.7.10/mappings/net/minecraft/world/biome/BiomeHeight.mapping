@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_202 net/minecraft/world/biome/BiomeHeight
+	METHOD method_754 EXTREME_HILLS_HEIGHT ()Lnet/minecraft/class_202;

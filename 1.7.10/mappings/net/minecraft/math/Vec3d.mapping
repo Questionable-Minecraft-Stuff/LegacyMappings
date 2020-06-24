@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_652 net/minecraft/math/Vec3d
+	FIELD field_1993 one D
+	FIELD field_1994 two D
+	FIELD field_1995 three D
+	METHOD <init> (DDD)V
+		ARG 1 one
+		ARG 3 two
+		ARG 5 three
+	METHOD method_1920 get (DDD)Lnet/minecraft/class_652;
+		ARG 0 one
+		ARG 2 two
+		ARG 4 three
+	METHOD method_1924 getVec3d (DDD)Lnet/minecraft/class_652;
+		ARG 1 one
+		ARG 3 two
+		ARG 5 three

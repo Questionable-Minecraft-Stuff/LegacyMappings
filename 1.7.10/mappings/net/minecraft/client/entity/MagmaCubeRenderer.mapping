@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1020 net/minecraft/client/entity/MagmaCubeRenderer
+	FIELD field_3938 MAGMA_CUBE Lnet/minecraft/class_1093;

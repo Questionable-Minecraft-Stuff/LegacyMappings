@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_721 net/minecraft/client/gui/Slot
+	FIELD field_2470 instance Lnet/minecraft/class_671;
+	METHOD <init> (Lnet/minecraft/class_671;IIIII)V
+		ARG 1 instance

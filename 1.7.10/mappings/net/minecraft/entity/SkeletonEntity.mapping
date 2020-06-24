@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1775 net/minecraft/entity/SkeletonEntity
+	METHOD method_6477 getType ()I

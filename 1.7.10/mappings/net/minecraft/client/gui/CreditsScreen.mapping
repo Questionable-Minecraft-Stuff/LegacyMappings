@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_768 net/minecraft/client/gui/CreditsScreen
+	FIELD field_2705 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_2706 MINECRAFT Lnet/minecraft/class_1093;
+	FIELD field_2707 VIGNETTE Lnet/minecraft/class_1093;

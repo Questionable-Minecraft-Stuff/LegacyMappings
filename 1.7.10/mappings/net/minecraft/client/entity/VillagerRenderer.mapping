@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1043 net/minecraft/client/entity/VillagerRenderer
+	FIELD field_3976 GENERIC Lnet/minecraft/class_1093;
+	FIELD field_3977 FARMER Lnet/minecraft/class_1093;
+	FIELD field_3978 LIBRARIAN Lnet/minecraft/class_1093;
+	FIELD field_3979 CLERK Lnet/minecraft/class_1093;
+	FIELD field_3980 BLACKSMITH Lnet/minecraft/class_1093;
+	FIELD field_3981 BUTCHER Lnet/minecraft/class_1093;

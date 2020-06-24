@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_999 net/minecraft/client/entity/EndCrystalRenderer
+	FIELD field_3863 TEXTURE Lnet/minecraft/class_1093;

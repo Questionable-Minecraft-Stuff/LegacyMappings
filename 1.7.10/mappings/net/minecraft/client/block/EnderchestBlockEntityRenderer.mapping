@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_979 net/minecraft/client/block/EnderchestBlockEntityRenderer
+	FIELD field_3822 ENDERCHEST Lnet/minecraft/class_1093;

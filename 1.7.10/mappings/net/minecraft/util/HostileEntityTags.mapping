@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1631 net/minecraft/util/HostileEntityTags
+	FIELD field_6027 NONE Lnet/minecraft/class_1631;
+	FIELD field_6028 UNDEAD Lnet/minecraft/class_1631;
+	FIELD field_6029 ARTHROPOD Lnet/minecraft/class_1631;

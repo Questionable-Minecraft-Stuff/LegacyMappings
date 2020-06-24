@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1614 net/minecraft/entity/SizeClass
+	FIELD field_5901 ONE Lnet/minecraft/class_1614;
+	FIELD field_5902 TWO Lnet/minecraft/class_1614;
+	FIELD field_5903 THREE Lnet/minecraft/class_1614;
+	FIELD field_5904 FOUR Lnet/minecraft/class_1614;
+	FIELD field_5905 FIVE Lnet/minecraft/class_1614;
+	FIELD field_5906 SIX Lnet/minecraft/class_1614;

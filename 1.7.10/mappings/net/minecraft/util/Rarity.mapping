@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_99 net/minecraft/util/Rarity
+	FIELD field_399 COMMON Lnet/minecraft/class_99;
+	FIELD field_400 UNCOMMON Lnet/minecraft/class_99;
+	FIELD field_401 RARE Lnet/minecraft/class_99;
+	FIELD field_402 EPIC Lnet/minecraft/class_99;

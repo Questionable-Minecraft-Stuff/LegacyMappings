@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_30 net/minecraft/item/ArmorItem
+	FIELD field_101 material Lnet/minecraft/class_32;
+	FIELD field_95 part I
+	FIELD field_98 durabilityMultiplier [I
+	METHOD <init> (Lnet/minecraft/class_32;II)V
+		ARG 1 material
+		ARG 3 part

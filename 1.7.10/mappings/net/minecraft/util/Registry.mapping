@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1222 net/minecraft/util/Registry
+	METHOD method_3942 getById (I)Ljava/lang/Object;
+	METHOD method_3943 register (ILjava/lang/String;Ljava/lang/Object;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 value

@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1610 net/minecraft/entity/AbstractEntity
+	FIELD field_5827 hitbox Lnet/minecraft/class_649;
+	FIELD field_5837 width F
+	FIELD field_5838 height F
+	FIELD field_5850 random Ljava/util/Random;
+	FIELD field_5868 uuid Ljava/util/UUID;
+	FIELD field_5869 sizeClass Lnet/minecraft/class_1614;
+	FIELD field_5872 id I
+	FIELD field_5883 riding Lnet/minecraft/class_1610;
+	FIELD field_5884 rider Lnet/minecraft/class_1610;
+	FIELD field_5886 world Lnet/minecraft/class_183;
+	FIELD field_5890 posX D
+	FIELD field_5891 posY D
+	FIELD field_5892 posZ D
+	METHOD <init> (Lnet/minecraft/class_183;)V
+		ARG 1 world
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 entity
+	METHOD method_5729 setEntityPos (DDD)V
+	METHOD method_5748 setId (I)V
+		ARG 1 id
+	METHOD method_5777 getId ()I

@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_586 net/minecraft/item/MapColor
+	FIELD field_1809 GOLD Lnet/minecraft/class_586;
+	FIELD field_1810 CYAN Lnet/minecraft/class_586;
+	FIELD field_1811 BLUE Lnet/minecraft/class_586;
+	FIELD field_1812 GREEN Lnet/minecraft/class_586;
+	FIELD field_1817 MAP_COLORS [Lnet/minecraft/class_586;
+	FIELD field_1818 AIR Lnet/minecraft/class_586;
+	FIELD field_1819 GRASS Lnet/minecraft/class_586;
+	FIELD field_1821 YELLOW Lnet/minecraft/class_586;
+	FIELD field_1822 RED Lnet/minecraft/class_586;
+	FIELD field_1823 ICE Lnet/minecraft/class_586;
+	FIELD field_1824 SILVER Lnet/minecraft/class_586;
+	FIELD field_1825 PLANT Lnet/minecraft/class_586;
+	FIELD field_1827 GRAY Lnet/minecraft/class_586;
+	FIELD field_1828 DIRT Lnet/minecraft/class_586;
+	FIELD field_1829 STONE Lnet/minecraft/class_586;
+	FIELD field_1830 WATER Lnet/minecraft/class_586;
+	FIELD field_1831 WOOD Lnet/minecraft/class_586;

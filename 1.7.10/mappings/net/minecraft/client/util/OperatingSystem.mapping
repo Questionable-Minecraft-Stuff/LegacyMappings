@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1683 net/minecraft/client/util/OperatingSystem
+	FIELD field_6267 LINUX Lnet/minecraft/class_1683;
+	FIELD field_6268 SOLARIS Lnet/minecraft/class_1683;
+	FIELD field_6269 WINDOWS Lnet/minecraft/class_1683;
+	FIELD field_6270 MACOS Lnet/minecraft/class_1683;
+	FIELD field_6271 OTHER Lnet/minecraft/class_1683;

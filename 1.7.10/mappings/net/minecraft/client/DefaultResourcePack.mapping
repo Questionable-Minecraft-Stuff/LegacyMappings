@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1085 net/minecraft/client/DefaultResourcePack
+	METHOD method_3511 getAssets (Lnet/minecraft/class_1093;)Ljava/io/InputStream;

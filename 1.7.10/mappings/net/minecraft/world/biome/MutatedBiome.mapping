@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_221 net/minecraft/world/biome/MutatedBiome
+	FIELD field_854 originalBiome Lnet/minecraft/class_201;
+	METHOD <init> (ILnet/minecraft/class_201;)V
+		ARG 1 id
+		ARG 2 biome

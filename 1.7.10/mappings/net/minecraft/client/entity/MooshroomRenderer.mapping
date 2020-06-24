@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1027 net/minecraft/client/entity/MooshroomRenderer
+	FIELD field_3948 MOOSHROOM Lnet/minecraft/class_1093;

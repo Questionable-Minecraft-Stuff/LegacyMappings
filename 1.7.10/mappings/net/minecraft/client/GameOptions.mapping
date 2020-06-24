@@ -1,0 +1,50 @@
+CLASS net/minecraft/class_695 net/minecraft/client/GameOptions
+	FIELD field_2271 TOUCHSCREEN_MODE Lnet/minecraft/class_695;
+	FIELD field_2272 CHAT_SCALE Lnet/minecraft/class_695;
+	FIELD field_2273 CHAT_WIDTH Lnet/minecraft/class_695;
+	FIELD field_2274 CHAT_HEIGHT_FOCUSED Lnet/minecraft/class_695;
+	FIELD field_2275 CHAT_HEIGHT_UNFOCUSED Lnet/minecraft/class_695;
+	FIELD field_2276 MIPMAP_LEVELS Lnet/minecraft/class_695;
+	FIELD field_2277 ANISOTROPIC_FILTERING Lnet/minecraft/class_695;
+	FIELD field_2278 FORCE_UNICODE_FONT Lnet/minecraft/class_695;
+	FIELD field_2279 STREAM_BYTES_PER_PIXEL Lnet/minecraft/class_695;
+	FIELD field_2280 STREAM_VOLUME_MIC Lnet/minecraft/class_695;
+	FIELD field_2281 STREAM_VOLUME_SYSTEM Lnet/minecraft/class_695;
+	FIELD field_2282 STREAM_KBPS Lnet/minecraft/class_695;
+	FIELD field_2283 STREAM_FPS Lnet/minecraft/class_695;
+	FIELD field_2284 STREAM_COMPRESSION Lnet/minecraft/class_695;
+	FIELD field_2285 STREAM_SEND_METADATA Lnet/minecraft/class_695;
+	FIELD field_2286 STREAM_CHAT_ENABLED Lnet/minecraft/class_695;
+	FIELD field_2287 STREAM_CHAT_USER_FILTER Lnet/minecraft/class_695;
+	FIELD field_2288 STREAM_MIC_TOGGLE_BEHAVIOR Lnet/minecraft/class_695;
+	FIELD field_2291 key Ljava/lang/String;
+	FIELD field_2296 INVERT_MOUSE Lnet/minecraft/class_695;
+	FIELD field_2297 SENSITIVITY Lnet/minecraft/class_695;
+	FIELD field_2298 FIELD_OF_VIEW Lnet/minecraft/class_695;
+	FIELD field_2299 BRIGHTNESS Lnet/minecraft/class_695;
+	FIELD field_2300 SATURATION Lnet/minecraft/class_695;
+	FIELD field_2301 RENDER_DISTANCE Lnet/minecraft/class_695;
+	FIELD field_2302 VIEW_BOBBING Lnet/minecraft/class_695;
+	FIELD field_2303 ANAGLYPH Lnet/minecraft/class_695;
+	FIELD field_2304 ADVANCED_OPENGL Lnet/minecraft/class_695;
+	FIELD field_2305 MAX_FPS Lnet/minecraft/class_695;
+	FIELD field_2306 ENABLE_FBO Lnet/minecraft/class_695;
+	FIELD field_2307 DIFFICULTY Lnet/minecraft/class_695;
+	FIELD field_2308 GRAPHICS_QUALITY Lnet/minecraft/class_695;
+	FIELD field_2309 AMBIENT_OCCLUSION Lnet/minecraft/class_695;
+	FIELD field_2310 GUI_SCALE Lnet/minecraft/class_695;
+	FIELD field_2311 SHOW_CLOUDS Lnet/minecraft/class_695;
+	FIELD field_2312 PARTICLE_QUALITY Lnet/minecraft/class_695;
+	FIELD field_2313 CHAT_VISIBILITY Lnet/minecraft/class_695;
+	FIELD field_2314 CHAT_COLOR Lnet/minecraft/class_695;
+	FIELD field_2315 CHAT_LINKS Lnet/minecraft/class_695;
+	FIELD field_2316 CHAT_OPACITY Lnet/minecraft/class_695;
+	FIELD field_2317 PROMPT_CHAT_LINKS Lnet/minecraft/class_695;
+	FIELD field_2318 IS_SNOOPER_ENABLED Lnet/minecraft/class_695;
+	FIELD field_2319 FULLSCREEN Lnet/minecraft/class_695;
+	FIELD field_2320 VSYNC Lnet/minecraft/class_695;
+	FIELD field_2321 SHOW_CAPE Lnet/minecraft/class_695;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZ)V
+		ARG 3 key
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZFFF)V
+		ARG 3 key

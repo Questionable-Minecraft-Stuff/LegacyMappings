@@ -1,0 +1,89 @@
+CLASS net/minecraft/class_201 net/minecraft/world/biome/AbstractBiome
+	FIELD field_688 ICE_PLAINS Lnet/minecraft/class_201;
+	FIELD field_689 ICE_MOUNTAINS Lnet/minecraft/class_201;
+	FIELD field_690 MUSHROOM_FIELDS Lnet/minecraft/class_201;
+	FIELD field_691 MUSHROOM_FIELD_SHORE Lnet/minecraft/class_201;
+	FIELD field_692 BEACH Lnet/minecraft/class_201;
+	FIELD field_693 DESERT_HILLS Lnet/minecraft/class_201;
+	FIELD field_694 FOREST_HILLS Lnet/minecraft/class_201;
+	FIELD field_695 TAIGA_HILLS Lnet/minecraft/class_201;
+	FIELD field_696 EXTREME_HILLS_EDGE Lnet/minecraft/class_201;
+	FIELD field_697 JUNGLE Lnet/minecraft/class_201;
+	FIELD field_698 JUNGLE_HILLS Lnet/minecraft/class_201;
+	FIELD field_699 JUNGLE_EDGE Lnet/minecraft/class_201;
+	FIELD field_700 DEEP_OCEAN Lnet/minecraft/class_201;
+	FIELD field_701 STONE_BEACH Lnet/minecraft/class_201;
+	FIELD field_702 COLD_BEACH Lnet/minecraft/class_201;
+	FIELD field_703 BIRCH_FOREST Lnet/minecraft/class_201;
+	FIELD field_704 BIRCH_FOREST_HILLS Lnet/minecraft/class_201;
+	FIELD field_705 ROOFED_FOREST Lnet/minecraft/class_201;
+	FIELD field_706 COLD_TAIGA Lnet/minecraft/class_201;
+	FIELD field_707 COLD_TAIGA_HILLS Lnet/minecraft/class_201;
+	FIELD field_708 MEGA_TAIGA Lnet/minecraft/class_201;
+	FIELD field_709 MEGA_TAIGA_HILLS Lnet/minecraft/class_201;
+	FIELD field_710 EXTREME_HILLS_PLUS Lnet/minecraft/class_201;
+	FIELD field_711 SAVANNA Lnet/minecraft/class_201;
+	FIELD field_712 SAVANNA_PLATEAU Lnet/minecraft/class_201;
+	FIELD field_713 BADLANDS Lnet/minecraft/class_201;
+	FIELD field_716 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_717 BIOMES [Lnet/minecraft/class_201;
+	FIELD field_719 BADLANDS_PLATEAU_F Lnet/minecraft/class_201;
+	FIELD field_720 BADLANDS_PLATEAU Lnet/minecraft/class_201;
+	FIELD field_724 name Ljava/lang/String;
+	FIELD field_725 color I
+	FIELD field_727 topBlock Lnet/minecraft/class_242;
+	FIELD field_729 bottomBlock Lnet/minecraft/class_242;
+	FIELD field_733 temperature F
+	FIELD field_737 hostileMobs Ljava/util/List;
+	FIELD field_738 passiveMobs Ljava/util/List;
+	FIELD field_739 aquaticMobs Ljava/util/List;
+	FIELD field_740 ambientMobs Ljava/util/List;
+	FIELD field_741 enableSnow Z
+	FIELD field_743 id I
+	FIELD field_745 RIVER_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_746 OCEAN_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_748 DESERT_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_749 TAIGA_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_750 HILLS_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_751 BADLANDS_PLATEAU_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_752 EXTREME_HILLS_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_753 BEACH_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_754 STONE_BEACH_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_755 MUSHROOM_FIELDS_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_756 SWAMP_HEIGHT Lnet/minecraft/class_202;
+	FIELD field_757 BIOMESET Ljava/util/Set;
+	FIELD field_758 OCEAN Lnet/minecraft/class_201;
+	FIELD field_759 PLAINS Lnet/minecraft/class_201;
+	FIELD field_760 DESERT Lnet/minecraft/class_201;
+	FIELD field_761 EXTREME_HILLS Lnet/minecraft/class_201;
+	FIELD field_762 FOREST Lnet/minecraft/class_201;
+	FIELD field_763 TAIGA Lnet/minecraft/class_201;
+	FIELD field_764 SWAMPLAND Lnet/minecraft/class_201;
+	FIELD field_765 RIVER Lnet/minecraft/class_201;
+	FIELD field_766 NETHER Lnet/minecraft/class_201;
+	FIELD field_767 END Lnet/minecraft/class_201;
+	FIELD field_768 FROZEN_OCEAN Lnet/minecraft/class_201;
+	FIELD field_769 FROZEN_RIVER Lnet/minecraft/class_201;
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD method_722 setTemperature (FF)Lnet/minecraft/class_201;
+	METHOD method_725 setColor (IZ)Lnet/minecraft/class_201;
+		ARG 1 color
+		ARG 2 bool
+	METHOD method_728 isEqualTo (Lnet/minecraft/class_201;)Z
+		ARG 1 biome
+	METHOD method_729 setBiomeHeight (Lnet/minecraft/class_202;)Lnet/minecraft/class_201;
+	METHOD method_730 setName (Ljava/lang/String;)Lnet/minecraft/class_201;
+		ARG 1 name
+	METHOD method_733 getSpawnableEntitiesByEntityTag (Lnet/minecraft/class_1629;)Ljava/util/List;
+		ARG 1 tag
+	METHOD method_734 disablePrecipitation ()Lnet/minecraft/class_201;
+	METHOD method_735 setColor (I)Lnet/minecraft/class_201;
+		ARG 1 color
+	METHOD method_739 enableSnow ()Lnet/minecraft/class_201;
+	METHOD method_743 getById (I)Lnet/minecraft/class_201;
+		ARG 0 id
+	METHOD method_750 getMutatedVariant ()Lnet/minecraft/class_201;
+	METHOD method_751 getAsClass ()Ljava/lang/Class;
+	METHOD method_752 getBiomeType ()Lnet/minecraft/class_203;
+	METHOD method_753 getBiomes ()[Lnet/minecraft/class_201;

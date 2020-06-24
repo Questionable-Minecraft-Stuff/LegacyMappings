@@ -1,0 +1,4 @@
+CLASS net/minecraft/server/MinecraftServer net/minecraft/server/AbstractMinecraftServer
+	FIELD field_5340 USERCACHE Ljava/io/File;
+	FIELD field_5348 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_5349 INSTANCE Lnet/minecraft/server/MinecraftServer;

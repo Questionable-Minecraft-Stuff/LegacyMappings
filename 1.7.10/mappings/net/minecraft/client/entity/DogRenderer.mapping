@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1047 net/minecraft/client/entity/DogRenderer
+	FIELD field_3990 DOG Lnet/minecraft/class_1093;
+	FIELD field_3991 TAMED_DOG Lnet/minecraft/class_1093;
+	FIELD field_3992 ANGRY_DOG Lnet/minecraft/class_1093;
+	FIELD field_3993 DOG_COLLAR Lnet/minecraft/class_1093;

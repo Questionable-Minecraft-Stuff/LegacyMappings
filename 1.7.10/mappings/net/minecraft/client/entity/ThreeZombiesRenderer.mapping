@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1048 net/minecraft/client/entity/ThreeZombiesRenderer
+	FIELD field_3998 ZOMBIFIED_PIGLIN Lnet/minecraft/class_1093;
+	FIELD field_3999 ZOMBIE Lnet/minecraft/class_1093;
+	FIELD field_4000 ZOMBIE_VILLAGER Lnet/minecraft/class_1093;

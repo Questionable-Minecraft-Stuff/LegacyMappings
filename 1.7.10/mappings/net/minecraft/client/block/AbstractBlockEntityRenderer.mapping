@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_976 net/minecraft/client/block/AbstractBlockEntityRenderer
+	METHOD method_3095 render (Lnet/minecraft/class_383;DDDF)V

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_272 net/minecraft/block/DispenserBlock
+	FIELD field_1124 PROVIDER Lnet/minecraft/class_1225;

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_718 net/minecraft/client/gui/OptionButton
+	FIELD field_2455 options Lnet/minecraft/class_695;

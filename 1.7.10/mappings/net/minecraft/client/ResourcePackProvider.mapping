@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1097 net/minecraft/client/ResourcePackProvider
+	METHOD method_3536 (Lnet/minecraft/class_1093;)Z
+		ARG 1 identifier

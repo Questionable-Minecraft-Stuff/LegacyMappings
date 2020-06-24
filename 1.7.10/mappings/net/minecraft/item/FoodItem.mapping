@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_79 net/minecraft/item/FoodItem
+	METHOD method_119 setStatusEffect (IIIF)Lnet/minecraft/class_79;
+	METHOD method_124 alwaysEdible ()Lnet/minecraft/class_79;

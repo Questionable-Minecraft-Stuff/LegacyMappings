@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_2 net/minecraft/command/Command
+	METHOD method_11 getArgs ()Ljava/util/List;
+	METHOD method_12 (Lnet/minecraft/class_55;[Ljava/lang/String;)V
+		ARG 1 source
+	METHOD method_13 getName ()Ljava/lang/String;
+	METHOD method_14 (Lnet/minecraft/class_55;)Ljava/lang/String;
+		ARG 1 source
+	METHOD method_8 (Lnet/minecraft/class_55;)Z
+		ARG 1 source
+	METHOD method_9 (Lnet/minecraft/class_55;[Ljava/lang/String;)Ljava/util/List;
+		ARG 1 source

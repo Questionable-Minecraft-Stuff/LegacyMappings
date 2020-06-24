@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_288 net/minecraft/block/FireBlock
+	FIELD field_1146 flammableBlocksByFlammability [I
+	FIELD field_1147 flammableBlocksBySpeed [I
+	METHOD method_1028 addAsFlammable (III)V
+		ARG 1 blockId
+		ARG 2 flammability
+		ARG 3 speed
+	METHOD method_1032 registerFlammableBlocks ()V

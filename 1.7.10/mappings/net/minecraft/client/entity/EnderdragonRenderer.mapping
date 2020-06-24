@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1000 net/minecraft/client/entity/EnderdragonRenderer
+	FIELD field_3866 EXPLOSION Lnet/minecraft/class_1093;
+	FIELD field_3867 BEAM Lnet/minecraft/class_1093;
+	FIELD field_3868 EYES Lnet/minecraft/class_1093;
+	FIELD field_3869 DRAGON Lnet/minecraft/class_1093;

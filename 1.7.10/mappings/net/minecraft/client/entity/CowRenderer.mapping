@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_996 net/minecraft/client/entity/CowRenderer
+	FIELD field_3859 COW Lnet/minecraft/class_1093;

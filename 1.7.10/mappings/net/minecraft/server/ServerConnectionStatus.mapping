@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1265 net/minecraft/server/ServerConnectionStatus
+	FIELD field_4649 HANDSHAKING Lnet/minecraft/class_1265;
+	FIELD field_4650 PLAY Lnet/minecraft/class_1265;
+	FIELD field_4651 STATUS Lnet/minecraft/class_1265;
+	FIELD field_4652 LOGIN Lnet/minecraft/class_1265;

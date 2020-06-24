@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_333 net/minecraft/block/PressurePlateActivationType
+	FIELD field_1206 ALL Lnet/minecraft/class_333;
+	FIELD field_1207 MOBS Lnet/minecraft/class_333;
+	FIELD field_1208 PLAYERS Lnet/minecraft/class_333;

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1594 net/minecraft/util/Snooper
+	METHOD method_5559 isSnooperEnabled ()Z
+	METHOD method_5560 (Lnet/minecraft/class_1592;)V
+		ARG 1 settings
+	METHOD method_5561 (Lnet/minecraft/class_1592;)V
+		ARG 1 snooper

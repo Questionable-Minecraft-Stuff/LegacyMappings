@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_649 net/minecraft/math/VoxelShape
+	METHOD method_1901 getVoxelShape (DDDDDD)Lnet/minecraft/class_649;

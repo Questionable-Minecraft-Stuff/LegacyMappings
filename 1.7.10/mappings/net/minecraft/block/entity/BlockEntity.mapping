@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_383 net/minecraft/block/entity/BlockEntity
+	FIELD field_1288 LOGGER Lorg/apache/logging/log4j/Logger;

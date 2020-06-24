@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1083 net/minecraft/client/AbstractResourcePack
+	FIELD field_4166 resourcePackFile Ljava/io/File;
+	FIELD field_4167 LOGGER Lorg/apache/logging/log4j/Logger;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 resourcePackFile
+	METHOD method_3505 (Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
+		ARG 0 file1
+		ARG 1 file2
+	METHOD method_3509 warnLowercase (Ljava/lang/String;)V
+		ARG 1 name

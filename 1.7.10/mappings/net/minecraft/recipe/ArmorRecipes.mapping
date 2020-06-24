@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_123 net/minecraft/recipe/ArmorRecipes
+	FIELD field_445 recipe [[Ljava/lang/String;
+	FIELD field_446 items [[Ljava/lang/Object;

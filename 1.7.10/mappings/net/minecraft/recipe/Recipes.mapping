@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_133 net/minecraft/recipe/Recipes
+	METHOD method_319 registerShapedRecipe (Lnet/minecraft/class_86;[Ljava/lang/Object;)Lnet/minecraft/class_136;
+	METHOD method_321 registerShapelessRecipe (Lnet/minecraft/class_86;[Ljava/lang/Object;)V

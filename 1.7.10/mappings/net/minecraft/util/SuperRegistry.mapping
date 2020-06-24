@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1227 net/minecraft/util/SuperRegistry
+	FIELD field_4581 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_4582 map Ljava/util/Map;
+	METHOD method_3956 getNewHashMap ()Ljava/util/Map;

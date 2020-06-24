@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_116 net/minecraft/util/HandMovement
+	FIELD field_422 NONE Lnet/minecraft/class_116;
+	FIELD field_423 EAT Lnet/minecraft/class_116;
+	FIELD field_424 DRINK Lnet/minecraft/class_116;
+	FIELD field_425 BLOCK Lnet/minecraft/class_116;
+	FIELD field_426 BOW Lnet/minecraft/class_116;

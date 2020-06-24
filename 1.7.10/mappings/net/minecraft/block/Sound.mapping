@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_246 net/minecraft/block/Sound
+	FIELD field_919 key Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;FF)V
+		ARG 1 key
+	METHOD method_929 getBreakSound ()Ljava/lang/String;
+	METHOD method_930 asString ()Ljava/lang/String;
+	METHOD method_933 getStepSound ()Ljava/lang/String;

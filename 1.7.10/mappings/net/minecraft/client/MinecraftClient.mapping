@@ -1,0 +1,54 @@
+CLASS net/minecraft/class_671 net/minecraft/client/MinecraftClient
+	FIELD field_2072 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_2073 LOGO Lnet/minecraft/class_1093;
+	FIELD field_2074 DISPLAYMODES Ljava/util/List;
+	FIELD field_2075 resourcePacksDirectory Ljava/io/File;
+	FIELD field_2079 INSTANCE Lnet/minecraft/class_671;
+	FIELD field_2080 fullscreenEnabled Z
+	FIELD field_2081 crashed Z
+	FIELD field_2082 systemInfo Lnet/minecraft/class_656;
+	FIELD field_2086 paused Z
+	FIELD field_2091 assetsDirectory Ljava/io/File;
+	FIELD field_2097 IS_MACOS Z
+	FIELD field_2103 serverName Ljava/lang/String;
+	FIELD field_2104 serverPort I
+	FIELD field_2106 is64Bit Z
+	FIELD field_2107 isDemo Z
+	FIELD field_2114 defaultResourcePack Lnet/minecraft/class_1085;
+	FIELD field_2116 languageHelper Lnet/minecraft/class_1114;
+	FIELD field_2118 framebuffer Lnet/minecraft/class_971;
+	FIELD field_2124 memory [B
+	FIELD field_2126 width I
+	FIELD field_2127 height I
+	FIELD field_2130 player Lnet/minecraft/class_897;
+	FIELD field_2131 livingEntity Lnet/minecraft/class_1627;
+	FIELD field_2132 entity Lnet/minecraft/class_1610;
+	FIELD field_2133 particleRenderer Lnet/minecraft/class_926;
+	FIELD field_2136 currentScreen Lnet/minecraft/class_757;
+	FIELD field_2143 settings Lnet/minecraft/class_692;
+	FIELD field_2145 gameDirectory Ljava/io/File;
+	METHOD <init> (Lnet/minecraft/class_701;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;Lcom/google/common/collect/Multimap;Ljava/lang/String;)V
+		ARG 1 sessionIdService
+		ARG 4 fullscreenEnabled
+		ARG 6 gameDirectory
+		ARG 7 assetsDirectory
+		ARG 8 resourcePacksDirectory
+	METHOD method_2057 getInstance ()Lnet/minecraft/class_671;
+	METHOD method_2079 getMusicType ()Lnet/minecraft/class_1157;
+	METHOD method_2081 getFramebuffer ()Lnet/minecraft/class_971;
+	METHOD method_2086 crash (Lnet/minecraft/class_656;)V
+		ARG 1 info
+	METHOD method_2092 readImage (Ljava/io/InputStream;)Ljava/nio/ByteBuffer;
+	METHOD method_2094 setServerDetails (Ljava/lang/String;I)V
+		ARG 1 name
+		ARG 2 port
+	METHOD method_2102 is64Bit ()Z
+	METHOD method_2104 start ()V
+	METHOD method_2106 updateDisplay ()V
+	METHOD method_2113 isForceUnicode ()Z
+	METHOD method_2115 (Lnet/minecraft/class_656;)Lnet/minecraft/class_656;
+		ARG 1 builder
+	METHOD method_2119 showCrashReport (Lnet/minecraft/class_656;)V
+		ARG 1 info
+	METHOD method_2121 stop ()V
+	METHOD method_2137 isDemo ()Z

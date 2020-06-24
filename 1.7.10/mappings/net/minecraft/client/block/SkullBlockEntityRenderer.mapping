@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_983 net/minecraft/client/block/SkullBlockEntityRenderer
+	FIELD field_3828 SKELETON Lnet/minecraft/class_1093;
+	FIELD field_3829 WITHER_SKELETON Lnet/minecraft/class_1093;
+	FIELD field_3830 ZOMBIE Lnet/minecraft/class_1093;
+	FIELD field_3831 CREEPER Lnet/minecraft/class_1093;

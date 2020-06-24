@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1045 net/minecraft/client/entity/WitherRenderer
+	FIELD field_3984 INVULNERABLE Lnet/minecraft/class_1093;
+	FIELD field_3985 WITHER Lnet/minecraft/class_1093;

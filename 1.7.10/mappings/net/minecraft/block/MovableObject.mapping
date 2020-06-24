@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_651 net/minecraft/block/MovableObject
+	FIELD field_1989 NONE Lnet/minecraft/class_651;
+	FIELD field_1990 BLOCK Lnet/minecraft/class_651;
+	FIELD field_1991 ENTITY Lnet/minecraft/class_651;

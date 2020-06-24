@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_121 net/minecraft/item/StatusEffectStrings
+	FIELD field_429 SUGAR_STRING Ljava/lang/String;
+	FIELD field_430 GHAST_TEAR_STRING Ljava/lang/String;
+	FIELD field_431 SPIDER_EYE_STRING Ljava/lang/String;
+	FIELD field_432 FERMENTED_SPIDER_EYE_STRING Ljava/lang/String;
+	FIELD field_433 GLISTERING_MELON_STRING Ljava/lang/String;
+	FIELD field_434 BLAZE_POWDER_STRING Ljava/lang/String;
+	FIELD field_435 MAGMA_CREAM_STRING Ljava/lang/String;
+	FIELD field_436 REDSTONE_STRING Ljava/lang/String;
+	FIELD field_437 GLOWSTONE_STRING Ljava/lang/String;
+	FIELD field_438 GUNPOWDER_STRING Ljava/lang/String;
+	FIELD field_439 GOLDEN_CARROT_STRING Ljava/lang/String;

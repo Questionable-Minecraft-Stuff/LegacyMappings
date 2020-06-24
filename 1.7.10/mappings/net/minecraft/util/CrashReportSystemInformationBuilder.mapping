@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_656 net/minecraft/util/CrashReportSystemInformationBuilder
+	FIELD field_2013 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_2016 crashReportGroup Lnet/minecraft/class_1408;
+	METHOD method_1963 saved (Ljava/io/File;)Z
+	METHOD method_1970 buildCrashReport ()Ljava/lang/String;
+	METHOD method_1971 getFile ()Ljava/io/File;
+	METHOD method_1974 addComment ()Ljava/lang/String;

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1408 net/minecraft/util/CrashReportGroup
+	FIELD field_5084 information Lnet/minecraft/class_656;
+	METHOD <init> (Lnet/minecraft/class_656;Ljava/lang/String;)V
+		ARG 1 information
+	METHOD method_4763 addGroup (Ljava/lang/String;Ljava/util/concurrent/Callable;)V

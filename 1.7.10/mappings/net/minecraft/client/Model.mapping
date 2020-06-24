@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_883 net/minecraft/client/Model
+	FIELD field_3254 model Lnet/minecraft/class_855;
+	METHOD <init> (Lnet/minecraft/class_855;Ljava/lang/String;)V
+		ARG 1 model
