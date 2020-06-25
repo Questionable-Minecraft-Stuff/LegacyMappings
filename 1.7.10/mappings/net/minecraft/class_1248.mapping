@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1248
+	METHOD method_4039 (Ljava/io/DataInput;ILnet/minecraft/class_1242;)V
+		ARG 1 input
+		ARG 2 depth

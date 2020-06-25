@@ -3,3 +3,8 @@ CLASS net/minecraft/class_99 net/minecraft/util/Rarity
 	FIELD field_400 UNCOMMON Lnet/minecraft/class_99;
 	FIELD field_401 RARE Lnet/minecraft/class_99;
 	FIELD field_402 EPIC Lnet/minecraft/class_99;
+	FIELD field_403 formatting Lnet/minecraft/class_1;
+	FIELD field_404 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_1;Ljava/lang/String;)V
+		ARG 3 formatting
+		ARG 4 name

@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_1556 net/minecraft/stat/Stats
+	FIELD field_5606 JUNK_CAUGHT Lnet/minecraft/class_1548;
+	FIELD field_5607 TREASURE_CAIGHT Lnet/minecraft/class_1548;
+	FIELD field_5617 GAMES_LEFT Lnet/minecraft/class_1548;
+	FIELD field_5618 MINUTES_PLAYED Lnet/minecraft/class_1548;
+	FIELD field_5619 DISTANCE_WALKED Lnet/minecraft/class_1548;
+	FIELD field_5620 DISTANCE_SWUM Lnet/minecraft/class_1548;
+	FIELD field_5621 DISTANCE_FALLEN Lnet/minecraft/class_1548;
+	FIELD field_5622 DISTANCE_CLIMBED Lnet/minecraft/class_1548;
+	FIELD field_5623 DISTANCE_FLOWN Lnet/minecraft/class_1548;
+	FIELD field_5624 DISTANCE_DIVEN Lnet/minecraft/class_1548;
+	FIELD field_5625 DISTANCE_BY_MINECART Lnet/minecraft/class_1548;
+	FIELD field_5626 DISTANCE_BY_BOAT Lnet/minecraft/class_1548;
+	FIELD field_5627 DISTANCE_BY_PIG Lnet/minecraft/class_1548;
+	FIELD field_5628 DISTANCE_BY_HORSE Lnet/minecraft/class_1548;
+	FIELD field_5629 TIMES_JUMPED Lnet/minecraft/class_1548;
+	FIELD field_5630 TIMES_DROPPED Lnet/minecraft/class_1548;
+	FIELD field_5631 DAMAGE_DEALT Lnet/minecraft/class_1548;
+	FIELD field_5632 DAMAGE_TAKEN Lnet/minecraft/class_1548;
+	FIELD field_5633 DEATHS Lnet/minecraft/class_1548;
+	FIELD field_5634 MOBS_KILLED Lnet/minecraft/class_1548;
+	FIELD field_5635 ANIMALS_BRED Lnet/minecraft/class_1548;
+	FIELD field_5636 PLAYERS_KILLED Lnet/minecraft/class_1548;
+	FIELD field_5637 FISH_CAUGHT Lnet/minecraft/class_1548;
+	METHOD method_5345 registerStats ()V
+	METHOD method_5348 ([Lnet/minecraft/class_1548;)V
+		ARG 0 stats
+	METHOD method_5349 ([Lnet/minecraft/class_1548;Lnet/minecraft/class_242;Lnet/minecraft/class_242;)V
+		ARG 0 statsArray
+		ARG 1 block1
+		ARG 2 block2

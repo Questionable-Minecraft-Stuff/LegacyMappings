@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_195
+	METHOD method_706 (Lnet/minecraft/class_183;II)Lnet/minecraft/class_175;
+		ARG 0 world
+	METHOD method_708 (Lnet/minecraft/class_1479;ZZZ)I
+		ARG 1 world

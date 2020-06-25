@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1548 net/minecraft/stat/Stat
+	FIELD field_5592 textProvider Lnet/minecraft/class_1287;
+	FIELD field_5593 statProvider Lnet/minecraft/class_1553;
+	FIELD field_5596 statName Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1287;)V
+		ARG 2 provider
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1287;Lnet/minecraft/class_1553;)V
+		ARG 1 name
+		ARG 2 textProvider
+		ARG 3 statProvider
+	METHOD method_5331 addStat ()Lnet/minecraft/class_1548;

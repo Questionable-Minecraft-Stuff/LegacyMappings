@@ -21,7 +21,7 @@ c	net/minecraft/class_1544	net/minecraft/util/StringFormatProvider
 	m	(Ljava/lang/String;)Ljava/lang/String;	method_5316	format
 		p	1		string
 c	net/minecraft/class_1422	net/minecraft/block/behavior/FluidBucketDispenseBehavior
-c	net/minecraft/class_1543	net/minecraft/advancement/Advancements
+c	net/minecraft/class_1543	net/minecraft/stat/Advancements
 	f	Lnet/minecraft/class_1542;	field_5575	ON_A_RAIL
 	f	Lnet/minecraft/class_1542;	field_5553	LIBRARIAN
 	f	Lnet/minecraft/class_1542;	field_5573	GETTING_AN_UPGRADE
@@ -59,7 +59,7 @@ c	net/minecraft/class_1543	net/minecraft/advancement/Advancements
 	f	Lnet/minecraft/class_1542;	field_5580	SNIPER_DUEL
 c	net/minecraft/class_1785	net/minecraft/entity/VillagerEntity
 c	net/minecraft/class_1421	net/minecraft/block/behavior/ArrowDispenseBehavior
-c	net/minecraft/class_1542	net/minecraft/advancement/Advancement
+c	net/minecraft/class_1542	net/minecraft/stat/Advancement
 	f	I	field_5541	row
 	m	(Ljava/lang/String;Ljava/lang/String;IILnet/minecraft/class_242;Lnet/minecraft/class_1542;)V	<init>	<init>
 		p	4		row
@@ -121,18 +121,34 @@ c	net/minecraft/class_1434	net/minecraft/block/behavior/FireChargeDispenseBehavi
 c	net/minecraft/class_1797	net/minecraft/entity/BigFireballEntity
 c	net/minecraft/class_1433	net/minecraft/block/behavior/FireworksDispenseBehavior
 c	net/minecraft/class_1796	net/minecraft/entity/FireworkEntity
+c	net/minecraft/class_1553	net/minecraft/stat/StatTypeProvider
 c	net/minecraft/class_1432	net/minecraft/block/behavior/SpawnEggDispenseBehavior
 c	net/minecraft/class_1795	net/minecraft/entity/AbstractFireballEntity
 c	net/minecraft/class_1794	net/minecraft/entity/EyeOfEnderProjectileEntity
 c	net/minecraft/class_1427	net/minecraft/block/behavior/EggDispsenseBehavior
-c	net/minecraft/class_1548	net/minecraft/util/Stat
+c	net/minecraft/class_1548	net/minecraft/stat/Stat
 	m	(Ljava/lang/String;Lnet/minecraft/class_1287;Lnet/minecraft/class_1553;)V	<init>	<init>
-		p	2		text
+		p	1	string	name
+		p	2		textProvider
+		p	3	pm	statProvider
+	f	Lnet/minecraft/class_1287;	field_5592	textProvider
+	f	Ljava/lang/String;	field_5596	statName
 	m	()Lnet/minecraft/class_1548;	method_5331	addStat
+	f	Lnet/minecraft/class_1553;	field_5593	statProvider
+	m	(Ljava/lang/String;Lnet/minecraft/class_1287;)V	<init>	<init>
+		p	2	fj	provider
 c	net/minecraft/class_1426	net/minecraft/block/behavior/TntExplosionDispenseBehavior
 c	net/minecraft/class_1789	net/minecraft/entity/AbstractPlayerEntity
+c	net/minecraft/class_1546	net/minecraft/stat/InteractionStat
+	f	Lnet/minecraft/class_84;	field_5585	statItem
+	m	()Lnet/minecraft/class_84;	method_5317	getStatItem
+	m	(Ljava/lang/String;Lnet/minecraft/class_1287;Lnet/minecraft/class_84;)V	<init>	<init>
+		p	2	fj	provider
+		p	1	string	name
+		p	3	adb	statItem
 c	net/minecraft/class_1425	net/minecraft/block/behavior/SheepDyeDispenseBehavior
 c	net/minecraft/class_1304	net/minecraft/util/AllotedMemoryRetriever
+c	net/minecraft/class_1545	net/minecraft/stat/NormalStat
 c	net/minecraft/class_1424	net/minecraft/block/behavior/FlintAndSteelDispenseBehavior
 c	net/minecraft/class_1429	net/minecraft/block/behavior/BottleOEnchantingDispenseBehavior
 c	net/minecraft/class_1428	net/minecraft/block/behavior/SnowballDispenseBehavior
@@ -301,20 +317,26 @@ c	net/minecraft/class_1622	net/minecraft/entity/XpOrbEntity
 c	net/minecraft/class_1743	net/minecraft/entity/AbstractWeatherEntity
 c	net/minecraft/class_291	net/minecraft/block/FurnaceBlock
 c	net/minecraft/class_1629	net/minecraft/util/EntityTags
-	m	()Ljava/lang/Class;	method_5956	getSuperClass
-	f	Ljava/lang/Class;	field_6021	superClass
+	m	()Ljava/lang/Class;	method_5956	getEntityClass
 	f	Lnet/minecraft/class_1629;	field_6019	AMBIENT
+	f	Z	field_6025	breedable
 	m	()I	method_5957	getWeight
+	f	Z	field_6024	peaceful
 	m	()Lnet/minecraft/class_584;	method_5958	getSubstance
+	f	I	field_6022	weight
+	m	()Z	method_5960	isBreedable
+	f	Lnet/minecraft/class_1629;	field_6018	PASSIVE
+	f	Lnet/minecraft/class_1629;	field_6017	HOSTILE
+	f	Ljava/lang/Class;	field_6021	entityClass
+	m	()Z	method_5959	isPeaceful
 	f	Lnet/minecraft/class_1629;	field_6020	AQUATIC
 	m	(Ljava/lang/String;ILjava/lang/Class;ILnet/minecraft/class_584;ZZ)V	<init>	<init>
+		p	7	boolean7	breedable
+		p	6	boolean6	peaceful
 		p	5		substance
 		p	4		weight
-		p	3		superClass
-	f	I	field_6022	weight
-	f	Lnet/minecraft/class_1629;	field_6018	PASSIVE
+		p	3		entityClass
 	f	Lnet/minecraft/class_584;	field_6023	substance
-	f	Lnet/minecraft/class_1629;	field_6017	HOSTILE
 c	net/minecraft/class_290	net/minecraft/block/FlowerPotBlock
 c	net/minecraft/class_1628	net/minecraft/entity/AbstractNonPlayerLivingEntity
 	m	(Lnet/minecraft/class_1789;)Z	method_5914	method_5914
@@ -412,6 +434,11 @@ c	net/minecraft/class_1714	net/minecraft/entity/AmbientMobEntity
 c	net/minecraft/class_1719	net/minecraft/entity/HorseEntity
 c	net/minecraft/class_1718	net/minecraft/entity/CowEntity
 c	net/minecraft/client/ClientBrandRetriever	net/minecraft/client/ClientBrandRetriever
+c	net/minecraft/class_195	net/minecraft/class_195
+	m	(Lnet/minecraft/class_183;II)Lnet/minecraft/class_175;	method_706	method_706
+		p	0	ahb	world
+	m	(Lnet/minecraft/class_1479;ZZZ)I	method_708	method_708
+		p	1	mt	world
 c	net/minecraft/class_1610	net/minecraft/entity/AbstractEntity
 	m	(Lnet/minecraft/class_1789;)Z	method_5744	method_5744
 		p	1		player
@@ -711,6 +738,10 @@ c	net/minecraft/class_1008	net/minecraft/client/entity/GhastRenderer
 	f	Lnet/minecraft/class_1093;	field_3902	GHAST
 	f	Lnet/minecraft/class_1093;	field_3903	GHAST_SHOOTING
 c	net/minecraft/class_1007	net/minecraft/client/entity/FishingParticleRenderer
+c	net/minecraft/class_1248	net/minecraft/class_1248
+	m	(Ljava/io/DataInput;ILnet/minecraft/class_1242;)V	method_4039	method_4039
+		p	2	integer	depth
+		p	1	dataInput	input
 c	net/minecraft/class_1006	net/minecraft/client/entity/FireballRenderer
 c	net/minecraft/class_1369	net/minecraft/server/ServerNetworkHandlerProvider
 c	net/minecraft/class_705	net/minecraft/client/gui/Gui
@@ -805,7 +836,8 @@ c	net/minecraft/class_1215	net/minecraft/block/behavior/DispenserBehaviorProvide
 	f	Lnet/minecraft/class_1215;	field_4559	INSTANCE
 c	net/minecraft/class_1219	net/minecraft/util/IdentityMap
 c	net/minecraft/class_1590	net/minecraft/client/util/IconRegistryProvider
-c	net/minecraft/class_1232	net/minecraft/util/nbt/CompoundNamedBinaryTag
+c	net/minecraft/class_1232	net/minecraft/util/nbt/CompoundNbt
+	f	Lorg/apache/logging/log4j/Logger;	field_4592	LOGGER
 c	net/minecraft/class_1594	net/minecraft/util/SnooperProvider
 	m	(Lnet/minecraft/class_1592;)V	method_5560	method_5560
 		p	1		settings
@@ -876,33 +908,37 @@ c	net/minecraft/class_1200	net/minecraft/util/MinecraftVersionRetriever
 c	net/minecraft/class_1436	net/minecraft/block/behavior/BoatDispenseBehavior
 c	net/minecraft/class_1799	net/minecraft/entity/SmallFireballEntity
 c	net/minecraft/class_1435	net/minecraft/util/BlockTypeRetriever
-c	net/minecraft/class_1556	net/minecraft/util/Stats
-	m	()V	method_5345	registerStats
-	f	Lnet/minecraft/class_1548;	field_5630	TIMES_DROPPED
+c	net/minecraft/class_1556	net/minecraft/stat/Stats
 	f	Lnet/minecraft/class_1548;	field_5633	DEATHS
-	f	Lnet/minecraft/class_1548;	field_5622	DISTANCE_CLIMBED
-	f	Lnet/minecraft/class_1548;	field_5634	MOBS_KILLED
 	f	Lnet/minecraft/class_1548;	field_5623	DISTANCE_FLOWN
 	f	Lnet/minecraft/class_1548;	field_5631	DAMAGE_DEALT
-	f	Lnet/minecraft/class_1548;	field_5620	DISTANCE_SWUM
-	f	Lnet/minecraft/class_1548;	field_5632	DAMAGE_TAKEN
 	f	Lnet/minecraft/class_1548;	field_5621	DISTANCE_FALLEN
 	f	Lnet/minecraft/class_1548;	field_5637	FISH_CAUGHT
-	f	Lnet/minecraft/class_1548;	field_5626	DISTANCE_BY_BOAT
 	f	Lnet/minecraft/class_1548;	field_5627	DISTANCE_BY_PIG
 	f	Lnet/minecraft/class_1548;	field_5635	ANIMALS_BRED
+	f	Lnet/minecraft/class_1548;	field_5625	DISTANCE_BY_MINECART
+	f	Lnet/minecraft/class_1548;	field_5628	DISTANCE_BY_HORSE
+	f	Lnet/minecraft/class_1548;	field_5606	JUNK_CAUGHT
+	f	Lnet/minecraft/class_1548;	field_5618	MINUTES_PLAYED
+	m	()V	method_5345	registerStats
+	f	Lnet/minecraft/class_1548;	field_5630	TIMES_DROPPED
+	f	Lnet/minecraft/class_1548;	field_5622	DISTANCE_CLIMBED
+	f	Lnet/minecraft/class_1548;	field_5634	MOBS_KILLED
+	f	Lnet/minecraft/class_1548;	field_5620	DISTANCE_SWUM
+	f	Lnet/minecraft/class_1548;	field_5632	DAMAGE_TAKEN
+	f	Lnet/minecraft/class_1548;	field_5626	DISTANCE_BY_BOAT
 	f	Lnet/minecraft/class_1548;	field_5624	DISTANCE_DIVEN
 	f	Lnet/minecraft/class_1548;	field_5636	PLAYERS_KILLED
-	f	Lnet/minecraft/class_1548;	field_5625	DISTANCE_BY_MINECART
 	f	Lnet/minecraft/class_1548;	field_5619	DISTANCE_WALKED
-	f	Lnet/minecraft/class_1548;	field_5628	DISTANCE_BY_HORSE
 	f	Lnet/minecraft/class_1548;	field_5617	GAMES_LEFT
-	f	Lnet/minecraft/class_1548;	field_5606	JUNK_CAUGHT
 	f	Lnet/minecraft/class_1548;	field_5629	TIMES_JUMPED
-	f	Lnet/minecraft/class_1548;	field_5618	MINUTES_PLAYED
 	f	Lnet/minecraft/class_1548;	field_5607	TREASURE_CAIGHT
 	m	([Lnet/minecraft/class_1548;)V	method_5348	method_5348
 		p	0		stats
+	m	([Lnet/minecraft/class_1548;Lnet/minecraft/class_242;Lnet/minecraft/class_242;)V	method_5349	method_5349
+		p	1	aji2	block1
+		p	0	arr	statsArray
+		p	2	aji3	block2
 c	net/minecraft/class_1573	net/minecraft/math/BetterMath
 	m	(I)I	method_5448	absI
 		p	0		number
@@ -966,8 +1002,13 @@ c	net/minecraft/class_888	net/minecraft/client/ClientNetworkHandler
 	f	Lnet/minecraft/class_671;	field_3268	instance
 c	net/minecraft/class_99	net/minecraft/util/Rarity
 	f	Lnet/minecraft/class_99;	field_402	EPIC
+	m	(Ljava/lang/String;ILnet/minecraft/class_1;Ljava/lang/String;)V	<init>	<init>
+		p	4	string4	name
+		p	3	a	formatting
 	f	Lnet/minecraft/class_99;	field_400	UNCOMMON
 	f	Lnet/minecraft/class_99;	field_401	RARE
+	f	Ljava/lang/String;	field_404	name
+	f	Lnet/minecraft/class_1;	field_403	formatting
 	f	Lnet/minecraft/class_99;	field_399	COMMON
 c	net/minecraft/class_98	net/minecraft/item/PotionItem
 c	net/minecraft/class_93	net/minecraft/block/behavior/MinecraftDispenseBehavior

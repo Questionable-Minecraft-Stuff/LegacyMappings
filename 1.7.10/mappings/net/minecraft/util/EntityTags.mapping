@@ -3,13 +3,19 @@ CLASS net/minecraft/class_1629 net/minecraft/util/EntityTags
 	FIELD field_6018 PASSIVE Lnet/minecraft/class_1629;
 	FIELD field_6019 AMBIENT Lnet/minecraft/class_1629;
 	FIELD field_6020 AQUATIC Lnet/minecraft/class_1629;
-	FIELD field_6021 superClass Ljava/lang/Class;
+	FIELD field_6021 entityClass Ljava/lang/Class;
 	FIELD field_6022 weight I
 	FIELD field_6023 substance Lnet/minecraft/class_584;
+	FIELD field_6024 peaceful Z
+	FIELD field_6025 breedable Z
 	METHOD <init> (Ljava/lang/String;ILjava/lang/Class;ILnet/minecraft/class_584;ZZ)V
-		ARG 3 superClass
+		ARG 3 entityClass
 		ARG 4 weight
 		ARG 5 substance
-	METHOD method_5956 getSuperClass ()Ljava/lang/Class;
+		ARG 6 peaceful
+		ARG 7 breedable
+	METHOD method_5956 getEntityClass ()Ljava/lang/Class;
 	METHOD method_5957 getWeight ()I
 	METHOD method_5958 getSubstance ()Lnet/minecraft/class_584;
+	METHOD method_5959 isPeaceful ()Z
+	METHOD method_5960 isBreedable ()Z
