@@ -1,14 +1,51 @@
 CLASS net/minecraft/class_86 net/minecraft/item/ItemStack
+	FIELD field_210 count I
 	FIELD field_212 nbt Lnet/minecraft/class_1232;
 	FIELD field_213 item Lnet/minecraft/class_84;
+	FIELD field_214 durability I
+	FIELD field_215 itemFrame Lnet/minecraft/class_1625;
+	METHOD <init> (Lnet/minecraft/class_242;)V
+		ARG 1 block
+	METHOD <init> (Lnet/minecraft/class_242;I)V
+		ARG 1 block
+		ARG 2 count
+	METHOD <init> (Lnet/minecraft/class_242;II)V
+		ARG 1 block
+		ARG 2 count
+		ARG 3 durability
 	METHOD <init> (Lnet/minecraft/class_84;)V
 		ARG 1 item
 	METHOD <init> (Lnet/minecraft/class_84;I)V
 		ARG 1 item
+		ARG 2 count
 	METHOD <init> (Lnet/minecraft/class_84;II)V
 		ARG 1 item
+		ARG 2 count
+		ARG 3 durability
+	METHOD method_217 (ILnet/minecraft/class_1627;)V
+		ARG 2 entity
+	METHOD method_223 (Lnet/minecraft/class_183;Lnet/minecraft/class_1610;IZ)V
+		ARG 1 world
 	METHOD method_227 (Lnet/minecraft/class_1232;)Lnet/minecraft/class_86;
 		ARG 0 nbt
+	METHOD method_230 (Lnet/minecraft/class_1627;Lnet/minecraft/class_1789;)V
+		ARG 1 entity
+		ARG 2 player
+	METHOD method_233 (Lnet/minecraft/class_1789;Z)Ljava/util/List;
+		ARG 1 player
 	METHOD method_234 getItem ()Lnet/minecraft/class_84;
+	METHOD method_235 setDurability (I)V
+		ARG 1 durability
+	METHOD method_240 (Lnet/minecraft/class_242;)Z
+		ARG 1 block
+	METHOD method_241 (Lnet/minecraft/class_1232;)Lnet/minecraft/class_1232;
+		ARG 1 nbt
 	METHOD method_244 (Lnet/minecraft/class_1232;)V
 		ARG 1 nbt
+	METHOD method_248 setNbt (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt
+	METHOD method_255 getDurability ()I
+	METHOD method_256 getItemDurability ()I
+	METHOD method_260 hasNbt ()Z
+	METHOD method_261 getNbt ()Lnet/minecraft/class_1232;
+	METHOD method_269 isEnchanted ()Z

@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_705 net/minecraft/client/gui/Gui
+	FIELD field_2389 DIRT_BACKGROUND Lnet/minecraft/class_1093;
+	FIELD field_2390 STATS_ICON Lnet/minecraft/class_1093;
+	FIELD field_2391 ALL_ICONS Lnet/minecraft/class_1093;

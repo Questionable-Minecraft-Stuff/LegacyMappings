@@ -3,6 +3,7 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 	FIELD field_186 durability I
 	FIELD field_188 effect Ljava/lang/String;
 	FIELD field_189 REGISTRY Lnet/minecraft/class_1222;
+	FIELD field_191 RAND Ljava/util/Random;
 	FIELD field_192 stackSize I
 	FIELD field_193 handheld Z
 	FIELD field_194 hasTypes Z
@@ -10,23 +11,94 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 	FIELD field_196 name Ljava/lang/String;
 	FIELD field_197 rawName Ljava/lang/String;
 	METHOD method_143 setItemGroup (Lnet/minecraft/class_48;)Lnet/minecraft/class_84;
+	METHOD method_145 (Lnet/minecraft/class_86;)Ljava/lang/String;
+		ARG 1 stack
+	METHOD method_147 (Lnet/minecraft/class_86;Lnet/minecraft/class_86;)Z
+		ARG 1 stack1
+		ARG 2 stack3
+	METHOD method_148 (Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_242;IIILnet/minecraft/class_1627;)Z
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 block
+		ARG 7 entity
+	METHOD method_149 (Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1610;IZ)V
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 entity
 	METHOD method_150 (Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;
 		ARG 1 stack
 		ARG 2 world
 		ARG 3 player
+	METHOD method_151 (Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;I)V
+		ARG 2 world
+		ARG 3 player
+	METHOD method_152 (Lnet/minecraft/class_86;Lnet/minecraft/class_242;)F
+		ARG 1 stack
+	METHOD method_153 (Lnet/minecraft/class_86;Lnet/minecraft/class_1627;Lnet/minecraft/class_1627;)Z
+		ARG 1 stack
+		ARG 2 entity1
+		ARG 3 entity2
+	METHOD method_154 (Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Lnet/minecraft/class_183;IIIIFFF)Z
+		ARG 1 stack
+		ARG 2 player
+		ARG 3 world
+	METHOD method_155 (Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Ljava/util/List;Z)V
+		ARG 1 stack
+		ARG 2 player
+	METHOD method_156 (Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Lnet/minecraft/class_1627;)Z
+		ARG 1 stack
+		ARG 2 player
+		ARG 3 entity
+	METHOD method_157 (Lnet/minecraft/class_183;Lnet/minecraft/class_1789;Z)Lnet/minecraft/class_650;
+		ARG 2 player
 	METHOD method_158 getAsItem (Lnet/minecraft/class_242;)Lnet/minecraft/class_84;
 		ARG 0 block
 	METHOD method_160 setHasTypes (Z)Lnet/minecraft/class_84;
+		ARG 1 hasTypes
+	METHOD method_162 getIdByItem (Lnet/minecraft/class_84;)I
+		ARG 0 item
+	METHOD method_163 (Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 player
+	METHOD method_164 (Lnet/minecraft/class_242;)Z
+		ARG 1 block
+	METHOD method_165 getIconProvider (I)Lnet/minecraft/class_1589;
 	METHOD method_167 setItemAfterUse (Lnet/minecraft/class_84;)Lnet/minecraft/class_84;
 	METHOD method_168 setRawName (Ljava/lang/String;)Lnet/minecraft/class_84;
 		ARG 1 name
 	METHOD method_170 getAsItem (I)Lnet/minecraft/class_84;
 		ARG 0 id
+	METHOD method_171 getHandMovementOnUse (Lnet/minecraft/class_86;)Lnet/minecraft/class_116;
+		ARG 1 stack
+	METHOD method_172 (Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)V
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 entity
 	METHOD method_174 setStackSize (I)Lnet/minecraft/class_84;
+	METHOD method_175 (Lnet/minecraft/class_86;)Z
+		ARG 1 stack
 	METHOD method_176 setEffect (Ljava/lang/String;)Lnet/minecraft/class_84;
 		ARG 1 effect
+	METHOD method_178 isHandheld ()Z
+	METHOD method_179 setDurability (I)Lnet/minecraft/class_84;
+		ARG 1 durability
+	METHOD method_180 getRarity (Lnet/minecraft/class_86;)Lnet/minecraft/class_99;
+		ARG 1 stack
 	METHOD method_181 setName (Ljava/lang/String;)Lnet/minecraft/class_84;
 		ARG 1 name
+	METHOD method_184 getEffect (Lnet/minecraft/class_86;)Ljava/lang/String;
+		ARG 1 stack
+	METHOD method_185 (Lnet/minecraft/class_86;)Lnet/minecraft/class_1589;
+		ARG 1 stack
+	METHOD method_186 createMultimap ()Lcom/google/common/collect/Multimap;
 	METHOD method_188 registerItems ()V
+	METHOD method_189 (Lnet/minecraft/class_86;)Z
+		ARG 1 stack
+	METHOD method_191 hasEffect (Lnet/minecraft/class_86;)Z
+		ARG 1 stack
+	METHOD method_193 getItemStackAsString (Lnet/minecraft/class_86;)Ljava/lang/String;
+		ARG 1 stack
+	METHOD method_195 durability ()I
 	METHOD method_196 hasDurability ()Z
 	METHOD method_197 setHandheld ()Lnet/minecraft/class_84;
