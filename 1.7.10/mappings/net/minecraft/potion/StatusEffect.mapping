@@ -1,6 +1,7 @@
-CLASS net/minecraft/class_1605 net/minecraft/potion/StatusEffects
+CLASS net/minecraft/class_1605 net/minecraft/potion/StatusEffect
 	FIELD field_5782 id I
 	FIELD field_5790 EFFECTS [Lnet/minecraft/class_1605;
+	FIELD field_5791 UNKNOWN Lnet/minecraft/class_1605;
 	FIELD field_5792 SPEED Lnet/minecraft/class_1605;
 	FIELD field_5793 SLOWNESS Lnet/minecraft/class_1605;
 	FIELD field_5794 HASTE Lnet/minecraft/class_1605;

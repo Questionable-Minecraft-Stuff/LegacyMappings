@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_140 net/minecraft/recipe/SwordRecipes
+	FIELD field_465 pattern [[Ljava/lang/String;
+	FIELD field_466 items [[Ljava/lang/Object;
+	METHOD method_331 register (Lnet/minecraft/class_133;)V
+		ARG 1 recipes
