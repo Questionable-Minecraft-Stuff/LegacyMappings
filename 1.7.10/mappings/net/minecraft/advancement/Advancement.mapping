@@ -27,3 +27,6 @@ CLASS net/minecraft/class_1542 net/minecraft/advancement/Advancement
 		ARG 4 row
 		ARG 5 logo
 		ARG 6 parent
+	METHOD method_5310 setStringFormatProvider (Lnet/minecraft/class_1544;)Lnet/minecraft/class_1542;
+		ARG 1 provider
+	METHOD method_5314 isChallenge ()Z
