@@ -7,14 +7,17 @@ assignees: ''
 
 ---
 
-**Type**
+**Type**  
 Class / Field / Method / Parameter
 
-**Type Descriptor**
-State the affected element's type descriptor
+**Describe where the element is**  
+State the affected element's type descriptor or describe where it is
 
-**Expected name**
+**Description of the element**  
+Describe what the element does
+
+**Expected name**  
 The expected name
 
-**Do you agree to the note given in CONTRIBUTING.md**
+**Do you agree to the note given in CONTRIBUTING.md**  
 No / Yes
