@@ -185,7 +185,7 @@ c	net/minecraft/class_1744	net/minecraft/entity/LightningEntity
 		p	1	ahb	world
 c	net/minecraft/class_1623	net/minecraft/entity/AbstractFlyingEntity
 c	net/minecraft/class_9	net/minecraft/inventory/EnchantingTableInventory
-c	net/minecraft/class_1743	net/minecraft/AbstractWeatherEntity
+c	net/minecraft/class_1743	net/minecraft/entity/AbstractWeatherEntity
 c	net/minecraft/class_1622	net/minecraft/entity/XpOrbEntity
 c	net/minecraft/class_1629	net/minecraft/util/EntityTags
 	f	Lnet/minecraft/class_1629;	field_6019	AMBIENT
@@ -1151,7 +1151,7 @@ c	net/minecraft/class_878	net/minecraft/client/entity/DogModel
 c	net/minecraft/class_999	net/minecraft/client/entity/EndCrystalRenderer
 	f	Lnet/minecraft/class_1093;	field_3863	TEXTURE
 c	net/minecraft/class_757	net/minecraft/client/gui/Screen
-c	net/minecraft/class_998	net/minecraft/GenericEntityRenderer
+c	net/minecraft/class_998	net/minecraft/client/entity/GenericEntityRenderer
 c	net/minecraft/class_513	net/minecraft/world/structure/TempleStructureFeature
 c	net/minecraft/class_997	net/minecraft/client/entity/CreeperRenderer
 	f	Lnet/minecraft/class_1093;	field_3861	CREEPER
