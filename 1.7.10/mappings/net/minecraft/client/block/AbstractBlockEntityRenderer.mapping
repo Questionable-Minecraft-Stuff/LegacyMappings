@@ -1,2 +1,9 @@
 CLASS net/minecraft/class_976 net/minecraft/client/block/AbstractBlockEntityRenderer
+	METHOD method_3094 (Lnet/minecraft/class_183;)V
+		ARG 1 world
 	METHOD method_3095 render (Lnet/minecraft/class_383;DDDF)V
+		ARG 2 posX
+		ARG 4 posY
+		ARG 6 posZ
+	METHOD method_3097 (Lnet/minecraft/class_1093;)V
+		ARG 1 identifier

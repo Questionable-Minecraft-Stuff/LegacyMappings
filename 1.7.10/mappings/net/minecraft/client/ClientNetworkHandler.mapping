@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_888 net/minecraft/client/ClientNetworkHandler
+	FIELD field_3268 instance Lnet/minecraft/class_671;
+	FIELD field_3272 screen Lnet/minecraft/class_757;
+	METHOD <init> (Lnet/minecraft/class_671;Lnet/minecraft/class_757;Lnet/minecraft/class_1260;)V
+		ARG 1 instance
+		ARG 2 screen

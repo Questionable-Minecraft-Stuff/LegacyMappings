@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_975 net/minecraft/client/block/BlockEntityMapHolder
+	FIELD field_3808 blockEntityMap Ljava/util/Map;

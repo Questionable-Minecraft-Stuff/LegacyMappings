@@ -6,11 +6,24 @@ CLASS net/minecraft/class_652 net/minecraft/math/Vec3d
 		ARG 1 one
 		ARG 3 two
 		ARG 5 three
+	METHOD method_1919 getVecBySqrtAverage ()Lnet/minecraft/class_652;
 	METHOD method_1920 get (DDD)Lnet/minecraft/class_652;
 		ARG 0 one
 		ARG 2 two
 		ARG 4 three
-	METHOD method_1924 getVec3d (DDD)Lnet/minecraft/class_652;
+	METHOD method_1922 subtract (Lnet/minecraft/class_652;)Lnet/minecraft/class_652;
+		ARG 1 subtrahend
+	METHOD method_1923 getSqrtAverage ()D
+	METHOD method_1924 setVec3dPos (DDD)Lnet/minecraft/class_652;
 		ARG 1 one
 		ARG 3 two
 		ARG 5 three
+	METHOD method_1926 getMultipliedSum (Lnet/minecraft/class_652;)D
+		ARG 1 other
+	METHOD method_1928 addToEach (DDD)Lnet/minecraft/class_652;
+	METHOD method_1930 getMultipliedDifference (Lnet/minecraft/class_652;)Lnet/minecraft/class_652;
+	METHOD method_1932 getDifferenceMultiplied (DDD)D
+	METHOD method_1933 getSqrtOfDifferenceOfTwoVec (Lnet/minecraft/class_652;)D
+		ARG 1 other
+	METHOD method_1935 getDifferenceOfTwoVec (Lnet/minecraft/class_652;)D
+		ARG 1 other

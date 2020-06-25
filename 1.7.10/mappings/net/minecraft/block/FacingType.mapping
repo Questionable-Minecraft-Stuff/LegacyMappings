@@ -22,4 +22,3 @@ CLASS net/minecraft/class_1217 net/minecraft/block/FacingType
 	METHOD method_3934 getOffsetX ()I
 	METHOD method_3935 getOffsetY ()I
 	METHOD method_3936 getOffsetZ ()I
-	METHOD values ()[Lnet/minecraft/class_1217;

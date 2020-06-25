@@ -1,3 +1,16 @@
 CLASS net/minecraft/class_148 net/minecraft/item/enchantment/AbstractEnchantment
+	FIELD field_472 LURE Lnet/minecraft/class_148;
 	FIELD field_474 tag Lnet/minecraft/class_149;
 	FIELD field_477 enchantments [Lnet/minecraft/class_148;
+	FIELD field_484 WATER_BREATHING Lnet/minecraft/class_148;
+	FIELD field_485 AQUA_AFFINITY Lnet/minecraft/class_148;
+	FIELD field_486 THORNS Lnet/minecraft/class_148;
+	FIELD field_490 KNOCKBACK Lnet/minecraft/class_148;
+	FIELD field_491 FIRE_ASPECT Lnet/minecraft/class_148;
+	FIELD field_493 EFFICIENCY Lnet/minecraft/class_148;
+	FIELD field_494 SILK_TOUCH Lnet/minecraft/class_148;
+	FIELD field_495 UNBREAKING Lnet/minecraft/class_148;
+	FIELD field_497 POWER Lnet/minecraft/class_148;
+	FIELD field_498 PUNCH Lnet/minecraft/class_148;
+	FIELD field_499 FLAME Lnet/minecraft/class_148;
+	FIELD field_500 INFINITY Lnet/minecraft/class_148;

@@ -1,1 +1,32 @@
 CLASS net/minecraft/class_952 net/minecraft/client/block/ReallyLongBlockRenderer
+	FIELD field_3496 provider Lnet/minecraft/class_192;
+	FIELD field_3523 betterGrass Z
+	FIELD field_3538 instance Lnet/minecraft/class_671;
+	METHOD method_2862 (Lnet/minecraft/class_235;III)Z
+		ARG 1 anvil
+	METHOD method_2863 (Lnet/minecraft/class_235;IIII)Z
+		ARG 1 anvil
+	METHOD method_2864 (Lnet/minecraft/class_235;IIIIFFFFZZI)F
+		ARG 1 anvil
+	METHOD method_2865 (Lnet/minecraft/class_235;IIIIZ)Z
+		ARG 1 anvil
+	METHOD method_2882 (Lnet/minecraft/class_250;III)Z
+		ARG 1 brewingStand
+	METHOD method_2883 (Lnet/minecraft/class_256;III)Z
+		ARG 1 cauldron
+	METHOD method_2885 (Lnet/minecraft/class_263;III)Z
+		ARG 1 comparator
+	METHOD method_2886 (Lnet/minecraft/class_269;III)Z
+		ARG 1 block
+	METHOD method_2887 (Lnet/minecraft/class_269;IIII)V
+		ARG 1 block
+	METHOD method_2894 (Lnet/minecraft/class_290;III)Z
+		ARG 1 flowerPot
+	METHOD method_2897 (Lnet/minecraft/class_344;III)Z
+		ARG 1 repeater
+	METHOD method_2912 (Lnet/minecraft/class_242;IIIZ)Z
+		ARG 1 block
+	METHOD method_2918 (Lnet/minecraft/class_242;III)Z
+		ARG 1 block
+	METHOD method_2921 (Lnet/minecraft/class_242;III)V
+		ARG 1 block

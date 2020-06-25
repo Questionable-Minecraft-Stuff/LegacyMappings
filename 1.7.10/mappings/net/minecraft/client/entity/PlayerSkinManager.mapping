@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1106 net/minecraft/client/entity/PlayerSkinManager
+	FIELD field_4210 STEVE Lnet/minecraft/class_1093;

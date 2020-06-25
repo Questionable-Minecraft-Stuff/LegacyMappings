@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1003 net/minecraft/client/AbstractRenderer
-	FIELD field_3892 SHADOWN Lnet/minecraft/class_1093;
+	FIELD field_3892 SHADOW Lnet/minecraft/class_1093;
 	FIELD field_3893 registry Lnet/minecraft/class_1002;
 	FIELD field_3894 rendererInstance Lnet/minecraft/class_952;
 	METHOD method_3165 (Lnet/minecraft/class_649;)V

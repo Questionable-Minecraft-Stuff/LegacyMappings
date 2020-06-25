@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1494 net/minecraft/server/ServerNetworkHandler
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_1260;Lnet/minecraft/class_1482;)V
+		ARG 1 server
+		ARG 3 player

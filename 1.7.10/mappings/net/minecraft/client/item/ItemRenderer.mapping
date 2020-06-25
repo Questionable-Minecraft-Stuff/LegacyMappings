@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_964 net/minecraft/client/item/ItemRenderer
+	FIELD field_3665 GLINT Lnet/minecraft/class_1093;
+	FIELD field_3666 MAP_BACKGROUND Lnet/minecraft/class_1093;
+	FIELD field_3667 UNDERWATER Lnet/minecraft/class_1093;
