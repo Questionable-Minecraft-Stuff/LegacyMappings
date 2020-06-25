@@ -157,6 +157,25 @@ c	net/minecraft/class_280	net/minecraft/block/EndPortalFrameBlock
 c	net/minecraft/class_1739	net/minecraft/entity/WitherEntity
 c	net/minecraft/class_1738	net/minecraft/entity/EnderDragonEntity
 	f	[Lnet/minecraft/class_1735;	field_6503	parts
+c	net/minecraft/class_1615	net/minecraft/entity/Entities
+	f	Lorg/apache/logging/log4j/Logger;	field_5909	LOGGER
+	m	(Ljava/lang/Class;Ljava/lang/String;III)V	method_5787	registerEntity
+		p	1	string	name
+		p	0	class1	entityClass
+	m	(I)Ljava/lang/Class;	method_5783	getClassById
+		p	0	integer	id
+	m	(Ljava/lang/Class;Ljava/lang/String;I)V	method_5786	registerEntity
+		p	0	class1	entityClass
+		p	1	string	name
+	m	(ILnet/minecraft/class_183;)Lnet/minecraft/class_1610;	method_5784	method_5784
+		p	0	integer	id
+		p	1	ahb	world
+	f	Ljava/util/Map;	field_5912	ENTITY_CLASSES
+	m	(Ljava/lang/String;Lnet/minecraft/class_183;)Lnet/minecraft/class_1610;	method_5788	method_5788
+		p	1	ahb	world
+	m	(Lnet/minecraft/class_1232;Lnet/minecraft/class_183;)Lnet/minecraft/class_1610;	method_5785	method_5785
+		p	0	dh	nbt
+		p	1	ahb	world
 c	net/minecraft/class_1736	net/minecraft/entity/EndCrystalEntity
 c	net/minecraft/class_295	net/minecraft/block/GravelBlock
 c	net/minecraft/class_294	net/minecraft/block/GrassBlock
@@ -185,7 +204,7 @@ c	net/minecraft/class_1744	net/minecraft/entity/LightningEntity
 	m	(Lnet/minecraft/class_183;DDD)V	<init>	<init>
 		p	1		world
 c	net/minecraft/class_1622	net/minecraft/entity/XpOrbEntity
-c	net/minecraft/class_1743	net/minecraft/AbstractWeatherEntity
+c	net/minecraft/class_1743	net/minecraft/entity/AbstractWeatherEntity
 c	net/minecraft/class_291	net/minecraft/block/FurnaceBlock
 c	net/minecraft/class_1629	net/minecraft/util/EntityTags
 	m	()Ljava/lang/Class;	method_5956	getSuperClass
@@ -572,12 +591,14 @@ c	net/minecraft/class_1582	net/minecraft/util/ChestLootTable
 		p	0		random
 	m	(Lnet/minecraft/class_84;IIII)V	<init>	<init>
 		p	1		item
+		p	2	integer2	durability
 	m	(Ljava/util/Random;[Lnet/minecraft/class_1582;Lnet/minecraft/class_1585;I)V	method_5504	method_5504
 		p	2		provider
+	f	Lnet/minecraft/class_86;	field_5699	stack
 	m	(Lnet/minecraft/class_86;III)V	<init>	<init>
 		p	1		stack
 c	net/minecraft/class_1461	net/minecraft/util/BlockDataRetriever
-c	net/minecraft/class_1581	net/minecraft/util/RandomTable
+c	net/minecraft/class_1581	net/minecraft/util/LootTable
 c	net/minecraft/class_1588	net/minecraft/client/FlippedIcon
 c	net/minecraft/class_1225	net/minecraft/util/RegistryProvider
 	m	(Ljava/lang/Object;)Ljava/lang/Object;	method_3953	getByName
@@ -707,6 +728,34 @@ c	net/minecraft/class_1556	net/minecraft/util/Stats
 	m	([Lnet/minecraft/class_1548;)V	method_5348	method_5348
 		p	0		stats
 c	net/minecraft/class_1573	net/minecraft/math/BetterMath
+	m	(I)I	method_5448	absI
+		p	0	integer	number
+	f	[F	field_5681	FLOATS
+	m	(F)I	method_5469	floorF
+		p	0	float1	number
+	m	(F)F	method_5466	sqrtF
+		p	0	float1	number
+	m	(F)F	method_5446	sin
+		p	0	float1	number
+	f	[I	field_5682	INTS
+	m	(D)I	method_5471	absAndFloor
+		p	0	double1	number
+	m	(D)I	method_5460	truncateD
+		p	0	double1	number
+	m	(D)J	method_5468	longFloorD
+		p	0	double1	number
+	m	(F)F	method_5462	cos
+		p	0	float1	number
+	m	(D)F	method_5443	sqrtD
+		p	0	double1	number
+	m	(D)I	method_5474	ceilD
+		p	0	double1	number
+	m	(D)I	method_5465	floorD
+		p	0	double1	number
+	m	(F)I	method_5475	ceilF
+		p	0	float1	number
+	m	(F)F	method_5472	absF
+		p	0	float1	number
 c	net/minecraft/class_1331	net/minecraft/util/JVMFlagsRetriever
 c	net/minecraft/class_1213	net/minecraft/util/RegistryWithKeys
 	f	Ljava/lang/String;	field_4556	name
@@ -793,6 +842,9 @@ c	net/minecraft/class_409	net/minecraft/block/PistonHeadBlock
 c	net/minecraft/class_408	net/minecraft/block/PistonBlock
 c	net/minecraft/class_407	net/minecraft/block/entity/EndPortalBlockEntity
 c	net/minecraft/class_649	net/minecraft/math/VoxelShape
+	m	(Lnet/minecraft/class_652;Lnet/minecraft/class_652;)Lnet/minecraft/class_650;	method_1905	method_1905
+		p	1	azw1	vec1
+		p	2	azw2	vec2
 	m	(Lnet/minecraft/class_649;D)D	method_1903	method_1903
 		p	1		shape
 	m	(Lnet/minecraft/class_649;D)D	method_1913	method_1913
@@ -1526,10 +1578,10 @@ c	net/minecraft/class_120	net/minecraft/item/SignedBookNQuillItem
 c	net/minecraft/class_1810	net/minecraft/inventory/AnvilInventory
 c	net/minecraft/class_1815	net/minecraft/inventory/BrewingStandInventory
 c	net/minecraft/class_1813	net/minecraft/inventory/BeaconInventory
+c	net/minecraft/class_259	net/minecraft/block/JungleCocoaBlock
 c	net/minecraft/class_138	net/minecraft/recipe/AllShapedRecipes
 	m	(Lnet/minecraft/class_133;)V	method_329	register
-		p	1	afe	recipes
-c	net/minecraft/class_259	net/minecraft/block/JungleCocoaBlock
+		p	1		recipes
 c	net/minecraft/class_24	net/minecraft/recipe/Result
 c	net/minecraft/class_258	net/minecraft/block/ClayBlock
 c	net/minecraft/class_379	net/minecraft/block/WoodenButtonBlock
@@ -1559,13 +1611,13 @@ c	net/minecraft/class_375	net/minecraft/block/LilyPadBlock
 c	net/minecraft/class_254	net/minecraft/block/CakeBlock
 c	net/minecraft/class_133	net/minecraft/recipe/Recipes
 	m	(Lnet/minecraft/class_86;[Ljava/lang/Object;)V	method_321	registerShapelessRecipe
-		p	1	add	stack
-		p	2	arr	args
+		p	1		stack
+		p	2		args
 	f	Ljava/util/List;	field_454	specialRecipes
 	m	()Ljava/util/List;	method_320	getSpecialRecipesList
 	m	(Lnet/minecraft/class_86;[Ljava/lang/Object;)Lnet/minecraft/class_136;	method_319	registerShapedRecipe
-		p	1	add	stack
-		p	2	arr	args
+		p	1		stack
+		p	2		args
 	f	Lnet/minecraft/class_133;	field_453	INSTANCE
 	m	()Lnet/minecraft/class_133;	method_317	getInstance
 c	net/minecraft/class_374	net/minecraft/block/CobblestoneWallBlock
@@ -1635,14 +1687,14 @@ c	net/minecraft/class_383	net/minecraft/block/entity/BlockEntity
 	f	Lorg/apache/logging/log4j/Logger;	field_1288	LOGGER
 c	net/minecraft/class_262	net/minecraft/block/CommandBlock
 c	net/minecraft/class_141	net/minecraft/item/enchantment/PowerEnchantment
+c	net/minecraft/class_261	net/minecraft/block/WoolBlock
+c	net/minecraft/class_382	net/minecraft/block/entity/BeaconBlockEntity
+	f	[[Lnet/minecraft/class_1605;	field_1279	STATUS_EFFECTS
 c	net/minecraft/class_140	net/minecraft/recipe/SwordRecipes
 	f	[[Ljava/lang/String;	field_465	pattern
 	f	[[Ljava/lang/Object;	field_466	items
 	m	(Lnet/minecraft/class_133;)V	method_331	register
-		p	1	afe	recipes
-c	net/minecraft/class_261	net/minecraft/block/WoolBlock
-c	net/minecraft/class_382	net/minecraft/block/entity/BeaconBlockEntity
-	f	[[Lnet/minecraft/class_1605;	field_1279	STATUS_EFFECTS
+		p	1		recipes
 c	net/minecraft/class_381	net/minecraft/block/CarpetBlock
 c	net/minecraft/class_380	net/minecraft/block/WoodenSlabBlock
 c	net/minecraft/class_266	net/minecraft/block/DaylightDetectorBlock

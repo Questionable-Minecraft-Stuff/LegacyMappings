@@ -1,1 +1,29 @@
 CLASS net/minecraft/class_1573 net/minecraft/math/BetterMath
+	FIELD field_5681 FLOATS [F
+	FIELD field_5682 INTS [I
+	METHOD method_5443 sqrtD (D)F
+		ARG 0 number
+	METHOD method_5446 sin (F)F
+		ARG 0 number
+	METHOD method_5448 absI (I)I
+		ARG 0 number
+	METHOD method_5460 truncateD (D)I
+		ARG 0 number
+	METHOD method_5462 cos (F)F
+		ARG 0 number
+	METHOD method_5465 floorD (D)I
+		ARG 0 number
+	METHOD method_5466 sqrtF (F)F
+		ARG 0 number
+	METHOD method_5468 longFloorD (D)J
+		ARG 0 number
+	METHOD method_5469 floorF (F)I
+		ARG 0 number
+	METHOD method_5471 absAndFloor (D)I
+		ARG 0 number
+	METHOD method_5472 absF (F)F
+		ARG 0 number
+	METHOD method_5474 ceilD (D)I
+		ARG 0 number
+	METHOD method_5475 ceilF (F)I
+		ARG 0 number

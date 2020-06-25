@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1615 net/minecraft/entity/Entities
+	FIELD field_5909 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_5912 ENTITY_CLASSES Ljava/util/Map;
+	METHOD method_5783 getClassById (I)Ljava/lang/Class;
+		ARG 0 id
+	METHOD method_5784 (ILnet/minecraft/class_183;)Lnet/minecraft/class_1610;
+		ARG 0 id
+		ARG 1 world
+	METHOD method_5785 (Lnet/minecraft/class_1232;Lnet/minecraft/class_183;)Lnet/minecraft/class_1610;
+		ARG 0 nbt
+		ARG 1 world
+	METHOD method_5786 registerEntity (Ljava/lang/Class;Ljava/lang/String;I)V
+		ARG 0 entityClass
+		ARG 1 name
+	METHOD method_5787 registerEntity (Ljava/lang/Class;Ljava/lang/String;III)V
+		ARG 0 entityClass
+		ARG 1 name
+	METHOD method_5788 (Ljava/lang/String;Lnet/minecraft/class_183;)Lnet/minecraft/class_1610;
+		ARG 1 world

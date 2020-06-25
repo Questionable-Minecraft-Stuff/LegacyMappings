@@ -1,1 +1,12 @@
 CLASS net/minecraft/class_1582 net/minecraft/util/ChestLootTable
+	FIELD field_5699 stack Lnet/minecraft/class_86;
+	METHOD <init> (Lnet/minecraft/class_84;IIII)V
+		ARG 1 item
+		ARG 2 durability
+	METHOD <init> (Lnet/minecraft/class_86;III)V
+		ARG 1 stack
+	METHOD method_5503 (Ljava/util/Random;[Lnet/minecraft/class_1582;Lnet/minecraft/class_394;I)V
+		ARG 0 random
+		ARG 2 dispenser
+	METHOD method_5504 (Ljava/util/Random;[Lnet/minecraft/class_1582;Lnet/minecraft/class_1585;I)V
+		ARG 2 provider

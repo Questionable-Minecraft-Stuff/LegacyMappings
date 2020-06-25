@@ -30,6 +30,9 @@ CLASS net/minecraft/class_649 net/minecraft/math/VoxelShape
 		ARG 1 shape
 	METHOD method_1904 compareVec3d (Lnet/minecraft/class_652;)Z
 		ARG 1 vec3d
+	METHOD method_1905 (Lnet/minecraft/class_652;Lnet/minecraft/class_652;)Lnet/minecraft/class_650;
+		ARG 1 vec1
+		ARG 2 vec2
 	METHOD method_1906 get ()Lnet/minecraft/class_649;
 	METHOD method_1907 increaseShapeSize (DDD)Lnet/minecraft/class_649;
 		ARG 1 sizeX
