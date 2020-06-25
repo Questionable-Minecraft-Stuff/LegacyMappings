@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_627 net/minecraft/world/WorldSaveService
+	FIELD field_1918 LOGGER Lorg/apache/logging/log4j/Logger;

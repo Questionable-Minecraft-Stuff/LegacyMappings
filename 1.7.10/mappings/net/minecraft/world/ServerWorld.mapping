@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_1479 net/minecraft/world/ServerWorld
+	FIELD field_5228 LOOT_TABLES [Lnet/minecraft/class_1582;
+	FIELD field_5231 LOGGER Lorg/apache/logging/log4j/Logger;

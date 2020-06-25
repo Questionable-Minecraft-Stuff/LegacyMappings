@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_791 net/minecraft/client/gui/BeaconPowerButton
+	METHOD <init> (Lnet/minecraft/class_787;IIIII)V
+		ARG 1 screen

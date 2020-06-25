@@ -1,5 +1,11 @@
 CLASS net/minecraft/class_1408 net/minecraft/util/CrashReportGroup
 	FIELD field_5084 information Lnet/minecraft/class_656;
+	FIELD field_5087 stackTraceElementArray [Ljava/lang/StackTraceElement;
 	METHOD <init> (Lnet/minecraft/class_656;Ljava/lang/String;)V
 		ARG 1 information
 	METHOD method_4763 addRetriever (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+	METHOD method_4764 (Ljava/lang/StringBuilder;)V
+		ARG 1 builder
+	METHOD method_4765 addBlockData (Lnet/minecraft/class_1408;IIILnet/minecraft/class_242;I)V
+		ARG 0 group
+		ARG 4 block

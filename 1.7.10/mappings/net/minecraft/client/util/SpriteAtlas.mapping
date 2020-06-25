@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1068 net/minecraft/client/util/SpriteAtlas
+	FIELD field_4112 BLOCKS Lnet/minecraft/class_1093;
+	FIELD field_4113 ITEMS Lnet/minecraft/class_1093;
+	FIELD field_4114 LOGGER Lorg/apache/logging/log4j/Logger;

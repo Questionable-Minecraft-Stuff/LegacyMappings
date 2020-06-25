@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_789 net/minecraft/client/gui/BeaconCancelButton
+	METHOD <init> (Lnet/minecraft/class_787;III)V
+		ARG 1 screen

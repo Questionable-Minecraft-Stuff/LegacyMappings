@@ -10,10 +10,10 @@ c	net/minecraft/class_1421	net/minecraft/block/behavior/ArrowDispenseBehavior
 c	net/minecraft/class_1420	net/minecraft/util/Start
 	f	Z	field_5100	started
 	m	()V	method_4797	registerDispenserSpecialItems
-	m	()V	method_4798	beginStart
+	m	()V	method_4798	start
 c	net/minecraft/class_1779	net/minecraft/entity/WitchEntity
 c	net/minecraft/class_1777	net/minecraft/entity/SpiderEntity
-c	net/minecraft/class_1656	net/minecraft/client/util/OperatingSystemProvider
+c	net/minecraft/class_1656	net/minecraft/client/util/OperatingSystemGetter
 	m	()Lnet/minecraft/class_1683;	method_6071	getOperatingSystem
 c	net/minecraft/class_1776	net/minecraft/entity/SlimeEntity
 c	net/minecraft/class_1419	net/minecraft/block/behavior/AbstractProjectileDispenserBehavior
@@ -108,9 +108,15 @@ c	net/minecraft/class_1646	net/minecraft/entity/EntityAttribute
 c	net/minecraft/class_1645	net/minecraft/entity/MutableAttributeInstance
 c	net/minecraft/class_1765	net/minecraft/entity/HostileMobEntityProvider
 c	net/minecraft/class_1408	net/minecraft/util/CrashReportGroup
+	m	(Ljava/lang/StringBuilder;)V	method_4764	method_4764
+		p	1	stringBuilder	builder
 	m	(Lnet/minecraft/class_656;Ljava/lang/String;)V	<init>	<init>
 		p	1		information
+	f	[Ljava/lang/StackTraceElement;	field_5087	stackTraceElementArray
 	m	(Ljava/lang/String;Ljava/util/concurrent/Callable;)V	method_4763	addRetriever
+	m	(Lnet/minecraft/class_1408;IIILnet/minecraft/class_242;I)V	method_4765	addBlockData
+		p	0	k	group
+		p	4	aji	block
 	f	Lnet/minecraft/class_656;	field_5084	information
 c	net/minecraft/class_1769	net/minecraft/entity/MagmaCubeEntity
 c	net/minecraft/class_289	net/minecraft/block/FlowerBlock
@@ -259,9 +265,12 @@ c	net/minecraft/class_2	net/minecraft/command/Command
 		p	1		source
 	m	(Lnet/minecraft/class_55;[Ljava/lang/String;)V	method_12	method_12
 		p	1		source
+c	net/minecraft/realms/RealmsButton	net/minecraft/realms/RealmsButton
 c	net/minecraft/class_183	net/minecraft/world/AbstractWorld
 	f	Z	field_595	isClient
 c	net/minecraft/class_188	net/minecraft/util/WorldException
+	m	(Ljava/lang/String;)V	<init>	<init>
+		p	1	string	reason
 c	net/minecraft/class_1710	net/minecraft/client/SoundType
 	f	Lnet/minecraft/class_1710;	field_6390	MUSIC_DISC
 	f	Ljava/lang/String;	field_6399	name
@@ -431,6 +440,7 @@ c	net/minecraft/class_1030	net/minecraft/client/entity/PigRenderer
 	f	Lnet/minecraft/class_1093;	field_3955	PIG
 c	net/minecraft/class_813	net/minecraft/client/gui/DispenserScreen
 c	net/minecraft/class_1150	net/minecraft/command/StopCommand
+c	net/minecraft/class_811	net/minecraft/client/gui/VillagerButton
 c	net/minecraft/class_810	net/minecraft/client/gui/VillagerTradingScreen
 c	net/minecraft/class_1034	net/minecraft/client/entity/SkeletonRenderer
 	f	Lnet/minecraft/class_1093;	field_3963	SKELETON
@@ -494,6 +504,7 @@ c	net/minecraft/class_1003	net/minecraft/client/AbstractRenderer
 		p	1		entity
 	f	Lnet/minecraft/class_1002;	field_3893	registry
 	f	Lnet/minecraft/class_952;	field_3894	rendererInstance
+c	net/minecraft/class_1486	net/minecraft/util/BlockLocation
 c	net/minecraft/class_1002	net/minecraft/client/entity/EntityRendererRegistry
 	f	Lnet/minecraft/class_1002;	field_3874	INSTANCE
 	m	(Lnet/minecraft/class_1610;FZ)Z	method_3161	method_3161
@@ -511,7 +522,13 @@ c	net/minecraft/class_1002	net/minecraft/client/entity/EntityRendererRegistry
 		p	1	sa	entity
 	m	(Lnet/minecraft/class_1610;)Lnet/minecraft/class_1003;	method_3157	method_3157
 		p	1	sa	entity
+c	net/minecraft/class_1119	net/minecraft/client/util/MetadataSerializer
+	f	Lnet/minecraft/class_1225;	field_4242	registry
+	f	Lcom/google/gson/GsonBuilder;	field_4243	builder
+	f	Lcom/google/gson/Gson;	field_4244	gson
 c	net/minecraft/class_1479	net/minecraft/world/ServerWorld
+	f	[Lnet/minecraft/class_1582;	field_5228	LOOT_TABLES
+	f	Lorg/apache/logging/log4j/Logger;	field_5231	LOGGER
 c	net/minecraft/client/main/Main	net/minecraft/client/main/Main
 	m	([Ljava/lang/String;)V	main	main
 		p	0		args
@@ -526,7 +543,8 @@ c	net/minecraft/class_835	net/minecraft/client/main/MainTypeImpl
 	m	()[Ljava/lang/reflect/Type;	getActualTypeArguments	getActualTypeArguments
 c	net/minecraft/class_1250	net/minecraft/util/JavaVersionVendorRetriever
 c	net/minecraft/class_712	net/minecraft/client/Chat
-c	net/minecraft/class_711	net/minecraft/client/gui/Button
+c	net/minecraft/class_711	net/minecraft/client/gui/Widget
+	f	Lnet/minecraft/class_1093;	field_2406	WIDGETS
 c	net/minecraft/class_1012	net/minecraft/client/entity/ItemFrameRenderer
 	f	Lnet/minecraft/class_1093;	field_3918	TEXTURE
 c	net/minecraft/class_1011	net/minecraft/client/entity/BiPedRenderer
@@ -554,6 +572,7 @@ c	net/minecraft/class_704	net/minecraft/client/gui/Overlay
 	f	Lnet/minecraft/class_671;	field_2380	instance
 	f	Lnet/minecraft/class_1013;	field_2378	renderer
 c	net/minecraft/class_709	net/minecraft/command/OPCommand
+c	net/minecraft/class_1461	net/minecraft/util/BlockDataRetriever
 c	net/minecraft/class_1582	net/minecraft/util/ContainerBlockLootTable
 	m	(Ljava/util/Random;[Lnet/minecraft/class_1582;Lnet/minecraft/class_394;I)V	method_5503	method_5503
 		p	2	apb	dispenser
@@ -568,7 +587,7 @@ c	net/minecraft/class_1581	net/minecraft/util/RandomTable
 c	net/minecraft/class_1225	net/minecraft/util/RegistryProvider
 	m	(Ljava/lang/Object;)Ljava/lang/Object;	method_3953	getByName
 		p	1		name
-	m	(Ljava/lang/Object;Ljava/lang/Object;)V	method_3954	addEntry
+	m	(Ljava/lang/Object;Ljava/lang/Object;)V	method_3954	addObjects
 		p	1		key1
 		p	2		key2
 c	net/minecraft/class_1588	net/minecraft/client/FlippedIcon
@@ -599,13 +618,14 @@ c	net/minecraft/class_1222	net/minecraft/util/Registry
 c	net/minecraft/class_1585	net/minecraft/util/InventoryProvider
 	m	(ILnet/minecraft/class_86;)Z	method_5518	method_5518
 		p	2		itemStack
-c	net/minecraft/class_1218	net/minecraft/util/ObjectIterable
+c	net/minecraft/class_1218	net/minecraft/util/ObjectIterableAccess
 c	net/minecraft/class_1216	net/minecraft/block/behavior/DispenserBehaviorProviderImpl
 c	net/minecraft/class_1215	net/minecraft/block/behavior/DispenserBehaviorProvider
 	m	(Lnet/minecraft/class_1210;Lnet/minecraft/class_86;)Lnet/minecraft/class_86;	method_3932	method_3932
 		p	2		stack
 	f	Lnet/minecraft/class_1215;	field_4559	INSTANCE
 c	net/minecraft/class_1219	net/minecraft/util/IdentityMap
+c	net/minecraft/class_1590	net/minecraft/client/util/IconRegistryProvider
 c	net/minecraft/class_1232	net/minecraft/util/nbt/CompoundNamedBinaryTag
 c	net/minecraft/class_1594	net/minecraft/util/SnooperProvider
 	m	(Lnet/minecraft/class_1592;)V	method_5560	method_5560
@@ -615,14 +635,34 @@ c	net/minecraft/class_1594	net/minecraft/util/SnooperProvider
 	m	()Z	method_5559	isSnooperEnabled
 c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
 	m	(Ljava/lang/String;Ljava/lang/Object;)V	method_5544	addStat
+c	net/minecraft/class_1115	net/minecraft/client/util/LanguageHelper
+	m	(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;	method_3583	translateAndFormat
+		p	1	string	string
+		p	2	arr	args
 c	net/minecraft/class_1114	net/minecraft/client/LanguageHelper
+	f	Lnet/minecraft/class_1115;	field_4233	INSTANCE
 c	net/minecraft/class_1355	net/minecraft/util/UsedMemoryRetriever
+c	net/minecraft/class_1112	net/minecraft/client/util/I18n
+	m	(Lnet/minecraft/class_1115;)V	method_3569	setLanguageHelper
+		p	0	brs	helper
+	m	(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;	method_3570	translate
+		p	1	arr	args
+		p	0	string	string
+	f	Lnet/minecraft/class_1115;	field_4228	HELPER
+c	net/minecraft/class_1229	net/minecraft/util/TranslateableString
+	m	()Lnet/minecraft/class_1229;	method_3964	getInstance
+	m	(Ljava/lang/String;)Ljava/lang/String;	method_3970	translate
+		p	1	string	string
+	f	Ljava/util/Map;	field_4588	langContents
+	f	Lnet/minecraft/class_1229;	field_4587	INSTANCE
 c	net/minecraft/class_1227	net/minecraft/util/SuperRegistry
 	m	()Ljava/util/Set;	method_3957	getAsSet
+	m	(Ljava/lang/Object;)Z	method_3958	contains
+		p	1	object	key
 	f	Lorg/apache/logging/log4j/Logger;	field_4581	LOGGER
 	f	Ljava/util/Map;	field_4582	map
 	m	()Ljava/util/Map;	method_3956	getNewHashMap
-c	net/minecraft/class_1226	net/minecraft/util/SystemNameArchVersionRetriever
+c	net/minecraft/class_1226	net/minecraft/util/SystemOSNameRetriever
 c	net/minecraft/class_1589	net/minecraft/client/util/IconProvider
 c	net/minecraft/class_1683	net/minecraft/client/util/OperatingSystem
 	f	Lnet/minecraft/class_1683;	field_6268	SOLARIS
@@ -644,6 +684,7 @@ c	net/minecraft/class_1443	net/minecraft/server/DedicatedServerThread
 c	net/minecraft/class_1200	net/minecraft/util/MinecraftVersionRetriever
 c	net/minecraft/class_1799	net/minecraft/entity/SmallFireballEntity
 c	net/minecraft/class_1436	net/minecraft/block/behavior/BoatDispenseBehavior
+c	net/minecraft/class_1435	net/minecraft/util/BlockTypeRetriever
 c	net/minecraft/class_1556	net/minecraft/util/Stats
 	f	Lnet/minecraft/class_1548;	field_5633	DEATHS
 	f	Lnet/minecraft/class_1548;	field_5623	DISTANCE_FLOWN
@@ -823,6 +864,7 @@ c	net/minecraft/class_649	net/minecraft/math/VoxelShape
 c	net/minecraft/class_407	net/minecraft/block/entity/EndPortalBlockEntity
 c	net/minecraft/class_787	net/minecraft/client/gui/BeaconScreen
 c	net/minecraft/class_303	net/minecraft/block/JukeboxBlock
+c	net/minecraft/class_1080	net/minecraft/client/util/TickableSpriteProvider
 c	net/minecraft/class_786	net/minecraft/client/gui/AnvilScreen
 c	net/minecraft/class_302	net/minecraft/block/IceBlock
 c	net/minecraft/class_785	net/minecraft/client/gui/InventoryScreen
@@ -834,6 +876,9 @@ c	net/minecraft/class_1085	net/minecraft/client/DefaultResourcePack
 	m	(Lnet/minecraft/class_1093;)Ljava/io/InputStream;	method_3511	getAssets
 c	net/minecraft/class_307	net/minecraft/block/LeverBlock
 c	net/minecraft/class_306	net/minecraft/block/AbstractLeavesBlock
+c	net/minecraft/class_789	net/minecraft/client/gui/BeaconCancelButton
+	m	(Lnet/minecraft/class_787;III)V	<init>	<init>
+		p	1	bez	screen
 c	net/minecraft/class_547	net/minecraft/world/structure/AbstractStructureFeature
 c	net/minecraft/class_1083	net/minecraft/client/AbstractResourcePack
 	m	(Ljava/lang/String;)V	method_3509	warnLowercase
@@ -891,9 +936,13 @@ c	net/minecraft/class_1093	net/minecraft/util/Identifier
 		p	1	string	path
 	m	()Ljava/lang/String;	method_3522	getNamespace
 c	net/minecraft/class_315	net/minecraft/block/MushroomPlantBlock
+c	net/minecraft/class_790	net/minecraft/client/gui/BeaconConfirmButton
+	m	(Lnet/minecraft/class_787;III)V	<init>	<init>
+		p	1	bez	screen
 c	net/minecraft/class_1097	net/minecraft/client/ResourcePackProvider
 	m	(Lnet/minecraft/class_1093;)Z	method_3536	method_3536
 		p	1		identifier
+c	net/minecraft/class_794	net/minecraft/client/gui/PaginationButton
 c	net/minecraft/class_552	net/minecraft/world/feature/StructureGenerationData
 c	net/minecraft/class_310	net/minecraft/block/MelonBlock
 c	net/minecraft/class_672	net/minecraft/client/TimerHackThread
@@ -902,6 +951,7 @@ c	net/minecraft/class_672	net/minecraft/client/TimerHackThread
 	m	(Lnet/minecraft/class_671;Ljava/lang/String;)V	<init>	<init>
 		p	1	bao	client
 		p	2	string	name
+c	net/minecraft/class_792	net/minecraft/client/gui/BeaconButton
 c	net/minecraft/class_671	net/minecraft/client/MinecraftClient
 	f	Z	field_2097	IS_MACOS
 	f	Ljava/io/File;	field_2091	assetsDirectory
@@ -962,6 +1012,9 @@ c	net/minecraft/class_671	net/minecraft/client/MinecraftClient
 	f	I	field_2126	width
 	m	()Lnet/minecraft/class_671;	method_2057	getInstance
 	f	Z	field_2080	fullscreenEnabled
+c	net/minecraft/class_791	net/minecraft/client/gui/BeaconPowerButton
+	m	(Lnet/minecraft/class_787;IIIII)V	<init>	<init>
+		p	1	bez	screen
 c	net/minecraft/class_309	net/minecraft/block/AbstractLogBlock
 c	net/minecraft/class_308	net/minecraft/block/AbstractFluidBlock
 c	net/minecraft/class_842	net/minecraft/client/entity/BoatEntityModel
@@ -972,21 +1025,33 @@ c	net/minecraft/class_721	net/minecraft/client/gui/Slot
 c	net/minecraft/class_841	net/minecraft/client/entity/BlazeModel
 c	net/minecraft/class_840	net/minecraft/client/entity/BatEntityModel
 c	net/minecraft/class_846	net/minecraft/client/entity/CowModel
+c	net/minecraft/class_724	net/minecraft/client/gui/RealmsProxyButton
+	m	(Lnet/minecraft/realms/RealmsButton;IIILjava/lang/String;)V	<init>	<init>
+		p	1	realmsButton	button
 c	net/minecraft/class_845	net/minecraft/client/entity/ChickenModel
 c	net/minecraft/class_965	net/minecraft/command/SetBlockCommand
+c	net/minecraft/class_722	net/minecraft/client/gui/SliderButton
 c	net/minecraft/class_1069	net/minecraft/command/SeedCommand
+c	net/minecraft/class_1068	net/minecraft/client/util/SpriteAtlas
+	f	Lnet/minecraft/class_1093;	field_4113	ITEMS
+	f	Lnet/minecraft/class_1093;	field_4112	BLOCKS
+	f	Lorg/apache/logging/log4j/Logger;	field_4114	LOGGER
 c	net/minecraft/class_718	net/minecraft/client/gui/OptionButton
 	f	Lnet/minecraft/class_695;	field_2455	options
 c	net/minecraft/class_838	net/minecraft/client/main/MainThread
 	m	()V	run	run
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1	string	string
+c	net/minecraft/class_715	net/minecraft/client/gui/LanguageButton
 c	net/minecraft/class_836	net/minecraft/client/main/SecondMainTypeImpl
 c	net/minecraft/class_974	net/minecraft/client/block/BeaconBlockEntityRenderer
 	f	Lnet/minecraft/class_1093;	field_3795	BEAM
+c	net/minecraft/class_973	net/minecraft/client/util/VertexState
 c	net/minecraft/class_852	net/minecraft/client/entity/MagmaCubeModel
-c	net/minecraft/class_972	net/minecraft/client/ModelTesselator
+c	net/minecraft/class_972	net/minecraft/client/util/Tesselator
+	f	Z	field_3786	notTesselating
 c	net/minecraft/class_850	net/minecraft/client/entity/BiPedModel
+	f	Lnet/minecraft/class_883;	field_3065	head
 c	net/minecraft/class_971	net/minecraft/client/GLFramebuffer
 c	net/minecraft/class_857	net/minecraft/client/entity/CatModel
 c	net/minecraft/class_978	net/minecraft/client/block/EnchantingTableBlockEntityRenderer
@@ -1004,15 +1069,21 @@ c	net/minecraft/class_1073	net/minecraft/client/TextureAtlasSpriteIcon
 c	net/minecraft/class_855	net/minecraft/client/entity/AbstractModel
 	m	(Lnet/minecraft/class_1627;FFF)V	method_2673	method_2673
 		p	1	sv	entity
+	m	(Lnet/minecraft/class_1610;FFFFFF)V	method_2672	method_2672
+		p	1	sa	entity
 	m	(FFFFFFLnet/minecraft/class_1610;)V	method_2668	method_2668
 		p	7	sa	entity
 c	net/minecraft/class_976	net/minecraft/client/block/AbstractBlockEntityRenderer
 	m	(Lnet/minecraft/class_383;DDDF)V	method_3095	render
 c	net/minecraft/class_612	net/minecraft/command/ListCommand
 c	net/minecraft/class_1199	net/minecraft/command/TimeCommand
+c	net/minecraft/class_1077	net/minecraft/client/util/SpriteProvider
 c	net/minecraft/class_1198	net/minecraft/command/TestforCommand
 c	net/minecraft/class_1197	net/minecraft/command/TestforBlockCommand
+c	net/minecraft/class_1075	net/minecraft/client/TextureManager
+	f	Lorg/apache/logging/log4j/Logger;	field_4146	LOGGER
 c	net/minecraft/class_1196	net/minecraft/command/TeleportCommand
+c	net/minecraft/class_1079	net/minecraft/client/util/ClientTickable
 c	net/minecraft/class_863	net/minecraft/client/block/SignBlockEntityModel
 c	net/minecraft/class_742	net/minecraft/client/gui/AddServerScreen
 c	net/minecraft/class_984	net/minecraft/client/block/EndPortalBlockEntityRenderer
@@ -1058,6 +1129,8 @@ c	net/minecraft/class_1047	net/minecraft/client/entity/DogRenderer
 	f	Lnet/minecraft/class_1093;	field_3993	DOG_COLLAR
 	f	Lnet/minecraft/class_1093;	field_3990	DOG
 	f	Lnet/minecraft/class_1093;	field_3991	TAMED_DOG
+c	net/minecraft/class_1288	net/minecraft/class_1288
+	f	Lcom/google/gson/Gson;	field_4690	GSON
 c	net/minecraft/class_1046	net/minecraft/client/entity/ExplodingWitherSkullRenderer
 c	net/minecraft/class_1039	net/minecraft/client/entity/MinecartWithTntRenderer
 c	net/minecraft/class_858	net/minecraft/client/entity/PigModel
@@ -1089,6 +1162,7 @@ c	net/minecraft/class_992	net/minecraft/client/entity/BlazeRenderer
 c	net/minecraft/class_991	net/minecraft/client/entity/BatRenderer
 c	net/minecraft/class_990	net/minecraft/client/entity/ArrowProjectileRenderer
 c	net/minecraft/class_627	net/minecraft/world/WorldSaveService
+	f	Lorg/apache/logging/log4j/Logger;	field_1918	LOGGER
 c	net/minecraft/class_127	net/minecraft/recipe/FoodRecipes
 c	net/minecraft/class_369	net/minecraft/block/LeavesBaseBlock
 c	net/minecraft/class_126	net/minecraft/recipe/FireworksRecipes
@@ -2396,6 +2470,7 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 		p	1	add	stack
 		p	2	yz	player
 		p	3	ahb	world
+	m	()Z	method_200	canBeUsed
 	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;	method_163	method_163
 		p	3	yz	player
 		p	2	ahb	world
@@ -2406,8 +2481,11 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 	m	()I	method_195	durability
 	m	(Lnet/minecraft/class_86;)Lnet/minecraft/class_1589;	method_185	method_185
 		p	1	add	stack
+	f	Lnet/minecraft/class_84;	field_187	itemAfterUse
 	f	Z	field_194	hasTypes
 	f	Ljava/util/Random;	field_191	RAND
+	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_187	method_187
+		p	1	add	stack
 	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1627;Lnet/minecraft/class_1627;)Z	method_153	method_153
 		p	3	sv3	entity2
 		p	2	sv2	entity1
@@ -2453,16 +2531,18 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 		p	1	add1	stack1
 		p	2	add2	stack3
 	m	(I)Lnet/minecraft/class_1589;	method_165	getIconProvider
+	m	()Lnet/minecraft/class_48;	method_194	getItemGroup
 	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_181	setName
 		p	1		name
 	m	(I)Lnet/minecraft/class_84;	method_170	getAsItem
 		p	0		id
 	m	()Z	method_196	hasDurability
-	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_145	method_145
+	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_145	getTranslationKey
 		p	1	add	stack
 	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;I)V	method_151	method_151
 		p	3	yz	player
 		p	2	ahb	world
+	m	()Ljava/lang/String;	method_202	getIconName
 	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_193	getItemStackAsString
 		p	1	add	stack
 	f	Lnet/minecraft/class_1222;	field_189	REGISTRY
@@ -2472,6 +2552,7 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 		p	1	add	stack
 		p	3	aji	block
 		p	7	sv	entity
+	m	()Ljava/lang/String;	method_140	getTranslationKey
 	m	()Lcom/google/common/collect/Multimap;	method_186	createMultimap
 	m	(Lnet/minecraft/class_242;)Lnet/minecraft/class_84;	method_158	getAsItem
 		p	0		block
@@ -2482,15 +2563,24 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 	m	(Lnet/minecraft/class_86;)Z	method_175	method_175
 		p	1	add	stack
 	m	()V	method_188	registerItems
+	m	(Lnet/minecraft/class_84;Lnet/minecraft/class_48;Ljava/util/List;)V	method_144	addToItemgroupList
+		p	3	list	list
+		p	1	adb	item
+		p	2	abt	itemGroup
 	f	I	field_186	durability
 	f	Z	field_193	handheld
 	f	Lnet/minecraft/class_48;	field_185	itemGroup
+	m	()Lnet/minecraft/class_84;	method_199	getItemAfterUse
+	m	(Lnet/minecraft/class_86;I)I	method_146	method_146
+		p	1	add	stack
 	m	(Lnet/minecraft/class_84;)Lnet/minecraft/class_84;	method_167	setItemAfterUse
+		p	1	adb	item
 	m	(Lnet/minecraft/class_86;)Z	method_191	hasEffect
 		p	1	add	stack
 	m	(I)Lnet/minecraft/class_84;	method_179	setDurability
 		p	1	integer	durability
 	m	(Lnet/minecraft/class_48;)Lnet/minecraft/class_84;	method_143	setItemGroup
+		p	1	abt	itemGroup
 	m	(Lnet/minecraft/class_86;)Lnet/minecraft/class_99;	method_180	getRarity
 		p	1	add	stack
 	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_184	getEffect

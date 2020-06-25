@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1115 net/minecraft/client/util/LanguageHelper
+	METHOD method_3583 translateAndFormat (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 string
+		ARG 2 args

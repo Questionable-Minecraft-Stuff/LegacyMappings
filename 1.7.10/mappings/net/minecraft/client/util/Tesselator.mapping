@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_972 net/minecraft/client/util/Tesselator
+	FIELD field_3786 notTesselating Z

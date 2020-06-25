@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_711 net/minecraft/client/gui/Widget
+	FIELD field_2406 WIDGETS Lnet/minecraft/class_1093;

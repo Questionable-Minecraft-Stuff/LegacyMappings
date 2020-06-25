@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1229 net/minecraft/util/TranslateableString
+	FIELD field_4587 INSTANCE Lnet/minecraft/class_1229;
+	FIELD field_4588 langContents Ljava/util/Map;
+	METHOD method_3964 getInstance ()Lnet/minecraft/class_1229;
+	METHOD method_3970 translate (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 string

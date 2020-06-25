@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1656 net/minecraft/client/util/OperatingSystemGetter
+	METHOD method_6071 getOperatingSystem ()Lnet/minecraft/class_1683;

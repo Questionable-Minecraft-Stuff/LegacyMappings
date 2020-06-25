@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_850 net/minecraft/client/entity/BiPedModel
+	FIELD field_3065 head Lnet/minecraft/class_883;

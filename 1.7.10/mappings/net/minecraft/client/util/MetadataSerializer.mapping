@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1119 net/minecraft/client/util/MetadataSerializer
+	FIELD field_4242 registry Lnet/minecraft/class_1225;
+	FIELD field_4243 builder Lcom/google/gson/GsonBuilder;
+	FIELD field_4244 gson Lcom/google/gson/Gson;

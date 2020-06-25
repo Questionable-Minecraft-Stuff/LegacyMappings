@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1075 net/minecraft/client/TextureManager
+	FIELD field_4146 LOGGER Lorg/apache/logging/log4j/Logger;

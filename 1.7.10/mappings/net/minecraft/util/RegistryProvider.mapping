@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1225 net/minecraft/util/RegistryProvider
 	METHOD method_3953 getByName (Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 name
-	METHOD method_3954 addEntry (Ljava/lang/Object;Ljava/lang/Object;)V
+	METHOD method_3954 addObjects (Ljava/lang/Object;Ljava/lang/Object;)V
 		ARG 1 key1
 		ARG 2 key2
