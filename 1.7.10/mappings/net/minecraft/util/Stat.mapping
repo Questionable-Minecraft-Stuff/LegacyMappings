@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_1548 net/minecraft/util/Stat
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1287;Lnet/minecraft/class_1553;)V
+		ARG 2 text

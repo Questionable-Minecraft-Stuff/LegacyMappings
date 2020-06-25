@@ -19,4 +19,3 @@ CLASS net/minecraft/class_1710 net/minecraft/client/SoundType
 	METHOD method_6184 getByName (Ljava/lang/String;)Lnet/minecraft/class_1710;
 		ARG 0 name
 	METHOD method_6185 getId ()I
-	METHOD values ()[Lnet/minecraft/class_1710;

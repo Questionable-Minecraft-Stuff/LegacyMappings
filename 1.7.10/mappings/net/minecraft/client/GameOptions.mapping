@@ -48,4 +48,3 @@ CLASS net/minecraft/class_695 net/minecraft/client/GameOptions
 		ARG 3 key
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZFFF)V
 		ARG 3 key
-	METHOD values ()[Lnet/minecraft/class_695;

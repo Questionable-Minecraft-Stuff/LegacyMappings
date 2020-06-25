@@ -16,4 +16,3 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/AbstractMinecraf
 	METHOD method_5082 generateWorld ()V
 	METHOD method_5098 stopServer ()V
 	METHOD method_5102 getCurrentDirectory ()Ljava/io/File;
-	METHOD run ()V

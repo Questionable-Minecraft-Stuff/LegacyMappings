@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1540 net/minecraft/block/Directions
+	FIELD field_5525 OFFSET_X [I
+	FIELD field_5526 OFFSET_Z [I
+	FIELD field_5527 SWNE [Ljava/lang/String;
+	FIELD field_5528 FACING_AS_DIRECTION [I
+	FIELD field_5529 DIRECTION_AS_FACING [I
+	FIELD field_5530 OPPOSITE [I
+	FIELD field_5531 RIGHT [I
+	FIELD field_5532 LEFT [I
+	FIELD field_5533 BED [[I
+	METHOD method_5305 getDirectionFromMovement (DD)I
+		ARG 0 num1
+		ARG 2 num2

@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1217 net/minecraft/block/FacingType
+	FIELD field_4560 DOWN Lnet/minecraft/class_1217;
+	FIELD field_4561 UP Lnet/minecraft/class_1217;
+	FIELD field_4562 NORTH Lnet/minecraft/class_1217;
+	FIELD field_4563 SOUTH Lnet/minecraft/class_1217;
+	FIELD field_4564 EAST Lnet/minecraft/class_1217;
+	FIELD field_4565 WEST Lnet/minecraft/class_1217;
+	FIELD field_4566 dunsew I
+	FIELD field_4567 udsnwe I
+	FIELD field_4568 offsetX I
+	FIELD field_4569 offsetY I
+	FIELD field_4570 offsetZ I
+	FIELD field_4571 FACING_TYPES [Lnet/minecraft/class_1217;
+	METHOD <init> (Ljava/lang/String;IIIIII)V
+		ARG 3 dunsew
+		ARG 4 udsnwe
+		ARG 5 offsetX
+		ARG 6 offsetY
+		ARG 7 offsetZ
+	METHOD method_3933 getById (I)Lnet/minecraft/class_1217;
+		ARG 0 id
+	METHOD method_3934 getOffsetX ()I
+	METHOD method_3935 getOffsetY ()I
+	METHOD method_3936 getOffsetZ ()I
+	METHOD values ()[Lnet/minecraft/class_1217;

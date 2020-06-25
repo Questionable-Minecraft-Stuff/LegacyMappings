@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1544 net/minecraft/util/StringFormatProvider
+	METHOD method_5316 format (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 string

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1632 net/minecraft/util/LegalSpecialCharecters
+	FIELD field_6031 CHARECTERS [C
+	METHOD method_5961 isCharecterLegal (C)Z
+		ARG 0 charecter
+	METHOD method_5962 getAsString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 string

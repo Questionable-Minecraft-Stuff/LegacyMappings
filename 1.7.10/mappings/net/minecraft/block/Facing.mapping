@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1566 net/minecraft/block/Facing
+	FIELD field_5656 opposite [I
+	FIELD field_5657 xOffset [I
+	FIELD field_5658 yOffset [I
+	FIELD field_5659 zOffset [I
+	FIELD field_5660 FACING_TYPES [Ljava/lang/String;

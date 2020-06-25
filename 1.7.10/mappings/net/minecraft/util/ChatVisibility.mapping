@@ -12,4 +12,3 @@ CLASS net/minecraft/class_1792 net/minecraft/util/ChatVisibility
 	METHOD method_6642 getById (I)Lnet/minecraft/class_1792;
 		ARG 0 id
 	METHOD method_6643 getKey ()Ljava/lang/String;
-	METHOD values ()[Lnet/minecraft/class_1792;

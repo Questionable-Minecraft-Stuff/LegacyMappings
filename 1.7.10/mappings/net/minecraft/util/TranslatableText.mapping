@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1295 net/minecraft/util/TranslatableText
+	METHOD <init> (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 text
+		ARG 2 args

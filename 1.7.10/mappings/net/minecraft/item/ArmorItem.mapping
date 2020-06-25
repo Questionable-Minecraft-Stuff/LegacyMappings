@@ -5,3 +5,5 @@ CLASS net/minecraft/class_30 net/minecraft/item/ArmorItem
 	METHOD <init> (Lnet/minecraft/class_32;II)V
 		ARG 1 material
 		ARG 3 part
+	METHOD method_52 dyeLeatherArmor (Lnet/minecraft/class_86;I)V
+		ARG 1 stack

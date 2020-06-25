@@ -1,11 +1,56 @@
 tiny	2	0	intermediary	named
+c	net/minecraft/class_1540	net/minecraft/block/Directions
+	f	[I	field_5525	OFFSET_X
+	f	[I	field_5530	OPPOSITE
+	f	[I	field_5531	RIGHT
+	f	[I	field_5532	LEFT
+	m	(DD)I	method_5305	getDirectionFromMovement
+		p	2	double2	num2
+		p	0	double1	num1
+	f	[[I	field_5533	BED
+	f	[Ljava/lang/String;	field_5527	SWNE
+	f	[I	field_5526	OFFSET_Z
+	f	[I	field_5528	FACING_AS_DIRECTION
+	f	[I	field_5529	DIRECTION_AS_FACING
 c	net/minecraft/class_1780	net/minecraft/entity/ZombieEntity
+c	net/minecraft/class_1544	net/minecraft/util/StringFormatProvider
+	m	(Ljava/lang/String;)Ljava/lang/String;	method_5316	format
+		p	1	string	string
 c	net/minecraft/class_1423	net/minecraft/block/behavior/BucketDispenseBehavior
 c	net/minecraft/class_1786	net/minecraft/entity/GamemodeAbilities
 	m	(Lnet/minecraft/class_1232;)V	method_6524	method_6524
 		p	1		tag
 c	net/minecraft/class_1422	net/minecraft/block/behavior/FluidBucketDispenseBehavior
 c	net/minecraft/class_1785	net/minecraft/entity/VillagerEntity
+c	net/minecraft/class_1542	net/minecraft/advancement/Advancement
+	f	I	field_5541	row
+	m	(Ljava/lang/String;Ljava/lang/String;IILnet/minecraft/class_242;Lnet/minecraft/class_1542;)V	<init>	<init>
+		p	4	integer4	row
+		p	3	integer3	column
+		p	6	pb	parent
+		p	5	aji	block
+		p	2	string2	description
+		p	1	string1	title
+	m	(Ljava/lang/String;Ljava/lang/String;IILnet/minecraft/class_86;Lnet/minecraft/class_1542;)V	<init>	<init>
+		p	2	string2	description
+		p	1	string1	title
+		p	4	integer4	row
+		p	3	integer3	column
+		p	6	pb	parent
+		p	5	add	logo
+	m	(Ljava/lang/String;Ljava/lang/String;IILnet/minecraft/class_84;Lnet/minecraft/class_1542;)V	<init>	<init>
+		p	5	adb	item
+		p	6	pb	parent
+		p	1	string1	title
+		p	2	string2	description
+		p	3	integer3	column
+		p	4	integer4	row
+	f	I	field_5540	column
+	f	Lnet/minecraft/class_1542;	field_5542	parent
+	f	Lnet/minecraft/class_1544;	field_5545	provider
+	f	Lnet/minecraft/class_86;	field_5543	logo
+	f	Z	field_5546	isChallenge
+	f	Ljava/lang/String;	field_5544	description
 c	net/minecraft/class_1421	net/minecraft/block/behavior/ArrowDispenseBehavior
 c	net/minecraft/class_1420	net/minecraft/util/Start
 	f	Z	field_5100	started
@@ -42,6 +87,8 @@ c	net/minecraft/class_1795	net/minecraft/entity/AbstractFireballEntity
 c	net/minecraft/class_1794	net/minecraft/entity/EyeOfEnderProjectileEntity
 c	net/minecraft/class_1427	net/minecraft/block/behavior/EggDispsenseBehavior
 c	net/minecraft/class_1548	net/minecraft/util/Stat
+	m	(Ljava/lang/String;Lnet/minecraft/class_1287;Lnet/minecraft/class_1553;)V	<init>	<init>
+		p	2	fj	text
 c	net/minecraft/class_1426	net/minecraft/block/behavior/TntExplosionDispenseBehavior
 c	net/minecraft/class_1789	net/minecraft/entity/AbstractPlayerEntity
 c	net/minecraft/class_1425	net/minecraft/block/behavior/SheepDyeDispenseBehavior
@@ -105,6 +152,7 @@ c	net/minecraft/class_1646	net/minecraft/entity/EntityAttribute
 	f	D	field_6105	minimumValue
 c	net/minecraft/class_1767	net/minecraft/entity/GhastEntity
 c	net/minecraft/class_1645	net/minecraft/entity/MutableAttributeInstance
+c	net/minecraft/class_1402	net/minecraft/packet/S2CDisconnectPacket
 c	net/minecraft/class_1765	net/minecraft/entity/HostileMobEntityProvider
 c	net/minecraft/class_1408	net/minecraft/util/CrashReportGroup
 	m	(Ljava/lang/StringBuilder;)V	method_4764	method_4764
@@ -181,6 +229,12 @@ c	net/minecraft/class_295	net/minecraft/block/GravelBlock
 c	net/minecraft/class_294	net/minecraft/block/GrassBlock
 c	net/minecraft/class_293	net/minecraft/block/GlowstoneBlock
 c	net/minecraft/class_292	net/minecraft/block/GlassBlock
+c	net/minecraft/class_1632	net/minecraft/util/LegalSpecialCharecters
+	m	(C)Z	method_5961	isCharecterLegal
+		p	0	character	charecter
+	m	(Ljava/lang/String;)Ljava/lang/String;	method_5962	getAsString
+		p	0	string	string
+	f	[C	field_6031	CHARECTERS
 c	net/minecraft/class_299	net/minecraft/block/HayBaleBlock
 c	net/minecraft/class_1753	net/minecraft/entity/MinecartWithFurnaceEntity
 c	net/minecraft/class_298	net/minecraft/block/TerracottaBlock
@@ -433,6 +487,7 @@ c	net/minecraft/class_1020	net/minecraft/client/entity/MagmaCubeRenderer
 	f	Lnet/minecraft/class_1093;	field_3938	MAGMA_CUBE
 c	net/minecraft/class_1027	net/minecraft/client/entity/MooshroomRenderer
 	f	Lnet/minecraft/class_1093;	field_3948	MOOSHROOM
+c	net/minecraft/class_1389	net/minecraft/packet/C2SGamemodeAbilitiesPacket
 c	net/minecraft/class_1026	net/minecraft/client/entity/NonPlayerEntityRenderer
 c	net/minecraft/class_1147	net/minecraft/client/IntegratedServer
 	f	Lorg/apache/logging/log4j/Logger;	field_4297	LOGGER2
@@ -563,6 +618,7 @@ c	net/minecraft/class_1012	net/minecraft/client/entity/ItemFrameRenderer
 c	net/minecraft/class_1011	net/minecraft/client/entity/BiPedRenderer
 c	net/minecraft/class_1010	net/minecraft/client/entity/HorseRenderer
 c	net/minecraft/class_1015	net/minecraft/command/SetIdleTimeoutCommand
+c	net/minecraft/class_1498	net/minecraft/server/TcpHandshakeHandler
 c	net/minecraft/class_1013	net/minecraft/client/ItemRenderer
 c	net/minecraft/class_1009	net/minecraft/client/entity/GiantRenderer
 	f	Lnet/minecraft/class_1093;	field_3904	GIANT
@@ -634,6 +690,31 @@ c	net/minecraft/class_1222	net/minecraft/util/Registry
 		p	2		name
 		p	1		id
 c	net/minecraft/class_1218	net/minecraft/util/ObjectIterableAccess
+c	net/minecraft/class_1217	net/minecraft/block/FacingType
+	f	I	field_4570	offsetZ
+	f	I	field_4569	offsetY
+	f	I	field_4567	udsnwe
+	f	I	field_4568	offsetX
+	f	[Lnet/minecraft/class_1217;	field_4571	FACING_TYPES
+	f	I	field_4566	dunsew
+	m	(Ljava/lang/String;IIIIII)V	<init>	<init>
+		p	3	integer3	dunsew
+		p	5	integer5	offsetX
+		p	4	integer4	udsnwe
+		p	7	integer7	offsetZ
+		p	6	integer6	offsetY
+	m	()I	method_3935	getOffsetY
+	m	()I	method_3934	getOffsetX
+	m	()[Lnet/minecraft/class_1217;	values	values
+	m	()I	method_3936	getOffsetZ
+	f	Lnet/minecraft/class_1217;	field_4565	WEST
+	f	Lnet/minecraft/class_1217;	field_4563	SOUTH
+	f	Lnet/minecraft/class_1217;	field_4564	EAST
+	f	Lnet/minecraft/class_1217;	field_4561	UP
+	f	Lnet/minecraft/class_1217;	field_4562	NORTH
+	m	(I)Lnet/minecraft/class_1217;	method_3933	getById
+		p	0	integer	id
+	f	Lnet/minecraft/class_1217;	field_4560	DOWN
 c	net/minecraft/class_1216	net/minecraft/block/behavior/DispenserBehaviorProviderImpl
 c	net/minecraft/class_1215	net/minecraft/block/behavior/DispenserBehaviorProvider
 	m	(Lnet/minecraft/class_1210;Lnet/minecraft/class_86;)Lnet/minecraft/class_86;	method_3932	method_3932
@@ -685,6 +766,12 @@ c	net/minecraft/class_1683	net/minecraft/client/util/OperatingSystem
 	f	Lnet/minecraft/class_1683;	field_6267	LINUX
 	f	Lnet/minecraft/class_1683;	field_6271	OTHER
 	f	Lnet/minecraft/class_1683;	field_6270	MACOS
+c	net/minecraft/class_1566	net/minecraft/block/Facing
+	f	[I	field_5657	xOffset
+	f	[I	field_5656	opposite
+	f	[Ljava/lang/String;	field_5660	FACING_TYPES
+	f	[I	field_5659	zOffset
+	f	[I	field_5658	yOffset
 c	net/minecraft/class_1203	net/minecraft/command/WhitelistCommand
 c	net/minecraft/class_1202	net/minecraft/command/WeatherCommand
 c	net/minecraft/class_1444	net/minecraft/server/ServerThread
@@ -1147,7 +1234,9 @@ c	net/minecraft/class_868	net/minecraft/client/entity/SlimeModel
 c	net/minecraft/class_1041	net/minecraft/client/entity/IronGolemRenderer
 	f	Lnet/minecraft/class_1093;	field_3973	IRON_GOLEM
 c	net/minecraft/class_989	net/minecraft/command/SetWorldSpawnCommand
+c	net/minecraft/class_1282	net/minecraft/util/AbstractText
 c	net/minecraft/class_1040	net/minecraft/client/entity/TntRenderer
+c	net/minecraft/class_1287	net/minecraft/util/TextProvider
 c	net/minecraft/class_1045	net/minecraft/client/entity/WitherRenderer
 	f	Lnet/minecraft/class_1093;	field_3985	WITHER
 	f	Lnet/minecraft/class_1093;	field_3984	INVULNERABLE
@@ -1188,6 +1277,7 @@ c	net/minecraft/class_995	net/minecraft/client/entity/ChickenRenderer
 c	net/minecraft/class_994	net/minecraft/client/entity/CaveSpiderRenderer
 	f	Lnet/minecraft/class_1093;	field_3857	CAVE_SPIDER
 c	net/minecraft/class_993	net/minecraft/client/entity/BoatRenderer
+c	net/minecraft/class_1294	net/minecraft/util/LiteralText
 c	net/minecraft/class_879	net/minecraft/client/entity/GiantModel
 c	net/minecraft/class_637	net/minecraft/command/TellCommand
 c	net/minecraft/class_516	net/minecraft/command/HelpCommand
@@ -1200,6 +1290,11 @@ c	net/minecraft/class_997	net/minecraft/client/entity/CreeperRenderer
 	f	Lnet/minecraft/class_1093;	field_3861	CREEPER
 	f	Lnet/minecraft/class_1093;	field_3860	CHARGED_CREEPER_OVERLAY
 c	net/minecraft/class_513	net/minecraft/world/structure/TempleStructureFeature
+c	net/minecraft/class_1297	net/minecraft/packet/AbstractPacket
+c	net/minecraft/class_1295	net/minecraft/util/TranslatableText
+	m	(Ljava/lang/String;[Ljava/lang/Object;)V	<init>	<init>
+		p	2	arr	args
+		p	1	string	text
 c	net/minecraft/class_1174	net/minecraft/command/SummonCommand
 c	net/minecraft/class_992	net/minecraft/client/entity/BlazeRenderer
 c	net/minecraft/class_871	net/minecraft/client/entity/SquidModel
@@ -1657,6 +1752,8 @@ c	net/minecraft/class_36	net/minecraft/item/BlockItem
 c	net/minecraft/class_146	net/minecraft/item/enchantment/UnbreakingEnchantment
 c	net/minecraft/class_31	net/minecraft/block/behavior/ArmorOnEntityDispenseBehavior
 c	net/minecraft/class_30	net/minecraft/item/ArmorItem
+	m	(Lnet/minecraft/class_86;I)V	method_52	dyeLeatherArmor
+		p	1	add	stack
 	f	[I	field_98	durabilityMultiplier
 	f	Lnet/minecraft/class_32;	field_101	material
 	m	(Lnet/minecraft/class_32;II)V	<init>	<init>
@@ -1927,6 +2024,7 @@ c	net/minecraft/server/MinecraftServer	net/minecraft/server/AbstractMinecraftSer
 		p	1		fileName
 c	net/minecraft/class_319	net/minecraft/block/Leaves2Block
 c	net/minecraft/class_49	net/minecraft/item/group/BuildingBlocksItemgroup
+c	net/minecraft/class_699	net/minecraft/util/SomeRandomError
 c	net/minecraft/class_336	net/minecraft/block/RailBlock
 c	net/minecraft/class_68	net/minecraft/item/EnchantedBookItem
 c	net/minecraft/class_335	net/minecraft/block/QuartzBlock
