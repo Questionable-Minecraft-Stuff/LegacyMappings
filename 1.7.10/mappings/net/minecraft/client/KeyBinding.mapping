@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_668 net/minecraft/client/KeyBinding
+	METHOD compareTo (Ljava/lang/Object;)I

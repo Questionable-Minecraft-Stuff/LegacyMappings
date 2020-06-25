@@ -20,43 +20,43 @@ c	net/minecraft/class_1786	net/minecraft/entity/GamemodeAbilities
 c	net/minecraft/class_1544	net/minecraft/util/StringFormatProvider
 	m	(Ljava/lang/String;)Ljava/lang/String;	method_5316	format
 		p	1		string
+c	net/minecraft/class_1422	net/minecraft/block/behavior/FluidBucketDispenseBehavior
 c	net/minecraft/class_1543	net/minecraft/advancement/Advancements
-	f	Lnet/minecraft/class_1542;	field_5553	LIBRARIAN
 	f	Lnet/minecraft/class_1542;	field_5575	ON_A_RAIL
-	f	Lnet/minecraft/class_1542;	field_5551	ENCHANTER
+	f	Lnet/minecraft/class_1542;	field_5553	LIBRARIAN
 	f	Lnet/minecraft/class_1542;	field_5573	GETTING_AN_UPGRADE
+	f	Lnet/minecraft/class_1542;	field_5551	ENCHANTER
 	f	Lnet/minecraft/class_1542;	field_5583	WE_NEED_TO_GO_DEEPER
-	f	Lnet/minecraft/class_1542;	field_5557	BEACONATOR
 	f	Lnet/minecraft/class_1542;	field_5579	WHEN_PIGS_FLY
+	f	Lnet/minecraft/class_1542;	field_5557	BEACONATOR
 	f	Lnet/minecraft/class_1542;	field_5567	TIME_TO_MINE
-	f	Lnet/minecraft/class_1542;	field_5555	THE_BEGINNING_WITH_A_QUESTION_MARK
 	f	Lnet/minecraft/class_1542;	field_5577	MONSTER_HUNTER
+	f	Lnet/minecraft/class_1542;	field_5555	THE_BEGINNING_WITH_A_QUESTION_MARK
 	f	Lnet/minecraft/class_1542;	field_5565	GETTING_WOOD
 	f	Lnet/minecraft/class_1542;	field_5549	THE_END_WITH_A_QUESTION_MARK
 	m	()V	method_5315	unusedMethod
-	f	Lnet/minecraft/class_1542;	field_5547	INTO_FIRE
 	f	Lnet/minecraft/class_1542;	field_5569	ACQUIRE_HARDWARE
+	f	Lnet/minecraft/class_1542;	field_5547	INTO_FIRE
 	f	Lnet/minecraft/class_1542;	field_5571	BAKE_BREAD
 	f	Lnet/minecraft/class_1542;	field_5581	DIAMONDS
 	f	Lnet/minecraft/class_1542;	field_5564	TAKING_INVENTORY
-	f	Lnet/minecraft/class_1542;	field_5552	OVERKILL
 	f	Lnet/minecraft/class_1542;	field_5574	DELICIOUS_FISH
+	f	Lnet/minecraft/class_1542;	field_5552	OVERKILL
 	f	Lnet/minecraft/class_1542;	field_5584	RETURN_TO_SENDER
-	f	Lnet/minecraft/class_1542;	field_5550	THE_END_WITH_A_FULLSTOP
 	f	Lnet/minecraft/class_1542;	field_5572	THE_LIE
+	f	Lnet/minecraft/class_1542;	field_5550	THE_END_WITH_A_FULLSTOP
 	f	Lnet/minecraft/class_1542;	field_5568	HOT_TOPIC
+	f	Lnet/minecraft/class_1542;	field_5578	COW_TIPPER
 	f	Ljava/util/List;	field_5563	ADVANCEMENTS
 	f	Lnet/minecraft/class_1542;	field_5556	THE_BEGINNING_WITH_A_FULLSTOP
-	f	Lnet/minecraft/class_1542;	field_5578	COW_TIPPER
 	f	Lnet/minecraft/class_1542;	field_5566	BENCHMARKING
-	f	Lnet/minecraft/class_1542;	field_5554	REPOPULATION
 	f	Lnet/minecraft/class_1542;	field_5576	TIME_TO_STRIKE
+	f	Lnet/minecraft/class_1542;	field_5554	REPOPULATION
 	f	Lnet/minecraft/class_1542;	field_5548	LOCAL_BREWERY
 	f	Lnet/minecraft/class_1542;	field_5558	ADVENTURING_TIME
 	f	Lnet/minecraft/class_1542;	field_5582	DIAMONDS_TO_YOU
 	f	Lnet/minecraft/class_1542;	field_5570	TIME_TO_FARM
 	f	Lnet/minecraft/class_1542;	field_5580	SNIPER_DUEL
-c	net/minecraft/class_1422	net/minecraft/block/behavior/FluidBucketDispenseBehavior
 c	net/minecraft/class_1785	net/minecraft/entity/VillagerEntity
 c	net/minecraft/class_1421	net/minecraft/block/behavior/ArrowDispenseBehavior
 c	net/minecraft/class_1542	net/minecraft/advancement/Advancement
@@ -90,7 +90,7 @@ c	net/minecraft/class_1542	net/minecraft/advancement/Advancement
 	m	()Z	method_5314	isChallenge
 	f	Ljava/lang/String;	field_5544	description
 	m	(Lnet/minecraft/class_1544;)Lnet/minecraft/class_1542;	method_5310	setStringFormatProvider
-		p	1	pd	provider
+		p	1		provider
 c	net/minecraft/class_1420	net/minecraft/util/Start
 	f	Z	field_5100	started
 	m	()V	method_4797	registerDispenserSpecialItems
@@ -210,7 +210,7 @@ c	net/minecraft/class_289	net/minecraft/block/FlowerBlock
 c	net/minecraft/class_284	net/minecraft/block/FarmlandBlock
 c	net/minecraft/class_163	net/minecraft/item/enchantment/WaterBreathingEnchantment
 c	net/minecraft/class_283	net/minecraft/block/FallingBlock
-c	net/minecraft/class_162	net/minecraft/item/enchantment/LootRelatedEnchantment
+c	net/minecraft/class_162	net/minecraft/item/enchantment/BetterLootEnchantment
 c	net/minecraft/class_161	net/minecraft/item/enchantment/KnockbackEnchantment
 c	net/minecraft/class_281	net/minecraft/block/EnderChestBlock
 c	net/minecraft/class_160	net/minecraft/item/enchantment/LureEnchantment
@@ -506,8 +506,8 @@ c	net/minecraft/class_1609	net/minecraft/util/CrashException
 		p	1		builder
 	m	()Lnet/minecraft/class_656;	method_5649	getBuilder
 c	net/minecraft/class_1729	net/minecraft/entity/SquidEntity
-c	net/minecraft/class_1260	net/minecraft/server/NetworkHandler
 c	net/minecraft/class_801	net/minecraft/inventory/CreativeInventoryInventory
+c	net/minecraft/class_1260	net/minecraft/server/NetworkHandler
 c	net/minecraft/class_1381	net/minecraft/util/IntCacheRetriever
 c	net/minecraft/class_921	net/minecraft/client/particle/ExplosionParticle
 	f	Lnet/minecraft/class_1093;	field_3388	EXPLOSION
@@ -637,6 +637,8 @@ c	net/minecraft/class_1119	net/minecraft/client/util/MetadataSerializer
 	f	Lnet/minecraft/class_1225;	field_4242	registry
 	f	Lcom/google/gson/GsonBuilder;	field_4243	builder
 	f	Lcom/google/gson/Gson;	field_4244	gson
+c	net/minecraft/class_1118	net/minecraft/client/SectionSerializerProvider
+c	net/minecraft/class_1116	net/minecraft/client/AbstractMetadataSerializer
 c	net/minecraft/class_1479	net/minecraft/world/ServerWorld
 	f	[Lnet/minecraft/class_1582;	field_5228	LOOT_TABLES
 	f	Lorg/apache/logging/log4j/Logger;	field_5231	LOGGER
@@ -648,35 +650,35 @@ c	net/minecraft/client/main/Main	net/minecraft/client/main/Main
 	f	Ljava/lang/reflect/Type;	field_5312	TYPE
 c	net/minecraft/class_952	net/minecraft/client/block/ReallyLongBlockRenderer
 	m	(Lnet/minecraft/class_290;III)Z	method_2894	method_2894
-		p	1	class_2902	flowerPot
+		p	1		flowerPot
 	m	(Lnet/minecraft/class_269;IIII)V	method_2887	method_2887
-		p	1	class_2692	block
+		p	1		block
 	m	(Lnet/minecraft/class_250;III)Z	method_2882	method_2882
-		p	1	class_2502	brewingStand
+		p	1		brewingStand
 	f	Z	field_3523	betterGrass
 	m	(Lnet/minecraft/class_235;IIII)Z	method_2863	method_2863
-		p	1	class_2352	anvil
+		p	1		anvil
 	m	(Lnet/minecraft/class_344;III)Z	method_2897	method_2897
-		p	1	class_3442	repeater
+		p	1		repeater
 	m	(Lnet/minecraft/class_263;III)Z	method_2885	method_2885
-		p	1	class_2632	comparator
+		p	1		comparator
 	m	(Lnet/minecraft/class_235;IIIIFFFFZZI)F	method_2864	method_2864
-		p	1	class_2352	anvil
+		p	1		anvil
 	f	Lnet/minecraft/class_671;	field_3538	instance
 	m	(Lnet/minecraft/class_242;IIIZ)Z	method_2912	method_2912
-		p	1	class_2422	block
+		p	1		block
 	m	(Lnet/minecraft/class_235;IIIIZ)Z	method_2865	method_2865
-		p	1	class_2352	anvil
+		p	1		anvil
 	m	(Lnet/minecraft/class_242;III)V	method_2921	method_2921
-		p	1	class_2422	block
+		p	1		block
 	m	(Lnet/minecraft/class_269;III)Z	method_2886	method_2886
-		p	1	class_2692	block
+		p	1		block
 	m	(Lnet/minecraft/class_242;III)Z	method_2918	method_2918
-		p	1	class_2422	block
+		p	1		block
 	m	(Lnet/minecraft/class_235;III)Z	method_2862	method_2862
-		p	1	class_2352	anvil
+		p	1		anvil
 	m	(Lnet/minecraft/class_256;III)Z	method_2883	method_2883
-		p	1	class_2562	cauldron
+		p	1		cauldron
 	f	Lnet/minecraft/class_192;	field_3496	provider
 c	net/minecraft/class_951	net/minecraft/entity/OnlineMultiplayerPlayerEntity
 c	net/minecraft/class_950	net/minecraft/entity/SingleplayerPlayerEntity
@@ -688,11 +690,11 @@ c	net/minecraft/class_711	net/minecraft/client/gui/Button
 c	net/minecraft/class_1012	net/minecraft/client/entity/ItemFrameRenderer
 	f	Lnet/minecraft/class_1093;	field_3918	TEXTURE
 c	net/minecraft/class_1011	net/minecraft/client/entity/BiPedRenderer
+c	net/minecraft/class_1010	net/minecraft/client/entity/HorseRenderer
 c	net/minecraft/class_1494	net/minecraft/server/ServerNetworkHandler
 	m	(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_1260;Lnet/minecraft/class_1482;)V	<init>	<init>
-		p	1	minecraftServer	server
-		p	3	mw	player
-c	net/minecraft/class_1010	net/minecraft/client/entity/HorseRenderer
+		p	1		server
+		p	3		player
 c	net/minecraft/class_1015	net/minecraft/command/SetIdleTimeoutCommand
 c	net/minecraft/class_1498	net/minecraft/server/TcpHandshakeHandler
 c	net/minecraft/class_1013	net/minecraft/client/ItemRenderer
@@ -700,12 +702,17 @@ c	net/minecraft/class_1009	net/minecraft/client/entity/GiantRenderer
 	f	Lnet/minecraft/class_1093;	field_3904	GIANT
 	m	(Lnet/minecraft/class_855;FF)V	<init>	<init>
 		p	1		model
+c	net/minecraft/class_1129	net/minecraft/client/LanguageSerializer
+	m	(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;	deserialize	deserialize
+		p	1	jsonElement	element
+		p	2	type	type
+		p	3	jsonDeserializationContext	conext
 c	net/minecraft/class_1008	net/minecraft/client/entity/GhastRenderer
 	f	Lnet/minecraft/class_1093;	field_3902	GHAST
 	f	Lnet/minecraft/class_1093;	field_3903	GHAST_SHOOTING
 c	net/minecraft/class_1007	net/minecraft/client/entity/FishingParticleRenderer
-c	net/minecraft/class_1369	net/minecraft/server/ServerNetworkHandlerProvider
 c	net/minecraft/class_1006	net/minecraft/client/entity/FireballRenderer
+c	net/minecraft/class_1369	net/minecraft/server/ServerNetworkHandlerProvider
 c	net/minecraft/class_705	net/minecraft/client/gui/Gui
 	f	Lnet/minecraft/class_1093;	field_2389	DIRT_BACKGROUND
 	f	Lnet/minecraft/class_1093;	field_2391	ALL_ICONS
@@ -813,6 +820,7 @@ c	net/minecraft/class_1115	net/minecraft/client/util/LanguageHelper
 		p	2		args
 c	net/minecraft/class_1114	net/minecraft/client/LanguageHelper
 	f	Lnet/minecraft/class_1115;	field_4233	INSTANCE
+c	net/minecraft/class_1113	net/minecraft/client/Language
 c	net/minecraft/class_1355	net/minecraft/util/UsedMemoryRetriever
 c	net/minecraft/class_1112	net/minecraft/client/util/I18n
 	m	(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;	method_3570	translate
@@ -852,18 +860,19 @@ c	net/minecraft/class_1566	net/minecraft/block/Facing
 	f	[I	field_5659	zOffset
 	f	[I	field_5658	yOffset
 c	net/minecraft/class_1203	net/minecraft/command/WhitelistCommand
-c	net/minecraft/class_1565	net/minecraft/util/IntegerHashMap
 c	net/minecraft/class_1202	net/minecraft/command/WeatherCommand
 c	net/minecraft/class_1444	net/minecraft/server/ServerThread
 	m	(Lnet/minecraft/server/MinecraftServer;Ljava/lang/String;)V	<init>	<init>
 		p	1		server
 		p	2		name
+c	net/minecraft/class_1565	net/minecraft/util/IntegerHashMap
 c	net/minecraft/class_1443	net/minecraft/server/DedicatedServerThread
 	f	Lnet/minecraft/class_1454;	field_5122	server
 	m	(Ljava/lang/String;Lnet/minecraft/class_1454;)V	<init>	<init>
 		p	2		server
 		p	1		name
 c	net/minecraft/class_1200	net/minecraft/util/MinecraftVersionRetriever
+	m	()Ljava/lang/Object;	call	call
 c	net/minecraft/class_1436	net/minecraft/block/behavior/BoatDispenseBehavior
 c	net/minecraft/class_1799	net/minecraft/entity/SmallFireballEntity
 c	net/minecraft/class_1435	net/minecraft/util/BlockTypeRetriever
@@ -948,13 +957,13 @@ c	net/minecraft/class_768	net/minecraft/client/gui/CreditsScreen
 	f	Lorg/apache/logging/log4j/Logger;	field_2705	LOGGER
 	f	Lnet/minecraft/class_1093;	field_2706	MINECRAFT
 c	net/minecraft/class_96	net/minecraft/item/PickaxeItem
+c	net/minecraft/class_404	net/minecraft/block/entity/NoteBlockEntity
 c	net/minecraft/class_888	net/minecraft/client/ClientNetworkHandler
 	f	Lnet/minecraft/class_757;	field_3272	screen
 	m	(Lnet/minecraft/class_671;Lnet/minecraft/class_757;Lnet/minecraft/class_1260;)V	<init>	<init>
-		p	1	bao	instance
-		p	2	bdw	screen
+		p	1		instance
+		p	2		screen
 	f	Lnet/minecraft/class_671;	field_3268	instance
-c	net/minecraft/class_404	net/minecraft/block/entity/NoteBlockEntity
 c	net/minecraft/class_99	net/minecraft/util/Rarity
 	f	Lnet/minecraft/class_99;	field_402	EPIC
 	f	Lnet/minecraft/class_99;	field_400	UNCOMMON
@@ -975,9 +984,9 @@ c	net/minecraft/class_410	net/minecraft/block/MovingPistonBlock
 c	net/minecraft/class_652	net/minecraft/math/Vec3d
 	m	(Lnet/minecraft/class_652;)Lnet/minecraft/class_652;	method_1930	getMultipliedDifference
 	m	(Lnet/minecraft/class_652;)D	method_1933	getSqrtOfDifferenceOfTwoVec
-		p	1	class_6522	other
+		p	1		other
 	m	(Lnet/minecraft/class_652;)Lnet/minecraft/class_652;	method_1922	subtract
-		p	1	class_6522	subtrahend
+		p	1		subtrahend
 	m	(DDD)V	<init>	<init>
 		p	5		three
 		p	1		one
@@ -987,11 +996,11 @@ c	net/minecraft/class_652	net/minecraft/math/Vec3d
 		p	3		two
 		p	1		one
 	m	(DDD)Lnet/minecraft/class_652;	method_1928	addToEach
-	m	()D	method_1923	getSqrtAverage
 	m	(Lnet/minecraft/class_652;)D	method_1926	getMultipliedSum
-		p	1	class_6522	other
+		p	1		other
+	m	()D	method_1923	getSqrtAverage
 	m	(Lnet/minecraft/class_652;)D	method_1935	getDifferenceOfTwoVec
-		p	1	class_6522	other
+		p	1		other
 	f	D	field_1994	two
 	m	(DDD)D	method_1932	getDifferenceMultiplied
 	f	D	field_1995	three
@@ -1110,6 +1119,7 @@ c	net/minecraft/class_1085	net/minecraft/client/DefaultResourcePack
 c	net/minecraft/class_306	net/minecraft/block/AbstractLeavesBlock
 c	net/minecraft/class_305	net/minecraft/block/LadderBlock
 c	net/minecraft/class_668	net/minecraft/client/KeyBinding
+	m	(Ljava/lang/Object;)I	compareTo	compareTo
 c	net/minecraft/class_789	net/minecraft/client/gui/BeaconCancelButton
 	m	(Lnet/minecraft/class_787;III)V	<init>	<init>
 		p	1		screen
@@ -1248,11 +1258,11 @@ c	net/minecraft/class_791	net/minecraft/client/gui/BeaconPowerButton
 		p	1		screen
 c	net/minecraft/class_309	net/minecraft/block/AbstractLogBlock
 c	net/minecraft/class_308	net/minecraft/block/AbstractFluidBlock
-c	net/minecraft/class_963	net/minecraft/client/BufferedImageProvider
 c	net/minecraft/class_721	net/minecraft/client/gui/Slot
 	m	(Lnet/minecraft/class_671;IIIII)V	<init>	<init>
 		p	1		instance
 	f	Lnet/minecraft/class_671;	field_2470	instance
+c	net/minecraft/class_963	net/minecraft/client/BufferedImageProvider
 c	net/minecraft/class_842	net/minecraft/client/entity/BoatEntityModel
 c	net/minecraft/class_841	net/minecraft/client/entity/BlazeModel
 c	net/minecraft/class_840	net/minecraft/client/entity/BatEntityModel
@@ -1262,11 +1272,11 @@ c	net/minecraft/class_724	net/minecraft/client/gui/RealmsProxyButton
 		p	1		button
 c	net/minecraft/class_845	net/minecraft/client/entity/ChickenModel
 c	net/minecraft/class_965	net/minecraft/command/SetBlockCommand
+c	net/minecraft/class_722	net/minecraft/client/gui/SliderButton
 c	net/minecraft/class_964	net/minecraft/client/item/ItemRenderer
 	f	Lnet/minecraft/class_1093;	field_3666	MAP_BACKGROUND
 	f	Lnet/minecraft/class_1093;	field_3665	GLINT
 	f	Lnet/minecraft/class_1093;	field_3667	UNDERWATER
-c	net/minecraft/class_722	net/minecraft/client/gui/SliderButton
 c	net/minecraft/class_1069	net/minecraft/command/SeedCommand
 c	net/minecraft/class_1068	net/minecraft/client/util/SpriteAtlas
 	f	Lnet/minecraft/class_1093;	field_4113	ITEMS
@@ -1303,13 +1313,13 @@ c	net/minecraft/class_856	net/minecraft/client/entity/HorseModel
 c	net/minecraft/class_735	net/minecraft/command/PardonIPCommand
 c	net/minecraft/class_976	net/minecraft/client/block/AbstractBlockEntityRenderer
 	m	(Lnet/minecraft/class_383;DDDF)V	method_3095	render
-		p	6	var6	posZ
-		p	4	var4	posY
-		p	2	var2	posX
+		p	6		posZ
+		p	4		posY
+		p	2		posX
 	m	(Lnet/minecraft/class_1093;)V	method_3097	method_3097
-		p	1	class_10932	identifier
+		p	1		identifier
 	m	(Lnet/minecraft/class_183;)V	method_3094	method_3094
-		p	1	class_1832	world
+		p	1		world
 c	net/minecraft/class_855	net/minecraft/client/entity/AbstractModel
 	m	(Lnet/minecraft/class_1627;FFF)V	method_2673	method_2673
 		p	1		entity
@@ -1867,8 +1877,8 @@ c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
 	f	Lnet/minecraft/class_148;	field_498	PUNCH
 	f	Lnet/minecraft/class_148;	field_491	FIRE_ASPECT
 	f	Lnet/minecraft/class_148;	field_493	EFFICIENCY
-	f	Lnet/minecraft/class_148;	field_472	LURE
 	f	Lnet/minecraft/class_148;	field_494	SILK_TOUCH
+	f	Lnet/minecraft/class_148;	field_472	LURE
 	f	Lnet/minecraft/class_148;	field_490	KNOCKBACK
 c	net/minecraft/class_389	net/minecraft/block/entity/CommandBlockEntity
 c	net/minecraft/class_268	net/minecraft/block/DetectorRailBlock
