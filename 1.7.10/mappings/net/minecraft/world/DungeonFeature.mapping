@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_467 net/minecraft/world/DungeonFeature
+	FIELD field_1577 DUNGEON_LOOT_TABLE [Lnet/minecraft/class_1582;
+	METHOD method_1470 getMob (Ljava/util/Random;)Ljava/lang/String;
+		ARG 1 rand

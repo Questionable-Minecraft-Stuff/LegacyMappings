@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_468 net/minecraft/world/StoneFeature
+	FIELD field_1580 filler Lnet/minecraft/class_242;
+	METHOD <init> (Lnet/minecraft/class_242;I)V
+		ARG 1 block
+	METHOD <init> (Lnet/minecraft/class_242;ILnet/minecraft/class_242;)V
+		ARG 1 block
+		ARG 3 filler
