@@ -429,10 +429,37 @@ c	net/minecraft/class_1594	net/minecraft/util/SnooperProvider
 	m	()Z	method_5559	isSnooperEnabled
 c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
 	m	(Ljava/lang/String;Ljava/lang/Object;)V	method_5544	addStat
+c	net/minecraft/class_1599	net/minecraft/entity/EntityDamageSource
+	m	(Ljava/lang/String;Lnet/minecraft/class_1610;)V	<init>	<init>
+		p	2	sa	entity
+		p	1	string	name
+	f	Lnet/minecraft/class_1610;	field_5773	entity
 c	net/minecraft/class_1115	net/minecraft/client/util/LanguageHelper
 	m	(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;	method_3583	translateAndFormat
 		p	1		string
 		p	2		args
+c	net/minecraft/class_1598	net/minecraft/entity/DamageSource
+	m	(Lnet/minecraft/class_1789;)Lnet/minecraft/class_1598;	method_5584	method_5584
+		p	0	yz	entity
+	f	Lnet/minecraft/class_1598;	field_5760	WITHER
+	f	Lnet/minecraft/class_1598;	field_5761	ANVIL
+	f	Lnet/minecraft/class_1598;	field_5750	ON_FIRE
+	f	Lnet/minecraft/class_1598;	field_5762	FALLING_BLOCK
+	f	Lnet/minecraft/class_1598;	field_5751	LAVA
+	f	Lnet/minecraft/class_1598;	field_5752	SUFFOCATE
+	f	Lnet/minecraft/class_1598;	field_5753	DROWN
+	f	Lnet/minecraft/class_1598;	field_5754	STARVE
+	f	Lnet/minecraft/class_1598;	field_5755	CACTI
+	f	Lnet/minecraft/class_1598;	field_5756	FALL
+	f	Lnet/minecraft/class_1598;	field_5757	OUT_OF_WORLD
+	f	Lnet/minecraft/class_1598;	field_5758	GENERIC
+	f	Lnet/minecraft/class_1598;	field_5759	MAGIC
+	f	Lnet/minecraft/class_1598;	field_5749	IN_FIRE
+	m	(Lnet/minecraft/class_1627;)Lnet/minecraft/class_1287;	method_5589	method_5589
+		p	1	sv	entity
+	m	()Lnet/minecraft/class_1610;	method_5597	getEntity
+	m	(Lnet/minecraft/class_1627;)Lnet/minecraft/class_1598;	method_5583	method_5583
+		p	0	sv	entity
 c	net/minecraft/class_1114	net/minecraft/client/LanguageHelper
 	f	Lnet/minecraft/class_1115;	field_4233	INSTANCE
 c	net/minecraft/class_1113	net/minecraft/client/Language
@@ -1542,6 +1569,10 @@ c	net/minecraft/class_1640	net/minecraft/entity/Attribute
 c	net/minecraft/class_1636	net/minecraft/entity/AbstractAIEntity
 c	net/minecraft/class_1634	net/minecraft/entity/PaintingEntity
 c	net/minecraft/class_1639	net/minecraft/entity/AbstractTameableEntity
+c	net/minecraft/class_1637	net/minecraft/util/EntityDataHelper
+	f	Lnet/minecraft/class_1610;	field_6076	entity
+	m	(Lnet/minecraft/class_1610;)V	<init>	<init>
+		p	1	sa	entity
 c	net/minecraft/class_1646	net/minecraft/entity/EntityAttribute
 	f	D	field_6106	maximumValue
 	m	()Ljava/lang/String;	method_6051	getName
@@ -1652,6 +1683,9 @@ c	net/minecraft/class_1628	net/minecraft/entity/AbstractNonPlayerLivingEntity
 	m	(Lnet/minecraft/class_1789;)Z	method_5914	method_5914
 		p	1		player
 c	net/minecraft/class_1627	net/minecraft/entity/AbstractLivingEntity
+	m	(Lnet/minecraft/class_1598;)V	method_5815	method_5815
+		p	1	ro	source
+	m	()Lnet/minecraft/class_1631;	method_5855	setHostileEntityTag
 c	net/minecraft/class_1626	net/minecraft/item/entity/LeashKnotEntity
 c	net/minecraft/realms/RealmsButton	net/minecraft/realms/RealmsButton
 c	net/minecraft/class_183	net/minecraft/world/AbstractWorld
@@ -1699,10 +1733,17 @@ c	net/minecraft/class_1610	net/minecraft/entity/AbstractEntity
 	m	(FF)V	method_5679	setHitboxBounds
 		p	1		width
 		p	2		height
+	f	Lnet/minecraft/class_1637;	field_5856	helper
 	m	()V	method_5651	setDead
 	m	(Lnet/minecraft/class_183;)V	<init>	<init>
 		p	1		world
 c	net/minecraft/class_198	net/minecraft/world/TemperoryChunkStorage
+c	net/minecraft/class_1600	net/minecraft/entity/DoubleDamageSource
+	f	Lnet/minecraft/class_1610;	field_5774	attacker
+	m	(Ljava/lang/String;Lnet/minecraft/class_1610;Lnet/minecraft/class_1610;)V	<init>	<init>
+		p	2	sa2	entity
+		p	3	sa3	attacker
+		p	1	string	name
 c	net/minecraft/class_1607	net/minecraft/entity/AbstractGrowingEntity
 c	net/minecraft/class_192	net/minecraft/util/BlockProvider
 c	net/minecraft/class_191	net/minecraft/world/Gamemodes
@@ -1881,7 +1922,7 @@ c	net/minecraft/class_1008	net/minecraft/client/entity/GhastRenderer
 	f	Lnet/minecraft/class_1093;	field_3903	GHAST_SHOOTING
 c	net/minecraft/class_1007	net/minecraft/client/entity/FishingParticleRenderer
 c	net/minecraft/class_1006	net/minecraft/client/entity/FireballRenderer
-c	net/minecraft/class_1248	net/minecraft/class_1248
+c	net/minecraft/class_1248	net/minecraft/util/AbstractNbt
 	m	(Ljava/io/DataInput;ILnet/minecraft/class_1242;)V	method_4039	method_4039
 		p	2		depth
 		p	1		input
@@ -2305,6 +2346,8 @@ c	net/minecraft/class_149	net/minecraft/util/ToolTags
 	f	Lnet/minecraft/class_149;	field_509	MINING
 c	net/minecraft/class_34	net/minecraft/item/AxeItem
 c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
+	m	(ILnet/minecraft/class_1631;)F	method_336	getDamageByHostileEntityTag
+		p	2	sz	tag
 	f	Lnet/minecraft/class_148;	field_488	SMITE
 	f	Lnet/minecraft/class_148;	field_501	LUCK_OF_THE_SEA
 	f	Lnet/minecraft/class_148;	field_484	WATER_BREATHING
@@ -2317,11 +2360,14 @@ c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
 	f	[Lnet/minecraft/class_148;	field_478	ENCHANTMENTS_ARRAY
 	f	Lnet/minecraft/class_148;	field_494	SILK_TOUCH
 	f	Lnet/minecraft/class_148;	field_472	LURE
+	m	(ILnet/minecraft/class_1598;)I	method_335	getDamageModifier
 	m	(IILnet/minecraft/class_149;)V	<init>	<init>
+		p	2	integer2	weight
 		p	3	afu	tag
 		p	1	integer1	id
 	m	(Ljava/lang/String;)Lnet/minecraft/class_148;	method_342	setName
 		p	1	string	name
+	f	I	field_476	weight
 	f	Lnet/minecraft/class_148;	field_499	FLAME
 	f	Lnet/minecraft/class_148;	field_489	BANE_OF_ARTHROPODS
 	f	Lnet/minecraft/class_148;	field_500	INFINITY
@@ -2331,13 +2377,22 @@ c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
 	f	Lnet/minecraft/class_148;	field_485	AQUA_AFFINITY
 	f	Lnet/minecraft/class_148;	field_497	POWER
 	f	Lnet/minecraft/class_149;	field_474	tag
+	m	()I	method_344	getEnchantmentWeight
 	f	Lnet/minecraft/class_148;	field_487	SHARPNESS
 	f	Lnet/minecraft/class_148;	field_491	FIRE_ASPECT
+	m	()I	method_346	getMinimumLevel
 	f	Lnet/minecraft/class_148;	field_481	FEATHER_FALLING
 	f	Lnet/minecraft/class_148;	field_493	EFFICIENCY
 	f	Lnet/minecraft/class_148;	field_483	PROJECTILE_PROTECTION
+	m	(Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;I)V	method_343	method_343
+		p	1	sv	entity
+		p	2	sa	entity2
 	f	Ljava/lang/String;	field_475	name
 	f	Lnet/minecraft/class_148;	field_490	KNOCKBACK
+	m	()I	method_340	getMaximumLevel
+	m	(Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;I)V	method_339	method_339
+		p	2	sa	entity2
+		p	1	sv	entity
 	f	I	field_473	id
 c	net/minecraft/class_389	net/minecraft/block/entity/CommandBlockEntity
 c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
@@ -2451,6 +2506,9 @@ c	net/minecraft/class_44	net/minecraft/item/CarrotOnAStickItem
 c	net/minecraft/class_43	net/minecraft/item/BucketItem
 c	net/minecraft/class_394	net/minecraft/block/entity/DispenserBlockEntity
 c	net/minecraft/class_393	net/minecraft/block/entity/DaylightDetectorBlockEntity
+c	net/minecraft/class_150	net/minecraft/enchantment/EnchantmentHelper
+	m	(ILnet/minecraft/class_86;)I	method_348	method_348
+		p	1	add	stack
 c	net/minecraft/class_392	net/minecraft/command/ExperienceCommand
 c	net/minecraft/class_40	net/minecraft/item/GlassBottleItem
 c	net/minecraft/class_391	net/minecraft/block/entity/RedstoneComparatorBlockEntity

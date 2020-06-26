@@ -3,6 +3,7 @@ CLASS net/minecraft/class_148 net/minecraft/item/enchantment/AbstractEnchantment
 	FIELD field_473 id I
 	FIELD field_474 tag Lnet/minecraft/class_149;
 	FIELD field_475 name Ljava/lang/String;
+	FIELD field_476 weight I
 	FIELD field_477 ENCHANTMENTS [Lnet/minecraft/class_148;
 	FIELD field_478 ENCHANTMENTS_ARRAY [Lnet/minecraft/class_148;
 	FIELD field_479 PROTECTION Lnet/minecraft/class_148;
@@ -30,6 +31,19 @@ CLASS net/minecraft/class_148 net/minecraft/item/enchantment/AbstractEnchantment
 	FIELD field_501 LUCK_OF_THE_SEA Lnet/minecraft/class_148;
 	METHOD <init> (IILnet/minecraft/class_149;)V
 		ARG 1 id
+		ARG 2 weight
 		ARG 3 tag
+	METHOD method_335 getDamageModifier (ILnet/minecraft/class_1598;)I
+	METHOD method_336 getDamageByHostileEntityTag (ILnet/minecraft/class_1631;)F
+		ARG 2 tag
+	METHOD method_339 (Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;I)V
+		ARG 1 entity
+		ARG 2 entity2
+	METHOD method_340 getMaximumLevel ()I
 	METHOD method_342 setName (Ljava/lang/String;)Lnet/minecraft/class_148;
 		ARG 1 name
+	METHOD method_343 (Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;I)V
+		ARG 1 entity
+		ARG 2 entity2
+	METHOD method_344 getEnchantmentWeight ()I
+	METHOD method_346 getMinimumLevel ()I

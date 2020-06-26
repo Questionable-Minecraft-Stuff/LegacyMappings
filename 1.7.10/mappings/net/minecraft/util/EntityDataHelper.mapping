@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1637 net/minecraft/util/EntityDataHelper
+	FIELD field_6076 entity Lnet/minecraft/class_1610;
+	METHOD <init> (Lnet/minecraft/class_1610;)V
+		ARG 1 entity

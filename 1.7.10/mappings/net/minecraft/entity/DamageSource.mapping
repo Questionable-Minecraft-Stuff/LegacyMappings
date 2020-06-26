@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1598 net/minecraft/entity/DamageSource
+	FIELD field_5749 IN_FIRE Lnet/minecraft/class_1598;
+	FIELD field_5750 ON_FIRE Lnet/minecraft/class_1598;
+	FIELD field_5751 LAVA Lnet/minecraft/class_1598;
+	FIELD field_5752 SUFFOCATE Lnet/minecraft/class_1598;
+	FIELD field_5753 DROWN Lnet/minecraft/class_1598;
+	FIELD field_5754 STARVE Lnet/minecraft/class_1598;
+	FIELD field_5755 CACTI Lnet/minecraft/class_1598;
+	FIELD field_5756 FALL Lnet/minecraft/class_1598;
+	FIELD field_5757 OUT_OF_WORLD Lnet/minecraft/class_1598;
+	FIELD field_5758 GENERIC Lnet/minecraft/class_1598;
+	FIELD field_5759 MAGIC Lnet/minecraft/class_1598;
+	FIELD field_5760 WITHER Lnet/minecraft/class_1598;
+	FIELD field_5761 ANVIL Lnet/minecraft/class_1598;
+	FIELD field_5762 FALLING_BLOCK Lnet/minecraft/class_1598;
+	METHOD method_5583 (Lnet/minecraft/class_1627;)Lnet/minecraft/class_1598;
+		ARG 0 entity
+	METHOD method_5584 (Lnet/minecraft/class_1789;)Lnet/minecraft/class_1598;
+		ARG 0 entity
+	METHOD method_5589 (Lnet/minecraft/class_1627;)Lnet/minecraft/class_1287;
+		ARG 1 entity
+	METHOD method_5597 getEntity ()Lnet/minecraft/class_1610;

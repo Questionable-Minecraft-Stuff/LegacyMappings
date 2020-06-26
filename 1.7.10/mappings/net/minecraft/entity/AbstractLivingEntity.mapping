@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_1627 net/minecraft/entity/AbstractLivingEntity
+	METHOD method_5815 (Lnet/minecraft/class_1598;)V
+		ARG 1 source
+	METHOD method_5855 setHostileEntityTag ()Lnet/minecraft/class_1631;

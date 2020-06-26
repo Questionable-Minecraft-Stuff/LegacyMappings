@@ -4,6 +4,7 @@ CLASS net/minecraft/class_1610 net/minecraft/entity/AbstractEntity
 	FIELD field_5837 width F
 	FIELD field_5838 height F
 	FIELD field_5850 random Ljava/util/Random;
+	FIELD field_5856 helper Lnet/minecraft/class_1637;
 	FIELD field_5868 uuid Ljava/util/UUID;
 	FIELD field_5869 sizeClass Lnet/minecraft/class_1614;
 	FIELD field_5872 id I
