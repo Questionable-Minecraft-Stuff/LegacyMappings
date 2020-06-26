@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_167 net/minecraft/item/enchantment/AquaAffinityEnchantment
+	METHOD <init> (II)V
+		ARG 1 id

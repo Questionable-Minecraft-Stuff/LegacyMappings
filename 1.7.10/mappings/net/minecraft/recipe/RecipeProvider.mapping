@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_135 net/minecraft/recipe/RecipeProvider
+	METHOD method_325 (Lnet/minecraft/class_7;Lnet/minecraft/class_183;)Z
+		ARG 1 inventory
+		ARG 2 world

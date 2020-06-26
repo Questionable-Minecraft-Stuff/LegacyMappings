@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_142 net/minecraft/item/enchantment/FlameEnchantment
+	METHOD <init> (II)V
+		ARG 1 id

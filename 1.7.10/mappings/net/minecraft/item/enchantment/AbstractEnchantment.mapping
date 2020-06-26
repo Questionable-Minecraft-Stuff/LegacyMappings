@@ -1,16 +1,35 @@
 CLASS net/minecraft/class_148 net/minecraft/item/enchantment/AbstractEnchantment
 	FIELD field_472 LURE Lnet/minecraft/class_148;
+	FIELD field_473 id I
 	FIELD field_474 tag Lnet/minecraft/class_149;
-	FIELD field_477 enchantments [Lnet/minecraft/class_148;
+	FIELD field_475 name Ljava/lang/String;
+	FIELD field_477 ENCHANTMENTS [Lnet/minecraft/class_148;
+	FIELD field_478 ENCHANTMENTS_ARRAY [Lnet/minecraft/class_148;
+	FIELD field_479 PROTECTION Lnet/minecraft/class_148;
+	FIELD field_480 FIRE_PROTECTION Lnet/minecraft/class_148;
+	FIELD field_481 FEATHER_FALLING Lnet/minecraft/class_148;
+	FIELD field_482 BLAST_PROTECTION Lnet/minecraft/class_148;
+	FIELD field_483 PROJECTILE_PROTECTION Lnet/minecraft/class_148;
 	FIELD field_484 WATER_BREATHING Lnet/minecraft/class_148;
 	FIELD field_485 AQUA_AFFINITY Lnet/minecraft/class_148;
 	FIELD field_486 THORNS Lnet/minecraft/class_148;
+	FIELD field_487 SHARPNESS Lnet/minecraft/class_148;
+	FIELD field_488 SMITE Lnet/minecraft/class_148;
+	FIELD field_489 BANE_OF_ARTHROPODS Lnet/minecraft/class_148;
 	FIELD field_490 KNOCKBACK Lnet/minecraft/class_148;
 	FIELD field_491 FIRE_ASPECT Lnet/minecraft/class_148;
+	FIELD field_492 LOOTING Lnet/minecraft/class_148;
 	FIELD field_493 EFFICIENCY Lnet/minecraft/class_148;
 	FIELD field_494 SILK_TOUCH Lnet/minecraft/class_148;
 	FIELD field_495 UNBREAKING Lnet/minecraft/class_148;
+	FIELD field_496 FORTUNE Lnet/minecraft/class_148;
 	FIELD field_497 POWER Lnet/minecraft/class_148;
 	FIELD field_498 PUNCH Lnet/minecraft/class_148;
 	FIELD field_499 FLAME Lnet/minecraft/class_148;
 	FIELD field_500 INFINITY Lnet/minecraft/class_148;
+	FIELD field_501 LUCK_OF_THE_SEA Lnet/minecraft/class_148;
+	METHOD <init> (IILnet/minecraft/class_149;)V
+		ARG 1 id
+		ARG 3 tag
+	METHOD method_342 setName (Ljava/lang/String;)Lnet/minecraft/class_148;
+		ARG 1 name

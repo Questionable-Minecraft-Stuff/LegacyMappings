@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_161 net/minecraft/item/enchantment/KnockbackEnchantment
+	METHOD <init> (II)V
+		ARG 1 id

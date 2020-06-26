@@ -1150,17 +1150,16 @@ c	net/minecraft/class_1803	net/minecraft/entity/EnderpearlProjectileEntity
 c	net/minecraft/class_1802	net/minecraft/entity/EggProjectileEntity
 c	net/minecraft/class_1808	net/minecraft/inventory/AbstractInventory
 c	net/minecraft/class_1806	net/minecraft/entity/ExplodingWitherSkullEntity
-c	net/minecraft/class_204	net/minecraft/world/biome/BiomeSpawnableEntities
 c	net/minecraft/class_446	net/minecraft/world/CactusFeature
-c	net/minecraft/class_445	net/minecraft/world/BonusChestFeature
+c	net/minecraft/class_204	net/minecraft/world/biome/BiomeSpawnableEntities
 c	net/minecraft/class_203	net/minecraft/world/biome/BiomeType
 	f	Lnet/minecraft/class_203;	field_774	TEMPERATE
 	f	Lnet/minecraft/class_203;	field_775	WARM
 	f	Lnet/minecraft/class_203;	field_772	OCEAN
 	f	Lnet/minecraft/class_203;	field_773	COLD
+c	net/minecraft/class_445	net/minecraft/world/BonusChestFeature
 c	net/minecraft/class_202	net/minecraft/world/biome/BiomeHeight
 	m	()Lnet/minecraft/class_202;	method_754	EXTREME_HILLS_HEIGHT
-c	net/minecraft/class_443	net/minecraft/world/ForestTreeFeature
 c	net/minecraft/class_201	net/minecraft/world/biome/AbstractBiome
 	m	(Lnet/minecraft/class_1629;)Ljava/util/List;	method_733	getSpawnableEntitiesByEntityTag
 		p	1		tag
@@ -1250,14 +1249,15 @@ c	net/minecraft/class_201	net/minecraft/world/biome/AbstractBiome
 	f	Lnet/minecraft/class_202;	field_750	HILLS_HEIGHT
 	f	Lnet/minecraft/class_201;	field_694	FOREST_HILLS
 	f	Lnet/minecraft/class_201;	field_690	MUSHROOM_FIELDS
-c	net/minecraft/class_449	net/minecraft/world/DesertWellFeature
+c	net/minecraft/class_443	net/minecraft/world/ForestTreeFeature
 c	net/minecraft/class_207	net/minecraft/command/ClearCommand
+c	net/minecraft/class_449	net/minecraft/world/DesertWellFeature
 c	net/minecraft/class_448	net/minecraft/world/DeadbushFeature
 c	net/minecraft/class_447	net/minecraft/world/ClayFeature
-c	net/minecraft/class_442	net/minecraft/world/TallTreeFeature
 c	net/minecraft/class_200	net/minecraft/world/biome/BeachBiome
-c	net/minecraft/class_441	net/minecraft/world/AbstractTreeFeature
+c	net/minecraft/class_442	net/minecraft/world/TallTreeFeature
 c	net/minecraft/class_683	net/minecraft/command/NetstatCommand
+c	net/minecraft/class_441	net/minecraft/world/AbstractTreeFeature
 c	net/minecraft/server/MinecraftServer	net/minecraft/server/AbstractMinecraftServer
 	m	()V	method_5082	generateWorld
 	m	(Lnet/minecraft/class_191;)V	method_5029	method_5029
@@ -1283,10 +1283,9 @@ c	net/minecraft/class_213	net/minecraft/world/biome/ForestBiome
 c	net/minecraft/class_454	net/minecraft/world/NetherFireFeature
 c	net/minecraft/class_219	net/minecraft/world/biome/BadlandsBiome
 c	net/minecraft/class_218	net/minecraft/world/biome/JungleBiome
-c	net/minecraft/class_459	net/minecraft/world/IceSpikeFeature
 c	net/minecraft/class_217	net/minecraft/world/biome/IcyBiome
+c	net/minecraft/class_459	net/minecraft/world/IceSpikeFeature
 c	net/minecraft/class_216	net/minecraft/world/biome/NetherBiome
-c	net/minecraft/class_453	net/minecraft/world/JungleBushFeature
 c	net/minecraft/class_695	net/minecraft/client/GameOptions
 	f	Lnet/minecraft/class_695;	field_2305	MAX_FPS
 	f	Lnet/minecraft/class_695;	field_2317	PROMPT_CHAT_LINKS
@@ -1338,15 +1337,15 @@ c	net/minecraft/class_695	net/minecraft/client/GameOptions
 	f	Lnet/minecraft/class_695;	field_2296	INVERT_MOUSE
 	f	Lnet/minecraft/class_695;	field_2274	CHAT_HEIGHT_FOCUSED
 c	net/minecraft/class_211	net/minecraft/world/biome/ExtremeHillsBiome
-c	net/minecraft/class_452	net/minecraft/world/FlowerFeature
+c	net/minecraft/class_453	net/minecraft/world/JungleBushFeature
 c	net/minecraft/class_694	net/minecraft/client/BooleanOptions
 	f	[I	field_2270	BOOLEAN_OPTIONS
 c	net/minecraft/class_210	net/minecraft/world/biome/DesertBiome
+c	net/minecraft/class_452	net/minecraft/world/FlowerFeature
 c	net/minecraft/class_693	net/minecraft/client/util/ParameterizedTypeImpl
 c	net/minecraft/class_451	net/minecraft/world/AbstractWorldFeature
 	m	(Lnet/minecraft/class_183;Ljava/util/Random;III)Z	method_1457	method_1457
 		p	1		world
-c	net/minecraft/class_450	net/minecraft/world/DoublePlantFeature
 c	net/minecraft/class_692	net/minecraft/client/Settings
 	f	Lnet/minecraft/class_671;	field_2238	instance
 	f	Z	field_2263	vsyncEnabled
@@ -1456,29 +1455,30 @@ c	net/minecraft/class_692	net/minecraft/client/Settings
 	f	Lnet/minecraft/class_668;	field_2192	JUMP
 	m	(Lnet/minecraft/class_695;)Z	method_2171	getBooleanValueOfOption
 		p	1		options
+c	net/minecraft/class_450	net/minecraft/world/DoublePlantFeature
 c	net/minecraft/class_468	net/minecraft/world/StoneFeature
 	f	Lnet/minecraft/class_242;	field_1580	filler
 	m	(Lnet/minecraft/class_242;I)V	<init>	<init>
-		p	1	aji	block
+		p	1		block
 	m	(Lnet/minecraft/class_242;ILnet/minecraft/class_242;)V	<init>	<init>
-		p	1	aji1	block
-		p	3	aji3	filler
+		p	1		block
+		p	3		filler
 c	net/minecraft/class_467	net/minecraft/world/DungeonFeature
 	m	(Ljava/util/Random;)Ljava/lang/String;	method_1470	getMob
-		p	1	random	rand
+		p	1		rand
 	f	[Lnet/minecraft/class_1582;	field_1577	DUNGEON_LOOT_TABLE
 c	net/minecraft/class_225	net/minecraft/world/biome/SavannaBiome
 c	net/minecraft/class_466	net/minecraft/world/MelonFeature
 c	net/minecraft/class_224	net/minecraft/world/biome/RiverBiome
-c	net/minecraft/class_465	net/minecraft/world/AbstractHugeTreeFeature
 c	net/minecraft/class_223	net/minecraft/world/biome/PlainsBiome
+c	net/minecraft/class_465	net/minecraft/world/AbstractHugeTreeFeature
 c	net/minecraft/class_229	net/minecraft/world/biome/TaigaBiome
 c	net/minecraft/class_228	net/minecraft/world/biome/SwampBiome
-c	net/minecraft/class_469	net/minecraft/world/SpruceTreeFeature
 c	net/minecraft/class_227	net/minecraft/world/biome/StoneBeachBiome
+c	net/minecraft/class_469	net/minecraft/world/SpruceTreeFeature
 c	net/minecraft/class_460	net/minecraft/world/LakeFeature
-c	net/minecraft/class_464	net/minecraft/world/HugePineTree
 c	net/minecraft/class_222	net/minecraft/world/biome/OceanBiome
+c	net/minecraft/class_464	net/minecraft/world/HugePineTree
 c	net/minecraft/class_463	net/minecraft/command/GameruleCommand
 c	net/minecraft/class_221	net/minecraft/world/biome/MutatedBiome
 	f	Lnet/minecraft/class_201;	field_854	originalBiome
@@ -1488,23 +1488,23 @@ c	net/minecraft/class_221	net/minecraft/world/biome/MutatedBiome
 c	net/minecraft/class_462	net/minecraft/world/HugeJungleTree
 c	net/minecraft/class_220	net/minecraft/world/biome/MushroomFieldsBiome
 c	net/minecraft/class_461	net/minecraft/world/GlowstoneFeature
-c	net/minecraft/class_479	net/minecraft/world/TallgrassGenerator
 c	net/minecraft/class_237	net/minecraft/block/AbstractPressurePlateBlock
-c	net/minecraft/class_478	net/minecraft/world/SwampTreeFeature
+c	net/minecraft/class_479	net/minecraft/world/TallgrassGenerator
 c	net/minecraft/class_236	net/minecraft/block/AbstractBlockWithEntity
-c	net/minecraft/class_477	net/minecraft/world/PineTreeFeature
+c	net/minecraft/class_478	net/minecraft/world/SwampTreeFeature
 c	net/minecraft/class_235	net/minecraft/block/AnvilBlock
-c	net/minecraft/class_476	net/minecraft/world/WaterfallFeature
+c	net/minecraft/class_477	net/minecraft/world/PineTreeFeature
 c	net/minecraft/class_234	net/minecraft/block/AirBlock
+c	net/minecraft/class_476	net/minecraft/world/WaterfallFeature
 c	net/minecraft/class_238	net/minecraft/block/AbstractRailBlock
 c	net/minecraft/class_471	net/minecraft/world/SugarcaneFeature
 c	net/minecraft/class_470	net/minecraft/world/PumpkinFeature
 c	net/minecraft/class_475	net/minecraft/world/ObsidianTowerFeature
-c	net/minecraft/class_474	net/minecraft/world/SavannaTreeFeature
 c	net/minecraft/class_232	net/minecraft/world/LilyPadFeature
+c	net/minecraft/class_474	net/minecraft/world/SavannaTreeFeature
 c	net/minecraft/class_473	net/minecraft/world/SandFeature
-c	net/minecraft/class_472	net/minecraft/world/DarkOakTreeFeature
 c	net/minecraft/class_230	net/minecraft/world/gen/EndBiome
+c	net/minecraft/class_472	net/minecraft/world/DarkOakTreeFeature
 c	net/minecraft/class_1423	net/minecraft/block/behavior/BucketDispenseBehavior
 c	net/minecraft/class_1422	net/minecraft/block/behavior/FluidBucketDispenseBehavior
 c	net/minecraft/class_1421	net/minecraft/block/behavior/ArrowDispenseBehavior
@@ -1568,13 +1568,25 @@ c	net/minecraft/class_1408	net/minecraft/util/CrashReportGroup
 		p	4		block
 	f	Lnet/minecraft/class_656;	field_5084	information
 c	net/minecraft/class_163	net/minecraft/item/enchantment/WaterBreathingEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_162	net/minecraft/item/enchantment/BetterLootEnchantment
 c	net/minecraft/class_161	net/minecraft/item/enchantment/KnockbackEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_160	net/minecraft/item/enchantment/LureEnchantment
 c	net/minecraft/class_167	net/minecraft/item/enchantment/AquaAffinityEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_166	net/minecraft/item/enchantment/SilkTouchEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_165	net/minecraft/item/enchantment/ThornsEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_164	net/minecraft/item/enchantment/ArmorProtectionEnchantment
+	m	(III)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_1614	net/minecraft/entity/SizeClass
 	f	Lnet/minecraft/class_1614;	field_5906	SIX
 	f	Lnet/minecraft/class_1614;	field_5902	TWO
@@ -2217,6 +2229,7 @@ c	net/minecraft/class_365	net/minecraft/command/EnchantCommand
 c	net/minecraft/class_123	net/minecraft/recipe/ArmorRecipes
 	f	[[Ljava/lang/Object;	field_446	items
 	f	[[Ljava/lang/String;	field_445	recipe
+c	net/minecraft/class_122	net/minecraft/recipe/ArmorDyeRecipe
 c	net/minecraft/class_364	net/minecraft/block/TallGrassBlock
 c	net/minecraft/class_363	net/minecraft/block/StoneSlabBlock
 c	net/minecraft/class_121	net/minecraft/item/StatusEffectStrings
@@ -2237,12 +2250,16 @@ c	net/minecraft/class_138	net/minecraft/recipe/AllShapedRecipes
 	m	(Lnet/minecraft/class_133;)V	method_329	register
 		p	1		recipes
 c	net/minecraft/class_24	net/minecraft/recipe/Result
+c	net/minecraft/class_137	net/minecraft/recipe/ShapelessRecipes
 c	net/minecraft/class_379	net/minecraft/block/WoodenButtonBlock
 c	net/minecraft/class_378	net/minecraft/block/PlanksBlock
 c	net/minecraft/class_26	net/minecraft/inventory/ItemSlot
 c	net/minecraft/class_136	net/minecraft/recipe/ShapedRecipes
 c	net/minecraft/class_377	net/minecraft/block/MetalPressurePlateBlock
 c	net/minecraft/class_135	net/minecraft/recipe/RecipeProvider
+	m	(Lnet/minecraft/class_7;Lnet/minecraft/class_183;)Z	method_325	method_325
+		p	2	ahb	world
+		p	1	aae	inventory
 c	net/minecraft/class_21	net/minecraft/inventory/VillagerInventory
 c	net/minecraft/class_139	net/minecraft/recipe/ToolRecipes
 	f	[[Ljava/lang/Object;	field_464	items
@@ -2288,21 +2305,40 @@ c	net/minecraft/class_149	net/minecraft/util/ToolTags
 	f	Lnet/minecraft/class_149;	field_509	MINING
 c	net/minecraft/class_34	net/minecraft/item/AxeItem
 c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
-	f	Lnet/minecraft/class_148;	field_499	FLAME
-	f	Lnet/minecraft/class_148;	field_500	INFINITY
-	f	Lnet/minecraft/class_148;	field_495	UNBREAKING
+	f	Lnet/minecraft/class_148;	field_488	SMITE
+	f	Lnet/minecraft/class_148;	field_501	LUCK_OF_THE_SEA
 	f	Lnet/minecraft/class_148;	field_484	WATER_BREATHING
-	f	[Lnet/minecraft/class_148;	field_477	enchantments
-	f	Lnet/minecraft/class_148;	field_485	AQUA_AFFINITY
-	f	Lnet/minecraft/class_148;	field_497	POWER
+	f	Lnet/minecraft/class_148;	field_496	FORTUNE
 	f	Lnet/minecraft/class_148;	field_486	THORNS
-	f	Lnet/minecraft/class_149;	field_474	tag
 	f	Lnet/minecraft/class_148;	field_498	PUNCH
-	f	Lnet/minecraft/class_148;	field_491	FIRE_ASPECT
-	f	Lnet/minecraft/class_148;	field_493	EFFICIENCY
+	f	Lnet/minecraft/class_148;	field_480	FIRE_PROTECTION
+	f	Lnet/minecraft/class_148;	field_492	LOOTING
+	f	Lnet/minecraft/class_148;	field_482	BLAST_PROTECTION
+	f	[Lnet/minecraft/class_148;	field_478	ENCHANTMENTS_ARRAY
 	f	Lnet/minecraft/class_148;	field_494	SILK_TOUCH
 	f	Lnet/minecraft/class_148;	field_472	LURE
+	m	(IILnet/minecraft/class_149;)V	<init>	<init>
+		p	3	afu	tag
+		p	1	integer1	id
+	m	(Ljava/lang/String;)Lnet/minecraft/class_148;	method_342	setName
+		p	1	string	name
+	f	Lnet/minecraft/class_148;	field_499	FLAME
+	f	Lnet/minecraft/class_148;	field_489	BANE_OF_ARTHROPODS
+	f	Lnet/minecraft/class_148;	field_500	INFINITY
+	f	Lnet/minecraft/class_148;	field_479	PROTECTION
+	f	Lnet/minecraft/class_148;	field_495	UNBREAKING
+	f	[Lnet/minecraft/class_148;	field_477	ENCHANTMENTS
+	f	Lnet/minecraft/class_148;	field_485	AQUA_AFFINITY
+	f	Lnet/minecraft/class_148;	field_497	POWER
+	f	Lnet/minecraft/class_149;	field_474	tag
+	f	Lnet/minecraft/class_148;	field_487	SHARPNESS
+	f	Lnet/minecraft/class_148;	field_491	FIRE_ASPECT
+	f	Lnet/minecraft/class_148;	field_481	FEATHER_FALLING
+	f	Lnet/minecraft/class_148;	field_493	EFFICIENCY
+	f	Lnet/minecraft/class_148;	field_483	PROJECTILE_PROTECTION
+	f	Ljava/lang/String;	field_475	name
 	f	Lnet/minecraft/class_148;	field_490	KNOCKBACK
+	f	I	field_473	id
 c	net/minecraft/class_389	net/minecraft/block/entity/CommandBlockEntity
 c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
 c	net/minecraft/class_147	net/minecraft/item/enchantment/EfficiencyEnchantment
@@ -2342,6 +2378,8 @@ c	net/minecraft/class_383	net/minecraft/block/entity/BlockEntity
 	f	Lnet/minecraft/class_183;	field_1289	world
 	f	Lorg/apache/logging/log4j/Logger;	field_1288	LOGGER
 c	net/minecraft/class_141	net/minecraft/item/enchantment/PowerEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_382	net/minecraft/block/entity/BeaconBlockEntity
 	f	[[Lnet/minecraft/class_1605;	field_1279	STATUS_EFFECTS
 c	net/minecraft/class_140	net/minecraft/recipe/SwordRecipes
@@ -2355,12 +2393,18 @@ c	net/minecraft/class_387	net/minecraft/block/entity/BrewingStandBlockEntity
 c	net/minecraft/class_145	net/minecraft/item/enchantment/EntityDamageEffectivityEnchantment
 c	net/minecraft/class_144	net/minecraft/item/enchantment/PunchEnchantment
 c	net/minecraft/class_143	net/minecraft/item/enchantment/InfinityEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_142	net/minecraft/item/enchantment/FlameEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_27	net/minecraft/inventory/DispenserInventory
 c	net/minecraft/class_29	net/minecraft/item/AnvilBlockItem
 c	net/minecraft/class_46	net/minecraft/item/TintedPlantBlockItem
 c	net/minecraft/class_45	net/minecraft/item/CoalItem
 c	net/minecraft/class_159	net/minecraft/item/enchantment/FireAspectEnchantment
+	m	(II)V	<init>	<init>
+		p	1	integer1	id
 c	net/minecraft/class_48	net/minecraft/item/group/ItemGroup
 	m	()Z	method_80	titleExists
 	m	()Lnet/minecraft/class_48;	method_83	setNoScrolling

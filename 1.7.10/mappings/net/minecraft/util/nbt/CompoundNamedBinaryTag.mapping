@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_1232 net/minecraft/util/nbt/CompoundNamedBinaryTag
+	FIELD field_4592 LOGGER Lorg/apache/logging/log4j/Logger;

@@ -1,2 +1,1 @@
 CLASS net/minecraft/class_1200 net/minecraft/util/MinecraftVersionRetriever
-	METHOD call ()Ljava/lang/Object;
