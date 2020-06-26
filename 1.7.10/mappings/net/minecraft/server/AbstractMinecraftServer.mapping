@@ -1,9 +1,12 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/AbstractMinecraftServer
 	FIELD field_5340 USERCACHE Ljava/io/File;
+	FIELD field_5342 worlds [Lnet/minecraft/class_1479;
 	FIELD field_5348 LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD field_5349 INSTANCE Lnet/minecraft/server/MinecraftServer;
+	FIELD field_5364 onlineMode Z
 	METHOD main ([Ljava/lang/String;)V
 		ARG 0 args
+	METHOD method_5024 onlineModeEnabled ()Z
 	METHOD method_5029 (Lnet/minecraft/class_191;)V
 		ARG 1 gamemodes
 	METHOD method_5031 (Lnet/minecraft/class_656;)V
@@ -14,5 +17,6 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/AbstractMinecraf
 	METHOD method_5076 getResourceFromFileName (Ljava/lang/String;)Ljava/io/File;
 		ARG 1 fileName
 	METHOD method_5082 generateWorld ()V
+	METHOD method_5088 getDifficulty ()Lnet/minecraft/class_1587;
 	METHOD method_5098 stopServer ()V
 	METHOD method_5102 getCurrentDirectory ()Ljava/io/File;

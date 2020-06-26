@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1451 net/minecraft/server/ServerPropertiesHelper
+	FIELD field_5131 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_5132 properties Ljava/util/Properties;
+	FIELD field_5133 propertiesFile Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 propertiesFile
+	METHOD method_4841 createPropertiesFile ()V
+	METHOD method_4844 setString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 property
+		ARG 2 value
+	METHOD method_4845 setBoolean (Ljava/lang/String;Z)Z
+		ARG 1 property
+		ARG 2 value
+	METHOD method_4846 writeProperties ()V
+	METHOD method_4847 getPropertiesFile ()Ljava/io/File;

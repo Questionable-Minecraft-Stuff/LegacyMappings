@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1441 net/minecraft/server/EndUserLicenseAgreement
+	FIELD field_5117 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_5118 eulaFile Ljava/io/File;
+	FIELD field_5119 accepted Z
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 eulaFile
+	METHOD method_4807 isAccepted ()Z
+	METHOD method_4808 checkIfAccepted (Ljava/io/File;)Z
+		ARG 1 eulaFile
+	METHOD method_4809 writeEula ()V

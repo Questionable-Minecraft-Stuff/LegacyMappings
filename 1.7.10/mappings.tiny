@@ -304,6 +304,9 @@ c	net/minecraft/class_921	net/minecraft/client/particle/ExplosionParticle
 	f	Lnet/minecraft/class_1093;	field_3388	EXPLOSION
 c	net/minecraft/class_1389	net/minecraft/packet/C2SGamemodeAbilitiesPacket
 c	net/minecraft/class_1147	net/minecraft/client/IntegratedServer
+	f	Lnet/minecraft/class_671;	field_4298	client
+	m	(Lnet/minecraft/class_671;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_190;)V	<init>	<init>
+		p	1	bao	client
 	f	Lorg/apache/logging/log4j/Logger;	field_4297	LOGGER2
 c	net/minecraft/class_1146	net/minecraft/client/IntegratedServerPlayers
 c	net/minecraft/class_913	net/minecraft/command/ScoreboardCommand
@@ -429,18 +432,20 @@ c	net/minecraft/class_1594	net/minecraft/util/SnooperProvider
 	m	()Z	method_5559	isSnooperEnabled
 c	net/minecraft/class_1592	net/minecraft/util/SnooperSettings
 	m	(Ljava/lang/String;Ljava/lang/Object;)V	method_5544	addStat
-c	net/minecraft/class_1599	net/minecraft/entity/EntityDamageSource
-	m	(Ljava/lang/String;Lnet/minecraft/class_1610;)V	<init>	<init>
-		p	2	sa	entity
-		p	1	string	name
-	f	Lnet/minecraft/class_1610;	field_5773	entity
 c	net/minecraft/class_1115	net/minecraft/client/util/LanguageHelper
 	m	(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;	method_3583	translateAndFormat
 		p	1		string
 		p	2		args
+c	net/minecraft/class_1599	net/minecraft/entity/EntityDamageSource
+	m	(Ljava/lang/String;Lnet/minecraft/class_1610;)V	<init>	<init>
+		p	2		entity
+		p	1		name
+	f	Lnet/minecraft/class_1610;	field_5773	entity
+c	net/minecraft/class_1114	net/minecraft/client/LanguageHelper
+	f	Lnet/minecraft/class_1115;	field_4233	INSTANCE
 c	net/minecraft/class_1598	net/minecraft/entity/DamageSource
 	m	(Lnet/minecraft/class_1789;)Lnet/minecraft/class_1598;	method_5584	method_5584
-		p	0	yz	entity
+		p	0		entity
 	f	Lnet/minecraft/class_1598;	field_5760	WITHER
 	f	Lnet/minecraft/class_1598;	field_5761	ANVIL
 	f	Lnet/minecraft/class_1598;	field_5750	ON_FIRE
@@ -456,12 +461,10 @@ c	net/minecraft/class_1598	net/minecraft/entity/DamageSource
 	f	Lnet/minecraft/class_1598;	field_5759	MAGIC
 	f	Lnet/minecraft/class_1598;	field_5749	IN_FIRE
 	m	(Lnet/minecraft/class_1627;)Lnet/minecraft/class_1287;	method_5589	method_5589
-		p	1	sv	entity
+		p	1		entity
 	m	()Lnet/minecraft/class_1610;	method_5597	getEntity
 	m	(Lnet/minecraft/class_1627;)Lnet/minecraft/class_1598;	method_5583	method_5583
-		p	0	sv	entity
-c	net/minecraft/class_1114	net/minecraft/client/LanguageHelper
-	f	Lnet/minecraft/class_1115;	field_4233	INSTANCE
+		p	0		entity
 c	net/minecraft/class_1113	net/minecraft/client/Language
 c	net/minecraft/class_1355	net/minecraft/util/UsedMemoryRetriever
 c	net/minecraft/class_1112	net/minecraft/client/util/I18n
@@ -1287,22 +1290,26 @@ c	net/minecraft/class_683	net/minecraft/command/NetstatCommand
 c	net/minecraft/class_441	net/minecraft/world/AbstractTreeFeature
 c	net/minecraft/server/MinecraftServer	net/minecraft/server/AbstractMinecraftServer
 	m	()V	method_5082	generateWorld
+	f	Ljava/io/File;	field_5340	USERCACHE
+	m	(Lnet/minecraft/class_656;)V	method_5031	method_5031
+		p	1		builder
+	m	()Lnet/minecraft/class_1587;	method_5088	getDifficulty
+	m	()Z	method_5024	onlineModeEnabled
+	f	Lnet/minecraft/server/MinecraftServer;	field_5349	INSTANCE
+	m	()V	method_5098	stopServer
+	m	(Ljava/lang/String;)Ljava/io/File;	method_5076	getResourceFromFileName
+		p	1		fileName
 	m	(Lnet/minecraft/class_191;)V	method_5029	method_5029
 		p	1		gamemodes
 	m	(Ljava/lang/String;)V	method_5032	convertWorldToAnvil
 		p	1		string
 	m	()Ljava/io/File;	method_5102	getCurrentDirectory
+	f	Z	field_5364	onlineMode
 	m	(Ljava/lang/String;Ljava/lang/String;JLnet/minecraft/class_193;Ljava/lang/String;)V	method_5033	startLoadingLevel
-	f	Ljava/io/File;	field_5340	USERCACHE
-	m	(Lnet/minecraft/class_656;)V	method_5031	method_5031
-		p	1		builder
 	f	Lorg/apache/logging/log4j/Logger;	field_5348	LOGGER
+	f	[Lnet/minecraft/class_1479;	field_5342	worlds
 	m	([Ljava/lang/String;)V	main	main
 		p	0		args
-	f	Lnet/minecraft/server/MinecraftServer;	field_5349	INSTANCE
-	m	()V	method_5098	stopServer
-	m	(Ljava/lang/String;)Ljava/io/File;	method_5076	getResourceFromFileName
-		p	1		fileName
 c	net/minecraft/class_457	net/minecraft/world/HugeMushroomFeature
 c	net/minecraft/class_699	net/minecraft/util/SomeRandomError
 c	net/minecraft/class_456	net/minecraft/world/LavaPocketFeature
@@ -1570,9 +1577,9 @@ c	net/minecraft/class_1636	net/minecraft/entity/AbstractAIEntity
 c	net/minecraft/class_1634	net/minecraft/entity/PaintingEntity
 c	net/minecraft/class_1639	net/minecraft/entity/AbstractTameableEntity
 c	net/minecraft/class_1637	net/minecraft/util/EntityDataHelper
-	f	Lnet/minecraft/class_1610;	field_6076	entity
 	m	(Lnet/minecraft/class_1610;)V	<init>	<init>
-		p	1	sa	entity
+		p	1		entity
+	f	Lnet/minecraft/class_1610;	field_6076	entity
 c	net/minecraft/class_1646	net/minecraft/entity/EntityAttribute
 	f	D	field_6106	maximumValue
 	m	()Ljava/lang/String;	method_6051	getName
@@ -1600,24 +1607,24 @@ c	net/minecraft/class_1408	net/minecraft/util/CrashReportGroup
 	f	Lnet/minecraft/class_656;	field_5084	information
 c	net/minecraft/class_163	net/minecraft/item/enchantment/WaterBreathingEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_162	net/minecraft/item/enchantment/BetterLootEnchantment
 c	net/minecraft/class_161	net/minecraft/item/enchantment/KnockbackEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_160	net/minecraft/item/enchantment/LureEnchantment
 c	net/minecraft/class_167	net/minecraft/item/enchantment/AquaAffinityEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_166	net/minecraft/item/enchantment/SilkTouchEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_165	net/minecraft/item/enchantment/ThornsEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_164	net/minecraft/item/enchantment/ArmorProtectionEnchantment
 	m	(III)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_1614	net/minecraft/entity/SizeClass
 	f	Lnet/minecraft/class_1614;	field_5906	SIX
 	f	Lnet/minecraft/class_1614;	field_5902	TWO
@@ -1684,7 +1691,7 @@ c	net/minecraft/class_1628	net/minecraft/entity/AbstractNonPlayerLivingEntity
 		p	1		player
 c	net/minecraft/class_1627	net/minecraft/entity/AbstractLivingEntity
 	m	(Lnet/minecraft/class_1598;)V	method_5815	method_5815
-		p	1	ro	source
+		p	1		source
 	m	()Lnet/minecraft/class_1631;	method_5855	setHostileEntityTag
 c	net/minecraft/class_1626	net/minecraft/item/entity/LeashKnotEntity
 c	net/minecraft/realms/RealmsButton	net/minecraft/realms/RealmsButton
@@ -1741,9 +1748,9 @@ c	net/minecraft/class_198	net/minecraft/world/TemperoryChunkStorage
 c	net/minecraft/class_1600	net/minecraft/entity/DoubleDamageSource
 	f	Lnet/minecraft/class_1610;	field_5774	attacker
 	m	(Ljava/lang/String;Lnet/minecraft/class_1610;Lnet/minecraft/class_1610;)V	<init>	<init>
-		p	2	sa2	entity
-		p	3	sa3	attacker
-		p	1	string	name
+		p	2		entity
+		p	3		attacker
+		p	1		name
 c	net/minecraft/class_1607	net/minecraft/entity/AbstractGrowingEntity
 c	net/minecraft/class_192	net/minecraft/util/BlockProvider
 c	net/minecraft/class_191	net/minecraft/world/Gamemodes
@@ -1989,6 +1996,16 @@ c	net/minecraft/class_1227	net/minecraft/util/SuperRegistry
 	m	()Ljava/util/Map;	method_3956	getNewHashMap
 	f	Ljava/util/Map;	field_4582	map
 c	net/minecraft/class_1226	net/minecraft/util/SystemNameArchVersionRetriever
+c	net/minecraft/class_1441	net/minecraft/server/EndUserLicenseAgreement
+	f	Lorg/apache/logging/log4j/Logger;	field_5117	LOGGER
+	f	Ljava/io/File;	field_5118	eulaFile
+	m	()Z	method_4807	isAccepted
+	f	Z	field_5119	accepted
+	m	()V	method_4809	writeEula
+	m	(Ljava/io/File;)V	<init>	<init>
+		p	1	file	eulaFile
+	m	(Ljava/io/File;)Z	method_4808	checkIfAccepted
+		p	1	file	eulaFile
 c	net/minecraft/class_1683	net/minecraft/client/util/OperatingSystem
 	f	Lnet/minecraft/class_1683;	field_6268	SOLARIS
 	f	Lnet/minecraft/class_1683;	field_6269	WINDOWS
@@ -2009,12 +2026,30 @@ c	net/minecraft/class_1443	net/minecraft/server/DedicatedServerThread
 c	net/minecraft/class_1200	net/minecraft/util/MinecraftVersionRetriever
 c	net/minecraft/class_1436	net/minecraft/block/behavior/BoatDispenseBehavior
 c	net/minecraft/class_1435	net/minecraft/util/BlockTypeRetriever
+c	net/minecraft/class_1451	net/minecraft/server/ServerPropertiesHelper
+	m	()V	method_4841	createPropertiesFile
+	f	Ljava/io/File;	field_5133	propertiesFile
+	f	Lorg/apache/logging/log4j/Logger;	field_5131	LOGGER
+	m	(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;	method_4844	setString
+		p	1	string1	property
+		p	2	string2	value
+	m	()V	method_4846	writeProperties
+	f	Ljava/util/Properties;	field_5132	properties
+	m	(Ljava/lang/String;Z)Z	method_4845	setBoolean
+		p	2	boolean2	value
+		p	1	string	property
+	m	(Ljava/io/File;)V	<init>	<init>
+		p	1	file	propertiesFile
+	m	()Ljava/io/File;	method_4847	getPropertiesFile
 c	net/minecraft/class_1213	net/minecraft/util/RegistryWithKeys
 	f	Ljava/lang/String;	field_4556	name
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1		name
 c	net/minecraft/class_1212	net/minecraft/block/behavior/SuperDispenserItemBehaviour
 c	net/minecraft/class_1454	net/minecraft/server/DedicatedServer
+	f	Lnet/minecraft/class_1451;	field_5139	propertiesHelper
+	f	Lorg/apache/logging/log4j/Logger;	field_5135	LOGGER2
+	f	Lnet/minecraft/class_1441;	field_5140	eula
 c	net/minecraft/class_1453	net/minecraft/server/DedicatedServerPlayers
 c	net/minecraft/class_765	net/minecraft/client/gui/SoundButton
 c	net/minecraft/class_523	net/minecraft/world/structure/StrongholdStructureFeature
@@ -2270,8 +2305,8 @@ c	net/minecraft/class_365	net/minecraft/command/EnchantCommand
 c	net/minecraft/class_123	net/minecraft/recipe/ArmorRecipes
 	f	[[Ljava/lang/Object;	field_446	items
 	f	[[Ljava/lang/String;	field_445	recipe
-c	net/minecraft/class_122	net/minecraft/recipe/ArmorDyeRecipe
 c	net/minecraft/class_364	net/minecraft/block/TallGrassBlock
+c	net/minecraft/class_122	net/minecraft/recipe/ArmorDyeRecipe
 c	net/minecraft/class_363	net/minecraft/block/StoneSlabBlock
 c	net/minecraft/class_121	net/minecraft/item/StatusEffectStrings
 	f	Ljava/lang/String;	field_430	GHAST_TEAR_STRING
@@ -2291,16 +2326,16 @@ c	net/minecraft/class_138	net/minecraft/recipe/AllShapedRecipes
 	m	(Lnet/minecraft/class_133;)V	method_329	register
 		p	1		recipes
 c	net/minecraft/class_24	net/minecraft/recipe/Result
-c	net/minecraft/class_137	net/minecraft/recipe/ShapelessRecipes
 c	net/minecraft/class_379	net/minecraft/block/WoodenButtonBlock
+c	net/minecraft/class_137	net/minecraft/recipe/ShapelessRecipes
 c	net/minecraft/class_378	net/minecraft/block/PlanksBlock
 c	net/minecraft/class_26	net/minecraft/inventory/ItemSlot
 c	net/minecraft/class_136	net/minecraft/recipe/ShapedRecipes
 c	net/minecraft/class_377	net/minecraft/block/MetalPressurePlateBlock
 c	net/minecraft/class_135	net/minecraft/recipe/RecipeProvider
 	m	(Lnet/minecraft/class_7;Lnet/minecraft/class_183;)Z	method_325	method_325
-		p	2	ahb	world
-		p	1	aae	inventory
+		p	2		world
+		p	1		inventory
 c	net/minecraft/class_21	net/minecraft/inventory/VillagerInventory
 c	net/minecraft/class_139	net/minecraft/recipe/ToolRecipes
 	f	[[Ljava/lang/Object;	field_464	items
@@ -2347,7 +2382,7 @@ c	net/minecraft/class_149	net/minecraft/util/ToolTags
 c	net/minecraft/class_34	net/minecraft/item/AxeItem
 c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
 	m	(ILnet/minecraft/class_1631;)F	method_336	getDamageByHostileEntityTag
-		p	2	sz	tag
+		p	2		tag
 	f	Lnet/minecraft/class_148;	field_488	SMITE
 	f	Lnet/minecraft/class_148;	field_501	LUCK_OF_THE_SEA
 	f	Lnet/minecraft/class_148;	field_484	WATER_BREATHING
@@ -2357,20 +2392,20 @@ c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
 	f	Lnet/minecraft/class_148;	field_480	FIRE_PROTECTION
 	f	Lnet/minecraft/class_148;	field_492	LOOTING
 	f	Lnet/minecraft/class_148;	field_482	BLAST_PROTECTION
-	f	[Lnet/minecraft/class_148;	field_478	ENCHANTMENTS_ARRAY
 	f	Lnet/minecraft/class_148;	field_494	SILK_TOUCH
+	f	[Lnet/minecraft/class_148;	field_478	ENCHANTMENTS_ARRAY
 	f	Lnet/minecraft/class_148;	field_472	LURE
 	m	(ILnet/minecraft/class_1598;)I	method_335	getDamageModifier
 	m	(IILnet/minecraft/class_149;)V	<init>	<init>
-		p	2	integer2	weight
-		p	3	afu	tag
-		p	1	integer1	id
+		p	2		weight
+		p	3		tag
+		p	1		id
 	m	(Ljava/lang/String;)Lnet/minecraft/class_148;	method_342	setName
-		p	1	string	name
+		p	1		name
 	f	I	field_476	weight
 	f	Lnet/minecraft/class_148;	field_499	FLAME
-	f	Lnet/minecraft/class_148;	field_489	BANE_OF_ARTHROPODS
 	f	Lnet/minecraft/class_148;	field_500	INFINITY
+	f	Lnet/minecraft/class_148;	field_489	BANE_OF_ARTHROPODS
 	f	Lnet/minecraft/class_148;	field_479	PROTECTION
 	f	Lnet/minecraft/class_148;	field_495	UNBREAKING
 	f	[Lnet/minecraft/class_148;	field_477	ENCHANTMENTS
@@ -2385,14 +2420,14 @@ c	net/minecraft/class_148	net/minecraft/item/enchantment/AbstractEnchantment
 	f	Lnet/minecraft/class_148;	field_493	EFFICIENCY
 	f	Lnet/minecraft/class_148;	field_483	PROJECTILE_PROTECTION
 	m	(Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;I)V	method_343	method_343
-		p	1	sv	entity
-		p	2	sa	entity2
+		p	1		entity
+		p	2		entity2
 	f	Ljava/lang/String;	field_475	name
 	f	Lnet/minecraft/class_148;	field_490	KNOCKBACK
 	m	()I	method_340	getMaximumLevel
 	m	(Lnet/minecraft/class_1627;Lnet/minecraft/class_1610;I)V	method_339	method_339
-		p	2	sa	entity2
-		p	1	sv	entity
+		p	2		entity2
+		p	1		entity
 	f	I	field_473	id
 c	net/minecraft/class_389	net/minecraft/block/entity/CommandBlockEntity
 c	net/minecraft/class_37	net/minecraft/item/SugarcaneItem
@@ -2434,7 +2469,7 @@ c	net/minecraft/class_383	net/minecraft/block/entity/BlockEntity
 	f	Lorg/apache/logging/log4j/Logger;	field_1288	LOGGER
 c	net/minecraft/class_141	net/minecraft/item/enchantment/PowerEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_382	net/minecraft/block/entity/BeaconBlockEntity
 	f	[[Lnet/minecraft/class_1605;	field_1279	STATUS_EFFECTS
 c	net/minecraft/class_140	net/minecraft/recipe/SwordRecipes
@@ -2449,17 +2484,17 @@ c	net/minecraft/class_145	net/minecraft/item/enchantment/EntityDamageEffectivity
 c	net/minecraft/class_144	net/minecraft/item/enchantment/PunchEnchantment
 c	net/minecraft/class_143	net/minecraft/item/enchantment/InfinityEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_142	net/minecraft/item/enchantment/FlameEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_27	net/minecraft/inventory/DispenserInventory
 c	net/minecraft/class_29	net/minecraft/item/AnvilBlockItem
 c	net/minecraft/class_46	net/minecraft/item/TintedPlantBlockItem
 c	net/minecraft/class_45	net/minecraft/item/CoalItem
 c	net/minecraft/class_159	net/minecraft/item/enchantment/FireAspectEnchantment
 	m	(II)V	<init>	<init>
-		p	1	integer1	id
+		p	1		id
 c	net/minecraft/class_48	net/minecraft/item/group/ItemGroup
 	m	()Z	method_80	titleExists
 	m	()Lnet/minecraft/class_48;	method_83	setNoScrolling
@@ -2506,11 +2541,11 @@ c	net/minecraft/class_44	net/minecraft/item/CarrotOnAStickItem
 c	net/minecraft/class_43	net/minecraft/item/BucketItem
 c	net/minecraft/class_394	net/minecraft/block/entity/DispenserBlockEntity
 c	net/minecraft/class_393	net/minecraft/block/entity/DaylightDetectorBlockEntity
-c	net/minecraft/class_150	net/minecraft/enchantment/EnchantmentHelper
-	m	(ILnet/minecraft/class_86;)I	method_348	method_348
-		p	1	add	stack
 c	net/minecraft/class_392	net/minecraft/command/ExperienceCommand
 c	net/minecraft/class_40	net/minecraft/item/GlassBottleItem
+c	net/minecraft/class_150	net/minecraft/enchantment/EnchantmentHelper
+	m	(ILnet/minecraft/class_86;)I	method_348	method_348
+		p	1		stack
 c	net/minecraft/class_391	net/minecraft/block/entity/RedstoneComparatorBlockEntity
 c	net/minecraft/class_398	net/minecraft/block/entity/FlowerPotBlockEntity
 c	net/minecraft/class_397	net/minecraft/block/entity/EnderChestBlockEntity

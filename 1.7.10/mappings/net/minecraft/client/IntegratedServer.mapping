@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_1147 net/minecraft/client/IntegratedServer
 	FIELD field_4297 LOGGER2 Lorg/apache/logging/log4j/Logger;
+	FIELD field_4298 client Lnet/minecraft/class_671;
+	METHOD <init> (Lnet/minecraft/class_671;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_190;)V
+		ARG 1 client
