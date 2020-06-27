@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_171 net/minecraft/block/behavior/CommandBlockBehavior
+	FIELD field_539 DATE_FORMAT Ljava/text/SimpleDateFormat;
+	METHOD method_404 (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt
+	METHOD method_407 (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt

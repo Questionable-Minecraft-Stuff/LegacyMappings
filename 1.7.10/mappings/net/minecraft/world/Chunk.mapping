@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_415 net/minecraft/world/Chunk
+	FIELD field_1386 world Lnet/minecraft/class_183;
+	FIELD field_1390 blockEntities Ljava/util/Map;
+	FIELD field_1391 entities [Ljava/util/List;
+	FIELD field_1396 hasEntities Z
+	FIELD field_1401 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_1404 isLoaded Z
+	METHOD <init> (Lnet/minecraft/class_183;II)V
+		ARG 1 world

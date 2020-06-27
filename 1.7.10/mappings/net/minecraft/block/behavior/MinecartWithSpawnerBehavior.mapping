@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_403 net/minecraft/block/behavior/MinecartWithSpawnerBehavior ACC:PUBLIC
+	FIELD field_1356 entity Lnet/minecraft/class_402;
+	METHOD <init> (Lnet/minecraft/class_402;)V
+		ARG 1 entity

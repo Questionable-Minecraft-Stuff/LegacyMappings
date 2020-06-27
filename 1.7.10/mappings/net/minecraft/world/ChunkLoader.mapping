@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_421 net/minecraft/world/ChunkLoader
+	METHOD method_1380 (Lnet/minecraft/class_422;Lnet/minecraft/class_1232;Lnet/minecraft/class_209;)V
+		ARG 1 nbt
+	METHOD method_1381 (Lnet/minecraft/class_1232;)Lnet/minecraft/class_422;
+		ARG 0 nbt

@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_76 net/minecraft/item/FishType
+	FIELD field_155 COD Lnet/minecraft/class_76;
+	FIELD field_156 SALMON Lnet/minecraft/class_76;
+	FIELD field_157 CLOWNFISH Lnet/minecraft/class_76;
+	FIELD field_158 PUFFERFISH Lnet/minecraft/class_76;
+	FIELD field_159 FISHES Ljava/util/Map;
+	FIELD field_160 id I
+	FIELD field_161 name Ljava/lang/String;
+	FIELD field_162 uncookedIcon Lnet/minecraft/class_1589;
+	FIELD field_163 cookedIcon Lnet/minecraft/class_1589;
+	FIELD field_164 uncookedHungerPoints I
+	FIELD field_165 uncookedSaturation F
+	FIELD field_166 cookedHungerPoints I
+	FIELD field_167 cookedSaturation F
+	FIELD field_168 canBeCooked Z
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;IF)V
+		ARG 3 id
+		ARG 4 name
+		ARG 5 uncookedHungerPoints
+		ARG 6 uncookedSaturation
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;IFIF)V
+		ARG 3 id
+		ARG 4 name
+		ARG 5 uncookedHungerPoints
+		ARG 6 uncookedSaturation
+		ARG 7 cookedHungerPoints
+		ARG 8 cookedSaturation
+	METHOD method_106 getId ()I
+	METHOD method_107 getFishTypeById (I)Lnet/minecraft/class_76;
+		ARG 0 id
+	METHOD method_108 getFishType (Lnet/minecraft/class_86;)Lnet/minecraft/class_76;
+		ARG 0 stack
+	METHOD method_109 registerIconProviders (Lnet/minecraft/class_1590;)V
+		ARG 1 provider
+	METHOD method_110 getName ()Ljava/lang/String;
+	METHOD method_111 getHungerPointsWhenUncooked ()I
+	METHOD method_112 getSaturationWhenUncooked ()F
+	METHOD method_113 getHungerPointsWhenCooked ()I
+	METHOD method_114 getSaturationWhenCooked ()F
+	METHOD method_115 getIconWhenUncooked ()Lnet/minecraft/class_1589;
+	METHOD method_116 getIconWhenCooked ()Lnet/minecraft/class_1589;
+	METHOD method_117 canBeCooked ()Z
+	METHOD values ()[Lnet/minecraft/class_76;

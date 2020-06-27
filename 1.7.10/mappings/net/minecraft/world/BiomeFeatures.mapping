@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_208 net/minecraft/world/BiomeFeatures
+	FIELD field_803 clay Lnet/minecraft/class_451;
+	FIELD field_804 sand Lnet/minecraft/class_451;
+	FIELD field_805 gravel Lnet/minecraft/class_451;
+	FIELD field_806 dirt Lnet/minecraft/class_451;
+	FIELD field_807 largeGravel Lnet/minecraft/class_451;
+	FIELD field_808 coal_ore Lnet/minecraft/class_451;
+	FIELD field_809 iron_ore Lnet/minecraft/class_451;
+	FIELD field_810 gold_ore Lnet/minecraft/class_451;
+	FIELD field_811 redstone_ore Lnet/minecraft/class_451;
+	FIELD field_812 diamond_ore Lnet/minecraft/class_451;
+	FIELD field_813 lapis_lazuli_ore Lnet/minecraft/class_451;
+	FIELD field_814 dandelion Lnet/minecraft/class_452;
+	FIELD field_815 brown_mushroom Lnet/minecraft/class_451;
+	FIELD field_816 red_mushroom Lnet/minecraft/class_451;
+	FIELD field_817 huge_mushroom Lnet/minecraft/class_451;
+	FIELD field_818 sugarcane Lnet/minecraft/class_451;
+	FIELD field_819 cacti Lnet/minecraft/class_451;
+	FIELD field_820 lily_pads Lnet/minecraft/class_451;
+	METHOD method_765 (Lnet/minecraft/class_201;)V
+		ARG 1 biome

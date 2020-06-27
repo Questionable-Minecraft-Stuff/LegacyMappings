@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_553 net/minecraft/world/structure/AbstractStructureComponent
+CLASS net/minecraft/class_553 net/minecraft/world/structure/AbstractStructurePiece
 	METHOD method_1612 (Lnet/minecraft/class_183;Lnet/minecraft/class_484;Ljava/util/Random;IIII[Lnet/minecraft/class_1582;I)Z
 		ARG 1 world
 	METHOD method_1615 (Lnet/minecraft/class_183;Ljava/util/Random;Lnet/minecraft/class_484;)Z

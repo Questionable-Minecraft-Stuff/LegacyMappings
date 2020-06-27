@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_231 net/minecraft/world/EndDimensionFeatures
+	FIELD field_863 feature Lnet/minecraft/class_451;

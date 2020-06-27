@@ -1,1 +1,12 @@
 CLASS net/minecraft/class_1589 net/minecraft/client/util/IconProvider
+	METHOD method_5527 getWidth ()I
+	METHOD method_5528 getInterposedX (D)F
+		ARG 1 x
+	METHOD method_5529 getHeight ()I
+	METHOD method_5530 getInterposedY (D)F
+		ARG 1 y
+	METHOD method_5531 getMinX ()F
+	METHOD method_5532 getMaxX ()F
+	METHOD method_5533 getMinY ()F
+	METHOD method_5534 getMaxY ()F
+	METHOD method_5535 getName ()Ljava/lang/String;

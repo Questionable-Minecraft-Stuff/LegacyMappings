@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_172 net/minecraft/block/behavior/AbstractSpawnerBehavior
+	METHOD method_418 (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt
+	METHOD method_423 (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt

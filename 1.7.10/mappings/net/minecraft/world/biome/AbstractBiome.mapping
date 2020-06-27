@@ -70,6 +70,8 @@ CLASS net/minecraft/class_201 net/minecraft/world/biome/AbstractBiome
 	METHOD method_725 setColor (IZ)Lnet/minecraft/class_201;
 		ARG 1 color
 		ARG 2 bool
+	METHOD method_727 (Lnet/minecraft/class_183;Ljava/util/Random;[Lnet/minecraft/class_242;[BIID)V
+		ARG 1 world
 	METHOD method_728 isEqualTo (Lnet/minecraft/class_201;)Z
 		ARG 1 biome
 	METHOD method_729 setBiomeHeight (Lnet/minecraft/class_202;)Lnet/minecraft/class_201;
