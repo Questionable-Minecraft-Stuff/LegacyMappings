@@ -131,14 +131,14 @@ c	net/minecraft/class_1546	net/minecraft/stat/InteractionStat
 		p	1		name
 		p	3		statItem
 c	net/minecraft/class_1304	net/minecraft/util/AllotedMemoryRetriever
+c	net/minecraft/class_1545	net/minecraft/stat/NormalStat
 c	net/minecraft/class_1787	net/minecraft/entity/PlayerInventory
 	m	()I	method_6549	getHotbarSlots
 	f	Lnet/minecraft/class_1789;	field_6696	player
 	m	(Lnet/minecraft/class_1789;)V	<init>	<init>
-		p	1	yz	player
+		p	1		player
 	f	[Lnet/minecraft/class_86;	field_6693	invSlots
 	f	[Lnet/minecraft/class_86;	field_6694	armorSlots
-c	net/minecraft/class_1545	net/minecraft/stat/NormalStat
 c	net/minecraft/class_1760	net/minecraft/entity/BlazeEntity
 c	net/minecraft/class_1522	net/minecraft/server/AbstractServerResponse
 c	net/minecraft/class_1764	net/minecraft/entity/EndermanEntity
@@ -794,7 +794,7 @@ c	net/minecraft/class_651	net/minecraft/block/MovableObject
 	f	Lnet/minecraft/class_651;	field_1989	NONE
 	f	Lnet/minecraft/class_651;	field_1990	BLOCK
 	f	Lnet/minecraft/class_651;	field_1991	ENTITY
-c	net/minecraft/class_650	net/minecraft/block/MovableObjectPosition
+c	net/minecraft/class_650	net/minecraft/block/MovableObjectPos
 c	net/minecraft/class_892	net/minecraft/world/ClientWorld
 c	net/minecraft/class_890	net/minecraft/client/ClientChunkHelper
 c	net/minecraft/class_409	net/minecraft/block/PistonHeadBlock
@@ -1200,32 +1200,32 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	m	()D	method_809	getMinZ
 	m	(Lnet/minecraft/class_246;)Lnet/minecraft/class_242;	method_859	setSound
 		p	1		sound
-	m	()Z	method_812	canSilkTouchHarvest
 	m	(II)Lnet/minecraft/class_1589;	method_827	getIcon
+	m	()Z	method_812	canSilkTouchHarvest
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;)V	method_849	onCollision
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	sa	entity
-		p	1	ahb	world
-		p	2	integer2	x
+		p	3		y
+		p	4		z
+		p	5		entity
+		p	1		world
+		p	2		x
 	f	Lnet/minecraft/class_246;	field_901	STONE2
 	m	()Lnet/minecraft/class_48;	method_817	getItemGroup
-	f	Z	field_917	hasStats
 	m	()Lnet/minecraft/class_242;	method_921	setUnbreakable
+	f	Z	field_917	hasStats
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_242;)V	method_844	onAdjacentUpdate
 		p	1		world
 		p	4		posZ
 		p	2		posX
 		p	3		posY
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1627;Lnet/minecraft/class_86;)V	method_852	onBlockPlacedByEntity
-		p	2	integer2	x
-		p	1	ahb	world
-		p	4	integer4	z
-		p	3	integer3	y
-		p	6	add	stack
-		p	5	sv	entity
+		p	2		x
+		p	1		world
+		p	4		z
+		p	3		y
+		p	6		stack
+		p	5		entity
 	m	(I)Lnet/minecraft/class_86;	method_909	createStackFromBlock
-		p	1	integer	state
+		p	1		state
 	m	(Ljava/util/Random;)I	method_861	getNumberOfDrops
 		p	1		random
 	m	(Lnet/minecraft/class_192;III)I	method_883	method_883
@@ -1233,42 +1233,42 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	3		posY
 		p	2		posX
 	m	(Lnet/minecraft/class_242;)I	method_876	getIdByBlock
-		p	0	aji	block
+		p	0		block
 	m	(ILjava/util/Random;I)Lnet/minecraft/class_84;	method_829	getDroppedItem
-		p	1	integer1	state
-		p	3	integer3	fortuneLevel
-		p	2	random	random
+		p	1		state
+		p	3		fortuneLevel
+		p	2		random
 	f	Ljava/lang/String;	field_896	name
 	f	Lnet/minecraft/class_246;	field_908	ANVIL
 	m	(I)Lnet/minecraft/class_242;	method_902	setOpacity
 		p	1		opacity
 	m	()Z	method_922	hasRandomTicks
-	m	(II)Lnet/minecraft/class_1589;	method_868	getItemIcon
-		p	1	integer1	side
-		p	2	integer2	state
 	m	(Lnet/minecraft/class_183;IIII)V	method_870	onBreakByPlayer
 		p	2		posX
 		p	3		posY
 		p	4		posZ
 		p	1		world
+	m	(II)Lnet/minecraft/class_1589;	method_868	getItemIcon
+		p	1		side
+		p	2		state
 	m	(Lnet/minecraft/class_183;IIII)V	method_882	summonXp
 		p	1		world
 	m	(F)Lnet/minecraft/class_242;	method_824	setLight
 		p	1		light
 	f	Lnet/minecraft/class_246;	field_900	GRASS
 	m	(Lnet/minecraft/class_242;Lnet/minecraft/class_242;)Z	method_858	checkIfEqual
-		p	0	aji1	block1
-		p	1	aji2	block2
+		p	0		block1
+		p	1		block2
 	f	Z	field_916	isCalled
 	m	(Lnet/minecraft/class_183;IIILjava/util/Random;)V	method_848	onUpdateTick
 		p	1		world
 		p	3		posY
 		p	2		posX
 		p	4		posZ
-	m	(Lnet/minecraft/class_192;III)V	method_856	method_856
-		p	1	ahl	world
 	m	(F)Lnet/minecraft/class_242;	method_880	setHardness
 		p	1		hardness
+	m	(Lnet/minecraft/class_192;III)V	method_856	method_856
+		p	1		world
 	m	(Lnet/minecraft/class_183;III)F	method_899	getHardness
 		p	4		posZ
 		p	1		world
@@ -1277,59 +1277,59 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	m	()Ljava/lang/String;	method_821	geName
 	f	F	field_891	slipperiness
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;IFFF)Z	method_854	onActivation
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	yz	entity
-		p	6	integer6	side
+		p	3		y
+		p	4		z
+		p	5		entity
+		p	6		side
 		p	1		world
-		p	2	integer2	x
-		p	7	float7	subX
-		p	8	float8	subY
-		p	9	float9	subZ
+		p	2		x
+		p	7		subX
+		p	8		subY
+		p	9		subZ
 	m	()V	method_918	registerBlocks
 	m	(Lnet/minecraft/class_183;IIII)V	method_900	beforeHarvest
-		p	5	integer5	state
-		p	4	integer4	z
-		p	3	integer3	y
-		p	2	integer2	x
+		p	5		state
+		p	4		z
+		p	3		y
+		p	2		x
 		p	1		world
 	f	D	field_887	maxZ
 	m	()D	method_928	getMinY
 	m	(Lnet/minecraft/class_1590;)V	method_862	registerIcon
-		p	1	rg	provider
+		p	1		provider
 	m	(Lnet/minecraft/class_177;)Z	method_834	canBeExplodedToItem
-		p	1	agw	explosion
+		p	1		explosion
 	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_893	setName
-		p	1	string	name
+		p	1		name
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;F)V	method_850	onEntityFallen
-		p	2	integer2	x
-		p	1	ahb	world
-		p	4	integer4	z
-		p	3	integer3	y
-		p	6	float6	height
-		p	5	sa	entity
+		p	2		x
+		p	1		world
+		p	4		z
+		p	3		y
+		p	6		height
+		p	5		entity
 	f	Lnet/minecraft/class_246;	field_903	GLASS
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;)V	method_853	method_853
 		p	1		world
 	f	Lnet/minecraft/class_246;	field_898	WOOD
 	m	(Lnet/minecraft/class_84;Lnet/minecraft/class_48;Ljava/util/List;)V	method_833	addToItemGroup
-		p	1	adb	item
-		p	3	list	list
-		p	2	abt	group
+		p	1		item
+		p	3		list
+		p	2		group
 	m	()Ljava/lang/String;	method_822	getItemIconName
 	m	()Z	method_818	isFlowerPot
 	f	F	field_915	resistance
 	m	(Lnet/minecraft/class_183;Lnet/minecraft/class_1789;IIII)V	method_855	harvest
-		p	1	ahb	world
-		p	3	integer3	x
-		p	2	yz	player
-		p	5	integer5	z
-		p	4	integer4	y
-		p	6	integer6	state
+		p	1		world
+		p	3		x
+		p	2		player
+		p	5		z
+		p	4		y
+		p	6		state
 	f	D	field_886	maxY
-	m	()D	method_808	getMaxY
 	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_878	getBlockByString
-		p	0	string	id
+		p	0		id
+	m	()D	method_808	getMaxY
 	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;	method_903	method_903
 		p	1		world
 	m	()Z	method_920	isFullCube
@@ -1340,23 +1340,23 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	1		world
 	m	()Lnet/minecraft/class_584;	method_917	getSubstance
 	m	(Lnet/minecraft/class_183;III)V	method_914	onRaining
-		p	3	integer3	y
-		p	2	integer2	x
+		p	3		y
+		p	2		x
 		p	1		world
-		p	4	integer4	z
+		p	4		z
 	f	Lnet/minecraft/class_246;	field_902	STONE3
 	m	()Lnet/minecraft/class_242;	method_815	noStats
 	m	()I	method_905	getPistonInteractionType
 	m	(Lnet/minecraft/class_48;)Lnet/minecraft/class_242;	method_831	setItemGroup
 		p	1		itemGroup
 	f	D	field_885	maxX
-	m	()Ljava/lang/String;	method_823	getTranslationKey
 	m	(Lnet/minecraft/class_192;IIII)I	method_884	weakPower
-		p	1	ahl	provider
-		p	2	integer2	x
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	integer5	state
+		p	1		provider
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		state
+	m	()Ljava/lang/String;	method_823	getTranslationKey
 	f	Lnet/minecraft/class_246;	field_897	STONE
 	m	(FFFFFF)V	method_825	setShape
 		p	1		minX
@@ -1371,14 +1371,14 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	f	Lnet/minecraft/class_584;	field_890	substance
 	m	()Z	method_820	overridesComparatorInput
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;)V	method_873	method_873
-		p	4	integer4	z
-		p	5	sa	entity
-		p	2	integer2	x
-		p	3	integer3	y
-		p	1	ahb	world
+		p	4		z
+		p	5		entity
+		p	2		x
+		p	3		y
+		p	1		world
 	f	Z	field_913	useNeighbourLight
 	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_887	setRawName
-		p	1	string	name
+		p	1		name
 	m	(F)Lnet/minecraft/class_242;	method_867	setResistance
 		p	1		resistance
 	m	()Z	method_913	blocksGrass
@@ -1393,35 +1393,35 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	f	Lnet/minecraft/class_246;	field_905	SAND
 	m	()D	method_926	getMinX
 	m	(ILjava/util/Random;)I	method_828	getBonusDrops
-		p	2	random	andom
-		p	1	integer	state
+		p	2		andom
+		p	1		state
 	m	(IZ)Z	method_830	canCollide
 	f	D	field_884	minZ
 	m	(Lnet/minecraft/class_192;III)I	method_891	method_891
-		p	4	integer4	z
-		p	3	integer3	y
-		p	2	integer2	x
-		p	1	ahl	provider
+		p	4		z
+		p	3		y
+		p	2		x
+		p	1		provider
 	f	Lnet/minecraft/class_1589;	field_892	icon
 	m	(Lnet/minecraft/class_183;III)Z	method_881	canBePlacedAtPos
-		p	1	ahb	world
-		p	2	integer2	x
-		p	3	integer3	y
-		p	4	integer4	z
+		p	1		world
+		p	2		x
+		p	3		y
+		p	4		z
 	m	()V	method_901	setBlockItemBounds
 	m	(Lnet/minecraft/class_183;IIIII)Z	method_839	onEvent
-		p	6	integer6	data
-		p	2	integer2	x
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	integer5	id
-		p	1	ahb	world
+		p	6		data
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		id
+		p	1		world
 	f	Lnet/minecraft/class_48;	field_893	itemGroup
 	m	(Lnet/minecraft/class_183;III)Z	method_910	canBlockPersist
-		p	2	integer2	x
-		p	3	integer3	y
-		p	1	ahb	world
-		p	4	integer4	z
+		p	2		x
+		p	3		y
+		p	1		world
+		p	4		z
 	m	()Z	method_897	canBePowered
 	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;	method_836	getBoundingBox
 		p	1		world
@@ -1435,67 +1435,67 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	m	()I	method_915	getLuminescence
 	m	()D	method_810	getMaxZ
 	m	(Lnet/minecraft/class_183;IIII)Z	method_890	canBlockBeAdjacent
-		p	5	integer5	side
-		p	4	integer4	z
-		p	1	ahb	world
-		p	3	integer3	y
-		p	2	integer2	x
+		p	5		side
+		p	4		z
+		p	1		world
+		p	3		y
+		p	2		x
 	m	(Lnet/minecraft/class_183;)I	method_835	getTickRate
 		p	1		world
 	f	Lnet/minecraft/class_246;	field_899	GRAVEL
-	m	(I)I	method_826	getBlockDamage
-		p	1	integer	state
 	m	()D	method_927	getMaxX
+	m	(I)I	method_826	getBlockDamage
+		p	1		state
 	f	Lnet/minecraft/class_246;	field_904	CLOTH
 	m	(Lnet/minecraft/class_183;IIII)I	method_904	getComparatorInputOverride
-		p	5	integer5	state
-		p	4	integer4	z
-		p	3	integer3	y
-		p	2	integer2	x
-		p	1	ahb	world
+		p	5		state
+		p	4		z
+		p	3		y
+		p	2		x
+		p	1		world
 	m	(Lnet/minecraft/class_183;III)I	method_912	getDefaultDamage
-		p	4	integer4	z
-		p	3	integer3	y
-		p	2	integer2	x
-		p	1	ahb	world
+		p	4		z
+		p	3		y
+		p	2		x
+		p	1		world
 	m	()Ljava/lang/String;	method_813	getTranslatedName
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;Lnet/minecraft/class_652;)V	method_851	method_851
-		p	1	ahb	world
+		p	1		world
 	f	I	field_912	light
 	f	D	field_883	minY
 	m	(Z)Lnet/minecraft/class_242;	method_865	setHasRandomTicks
 		p	1		hasRandomTicks
 	m	(Lnet/minecraft/class_183;IIIILnet/minecraft/class_86;)Z	method_840	canBeReplaced
-		p	1	ahb	world
-		p	2	integer2	x
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	integer5	side
-		p	6	add	stack
+		p	1		world
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		side
+		p	6		stack
 	f	Lnet/minecraft/class_1222;	field_895	REGISTRY
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_652;Lnet/minecraft/class_652;)Lnet/minecraft/class_650;	method_847	method_847
-		p	1	ahb	world
-		p	2	integer2	x
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	azw5	vec1
-		p	6	azw6	vec2
+		p	1		world
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		vec1
+		p	6		vec2
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V	method_842	dropBlockAsItem
-		p	4	integer4	z
-		p	5	add	stack
-		p	2	integer2	x
-		p	3	integer3	y
+		p	4		z
+		p	5		stack
+		p	2		x
+		p	3		y
 		p	1		world
 	f	Z	field_911	blocksGrass
 	f	Lnet/minecraft/class_246;	field_907	LADDER
-	f	Ljava/lang/String;	field_894	rawName
 	m	()Z	method_923	isBlockEntity
+	f	Ljava/lang/String;	field_894	rawName
 	m	(Lnet/minecraft/class_183;IIII)V	method_895	afterBlockPlaced
-		p	4	integer4	z
-		p	3	integer3	y
-		p	5	integer5	state
-		p	2	integer2	x
-		p	1	ahb	world
+		p	4		z
+		p	3		y
+		p	5		state
+		p	2		x
+		p	1		world
 	m	()Z	method_814	hasStats
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_242;I)V	method_845	onBreaking
 		p	1		world
@@ -1503,48 +1503,48 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	2		posX
 		p	5		block
 		p	4		posZ
-		p	6	integer6	state
+		p	6		state
 	m	(Lnet/minecraft/class_242;)Z	method_885	isEqualTo
-		p	1	aji	block
+		p	1		block
 	m	(I)Lnet/minecraft/class_242;	method_894	getBlockById
-		p	0	integer	id
+		p	0		id
 	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_84;	method_889	getItem
-		p	2	integer2	x
-		p	1	ahb	world
-		p	4	integer4	z
-		p	3	integer3	y
+		p	2		x
+		p	1		world
+		p	4		z
+		p	3		y
 	m	(Lnet/minecraft/class_192;IIII)I	method_875	strongPower
-		p	5	integer5	state
-		p	4	integer4	z
-		p	3	integer3	y
-		p	2	integer2	x
-		p	1	ahl	provider
+		p	5		state
+		p	4		z
+		p	3		y
+		p	2		x
+		p	1		provider
 	f	D	field_882	minX
 	m	()I	method_911	getOpacity
 	m	()I	method_866	getRenderType
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_177;)V	method_843	onExplosion
-		p	4	integer4	z
-		p	5	agw	explosion
-		p	2	integer2	x
-		p	3	integer3	y
-		p	1	ahb	world
+		p	4		z
+		p	5		explosion
+		p	2		x
+		p	3		y
+		p	1		world
 	f	Z	field_881	isBlockEntity
 	m	()Z	method_919	isNormalBlock
 	m	(Lnet/minecraft/class_1610;)F	method_863	getBlastResistance
-		p	1	sa	entity
+		p	1		entity
 	m	(I)Lnet/minecraft/class_586;	method_898	getMapColor
 		p	1		id
 	m	(Lnet/minecraft/class_1789;Lnet/minecraft/class_183;III)F	method_864	getRelativeHardnress
 		p	2		world
 		p	1		player
-		p	4	integer4	y
-		p	3	integer3	x
-		p	5	integer5	z
+		p	4		y
+		p	3		x
+		p	5		z
 	m	(Lnet/minecraft/class_183;IIIIFFFI)I	method_837	method_837
-		p	1	ahb	world
-		p	2	integer2	x
-		p	3	integer3	y
-		p	4	integer4	z
+		p	1		world
+		p	2		x
+		p	3		y
+		p	4		z
 	m	()Z	method_879	getBoolean
 	m	()Z	method_924	hasCollision
 	m	()I	method_925	getRenderLayerType
@@ -1552,24 +1552,24 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 	f	Lnet/minecraft/class_246;	field_906	SNOW
 	m	()F	method_816	getOcclusionLightValue
 	m	(Lnet/minecraft/class_183;IIIIFI)V	method_838	randomlyDropAsItem
-		p	3	integer3	y
-		p	4	integer4	z
-		p	5	integer5	state
+		p	3		y
+		p	4		z
+		p	5		state
 		p	6		chance
-		p	7	integer7	fortuneLevel
+		p	7		fortuneLevel
 		p	1		world
-		p	2	integer2	x
+		p	2		x
 	m	(Lnet/minecraft/class_584;)V	<init>	<init>
 		p	1		substance
 	f	I	field_910	opacity
 	m	(Lnet/minecraft/class_84;)Lnet/minecraft/class_242;	method_832	getBlockByItem
-		p	0	adb	item
+		p	0		item
 	m	(Lnet/minecraft/class_183;IIIILnet/minecraft/class_1789;)V	method_841	onHarvestAttempt
-		p	4	integer4	z
-		p	3	integer3	y
+		p	4		z
+		p	3		y
 		p	6		player
-		p	5	integer5	state
-		p	2	integer2	x
+		p	5		state
+		p	2		x
 		p	1		world
 	m	()Z	method_908	isOpaque
 	f	F	field_889	particleGravity
@@ -2136,15 +2136,15 @@ c	net/minecraft/class_1632	net/minecraft/util/LegalSpecialCharecters
 	f	[C	field_6031	CHARECTERS
 c	net/minecraft/class_177	net/minecraft/entity/Explosion
 	f	D	field_576	z
-	f	D	field_575	y
 	f	Lnet/minecraft/class_1610;	field_577	entity
-	f	Lnet/minecraft/class_183;	field_582	world
+	f	D	field_575	y
 	m	(Lnet/minecraft/class_183;Lnet/minecraft/class_1610;DDDF)V	<init>	<init>
-		p	5	double4	y
-		p	7	double5	z
-		p	1	ahb	world
-		p	3	double3	x
-		p	2	sa	entity
+		p	5		y
+		p	7		z
+		p	1		world
+		p	3		x
+		p	2		entity
+	f	Lnet/minecraft/class_183;	field_582	world
 	f	D	field_574	x
 c	net/minecraft/class_1631	net/minecraft/util/HostileEntityTags
 	f	Lnet/minecraft/class_1631;	field_6027	NONE
@@ -2546,7 +2546,7 @@ c	net/minecraft/class_1229	net/minecraft/util/TranslateableString
 		p	1		string
 	f	Ljava/util/Map;	field_4588	langContents
 	f	Lnet/minecraft/class_1229;	field_4587	INSTANCE
-c	net/minecraft/class_1228	net/minecraft/util/StatCollector
+c	net/minecraft/class_1228	net/minecraft/util/Collector
 	m	(Ljava/lang/String;)Ljava/lang/String;	method_3960	translate
 c	net/minecraft/class_1227	net/minecraft/util/SuperRegistry
 	m	()Ljava/util/Set;	method_3957	getAsSet
@@ -3598,102 +3598,131 @@ c	net/minecraft/class_350	net/minecraft/block/SkullBlock
 c	net/minecraft/class_591	net/minecraft/command/BanListCommand
 c	net/minecraft/class_81	net/minecraft/item/PaintingItem
 c	net/minecraft/class_84	net/minecraft/item/Item
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Lnet/minecraft/class_183;IIIIFFF)Z	method_154	method_154
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Lnet/minecraft/class_183;IIIIFFF)Z	method_154	canBeUsed
 		p	1		stack
 		p	2		player
 		p	3		world
 	m	()Z	method_200	canBeUsed
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;	method_163	method_163
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;	method_163	eat
 		p	3		player
 		p	2		world
 		p	1		stack
 	m	()I	method_195	durability
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Ljava/util/List;Z)V	method_155	method_155
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Ljava/util/List;Z)V	method_155	appendTooltips
+		p	3	list	tooltip
 		p	2		player
 		p	1		stack
-	m	(Lnet/minecraft/class_86;)Lnet/minecraft/class_1589;	method_185	method_185
+	m	(Lnet/minecraft/class_86;)Lnet/minecraft/class_1589;	method_185	getIconByStack
 		p	1		stack
 	f	Lnet/minecraft/class_84;	field_187	itemAfterUse
+	f	Ljava/util/UUID;	field_190	uuid
 	f	Z	field_194	hasTypes
+	m	()Z	method_182	rotate
+	m	(II)Lnet/minecraft/class_1589;	method_142	getIconByDurability
+		p	1	integer1	durability
 	f	Ljava/util/Random;	field_191	RAND
-	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_187	method_187
+	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_187	getNameByTranslation
 		p	1		stack
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1627;Lnet/minecraft/class_1627;)Z	method_153	method_153
-		p	3		entity2
-		p	2		entity1
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1627;Lnet/minecraft/class_1627;)Z	method_153	onAttack
+		p	3		attacker
+		p	2		victim
 		p	1		stack
 	f	Lnet/minecraft/class_1589;	field_195	icon
 	m	(Z)Lnet/minecraft/class_84;	method_160	setHasTypes
 		p	1		hasTypes
 	f	I	field_192	stackSize
 	f	Ljava/lang/String;	field_196	name
-	f	Ljava/lang/String;	field_188	effect
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;	method_150	method_150
+	m	()I	method_190	getStackSize
+	f	Ljava/lang/String;	field_188	effectString
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)Lnet/minecraft/class_86;	method_150	use
 		p	3		player
 		p	2		world
 		p	1		stack
+	m	()Z	method_198	sharesNbt
 	m	()Z	method_178	isHandheld
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_242;)F	method_152	method_152
+	m	(Lnet/minecraft/class_86;)Z	method_177	isTool
+		p	1	add	stack
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_242;)F	method_152	getFloat
 		p	1		stack
-	m	(Lnet/minecraft/class_86;)Z	method_189	method_189
+		p	2	aji	block
+	m	(Lnet/minecraft/class_86;)Z	method_189	doesNotStayInGrid
 		p	1		stack
-	m	(Lnet/minecraft/class_183;Lnet/minecraft/class_1789;Z)Lnet/minecraft/class_650;	method_157	method_157
+	m	(Lnet/minecraft/class_183;Lnet/minecraft/class_1789;Z)Lnet/minecraft/class_650;	method_157	getPosFromPlayer
+		p	1	ahb	world
 		p	2		player
+		p	3	boolean3	liquids
 	m	(Lnet/minecraft/class_86;)Lnet/minecraft/class_116;	method_171	getHandMovementOnUse
 		p	1		stack
 	m	()Lnet/minecraft/class_84;	method_197	setHandheld
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)V	method_172	method_172
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;)V	method_172	create
 		p	2		world
 		p	3		entity
 		p	1		stack
 	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_168	setRawName
 		p	1		name
+	m	()I	method_166	getEnchantability
 	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_176	setEffect
-		p	1		effect
+		p	1		effectString
 	m	(Lnet/minecraft/class_84;)I	method_162	getIdByItem
 		p	0		item
 	f	Ljava/lang/String;	field_197	rawName
 	m	(Lnet/minecraft/class_242;)Z	method_164	method_164
 		p	1		block
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1610;IZ)V	method_149	method_149
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1610;IZ)V	method_149	update
+		p	4	integer	slot
+		p	5	boolean5	held
 		p	1		stack
 		p	2		world
 		p	3		entity
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_86;)Z	method_147	method_147
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_86;)Z	method_147	isRepairable
 		p	1		stack1
 		p	2		stack3
 	m	(I)Lnet/minecraft/class_1589;	method_165	getIconProvider
+		p	1	integer	damage
 	m	()Lnet/minecraft/class_48;	method_194	getItemGroup
 	m	(Ljava/lang/String;)Lnet/minecraft/class_84;	method_181	setName
 		p	1		name
 	m	(I)Lnet/minecraft/class_84;	method_170	getAsItem
 		p	0		id
+	m	()Z	method_192	hasTypes
 	m	()Z	method_196	hasDurability
+	m	(Lnet/minecraft/class_86;)I	method_173	getUseDuration
+		p	1	add	stack
 	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_145	getTranslationKey
 		p	1		stack
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;I)V	method_151	method_151
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_1789;I)V	method_151	onUseStopped
+		p	4	integer	remainingTime
+		p	1	add	stack
 		p	3		player
 		p	2		world
+	m	()I	method_169	getSpriteId
 	m	()Ljava/lang/String;	method_202	getIconName
 	m	(Lnet/minecraft/class_86;)Ljava/lang/String;	method_193	getItemStackAsString
 		p	1		stack
 	m	(I)Lnet/minecraft/class_84;	method_174	setStackSize
+		p	1	integer	stackSize
 	f	Lnet/minecraft/class_1222;	field_189	REGISTRY
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_242;IIILnet/minecraft/class_1627;)Z	method_148	method_148
+	m	(I)I	method_141	getState
+		p	1	integer	state
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_183;Lnet/minecraft/class_242;IIILnet/minecraft/class_1627;)Z	method_148	onBlockHarvest
 		p	2		world
 		p	1		stack
+		p	6	integer6	blockZ
+		p	5	integer5	blockY
+		p	4	integer4	blockX
 		p	3		block
 		p	7		entity
 	m	()Ljava/lang/String;	method_140	getTranslationKey
+	m	()Z	method_201	canAffectBlocks
 	m	()Lcom/google/common/collect/Multimap;	method_186	createMultimap
 	m	(Lnet/minecraft/class_242;)Lnet/minecraft/class_84;	method_158	getAsItem
 		p	0		block
-	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Lnet/minecraft/class_1627;)Z	method_156	method_156
+	m	(Lnet/minecraft/class_86;Lnet/minecraft/class_1789;Lnet/minecraft/class_1627;)Z	method_156	canBeUsedOnEntity
 		p	3		entity
 		p	2		player
 		p	1		stack
 	m	()V	method_188	registerItems
-	m	(Lnet/minecraft/class_86;)Z	method_175	method_175
+	m	(Lnet/minecraft/class_86;)Z	method_175	hasGlint
 		p	1		stack
 	m	(Lnet/minecraft/class_84;Lnet/minecraft/class_48;Ljava/util/List;)V	method_144	addToItemgroupList
 		p	3		list
@@ -3705,10 +3734,12 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 	m	()Lnet/minecraft/class_84;	method_199	getItemAfterUse
 	m	(Lnet/minecraft/class_84;)Lnet/minecraft/class_84;	method_167	setItemAfterUse
 		p	1		item
-	m	(Lnet/minecraft/class_86;I)I	method_146	method_146
+	m	(Lnet/minecraft/class_86;I)I	method_146	getColor
 		p	1		stack
-	m	(Lnet/minecraft/class_86;)Z	method_191	hasEffect
+		p	2	integer	state
+	m	(Lnet/minecraft/class_86;)Z	method_191	isBrewable
 		p	1		stack
+	m	()Z	method_183	isMap
 	m	(I)Lnet/minecraft/class_84;	method_179	setDurability
 		p	1		durability
 	m	(Lnet/minecraft/class_48;)Lnet/minecraft/class_84;	method_143	setItemGroup
@@ -3717,6 +3748,8 @@ c	net/minecraft/class_84	net/minecraft/item/Item
 		p	1		stack
 	m	(Lnet/minecraft/class_86;)Lnet/minecraft/class_99;	method_180	getRarity
 		p	1		stack
+	m	(Lnet/minecraft/class_1590;)V	method_159	registerIcon
+		p	1	rg	provider
 c	net/minecraft/class_83	net/minecraft/item/HoeItem
 c	net/minecraft/class_354	net/minecraft/block/SpongeBlock
 c	net/minecraft/class_112	net/minecraft/item/SnowballItem
