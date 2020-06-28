@@ -20,10 +20,13 @@ CLASS net/minecraft/class_652 net/minecraft/math/Vec3d
 		ARG 5 three
 	METHOD method_1926 getMultipliedSum (Lnet/minecraft/class_652;)D
 		ARG 1 other
+	METHOD method_1927 getMiddleWithXValue (Lnet/minecraft/class_652;D)Lnet/minecraft/class_652;
 	METHOD method_1928 addToEach (DDD)Lnet/minecraft/class_652;
 	METHOD method_1930 getMultipliedDifference (Lnet/minecraft/class_652;)Lnet/minecraft/class_652;
+	METHOD method_1931 getMiddleWithYValue (Lnet/minecraft/class_652;D)Lnet/minecraft/class_652;
 	METHOD method_1932 getDifferenceMultiplied (DDD)D
 	METHOD method_1933 getSqrtOfDifferenceOfTwoVec (Lnet/minecraft/class_652;)D
 		ARG 1 other
+	METHOD method_1934 getMiddleWithZValue (Lnet/minecraft/class_652;D)Lnet/minecraft/class_652;
 	METHOD method_1935 getDifferenceOfTwoVec (Lnet/minecraft/class_652;)D
 		ARG 1 other

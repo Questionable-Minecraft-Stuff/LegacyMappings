@@ -131,6 +131,13 @@ c	net/minecraft/class_1546	net/minecraft/stat/InteractionStat
 		p	1		name
 		p	3		statItem
 c	net/minecraft/class_1304	net/minecraft/util/AllotedMemoryRetriever
+c	net/minecraft/class_1787	net/minecraft/entity/PlayerInventory
+	m	()I	method_6549	getHotbarSlots
+	f	Lnet/minecraft/class_1789;	field_6696	player
+	m	(Lnet/minecraft/class_1789;)V	<init>	<init>
+		p	1	yz	player
+	f	[Lnet/minecraft/class_86;	field_6693	invSlots
+	f	[Lnet/minecraft/class_86;	field_6694	armorSlots
 c	net/minecraft/class_1545	net/minecraft/stat/NormalStat
 c	net/minecraft/class_1760	net/minecraft/entity/BlazeEntity
 c	net/minecraft/class_1522	net/minecraft/server/AbstractServerResponse
@@ -165,7 +172,7 @@ c	net/minecraft/class_284	net/minecraft/block/FarmlandBlock
 c	net/minecraft/class_283	net/minecraft/block/FallingBlock
 c	net/minecraft/class_282	net/minecraft/block/BlockEntityProvider
 	m	(Lnet/minecraft/class_183;I)Lnet/minecraft/class_383;	method_1017	getBlockEntity
-		p	1	ahb	world
+		p	1		world
 c	net/minecraft/class_281	net/minecraft/block/EnderChestBlock
 c	net/minecraft/class_288	net/minecraft/block/FireBlock
 	f	[I	field_1146	flammableBlocksByFlammability
@@ -375,20 +382,20 @@ c	net/minecraft/class_951	net/minecraft/entity/OnlineMultiplayerPlayerEntity
 c	net/minecraft/class_950	net/minecraft/entity/SingleplayerPlayerEntity
 c	net/minecraft/class_954	net/minecraft/client/WorldRenderer
 	m	(III)V	method_2947	setPos
-		p	1	integer1	x
-		p	3	integer3	z
-		p	2	integer2	y
+		p	1		x
+		p	3		z
+		p	2		y
 	f	I	field_3560	z
 	f	I	field_3570	positiveY
 	f	I	field_3562	negativeY
 	f	I	field_3564	clippedX
-	f	Z	field_3578	isChunkLit
 	f	Ljava/util/List;	field_3579	blockEntityRenderers
+	f	Z	field_3578	isChunkLit
 	m	(Lnet/minecraft/class_1627;)V	method_2951	update
-		p	1	sv	entity
+		p	1		entity
 	m	(Lnet/minecraft/class_183;Ljava/util/List;IIII)V	<init>	<init>
-		p	2	list	blockEntities
-		p	1	ahb	world
+		p	2		blockEntities
+		p	1		world
 	f	Z	field_3572	requiresUpdating
 	f	Lnet/minecraft/class_972;	field_3552	tesselator
 	f	[Z	field_3568	skip
@@ -645,6 +652,7 @@ c	net/minecraft/class_652	net/minecraft/math/Vec3d
 	m	()D	method_1923	getSqrtAverage
 	m	(Lnet/minecraft/class_652;)D	method_1935	getDifferenceOfTwoVec
 		p	1		other
+	m	(Lnet/minecraft/class_652;D)Lnet/minecraft/class_652;	method_1927	getMiddleWithXValue
 	f	D	field_1994	two
 	m	(DDD)D	method_1932	getDifferenceMultiplied
 	f	D	field_1995	three
@@ -653,6 +661,8 @@ c	net/minecraft/class_652	net/minecraft/math/Vec3d
 		p	2		two
 		p	0		one
 	f	D	field_1993	one
+	m	(Lnet/minecraft/class_652;D)Lnet/minecraft/class_652;	method_1931	getMiddleWithYValue
+	m	(Lnet/minecraft/class_652;D)Lnet/minecraft/class_652;	method_1934	getMiddleWithZValue
 	m	()Lnet/minecraft/class_652;	method_1919	getVecBySqrtAverage
 c	net/minecraft/class_417	net/minecraft/world/ChunkBlockStorage
 c	net/minecraft/class_657	net/minecraft/command/TellrawCommand
@@ -660,108 +670,108 @@ c	net/minecraft/class_415	net/minecraft/world/Chunk
 	f	J	field_1397	timeSinceLastSave
 	f	Ljava/util/Map;	field_1390	blockEntities
 	m	(Lnet/minecraft/class_183;[Lnet/minecraft/class_242;[BII)V	<init>	<init>
-		p	4	integer4	x
-		p	5	integer5	z
-		p	1	ahb	world
-		p	2	arr	blocks
+		p	4		x
+		p	5		z
+		p	1		world
+		p	2		blocks
 	f	Lnet/minecraft/class_183;	field_1386	world
 	m	(II)I	method_1319	getHeight
 	m	(Lnet/minecraft/class_1610;)V	method_1311	addEntityToChunk
-		p	1	sa	entity
+		p	1		entity
 	m	(II)I	method_1330	getPrecipitationHeight
 	f	Z	field_1385	isLoaded
 	f	Z	field_1393	lightPopulated
 	m	(I)V	method_1298	isPopulated
-		p	1	integer	integer
+		p	1		integer
 	m	()V	method_1347	validateLight
 	f	[B	field_1403	biomeByIdArray
 	m	()Z	method_1342	isPopulated
 	m	(Lnet/minecraft/class_183;II)V	<init>	<init>
-		p	3	integer3	z
-		p	2	integer2	x
+		p	3		z
+		p	2		x
 		p	1		world
 	f	[Ljava/util/List;	field_1391	entities
 	m	(IIII)Z	method_1301	setBlockMeta
 	f	Lorg/apache/logging/log4j/Logger;	field_1401	LOGGER
 	m	(Z)Z	method_1314	needsSave
 	m	(Lnet/minecraft/class_383;)V	method_1308	addBlockEntity
-		p	1	aor	blockEntity
+		p	1		blockEntity
 	m	()Lnet/minecraft/class_176;	method_1343	getNewChunkPosPair
 	m	()V	method_1297	createHeightMap
-	m	(IIII)I	method_1321	getBlockLightLevel
 	m	(III)I	method_1326	getBlockMeta
-		p	3	integer3	z
-		p	1	integer1	x
-		p	2	integer2	y
+		p	3		z
+		p	1		x
+		p	2		y
+	m	(IIII)I	method_1321	getBlockLightLevel
 	m	()V	method_1318	generateSkyLight
 	f	Z	field_1396	hasEntities
 	f	Z	field_1392	terrainPopulated
 	m	(III)Lnet/minecraft/class_383;	method_1334	getBlockEntityByPos
-		p	1	integer1	x
-		p	2	integer2	y
-		p	3	integer3	z
+		p	1		x
+		p	2		y
+		p	3		z
 	f	I	field_1389	z
 	m	(III)V	method_1336	removeBlockEntity
-		p	2	integer2	y
-		p	1	integer1	x
-		p	3	integer3	z
+		p	2		y
+		p	1		x
+		p	3		z
 	f	[I	field_1387	heightMap
-	m	(Lnet/minecraft/class_412;Lnet/minecraft/class_412;II)V	method_1309	populate
-		p	2	apu2	access2
-		p	1	apu1	access1
 	m	(III)I	method_1320	getBlockOpacityByPos
-		p	1	integer1	x
-		p	2	integer2	y
-		p	3	integer3	z
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(Lnet/minecraft/class_412;Lnet/minecraft/class_412;II)V	method_1309	populate
+		p	2		access2
+		p	1		access1
 	m	()V	method_1345	nullLightChecks
 	m	()Z	method_1337	isEmpty
 	m	(II)Z	method_1299	validateChunkPos
-		p	2	integer2	z
-		p	1	integer1	x
+		p	2		z
+		p	1		x
 	m	([B)V	method_1315	setBiomeArray
-		p	1	arr	biomes
+		p	1		biomes
 	f	Z	field_1395	isModified
 	m	()V	method_1329	onUnload
 	m	(IIILnet/minecraft/class_242;I)Z	method_1302	setBlockWithMeta
-		p	3	integer3	z
-		p	2	integer2	y
-		p	1	integer1	x
+		p	3		z
+		p	2		y
+		p	1		x
 	f	I	field_1405	lightChecks
 	m	(J)Ljava/util/Random;	method_1305	getRandomBySeed
-		p	1	long1	seed
+		p	1		seed
 	f	I	field_1388	x
 	m	(Lnet/minecraft/class_1610;I)V	method_1312	removeEntity
-		p	2	integer	index
-		p	1	sa	entity
+		p	2		index
+		p	1		entity
+	m	()[Lnet/minecraft/class_417;	method_1341	getStorageArray
 	m	()V	method_1324	onLoad
 	m	(Lnet/minecraft/class_1610;)V	method_1322	removeEntityFromChunk
-		p	1	sa	entity
-	m	()[Lnet/minecraft/class_417;	method_1341	getStorageArray
+		p	1		entity
 	m	()V	method_1332	setAsModified
 	m	(II)Z	method_1335	validateLightAtPos
-		p	2	integer2	z
-		p	1	integer1	x
+		p	2		z
+		p	1		x
 	m	(Lnet/minecraft/class_183;[Lnet/minecraft/class_242;II)V	<init>	<init>
-		p	1	ahb	world
-		p	2	arr	blocks
-		p	3	integer3	x
-		p	4	integer4	z
+		p	1		world
+		p	2		blocks
+		p	3		x
+		p	4		z
 	f	Z	field_1398	provideUpdates
 	f	[Lnet/minecraft/class_417;	field_1402	storageArray
 	m	(III)Lnet/minecraft/class_242;	method_1300	getBlockAtPos
-		p	1	integer1	x
-		p	2	integer2	y
-		p	3	integer3	z
+		p	1		x
+		p	2		y
+		p	3		z
 	f	Z	field_1382	lit
 	f	Z	field_1394	hasTicked
 	m	(Lnet/minecraft/class_194;III)I	method_1306	getLightLevel
-		p	1	ahn	type
+		p	1		type
 	m	(III)Z	method_1331	isBlockBelowSky
-		p	2	integer2	y
-		p	3	integer3	z
-		p	1	integer1	x
+		p	2		y
+		p	3		z
+		p	1		x
 	m	(Lnet/minecraft/class_194;IIII)V	method_1307	setLightLevel
-		p	1	ahn	type
+		p	1		type
 	m	()[B	method_1344	getBiomeIdArray
 	f	J	field_1400	playerTime
 c	net/minecraft/class_656	net/minecraft/util/CrashReportSystemInformationBuilder
@@ -989,9 +999,9 @@ c	net/minecraft/class_1174	net/minecraft/command/SummonCommand
 c	net/minecraft/class_871	net/minecraft/client/entity/SquidModel
 c	net/minecraft/class_629	net/minecraft/world/WorldProperties
 	m	(Lnet/minecraft/class_1232;)V	<init>	<init>
-		p	1	dh	nbt
+		p	1		nbt
 	m	(Lnet/minecraft/class_1408;)V	method_1795	method_1795
-		p	1	k	group
+		p	1		group
 c	net/minecraft/class_627	net/minecraft/world/WorldSaveService
 	f	Lorg/apache/logging/log4j/Logger;	field_1918	LOGGER
 c	net/minecraft/class_247	net/minecraft/block/Blocks
@@ -1187,32 +1197,35 @@ c	net/minecraft/class_243	net/minecraft/block/GlassSound
 c	net/minecraft/class_485	net/minecraft/world/structure/MineshaftStructureFeature
 c	net/minecraft/class_242	net/minecraft/block/Block
 	m	()Z	method_888	renderAsNormalBlock
+	m	()D	method_809	getMinZ
 	m	(Lnet/minecraft/class_246;)Lnet/minecraft/class_242;	method_859	setSound
 		p	1		sound
+	m	()Z	method_812	canSilkTouchHarvest
 	m	(II)Lnet/minecraft/class_1589;	method_827	getIcon
-	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_887	setRawName
-	m	(F)Lnet/minecraft/class_242;	method_867	setResistance
-		p	1		resistance
-	f	Z	field_909	opaque
-	m	(Lnet/minecraft/class_192;III)Z	method_874	blocksMovement
-		p	3		posY
-		p	4		posZ
-		p	2		posX
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;)V	method_849	onCollision
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	sa	entity
+		p	1	ahb	world
+		p	2	integer2	x
 	f	Lnet/minecraft/class_246;	field_901	STONE2
-	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_649;Ljava/util/List;Lnet/minecraft/class_1610;)V	method_846	method_846
-		p	1		world
 	m	()Lnet/minecraft/class_48;	method_817	getItemGroup
-	f	Lnet/minecraft/class_246;	field_888	sound
+	f	Z	field_917	hasStats
 	m	()Lnet/minecraft/class_242;	method_921	setUnbreakable
-	f	Lnet/minecraft/class_246;	field_905	SAND
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_242;)V	method_844	onAdjacentUpdate
 		p	1		world
 		p	4		posZ
 		p	2		posX
 		p	3		posY
-	m	(IZ)Z	method_830	canCollide
-	f	D	field_884	minZ
-	f	Lnet/minecraft/class_1589;	field_892	icon
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1627;Lnet/minecraft/class_86;)V	method_852	onBlockPlacedByEntity
+		p	2	integer2	x
+		p	1	ahb	world
+		p	4	integer4	z
+		p	3	integer3	y
+		p	6	add	stack
+		p	5	sv	entity
+	m	(I)Lnet/minecraft/class_86;	method_909	createStackFromBlock
+		p	1	integer	state
 	m	(Ljava/util/Random;)I	method_861	getNumberOfDrops
 		p	1		random
 	m	(Lnet/minecraft/class_192;III)I	method_883	method_883
@@ -1220,21 +1233,19 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	3		posY
 		p	2		posX
 	m	(Lnet/minecraft/class_242;)I	method_876	getIdByBlock
+		p	0	aji	block
 	m	(ILjava/util/Random;I)Lnet/minecraft/class_84;	method_829	getDroppedItem
-	f	Lnet/minecraft/class_48;	field_893	itemGroup
-	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;	method_836	getBoundingBox
-		p	1		world
-	m	(Lnet/minecraft/class_183;IIIII)V	method_871	dropAsItem
-		p	1		world
+		p	1	integer1	state
+		p	3	integer3	fortuneLevel
+		p	2	random	random
+	f	Ljava/lang/String;	field_896	name
 	f	Lnet/minecraft/class_246;	field_908	ANVIL
 	m	(I)Lnet/minecraft/class_242;	method_902	setOpacity
 		p	1		opacity
 	m	()Z	method_922	hasRandomTicks
-	m	(Lnet/minecraft/class_183;IIILjava/util/Random;)V	method_872	onDisplayTick
-		p	3		posY
-		p	4		posZ
-		p	1		world
-		p	2		posX
+	m	(II)Lnet/minecraft/class_1589;	method_868	getItemIcon
+		p	1	integer1	side
+		p	2	integer2	state
 	m	(Lnet/minecraft/class_183;IIII)V	method_870	onBreakByPlayer
 		p	2		posX
 		p	3		posY
@@ -1244,63 +1255,81 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	1		world
 	m	(F)Lnet/minecraft/class_242;	method_824	setLight
 		p	1		light
-	m	()I	method_915	getLuminescence
 	f	Lnet/minecraft/class_246;	field_900	GRASS
-	m	(Lnet/minecraft/class_183;)I	method_835	getTickRate
-		p	1		world
-	f	Lnet/minecraft/class_246;	field_899	GRAVEL
+	m	(Lnet/minecraft/class_242;Lnet/minecraft/class_242;)Z	method_858	checkIfEqual
+		p	0	aji1	block1
+		p	1	aji2	block2
+	f	Z	field_916	isCalled
 	m	(Lnet/minecraft/class_183;IIILjava/util/Random;)V	method_848	onUpdateTick
 		p	1		world
 		p	3		posY
 		p	2		posX
 		p	4		posZ
-	f	Lnet/minecraft/class_246;	field_904	CLOTH
+	m	(Lnet/minecraft/class_192;III)V	method_856	method_856
+		p	1	ahl	world
 	m	(F)Lnet/minecraft/class_242;	method_880	setHardness
 		p	1		hardness
-	f	I	field_912	light
-	f	D	field_883	minY
 	m	(Lnet/minecraft/class_183;III)F	method_899	getHardness
 		p	4		posZ
 		p	1		world
 		p	2		posX
 		p	3		posY
-	m	(Z)Lnet/minecraft/class_242;	method_865	setHasRandomTicks
-		p	1		hasRandomTicks
+	m	()Ljava/lang/String;	method_821	geName
 	f	F	field_891	slipperiness
-	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;IFFF)Z	method_854	method_854
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;IFFF)Z	method_854	onActivation
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	yz	entity
+		p	6	integer6	side
 		p	1		world
-	f	Lnet/minecraft/class_1222;	field_895	REGISTRY
-	m	(Lnet/minecraft/class_183;IIII)V	method_900	method_900
-		p	1	ahb	world
+		p	2	integer2	x
+		p	7	float7	subX
+		p	8	float8	subY
+		p	9	float9	subZ
 	m	()V	method_918	registerBlocks
+	m	(Lnet/minecraft/class_183;IIII)V	method_900	beforeHarvest
+		p	5	integer5	state
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1		world
 	f	D	field_887	maxZ
-	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V	method_842	method_842
-		p	1		world
-	f	Lnet/minecraft/class_246;	field_907	LADDER
-	m	()Z	method_923	isBlockEntity
-	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_242;I)V	method_845	onBreaking
-		p	1		world
-		p	3		posY
-		p	2		posX
-		p	5		block
-		p	4		posZ
+	m	()D	method_928	getMinY
+	m	(Lnet/minecraft/class_1590;)V	method_862	registerIcon
+		p	1	rg	provider
+	m	(Lnet/minecraft/class_177;)Z	method_834	canBeExplodedToItem
+		p	1	agw	explosion
 	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_893	setName
+		p	1	string	name
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;F)V	method_850	onEntityFallen
+		p	2	integer2	x
+		p	1	ahb	world
+		p	4	integer4	z
+		p	3	integer3	y
+		p	6	float6	height
+		p	5	sa	entity
 	f	Lnet/minecraft/class_246;	field_903	GLASS
 	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;)V	method_853	method_853
 		p	1		world
 	f	Lnet/minecraft/class_246;	field_898	WOOD
-	f	D	field_882	minX
-	m	()I	method_911	getOpacity
-	m	()I	method_866	getRenderType
-	f	Z	field_881	isBlockEntity
+	m	(Lnet/minecraft/class_84;Lnet/minecraft/class_48;Ljava/util/List;)V	method_833	addToItemGroup
+		p	1	adb	item
+		p	3	list	list
+		p	2	abt	group
+	m	()Ljava/lang/String;	method_822	getItemIconName
+	m	()Z	method_818	isFlowerPot
 	f	F	field_915	resistance
-	m	()Z	method_919	isNormalBlock
+	m	(Lnet/minecraft/class_183;Lnet/minecraft/class_1789;IIII)V	method_855	harvest
+		p	1	ahb	world
+		p	3	integer3	x
+		p	2	yz	player
+		p	5	integer5	z
+		p	4	integer4	y
+		p	6	integer6	state
 	f	D	field_886	maxY
-	m	(I)Lnet/minecraft/class_586;	method_898	getMapColor
-		p	1		id
-	m	(Lnet/minecraft/class_1789;Lnet/minecraft/class_183;III)F	method_864	method_864
-		p	2		world
-		p	1		player
+	m	()D	method_808	getMaxY
+	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_878	getBlockByString
+		p	0	string	id
 	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;	method_903	method_903
 		p	1		world
 	m	()Z	method_920	isFullCube
@@ -1309,24 +1338,26 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	3		posY
 		p	2		posX
 		p	1		world
-	m	(Lnet/minecraft/class_183;III)V	method_914	method_914
-		p	1	ahb	world
-	m	()Z	method_924	hasCollision
 	m	()Lnet/minecraft/class_584;	method_917	getSubstance
+	m	(Lnet/minecraft/class_183;III)V	method_914	onRaining
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1		world
+		p	4	integer4	z
 	f	Lnet/minecraft/class_246;	field_902	STONE3
 	m	()Lnet/minecraft/class_242;	method_815	noStats
-	f	Z	field_918	hasRandomTicks
-	f	Lnet/minecraft/class_246;	field_906	SNOW
+	m	()I	method_905	getPistonInteractionType
 	m	(Lnet/minecraft/class_48;)Lnet/minecraft/class_242;	method_831	setItemGroup
 		p	1		itemGroup
-	m	(Lnet/minecraft/class_183;IIIIFI)V	method_838	randomlyDropAsItem
-		p	6		chance
-		p	1		world
 	f	D	field_885	maxX
-	m	(Lnet/minecraft/class_584;)V	<init>	<init>
-		p	1		substance
+	m	()Ljava/lang/String;	method_823	getTranslationKey
+	m	(Lnet/minecraft/class_192;IIII)I	method_884	weakPower
+		p	1	ahl	provider
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	integer5	state
 	f	Lnet/minecraft/class_246;	field_897	STONE
-	f	I	field_910	opacity
 	m	(FFFFFF)V	method_825	setShape
 		p	1		minX
 		p	2		minY
@@ -1334,12 +1365,214 @@ c	net/minecraft/class_242	net/minecraft/block/Block
 		p	4		maxX
 		p	5		maxY
 		p	6		maxZ
+	m	()Z	method_916	usesNeighbourLight
+	m	()Z	method_819	requiresBlockUpdates
 	f	F	field_914	hardness
-	m	(Lnet/minecraft/class_183;IIIILnet/minecraft/class_1789;)V	method_841	method_841
-		p	6	yz	player
-		p	1	ahb	world
-	m	()Z	method_908	isOpaque
 	f	Lnet/minecraft/class_584;	field_890	substance
+	m	()Z	method_820	overridesComparatorInput
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;)V	method_873	method_873
+		p	4	integer4	z
+		p	5	sa	entity
+		p	2	integer2	x
+		p	3	integer3	y
+		p	1	ahb	world
+	f	Z	field_913	useNeighbourLight
+	m	(Ljava/lang/String;)Lnet/minecraft/class_242;	method_887	setRawName
+		p	1	string	name
+	m	(F)Lnet/minecraft/class_242;	method_867	setResistance
+		p	1		resistance
+	m	()Z	method_913	blocksGrass
+	f	Z	field_909	opaque
+	m	(Lnet/minecraft/class_192;III)Z	method_874	blocksMovement
+		p	3		posY
+		p	4		posZ
+		p	2		posX
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_649;Ljava/util/List;Lnet/minecraft/class_1610;)V	method_846	method_846
+		p	1		world
+	f	Lnet/minecraft/class_246;	field_888	sound
+	f	Lnet/minecraft/class_246;	field_905	SAND
+	m	()D	method_926	getMinX
+	m	(ILjava/util/Random;)I	method_828	getBonusDrops
+		p	2	random	andom
+		p	1	integer	state
+	m	(IZ)Z	method_830	canCollide
+	f	D	field_884	minZ
+	m	(Lnet/minecraft/class_192;III)I	method_891	method_891
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	ahl	provider
+	f	Lnet/minecraft/class_1589;	field_892	icon
+	m	(Lnet/minecraft/class_183;III)Z	method_881	canBePlacedAtPos
+		p	1	ahb	world
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	()V	method_901	setBlockItemBounds
+	m	(Lnet/minecraft/class_183;IIIII)Z	method_839	onEvent
+		p	6	integer6	data
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	integer5	id
+		p	1	ahb	world
+	f	Lnet/minecraft/class_48;	field_893	itemGroup
+	m	(Lnet/minecraft/class_183;III)Z	method_910	canBlockPersist
+		p	2	integer2	x
+		p	3	integer3	y
+		p	1	ahb	world
+		p	4	integer4	z
+	m	()Z	method_897	canBePowered
+	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;	method_836	getBoundingBox
+		p	1		world
+	m	(Lnet/minecraft/class_183;IIIII)V	method_871	dropAsItem
+		p	1		world
+	m	(Lnet/minecraft/class_183;IIILjava/util/Random;)V	method_872	onDisplayTick
+		p	3		posY
+		p	4		posZ
+		p	1		world
+		p	2		posX
+	m	()I	method_915	getLuminescence
+	m	()D	method_810	getMaxZ
+	m	(Lnet/minecraft/class_183;IIII)Z	method_890	canBlockBeAdjacent
+		p	5	integer5	side
+		p	4	integer4	z
+		p	1	ahb	world
+		p	3	integer3	y
+		p	2	integer2	x
+	m	(Lnet/minecraft/class_183;)I	method_835	getTickRate
+		p	1		world
+	f	Lnet/minecraft/class_246;	field_899	GRAVEL
+	m	(I)I	method_826	getBlockDamage
+		p	1	integer	state
+	m	()D	method_927	getMaxX
+	f	Lnet/minecraft/class_246;	field_904	CLOTH
+	m	(Lnet/minecraft/class_183;IIII)I	method_904	getComparatorInputOverride
+		p	5	integer5	state
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	ahb	world
+	m	(Lnet/minecraft/class_183;III)I	method_912	getDefaultDamage
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	ahb	world
+	m	()Ljava/lang/String;	method_813	getTranslatedName
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;Lnet/minecraft/class_652;)V	method_851	method_851
+		p	1	ahb	world
+	f	I	field_912	light
+	f	D	field_883	minY
+	m	(Z)Lnet/minecraft/class_242;	method_865	setHasRandomTicks
+		p	1		hasRandomTicks
+	m	(Lnet/minecraft/class_183;IIIILnet/minecraft/class_86;)Z	method_840	canBeReplaced
+		p	1	ahb	world
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	integer5	side
+		p	6	add	stack
+	f	Lnet/minecraft/class_1222;	field_895	REGISTRY
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_652;Lnet/minecraft/class_652;)Lnet/minecraft/class_650;	method_847	method_847
+		p	1	ahb	world
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	azw5	vec1
+		p	6	azw6	vec2
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V	method_842	dropBlockAsItem
+		p	4	integer4	z
+		p	5	add	stack
+		p	2	integer2	x
+		p	3	integer3	y
+		p	1		world
+	f	Z	field_911	blocksGrass
+	f	Lnet/minecraft/class_246;	field_907	LADDER
+	f	Ljava/lang/String;	field_894	rawName
+	m	()Z	method_923	isBlockEntity
+	m	(Lnet/minecraft/class_183;IIII)V	method_895	afterBlockPlaced
+		p	4	integer4	z
+		p	3	integer3	y
+		p	5	integer5	state
+		p	2	integer2	x
+		p	1	ahb	world
+	m	()Z	method_814	hasStats
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_242;I)V	method_845	onBreaking
+		p	1		world
+		p	3		posY
+		p	2		posX
+		p	5		block
+		p	4		posZ
+		p	6	integer6	state
+	m	(Lnet/minecraft/class_242;)Z	method_885	isEqualTo
+		p	1	aji	block
+	m	(I)Lnet/minecraft/class_242;	method_894	getBlockById
+		p	0	integer	id
+	m	(Lnet/minecraft/class_183;III)Lnet/minecraft/class_84;	method_889	getItem
+		p	2	integer2	x
+		p	1	ahb	world
+		p	4	integer4	z
+		p	3	integer3	y
+	m	(Lnet/minecraft/class_192;IIII)I	method_875	strongPower
+		p	5	integer5	state
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	ahl	provider
+	f	D	field_882	minX
+	m	()I	method_911	getOpacity
+	m	()I	method_866	getRenderType
+	m	(Lnet/minecraft/class_183;IIILnet/minecraft/class_177;)V	method_843	onExplosion
+		p	4	integer4	z
+		p	5	agw	explosion
+		p	2	integer2	x
+		p	3	integer3	y
+		p	1	ahb	world
+	f	Z	field_881	isBlockEntity
+	m	()Z	method_919	isNormalBlock
+	m	(Lnet/minecraft/class_1610;)F	method_863	getBlastResistance
+		p	1	sa	entity
+	m	(I)Lnet/minecraft/class_586;	method_898	getMapColor
+		p	1		id
+	m	(Lnet/minecraft/class_1789;Lnet/minecraft/class_183;III)F	method_864	getRelativeHardnress
+		p	2		world
+		p	1		player
+		p	4	integer4	y
+		p	3	integer3	x
+		p	5	integer5	z
+	m	(Lnet/minecraft/class_183;IIIIFFFI)I	method_837	method_837
+		p	1	ahb	world
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	()Z	method_879	getBoolean
+	m	()Z	method_924	hasCollision
+	m	()I	method_925	getRenderLayerType
+	f	Z	field_918	hasRandomTicks
+	f	Lnet/minecraft/class_246;	field_906	SNOW
+	m	()F	method_816	getOcclusionLightValue
+	m	(Lnet/minecraft/class_183;IIIIFI)V	method_838	randomlyDropAsItem
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	integer5	state
+		p	6		chance
+		p	7	integer7	fortuneLevel
+		p	1		world
+		p	2	integer2	x
+	m	(Lnet/minecraft/class_584;)V	<init>	<init>
+		p	1		substance
+	f	I	field_910	opacity
+	m	(Lnet/minecraft/class_84;)Lnet/minecraft/class_242;	method_832	getBlockByItem
+		p	0	adb	item
+	m	(Lnet/minecraft/class_183;IIIILnet/minecraft/class_1789;)V	method_841	onHarvestAttempt
+		p	4	integer4	z
+		p	3	integer3	y
+		p	6		player
+		p	5	integer5	state
+		p	2	integer2	x
+		p	1		world
+	m	()Z	method_908	isOpaque
+	f	F	field_889	particleGravity
 c	net/minecraft/class_241	net/minecraft/block/BedBlock
 c	net/minecraft/class_1810	net/minecraft/inventory/AnvilInventory
 c	net/minecraft/class_1815	net/minecraft/inventory/BrewingStandInventory
@@ -1901,16 +2134,28 @@ c	net/minecraft/class_1632	net/minecraft/util/LegalSpecialCharecters
 	m	(Ljava/lang/String;)Ljava/lang/String;	method_5962	getAsString
 		p	0		string
 	f	[C	field_6031	CHARECTERS
+c	net/minecraft/class_177	net/minecraft/entity/Explosion
+	f	D	field_576	z
+	f	D	field_575	y
+	f	Lnet/minecraft/class_1610;	field_577	entity
+	f	Lnet/minecraft/class_183;	field_582	world
+	m	(Lnet/minecraft/class_183;Lnet/minecraft/class_1610;DDDF)V	<init>	<init>
+		p	5	double4	y
+		p	7	double5	z
+		p	1	ahb	world
+		p	3	double3	x
+		p	2	sa	entity
+	f	D	field_574	x
 c	net/minecraft/class_1631	net/minecraft/util/HostileEntityTags
 	f	Lnet/minecraft/class_1631;	field_6027	NONE
 	f	Lnet/minecraft/class_1631;	field_6029	ARTHROPOD
 	f	Lnet/minecraft/class_1631;	field_6028	UNDEAD
 c	net/minecraft/class_176	net/minecraft/world/ChunkPosPair
 	m	(II)V	<init>	<init>
-		p	1	integer1	x
-		p	2	integer2	z
+		p	1		x
+		p	2		z
 	m	(Ljava/lang/Object;)Z	equals	equals
-		p	1	object	object
+		p	1		object
 	m	()I	method_439	getX
 	f	I	field_571	z
 	m	()I	method_442	getZ
@@ -1919,14 +2164,14 @@ c	net/minecraft/class_175	net/minecraft/world/ChunkPos
 	f	I	field_568	y
 	f	I	field_567	x
 	m	(Ljava/lang/Object;)Z	equals	equals
-		p	1	object	object
+		p	1		object
 	m	(Lnet/minecraft/class_652;)V	<init>	<init>
-		p	1	azw	vec
+		p	1		vec
 	f	I	field_569	z
 	m	(III)V	<init>	<init>
-		p	2	integer2	y
-		p	1	integer1	x
-		p	3	integer3	z
+		p	2		y
+		p	1		x
+		p	3		z
 c	net/minecraft/class_1625	net/minecraft/entity/ItemFrameEntity
 c	net/minecraft/class_1624	net/minecraft/entity/AbstractWallHangableEntity
 c	net/minecraft/class_1623	net/minecraft/entity/AbstractFlyingEntity
@@ -1966,31 +2211,31 @@ c	net/minecraft/class_183	net/minecraft/world/AbstractWorld
 	f	Ljava/util/List;	field_611	players
 	f	Lnet/minecraft/class_1587;	field_621	difficulty
 	m	(Lnet/minecraft/class_190;)V	method_506	init
-		p	1	ahj	settings
+		p	1		settings
 	f	Lnet/minecraft/class_629;	field_627	properties
-	f	J	field_606	cloudColor
 	m	(IIILnet/minecraft/class_383;)V	method_501	setBlockEntityAtPos
+	f	J	field_606	cloudColor
 	m	(Lnet/minecraft/class_640;Ljava/lang/String;Lnet/minecraft/class_190;Lnet/minecraft/class_428;Lnet/minecraft/class_1574;)V	<init>	<init>
-		p	4	aqo	dimension
-		p	5	qi	profiler
-		p	3	ahj	settings
+		p	4		dimension
+		p	5		profiler
+		p	3		settings
 	m	()Lnet/minecraft/class_412;	method_622	createChunkAccess
 	f	Lnet/minecraft/class_428;	field_623	dimension
 	f	Ljava/util/Random;	field_622	random
 	f	Lnet/minecraft/class_640;	field_626	saveAccess
 	f	Z	field_595	isClient
 	m	(Lnet/minecraft/class_640;Ljava/lang/String;Lnet/minecraft/class_428;Lnet/minecraft/class_190;Lnet/minecraft/class_1574;)V	<init>	<init>
-		p	1	azc	access
-		p	5	qi	profiler
-		p	4	ahj	settings
-		p	3	aqo	dimension
+		p	1		access
+		p	5		profiler
+		p	4		settings
+		p	3		dimension
 	f	Ljava/util/List;	field_609	unloadedEntities
 	f	Ljava/util/List;	field_608	loadedEntities
 	f	Ljava/util/List;	field_605	flushableBlockEntities
 	f	Ljava/util/List;	field_604	allBlockEntities
 	m	(II)Lnet/minecraft/class_242;	method_555	getBlockAtHeightLimit
-		p	2	integer2	z
-		p	1	integer1	x
+		p	2		z
+		p	1		x
 	f	Lnet/minecraft/class_412;	field_625	chunkAccess
 	f	Ljava/util/List;	field_612	lightningStrikes
 c	net/minecraft/class_188	net/minecraft/util/WorldException
@@ -2008,7 +2253,7 @@ c	net/minecraft/class_194	net/minecraft/world/LightingType
 	f	Lnet/minecraft/class_194;	field_664	SKY
 	f	I	field_666	defaultLight
 	m	(Ljava/lang/String;II)V	<init>	<init>
-		p	3	integer3	defaultLight
+		p	3		defaultLight
 c	net/minecraft/class_1610	net/minecraft/entity/AbstractEntity
 	m	(Lnet/minecraft/class_1789;)Z	method_5744	method_5744
 		p	1		player
@@ -2060,9 +2305,10 @@ c	net/minecraft/class_1607	net/minecraft/entity/AbstractGrowingEntity
 c	net/minecraft/class_192	net/minecraft/util/BlockProvider
 	m	(II)Lnet/minecraft/class_201;	method_686	getBiome
 	m	(III)Lnet/minecraft/class_242;	method_687	getBlock
-		p	2	integer2	y
-		p	1	integer1	x
-		p	3	integer3	z
+		p	2		y
+		p	1		x
+		p	3		z
+	m	(III)I	method_690	getBlockMetadata
 c	net/minecraft/class_191	net/minecraft/world/Gamemodes
 	m	()Ljava/lang/String;	method_680	getName
 	f	Lnet/minecraft/class_191;	field_645	NOT_SET
@@ -2075,7 +2321,6 @@ c	net/minecraft/class_191	net/minecraft/world/Gamemodes
 		p	4		name
 	f	Ljava/lang/String;	field_650	name
 	f	I	field_649	id
-c	net/minecraft/class_190	net/minecraft/world/WorldSettings
 c	net/minecraft/class_1605	net/minecraft/potion/StatusEffect
 	f	Lnet/minecraft/class_1605;	field_5807	NIGHTVISION
 	f	Lnet/minecraft/class_1605;	field_5809	WEAKNESS
@@ -2105,6 +2350,7 @@ c	net/minecraft/class_1605	net/minecraft/potion/StatusEffect
 	f	I	field_5782	id
 	f	Lnet/minecraft/class_1605;	field_5813	ABSORPTION
 	f	Lnet/minecraft/class_1605;	field_5801	REGENERATION
+c	net/minecraft/class_190	net/minecraft/world/WorldSettings
 c	net/minecraft/class_1609	net/minecraft/util/CrashException
 	f	Lnet/minecraft/class_656;	field_5824	builder
 	m	(Lnet/minecraft/class_656;)V	<init>	<init>
@@ -2300,6 +2546,8 @@ c	net/minecraft/class_1229	net/minecraft/util/TranslateableString
 		p	1		string
 	f	Ljava/util/Map;	field_4588	langContents
 	f	Lnet/minecraft/class_1229;	field_4587	INSTANCE
+c	net/minecraft/class_1228	net/minecraft/util/StatCollector
+	m	(Ljava/lang/String;)Ljava/lang/String;	method_3960	translate
 c	net/minecraft/class_1227	net/minecraft/util/SuperRegistry
 	m	()Ljava/util/Set;	method_3957	getAsSet
 	m	(Ljava/lang/Object;)Z	method_3958	contains
@@ -2791,8 +3039,8 @@ c	net/minecraft/class_383	net/minecraft/block/entity/BlockEntity
 	f	Lorg/apache/logging/log4j/Logger;	field_1288	LOGGER
 	f	I	field_1290	chunkX
 	m	(Ljava/lang/Class;Ljava/lang/String;)V	method_1160	addBlockEntity
-		p	1	string	name
-		p	0	class1	clazz
+		p	1		name
+		p	0		clazz
 	m	()Z	method_1172	isDead
 c	net/minecraft/class_141	net/minecraft/item/enchantment/PowerEnchantment
 	m	(II)V	<init>	<init>

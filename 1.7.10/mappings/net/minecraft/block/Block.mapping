@@ -7,11 +7,14 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 	FIELD field_886 maxY D
 	FIELD field_887 maxZ D
 	FIELD field_888 sound Lnet/minecraft/class_246;
+	FIELD field_889 particleGravity F
 	FIELD field_890 substance Lnet/minecraft/class_584;
 	FIELD field_891 slipperiness F
 	FIELD field_892 icon Lnet/minecraft/class_1589;
 	FIELD field_893 itemGroup Lnet/minecraft/class_48;
+	FIELD field_894 rawName Ljava/lang/String;
 	FIELD field_895 REGISTRY Lnet/minecraft/class_1222;
+	FIELD field_896 name Ljava/lang/String;
 	FIELD field_897 STONE Lnet/minecraft/class_246;
 	FIELD field_898 WOOD Lnet/minecraft/class_246;
 	FIELD field_899 GRAVEL Lnet/minecraft/class_246;
@@ -26,14 +29,31 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 	FIELD field_908 ANVIL Lnet/minecraft/class_246;
 	FIELD field_909 opaque Z
 	FIELD field_910 opacity I
+	FIELD field_911 blocksGrass Z
 	FIELD field_912 light I
+	FIELD field_913 useNeighbourLight Z
 	FIELD field_914 hardness F
 	FIELD field_915 resistance F
+	FIELD field_916 isCalled Z
+	FIELD field_917 hasStats Z
 	FIELD field_918 hasRandomTicks Z
 	METHOD <init> (Lnet/minecraft/class_584;)V
 		ARG 1 substance
+	METHOD method_808 getMaxY ()D
+	METHOD method_809 getMinZ ()D
+	METHOD method_810 getMaxZ ()D
+	METHOD method_812 canSilkTouchHarvest ()Z
+	METHOD method_813 getTranslatedName ()Ljava/lang/String;
+	METHOD method_814 hasStats ()Z
 	METHOD method_815 noStats ()Lnet/minecraft/class_242;
+	METHOD method_816 getOcclusionLightValue ()F
 	METHOD method_817 getItemGroup ()Lnet/minecraft/class_48;
+	METHOD method_818 isFlowerPot ()Z
+	METHOD method_819 requiresBlockUpdates ()Z
+	METHOD method_820 overridesComparatorInput ()Z
+	METHOD method_821 geName ()Ljava/lang/String;
+	METHOD method_822 getItemIconName ()Ljava/lang/String;
+	METHOD method_823 getTranslationKey ()Ljava/lang/String;
 	METHOD method_824 setLight (F)Lnet/minecraft/class_242;
 		ARG 1 light
 	METHOD method_825 setShape (FFFFFF)V
@@ -43,23 +63,77 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
+	METHOD method_826 getBlockDamage (I)I
+		ARG 1 state
 	METHOD method_827 getIcon (II)Lnet/minecraft/class_1589;
+	METHOD method_828 getBonusDrops (ILjava/util/Random;)I
+		ARG 1 state
+		ARG 2 andom
 	METHOD method_829 getDroppedItem (ILjava/util/Random;I)Lnet/minecraft/class_84;
+		ARG 1 state
+		ARG 2 random
+		ARG 3 fortuneLevel
 	METHOD method_830 canCollide (IZ)Z
 	METHOD method_831 setItemGroup (Lnet/minecraft/class_48;)Lnet/minecraft/class_242;
 		ARG 1 itemGroup
+	METHOD method_832 getBlockByItem (Lnet/minecraft/class_84;)Lnet/minecraft/class_242;
+		ARG 0 item
+	METHOD method_833 addToItemGroup (Lnet/minecraft/class_84;Lnet/minecraft/class_48;Ljava/util/List;)V
+		ARG 1 item
+		ARG 2 group
+		ARG 3 list
+	METHOD method_834 canBeExplodedToItem (Lnet/minecraft/class_177;)Z
+		ARG 1 explosion
 	METHOD method_835 getTickRate (Lnet/minecraft/class_183;)I
 		ARG 1 world
 	METHOD method_836 getBoundingBox (Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;
 		ARG 1 world
+	METHOD method_837 (Lnet/minecraft/class_183;IIIIFFFI)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_838 randomlyDropAsItem (Lnet/minecraft/class_183;IIIIFI)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
 		ARG 6 chance
-	METHOD method_841 (Lnet/minecraft/class_183;IIIILnet/minecraft/class_1789;)V
+		ARG 7 fortuneLevel
+	METHOD method_839 onEvent (Lnet/minecraft/class_183;IIIII)Z
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 id
+		ARG 6 data
+	METHOD method_840 canBeReplaced (Lnet/minecraft/class_183;IIIILnet/minecraft/class_86;)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+		ARG 6 stack
+	METHOD method_841 onHarvestAttempt (Lnet/minecraft/class_183;IIIILnet/minecraft/class_1789;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
 		ARG 6 player
-	METHOD method_842 (Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V
+	METHOD method_842 dropBlockAsItem (Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 stack
+	METHOD method_843 onExplosion (Lnet/minecraft/class_183;IIILnet/minecraft/class_177;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 explosion
 	METHOD method_844 onAdjacentUpdate (Lnet/minecraft/class_183;IIILnet/minecraft/class_242;)V
 		ARG 1 world
 		ARG 2 posX
@@ -71,29 +145,89 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 		ARG 3 posY
 		ARG 4 posZ
 		ARG 5 block
+		ARG 6 state
 	METHOD method_846 (Lnet/minecraft/class_183;IIILnet/minecraft/class_649;Ljava/util/List;Lnet/minecraft/class_1610;)V
 		ARG 1 world
+	METHOD method_847 (Lnet/minecraft/class_183;IIILnet/minecraft/class_652;Lnet/minecraft/class_652;)Lnet/minecraft/class_650;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 vec1
+		ARG 6 vec2
 	METHOD method_848 onUpdateTick (Lnet/minecraft/class_183;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 posX
 		ARG 3 posY
 		ARG 4 posZ
+	METHOD method_849 onCollision (Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD method_850 onEntityFallen (Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;F)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 height
+	METHOD method_851 (Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;Lnet/minecraft/class_652;)V
+		ARG 1 world
+	METHOD method_852 onBlockPlacedByEntity (Lnet/minecraft/class_183;IIILnet/minecraft/class_1627;Lnet/minecraft/class_86;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 stack
 	METHOD method_853 (Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;)V
 		ARG 1 world
-	METHOD method_854 (Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;IFFF)Z
+	METHOD method_854 onActivation (Lnet/minecraft/class_183;IIILnet/minecraft/class_1789;IFFF)Z
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 side
+		ARG 7 subX
+		ARG 8 subY
+		ARG 9 subZ
+	METHOD method_855 harvest (Lnet/minecraft/class_183;Lnet/minecraft/class_1789;IIII)V
+		ARG 1 world
+		ARG 2 player
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 state
+	METHOD method_856 (Lnet/minecraft/class_192;III)V
+		ARG 1 world
+	METHOD method_858 checkIfEqual (Lnet/minecraft/class_242;Lnet/minecraft/class_242;)Z
+		ARG 0 block1
+		ARG 1 block2
 	METHOD method_859 setSound (Lnet/minecraft/class_246;)Lnet/minecraft/class_242;
 		ARG 1 sound
 	METHOD method_861 getNumberOfDrops (Ljava/util/Random;)I
 		ARG 1 random
-	METHOD method_864 (Lnet/minecraft/class_1789;Lnet/minecraft/class_183;III)F
+	METHOD method_862 registerIcon (Lnet/minecraft/class_1590;)V
+		ARG 1 provider
+	METHOD method_863 getBlastResistance (Lnet/minecraft/class_1610;)F
+		ARG 1 entity
+	METHOD method_864 getRelativeHardnress (Lnet/minecraft/class_1789;Lnet/minecraft/class_183;III)F
 		ARG 1 player
 		ARG 2 world
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 	METHOD method_865 setHasRandomTicks (Z)Lnet/minecraft/class_242;
 		ARG 1 hasRandomTicks
 	METHOD method_866 getRenderType ()I
 	METHOD method_867 setResistance (F)Lnet/minecraft/class_242;
 		ARG 1 resistance
+	METHOD method_868 getItemIcon (II)Lnet/minecraft/class_1589;
+		ARG 1 side
+		ARG 2 state
 	METHOD method_869 onAdding (Lnet/minecraft/class_183;III)V
 		ARG 1 world
 		ARG 2 posX
@@ -111,22 +245,78 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 		ARG 2 posX
 		ARG 3 posY
 		ARG 4 posZ
+	METHOD method_873 (Lnet/minecraft/class_183;IIILnet/minecraft/class_1610;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD method_874 blocksMovement (Lnet/minecraft/class_192;III)Z
 		ARG 2 posX
 		ARG 3 posY
 		ARG 4 posZ
+	METHOD method_875 strongPower (Lnet/minecraft/class_192;IIII)I
+		ARG 1 provider
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
 	METHOD method_876 getIdByBlock (Lnet/minecraft/class_242;)I
+		ARG 0 block
+	METHOD method_878 getBlockByString (Ljava/lang/String;)Lnet/minecraft/class_242;
+		ARG 0 id
+	METHOD method_879 getBoolean ()Z
 	METHOD method_880 setHardness (F)Lnet/minecraft/class_242;
 		ARG 1 hardness
+	METHOD method_881 canBePlacedAtPos (Lnet/minecraft/class_183;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_882 summonXp (Lnet/minecraft/class_183;IIII)V
 		ARG 1 world
 	METHOD method_883 (Lnet/minecraft/class_192;III)I
 		ARG 2 posX
 		ARG 3 posY
 		ARG 4 posZ
+	METHOD method_884 weakPower (Lnet/minecraft/class_192;IIII)I
+		ARG 1 provider
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
+	METHOD method_885 isEqualTo (Lnet/minecraft/class_242;)Z
+		ARG 1 block
 	METHOD method_887 setRawName (Ljava/lang/String;)Lnet/minecraft/class_242;
+		ARG 1 name
 	METHOD method_888 renderAsNormalBlock ()Z
+	METHOD method_889 getItem (Lnet/minecraft/class_183;III)Lnet/minecraft/class_84;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_890 canBlockBeAdjacent (Lnet/minecraft/class_183;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD method_891 (Lnet/minecraft/class_192;III)I
+		ARG 1 provider
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_893 setName (Ljava/lang/String;)Lnet/minecraft/class_242;
+		ARG 1 name
+	METHOD method_894 getBlockById (I)Lnet/minecraft/class_242;
+		ARG 0 id
+	METHOD method_895 afterBlockPlaced (Lnet/minecraft/class_183;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
+	METHOD method_897 canBePowered ()Z
 	METHOD method_898 getMapColor (I)Lnet/minecraft/class_586;
 		ARG 1 id
 	METHOD method_899 getHardness (Lnet/minecraft/class_183;III)F
@@ -134,17 +324,46 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 		ARG 2 posX
 		ARG 3 posY
 		ARG 4 posZ
-	METHOD method_900 (Lnet/minecraft/class_183;IIII)V
+	METHOD method_900 beforeHarvest (Lnet/minecraft/class_183;IIII)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
+	METHOD method_901 setBlockItemBounds ()V
 	METHOD method_902 setOpacity (I)Lnet/minecraft/class_242;
 		ARG 1 opacity
 	METHOD method_903 (Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;
 		ARG 1 world
-	METHOD method_908 isOpaque ()Z
-	METHOD method_911 getOpacity ()I
-	METHOD method_914 (Lnet/minecraft/class_183;III)V
+	METHOD method_904 getComparatorInputOverride (Lnet/minecraft/class_183;IIII)I
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 state
+	METHOD method_905 getPistonInteractionType ()I
+	METHOD method_908 isOpaque ()Z
+	METHOD method_909 createStackFromBlock (I)Lnet/minecraft/class_86;
+		ARG 1 state
+	METHOD method_910 canBlockPersist (Lnet/minecraft/class_183;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_911 getOpacity ()I
+	METHOD method_912 getDefaultDamage (Lnet/minecraft/class_183;III)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_913 blocksGrass ()Z
+	METHOD method_914 onRaining (Lnet/minecraft/class_183;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_915 getLuminescence ()I
+	METHOD method_916 usesNeighbourLight ()Z
 	METHOD method_917 getSubstance ()Lnet/minecraft/class_584;
 	METHOD method_918 registerBlocks ()V
 	METHOD method_919 isNormalBlock ()Z
@@ -153,3 +372,7 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 	METHOD method_922 hasRandomTicks ()Z
 	METHOD method_923 isBlockEntity ()Z
 	METHOD method_924 hasCollision ()Z
+	METHOD method_925 getRenderLayerType ()I
+	METHOD method_926 getMinX ()D
+	METHOD method_927 getMaxX ()D
+	METHOD method_928 getMinY ()D

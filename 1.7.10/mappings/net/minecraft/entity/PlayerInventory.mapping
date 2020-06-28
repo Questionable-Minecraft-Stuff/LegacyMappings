@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1787 net/minecraft/entity/PlayerInventory
+	FIELD field_6693 invSlots [Lnet/minecraft/class_86;
+	FIELD field_6694 armorSlots [Lnet/minecraft/class_86;
+	FIELD field_6696 player Lnet/minecraft/class_1789;
+	METHOD <init> (Lnet/minecraft/class_1789;)V
+		ARG 1 player
+	METHOD method_6549 getHotbarSlots ()I

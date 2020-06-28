@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_177 net/minecraft/entity/Explosion
+	FIELD field_574 x D
+	FIELD field_575 y D
+	FIELD field_576 z D
+	FIELD field_577 entity Lnet/minecraft/class_1610;
+	FIELD field_582 world Lnet/minecraft/class_183;
+	METHOD <init> (Lnet/minecraft/class_183;Lnet/minecraft/class_1610;DDDF)V
+		ARG 1 world
+		ARG 2 entity
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
