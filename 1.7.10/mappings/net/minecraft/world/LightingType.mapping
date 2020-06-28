@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_194 net/minecraft/world/LightingType
+	FIELD field_664 SKY Lnet/minecraft/class_194;
+	FIELD field_665 BLOCK Lnet/minecraft/class_194;
+	FIELD field_666 defaultLight I
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 3 defaultLight

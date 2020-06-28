@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_282 net/minecraft/block/BlockEntityProvider
+	METHOD method_1017 getBlockEntity (Lnet/minecraft/class_183;I)Lnet/minecraft/class_383;
+		ARG 1 world

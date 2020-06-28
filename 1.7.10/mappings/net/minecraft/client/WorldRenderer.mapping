@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_954 net/minecraft/client/WorldRenderer
+	FIELD field_3552 tesselator Lnet/minecraft/class_972;
+	FIELD field_3553 initialized Z
+	FIELD field_3554 blockEntities Ljava/util/List;
+	FIELD field_3556 world Lnet/minecraft/class_183;
+	FIELD field_3557 updatedChunks I
+	FIELD field_3558 x I
+	FIELD field_3559 y I
+	FIELD field_3560 z I
+	FIELD field_3561 negativeX I
+	FIELD field_3562 negativeY I
+	FIELD field_3563 negativeZ I
+	FIELD field_3564 clippedX I
+	FIELD field_3565 clippedY I
+	FIELD field_3566 clippedZ I
+	FIELD field_3568 skip [Z
+	FIELD field_3569 positiveX I
+	FIELD field_3570 positiveY I
+	FIELD field_3571 positiveZ I
+	FIELD field_3572 requiresUpdating Z
+	FIELD field_3573 renderingVoxelShape Lnet/minecraft/class_649;
+	FIELD field_3578 isChunkLit Z
+	FIELD field_3579 blockEntityRenderers Ljava/util/List;
+	FIELD field_3580 vertexState Lnet/minecraft/class_973;
+	FIELD field_3581 renderList I
+	METHOD <init> (Lnet/minecraft/class_183;Ljava/util/List;IIII)V
+		ARG 1 world
+		ARG 2 blockEntities
+	METHOD method_2945 setNoDraw ()V
+	METHOD method_2947 setPos (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_2951 update (Lnet/minecraft/class_1627;)V
+		ARG 1 entity
+	METHOD method_2958 setupTranslation ()V

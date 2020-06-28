@@ -1,9 +1,108 @@
 CLASS net/minecraft/class_415 net/minecraft/world/Chunk
+	FIELD field_1382 lit Z
+	FIELD field_1385 isLoaded Z
 	FIELD field_1386 world Lnet/minecraft/class_183;
+	FIELD field_1387 heightMap [I
+	FIELD field_1388 x I
+	FIELD field_1389 z I
 	FIELD field_1390 blockEntities Ljava/util/Map;
 	FIELD field_1391 entities [Ljava/util/List;
+	FIELD field_1392 terrainPopulated Z
+	FIELD field_1393 lightPopulated Z
+	FIELD field_1394 hasTicked Z
+	FIELD field_1395 isModified Z
 	FIELD field_1396 hasEntities Z
+	FIELD field_1397 timeSinceLastSave J
+	FIELD field_1398 provideUpdates Z
+	FIELD field_1400 playerTime J
 	FIELD field_1401 LOGGER Lorg/apache/logging/log4j/Logger;
-	FIELD field_1404 isLoaded Z
+	FIELD field_1402 storageArray [Lnet/minecraft/class_417;
+	FIELD field_1403 biomeByIdArray [B
+	FIELD field_1405 lightChecks I
 	METHOD <init> (Lnet/minecraft/class_183;II)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 z
+	METHOD <init> (Lnet/minecraft/class_183;[Lnet/minecraft/class_242;II)V
+		ARG 1 world
+		ARG 2 blocks
+		ARG 3 x
+		ARG 4 z
+	METHOD <init> (Lnet/minecraft/class_183;[Lnet/minecraft/class_242;[BII)V
+		ARG 1 world
+		ARG 2 blocks
+		ARG 4 x
+		ARG 5 z
+	METHOD method_1297 createHeightMap ()V
+	METHOD method_1298 isPopulated (I)V
+		ARG 1 integer
+	METHOD method_1299 validateChunkPos (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1300 getBlockAtPos (III)Lnet/minecraft/class_242;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1301 setBlockMeta (IIII)Z
+	METHOD method_1302 setBlockWithMeta (IIILnet/minecraft/class_242;I)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1305 getRandomBySeed (J)Ljava/util/Random;
+		ARG 1 seed
+	METHOD method_1306 getLightLevel (Lnet/minecraft/class_194;III)I
+		ARG 1 type
+	METHOD method_1307 setLightLevel (Lnet/minecraft/class_194;IIII)V
+		ARG 1 type
+	METHOD method_1308 addBlockEntity (Lnet/minecraft/class_383;)V
+		ARG 1 blockEntity
+	METHOD method_1309 populate (Lnet/minecraft/class_412;Lnet/minecraft/class_412;II)V
+		ARG 1 access1
+		ARG 2 access2
+	METHOD method_1311 addEntityToChunk (Lnet/minecraft/class_1610;)V
+		ARG 1 entity
+	METHOD method_1312 removeEntity (Lnet/minecraft/class_1610;I)V
+		ARG 1 entity
+		ARG 2 index
+	METHOD method_1314 needsSave (Z)Z
+	METHOD method_1315 setBiomeArray ([B)V
+		ARG 1 biomes
+	METHOD method_1318 generateSkyLight ()V
+	METHOD method_1319 getHeight (II)I
+	METHOD method_1320 getBlockOpacityByPos (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1321 getBlockLightLevel (IIII)I
+	METHOD method_1322 removeEntityFromChunk (Lnet/minecraft/class_1610;)V
+		ARG 1 entity
+	METHOD method_1324 onLoad ()V
+	METHOD method_1326 getBlockMeta (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1329 onUnload ()V
+	METHOD method_1330 getPrecipitationHeight (II)I
+	METHOD method_1331 isBlockBelowSky (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1332 setAsModified ()V
+	METHOD method_1334 getBlockEntityByPos (III)Lnet/minecraft/class_383;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1335 validateLightAtPos (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1336 removeBlockEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1337 isEmpty ()Z
+	METHOD method_1341 getStorageArray ()[Lnet/minecraft/class_417;
+	METHOD method_1342 isPopulated ()Z
+	METHOD method_1343 getNewChunkPosPair ()Lnet/minecraft/class_176;
+	METHOD method_1344 getBiomeIdArray ()[B
+	METHOD method_1345 nullLightChecks ()V
+	METHOD method_1347 validateLight ()V

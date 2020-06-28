@@ -24,7 +24,7 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 	FIELD field_906 SNOW Lnet/minecraft/class_246;
 	FIELD field_907 LADDER Lnet/minecraft/class_246;
 	FIELD field_908 ANVIL Lnet/minecraft/class_246;
-	FIELD field_909 isOpaque Z
+	FIELD field_909 opaque Z
 	FIELD field_910 opacity I
 	FIELD field_912 light I
 	FIELD field_914 hardness F
@@ -55,6 +55,9 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 	METHOD method_838 randomlyDropAsItem (Lnet/minecraft/class_183;IIIIFI)V
 		ARG 1 world
 		ARG 6 chance
+	METHOD method_841 (Lnet/minecraft/class_183;IIIILnet/minecraft/class_1789;)V
+		ARG 1 world
+		ARG 6 player
 	METHOD method_842 (Lnet/minecraft/class_183;IIILnet/minecraft/class_86;)V
 		ARG 1 world
 	METHOD method_844 onAdjacentUpdate (Lnet/minecraft/class_183;IIILnet/minecraft/class_242;)V
@@ -113,7 +116,6 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 		ARG 3 posY
 		ARG 4 posZ
 	METHOD method_876 getIdByBlock (Lnet/minecraft/class_242;)I
-	METHOD method_879 isOpaque ()Z
 	METHOD method_880 setHardness (F)Lnet/minecraft/class_242;
 		ARG 1 hardness
 	METHOD method_882 summonXp (Lnet/minecraft/class_183;IIII)V
@@ -132,10 +134,17 @@ CLASS net/minecraft/class_242 net/minecraft/block/Block
 		ARG 2 posX
 		ARG 3 posY
 		ARG 4 posZ
+	METHOD method_900 (Lnet/minecraft/class_183;IIII)V
+		ARG 1 world
 	METHOD method_902 setOpacity (I)Lnet/minecraft/class_242;
 		ARG 1 opacity
 	METHOD method_903 (Lnet/minecraft/class_183;III)Lnet/minecraft/class_649;
 		ARG 1 world
+	METHOD method_908 isOpaque ()Z
+	METHOD method_911 getOpacity ()I
+	METHOD method_914 (Lnet/minecraft/class_183;III)V
+		ARG 1 world
+	METHOD method_915 getLuminescence ()I
 	METHOD method_917 getSubstance ()Lnet/minecraft/class_584;
 	METHOD method_918 registerBlocks ()V
 	METHOD method_919 isNormalBlock ()Z

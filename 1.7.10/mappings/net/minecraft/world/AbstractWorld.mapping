@@ -1,2 +1,32 @@
 CLASS net/minecraft/class_183 net/minecraft/world/AbstractWorld
 	FIELD field_595 isClient Z
+	FIELD field_604 allBlockEntities Ljava/util/List;
+	FIELD field_605 flushableBlockEntities Ljava/util/List;
+	FIELD field_606 cloudColor J
+	FIELD field_608 loadedEntities Ljava/util/List;
+	FIELD field_609 unloadedEntities Ljava/util/List;
+	FIELD field_610 loadedBlockEntities Ljava/util/List;
+	FIELD field_611 players Ljava/util/List;
+	FIELD field_612 lightningStrikes Ljava/util/List;
+	FIELD field_621 difficulty Lnet/minecraft/class_1587;
+	FIELD field_622 random Ljava/util/Random;
+	FIELD field_623 dimension Lnet/minecraft/class_428;
+	FIELD field_625 chunkAccess Lnet/minecraft/class_412;
+	FIELD field_626 saveAccess Lnet/minecraft/class_640;
+	FIELD field_627 properties Lnet/minecraft/class_629;
+	METHOD <init> (Lnet/minecraft/class_640;Ljava/lang/String;Lnet/minecraft/class_190;Lnet/minecraft/class_428;Lnet/minecraft/class_1574;)V
+		ARG 3 settings
+		ARG 4 dimension
+		ARG 5 profiler
+	METHOD <init> (Lnet/minecraft/class_640;Ljava/lang/String;Lnet/minecraft/class_428;Lnet/minecraft/class_190;Lnet/minecraft/class_1574;)V
+		ARG 1 access
+		ARG 3 dimension
+		ARG 4 settings
+		ARG 5 profiler
+	METHOD method_501 setBlockEntityAtPos (IIILnet/minecraft/class_383;)V
+	METHOD method_506 init (Lnet/minecraft/class_190;)V
+		ARG 1 settings
+	METHOD method_555 getBlockAtHeightLimit (II)Lnet/minecraft/class_242;
+		ARG 1 x
+		ARG 2 z
+	METHOD method_622 createChunkAccess ()Lnet/minecraft/class_412;

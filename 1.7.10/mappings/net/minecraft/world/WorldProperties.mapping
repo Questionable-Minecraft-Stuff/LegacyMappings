@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_629 net/minecraft/world/WorldProperties
+	METHOD <init> (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt
+	METHOD method_1795 (Lnet/minecraft/class_1408;)V
+		ARG 1 group

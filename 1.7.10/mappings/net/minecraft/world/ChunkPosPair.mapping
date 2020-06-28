@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_176 net/minecraft/world/ChunkPosPair
+	FIELD field_570 x I
+	FIELD field_571 z I
+	METHOD <init> (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD method_439 getX ()I
+	METHOD method_442 getZ ()I

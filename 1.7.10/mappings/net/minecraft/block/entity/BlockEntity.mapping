@@ -1,3 +1,15 @@
 CLASS net/minecraft/class_383 net/minecraft/block/entity/BlockEntity
 	FIELD field_1288 LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD field_1289 world Lnet/minecraft/class_183;
+	FIELD field_1290 chunkX I
+	FIELD field_1291 chunkY I
+	FIELD field_1292 chunkZ I
+	FIELD field_1293 dead Z
+	FIELD field_1296 nameAndClass Ljava/util/Map;
+	FIELD field_1297 classAndName Ljava/util/Map;
+	METHOD method_1160 addBlockEntity (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 clazz
+		ARG 1 name
+	METHOD method_1172 isDead ()Z
+	METHOD method_1173 destroy ()V
+	METHOD method_1174 unDestroy ()V

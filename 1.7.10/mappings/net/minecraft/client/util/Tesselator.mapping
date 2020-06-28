@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_972 net/minecraft/client/util/Tesselator
+	FIELD field_3763 INSTANCE Lnet/minecraft/class_972;
 	FIELD field_3786 notTesselating Z
