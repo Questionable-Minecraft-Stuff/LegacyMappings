@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1590 net/minecraft/client/util/TextureRegistryProvider
+	METHOD method_5536 registerTexture (Ljava/lang/String;)Lnet/minecraft/class_1589;
+		ARG 1 name

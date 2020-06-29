@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1610 net/minecraft/entity/AbstractEntity
 	FIELD field_5827 hitbox Lnet/minecraft/class_649;
-	FIELD field_5835 dead Z
+	FIELD field_5835 destroyed Z
 	FIELD field_5837 width F
 	FIELD field_5838 height F
 	FIELD field_5850 random Ljava/util/Random;
@@ -32,6 +32,10 @@ CLASS net/minecraft/class_1610 net/minecraft/entity/AbstractEntity
 	METHOD method_5729 setEntityPos (DDD)V
 	METHOD method_5734 (Lnet/minecraft/class_1232;)V
 		ARG 1 nbt
+	METHOD method_5738 initialize ()V
+	METHOD method_5742 setArmorInArmorSlot (ILnet/minecraft/class_86;)V
+		ARG 1 slot
+		ARG 2 armor
 	METHOD method_5744 (Lnet/minecraft/class_1789;)Z
 		ARG 1 player
 	METHOD method_5748 setId (I)V

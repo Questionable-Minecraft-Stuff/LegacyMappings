@@ -26,7 +26,15 @@ CLASS net/minecraft/class_183 net/minecraft/world/AbstractWorld
 	METHOD method_501 setBlockEntityAtPos (IIILnet/minecraft/class_383;)V
 	METHOD method_506 init (Lnet/minecraft/class_190;)V
 		ARG 1 settings
+	METHOD method_542 playSound (Lnet/minecraft/class_1610;Ljava/lang/String;FF)V
+	METHOD method_548 (Lnet/minecraft/class_1789;Ljava/lang/String;FF)V
+		ARG 1 player
+		ARG 2 name
+		ARG 3 intensity
+		ARG 4 pitch
 	METHOD method_555 getBlockAtHeightLimit (II)Lnet/minecraft/class_242;
 		ARG 1 x
 		ARG 2 z
+	METHOD method_595 summonEntityAtPlayer (Lnet/minecraft/class_1610;)Z
+		ARG 1 entity
 	METHOD method_622 createChunkAccess ()Lnet/minecraft/class_412;

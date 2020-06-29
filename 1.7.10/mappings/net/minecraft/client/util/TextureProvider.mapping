@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1589 net/minecraft/client/util/IconProvider
+CLASS net/minecraft/class_1589 net/minecraft/client/util/TextureProvider
 	METHOD method_5527 getWidth ()I
 	METHOD method_5528 getInterposedX (D)F
 		ARG 1 x

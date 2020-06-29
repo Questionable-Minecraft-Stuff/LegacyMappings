@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1644 net/minecraft/entity/AttributeMap
+	METHOD method_6043 (Lnet/minecraft/class_1640;)Lnet/minecraft/class_1641;
+		ARG 1 attribute

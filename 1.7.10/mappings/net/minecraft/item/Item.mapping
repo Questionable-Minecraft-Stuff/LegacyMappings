@@ -9,13 +9,13 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 	FIELD field_192 stackSize I
 	FIELD field_193 handheld Z
 	FIELD field_194 hasTypes Z
-	FIELD field_195 icon Lnet/minecraft/class_1589;
+	FIELD field_195 texture Lnet/minecraft/class_1589;
 	FIELD field_196 name Ljava/lang/String;
 	FIELD field_197 rawName Ljava/lang/String;
 	METHOD method_140 getTranslationKey ()Ljava/lang/String;
 	METHOD method_141 getState (I)I
 		ARG 1 state
-	METHOD method_142 getIconByDurability (II)Lnet/minecraft/class_1589;
+	METHOD method_142 getTextureByDurability (II)Lnet/minecraft/class_1589;
 		ARG 1 durability
 	METHOD method_143 setItemGroup (Lnet/minecraft/class_48;)Lnet/minecraft/class_84;
 		ARG 1 itemGroup
@@ -79,7 +79,7 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 		ARG 3 liquids
 	METHOD method_158 getAsItem (Lnet/minecraft/class_242;)Lnet/minecraft/class_84;
 		ARG 0 block
-	METHOD method_159 registerIcon (Lnet/minecraft/class_1590;)V
+	METHOD method_159 registerTexture (Lnet/minecraft/class_1590;)V
 		ARG 1 provider
 	METHOD method_160 setHasTypes (Z)Lnet/minecraft/class_84;
 		ARG 1 hasTypes
@@ -91,7 +91,7 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 		ARG 3 player
 	METHOD method_164 (Lnet/minecraft/class_242;)Z
 		ARG 1 block
-	METHOD method_165 getIconProvider (I)Lnet/minecraft/class_1589;
+	METHOD method_165 getTextureProvider (I)Lnet/minecraft/class_1589;
 		ARG 1 damage
 	METHOD method_166 getEnchantability ()I
 	METHOD method_167 setItemAfterUse (Lnet/minecraft/class_84;)Lnet/minecraft/class_84;
@@ -128,7 +128,7 @@ CLASS net/minecraft/class_84 net/minecraft/item/Item
 	METHOD method_183 isMap ()Z
 	METHOD method_184 getEffect (Lnet/minecraft/class_86;)Ljava/lang/String;
 		ARG 1 stack
-	METHOD method_185 getIconByStack (Lnet/minecraft/class_86;)Lnet/minecraft/class_1589;
+	METHOD method_185 getTextureByStack (Lnet/minecraft/class_86;)Lnet/minecraft/class_1589;
 		ARG 1 stack
 	METHOD method_186 createMultimap ()Lcom/google/common/collect/Multimap;
 	METHOD method_187 getNameByTranslation (Lnet/minecraft/class_86;)Ljava/lang/String;

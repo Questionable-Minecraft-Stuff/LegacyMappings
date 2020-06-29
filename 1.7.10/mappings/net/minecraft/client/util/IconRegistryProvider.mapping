@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1590 net/minecraft/client/util/IconRegistryProvider
-	METHOD method_5536 registerIcon (Ljava/lang/String;)Lnet/minecraft/class_1589;
-		ARG 1 name

@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_77 net/minecraft/item/FishingRodItem
+	FIELD field_170 cast_texture Lnet/minecraft/class_1589;
+	METHOD method_118 getTextureWhenCast ()Lnet/minecraft/class_1589;
