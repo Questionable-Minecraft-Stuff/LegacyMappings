@@ -19,3 +19,7 @@ If you're planning on *actually* helping, follow these instructions
 4. Abstract classes should have the `Abstract` prefix
 5. Interfaces should be suffixed with `Provider` or `Access`
 6. Classes having a single, obvious purpose should be suffixed with what they are. E.g.: `CreeperEntity`, `CreeperModel`, `CreeperRenderer`
+
+### Other stuff
+1. Preferably, sign your commits becuase it looks cool
+2. Commits that include mapping name changes should inlude *every single changed file* in the commit message. Here's an example -> https://github.com/Useless-Minecraft-Stuff/LegacyMappings/commit/2ab3930898e4bc90a733e0d6e034978c35f5d354
