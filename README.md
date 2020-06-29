@@ -11,4 +11,4 @@ If you want to contribute to this, read everything in CONTRIBUTING.md
 Many names come from [Yarn](https://github.com/FabricMC/yarn), licensed under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ### License
-LegacyMappings is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+LegacyMappings is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless otherwise stated.
