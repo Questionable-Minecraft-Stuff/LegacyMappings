@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_6 net/minecraft/inventory/ChestInventory
+	FIELD field_32 provider Lnet/minecraft/class_1585;
+	METHOD <init> (Lnet/minecraft/class_1585;Lnet/minecraft/class_1585;)V
+		ARG 1 provider1
+		ARG 2 provider2

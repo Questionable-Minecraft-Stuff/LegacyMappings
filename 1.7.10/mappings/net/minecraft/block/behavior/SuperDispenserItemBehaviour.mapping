@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_1212 net/minecraft/block/behavior/SuperDispenserItemBehaviour
+	METHOD method_3927 (Lnet/minecraft/class_183;Lnet/minecraft/class_86;ILnet/minecraft/class_1217;Lnet/minecraft/class_1223;)V
+		ARG 0 world
+		ARG 1 stack
+		ARG 3 type

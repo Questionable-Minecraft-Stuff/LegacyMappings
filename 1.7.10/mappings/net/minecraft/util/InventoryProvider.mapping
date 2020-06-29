@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_1585 net/minecraft/util/InventoryProvider
+	METHOD method_5517 asString ()Ljava/lang/String;
 	METHOD method_5518 (ILnet/minecraft/class_86;)Z
 		ARG 2 itemStack

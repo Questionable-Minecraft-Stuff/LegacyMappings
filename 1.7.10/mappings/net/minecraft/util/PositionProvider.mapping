@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1223 net/minecraft/util/PositionProvider
+	METHOD method_3950 getX ()D
+	METHOD method_3951 getY ()D
+	METHOD method_3952 getZ ()D

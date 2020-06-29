@@ -11,6 +11,10 @@ CLASS net/minecraft/class_1543 net/minecraft/advancement/Advancements
 	FIELD field_5556 THE_BEGINNING_WITH_A_FULLSTOP Lnet/minecraft/class_1542;
 	FIELD field_5557 BEACONATOR Lnet/minecraft/class_1542;
 	FIELD field_5558 ADVENTURING_TIME Lnet/minecraft/class_1542;
+	FIELD field_5559 minColumn I
+	FIELD field_5560 minRow I
+	FIELD field_5561 maxColumn I
+	FIELD field_5562 maxRow I
 	FIELD field_5563 ADVANCEMENTS Ljava/util/List;
 	FIELD field_5564 TAKING_INVENTORY Lnet/minecraft/class_1542;
 	FIELD field_5565 GETTING_WOOD Lnet/minecraft/class_1542;

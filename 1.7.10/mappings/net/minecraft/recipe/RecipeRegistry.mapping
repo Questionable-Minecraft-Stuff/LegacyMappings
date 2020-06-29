@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_133 net/minecraft/recipe/RecipeRegistry
+	FIELD field_453 INSTANCE Lnet/minecraft/class_133;
+	FIELD field_454 specialRecipes Ljava/util/List;
+	METHOD method_317 getInstance ()Lnet/minecraft/class_133;
+	METHOD method_318 (Lnet/minecraft/class_7;Lnet/minecraft/class_183;)Lnet/minecraft/class_86;
+		ARG 1 inventory
+		ARG 2 world
+	METHOD method_319 registerShapedRecipe (Lnet/minecraft/class_86;[Ljava/lang/Object;)Lnet/minecraft/class_136;
+		ARG 1 stack
+		ARG 2 args
+	METHOD method_320 getSpecialRecipesList ()Ljava/util/List;
+	METHOD method_321 registerShapelessRecipe (Lnet/minecraft/class_86;[Ljava/lang/Object;)V
+		ARG 1 stack
+		ARG 2 args

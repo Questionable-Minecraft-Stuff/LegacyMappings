@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_125 net/minecraft/recipe/DyeingRecipes
+	METHOD method_305 register (Lnet/minecraft/class_133;)V

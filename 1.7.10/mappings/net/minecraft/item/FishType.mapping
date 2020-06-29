@@ -40,4 +40,3 @@ CLASS net/minecraft/class_76 net/minecraft/item/FishType
 	METHOD method_115 getIconWhenUncooked ()Lnet/minecraft/class_1589;
 	METHOD method_116 getIconWhenCooked ()Lnet/minecraft/class_1589;
 	METHOD method_117 canBeCooked ()Z
-	METHOD values ()[Lnet/minecraft/class_76;

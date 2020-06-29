@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_7 net/minecraft/inventory/CraftingInventory
+	FIELD field_34 stacks [Lnet/minecraft/class_86;
+	FIELD field_36 inventory Lnet/minecraft/class_1808;
+	METHOD <init> (Lnet/minecraft/class_1808;II)V
+		ARG 1 inventory

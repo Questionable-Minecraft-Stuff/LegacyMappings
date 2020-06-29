@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_127 net/minecraft/recipe/FoodRecipes
+	METHOD method_306 register (Lnet/minecraft/class_133;)V
+		ARG 1 recipes

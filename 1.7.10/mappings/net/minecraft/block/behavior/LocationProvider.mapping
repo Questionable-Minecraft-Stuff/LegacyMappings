@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1221 net/minecraft/block/behavior/LocationProvider
+	METHOD method_3941 getWorld ()Lnet/minecraft/class_183;

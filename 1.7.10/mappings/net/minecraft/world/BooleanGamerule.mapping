@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_179 net/minecraft/world/BooleanGamerule
+	FIELD field_585 rules Ljava/util/TreeMap;
+	METHOD method_453 (Lnet/minecraft/class_1232;)V
+		ARG 1 nbt
+	METHOD method_455 addRule (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 literal
+		ARG 2 defaultValue
