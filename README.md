@@ -1,4 +1,6 @@
 # LegacyMappings
+This project is not actively maintained, because [Legacy Fabric](https://github.com/Legacy-Fabric) exists ;)
+
 Mappings for 1.7.10
 
 You probably won't see this but if you do, You're in!  
